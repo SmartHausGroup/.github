@@ -58,7 +58,7 @@ This ensures every system is **traceable, secure, and governed by design**—not
 
 **TAI (Tutelarius Auxilium Intellectus - Guardian of Intelligent Assistance)** - A modular Personal Assistant platform that enables plug-and-play integration of AI modules and capabilities. TAI provides a flexible architecture where core systems (RFS, VFE, QuantumCore) integrate seamlessly as modules. The vision is to create a marketplace ecosystem where developers can build and distribute modules that extend TAI's capabilities, similar to an app store for AI assistants. RFS and VFE modules run locally on edge devices, preserving user data privacy while enabling powerful AI capabilities.
 
-**AIVA (AI Virtual Assistant - Living Intelligence)** - An intent-to-execution system built on the LATTICE ecosystem. AIVA takes natural language intent and automatically decomposes it into executable workflows through three specialized layers:
+**AIVA (Artificialis Intelligentia Vivens Anima - Artificial Intelligence Living Soul)** - An intent-to-execution system built on the LATTICE ecosystem. AIVA takes natural language intent and automatically decomposes it into executable workflows through three specialized layers:
 - **AIOS (Artificial Intelligence Operating System)** - Intelligence layer: symbolic cognition, brain regions (Prefrontal Cortex, Hippocampus, Amygdala, etc.), and intent-driven orchestration
 - **LQL (Lattice Query Language)** - Chemistry layer: declarative query language transforming intent into mathematically provable execution graphs (DAGs)
 - **LEF (Lattice Execution Fabric)** - Physics layer: particle-based execution engine that compiles symbolic instructions to native machine code
