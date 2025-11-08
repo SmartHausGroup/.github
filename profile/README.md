@@ -41,9 +41,9 @@ This ensures every system is **traceable, secure, and governed by design**—not
 
 ### ⚛️ Systems: Core Technologies
 
-**RFS (Resonant Field Storage)** - A holographic memory substrate that stores documents as superposed wave patterns in a 4-D field. Retrieves information through resonance rather than traditional indexing. Features Metal acceleration, mathematical guardrails, and AEAD-backed exact recall.
+**RFS (Resonant Field Storage)** - A holographic memory substrate that stores documents as superposed wave patterns in a 4-D field. Retrieves information through resonance rather than traditional indexing. Features Metal acceleration, mathematical guardrails, and AEAD-backed exact recall. **RFS runs locally on edge devices, preserving data privacy by keeping all data on-device.**
 
-**VFE (VerbumFieldEngine)** - GPU-first model inference engine with calculus-based model selection. Optimizes cost, privacy, alignment, and capacity constraints. Supports Metal, CUDA, and ROCm acceleration.
+**VFE (VerbumFieldEngine)** - GPU-first model inference engine with calculus-based model selection. Optimizes cost, privacy, alignment, and capacity constraints. Supports Metal, CUDA, and ROCm acceleration. **VFE runs locally on edge devices, ensuring sensitive data never leaves the user's hardware.**
 
 **QuantumCore** - Native C++ quantum compute engine providing high-performance numerics for orchestrators. Exposes eigen/spectral operations with optional HTTP service layer.
 
@@ -56,19 +56,21 @@ This ensures every system is **traceable, secure, and governed by design**—not
 
 ### 🚀 Platforms: Integrated Systems
 
-**TAI (Triadic AI)** - Platform that integrates core systems (RFS, VFE, QuantumCore, Holographic Memory) into unified services. Provides enterprise-grade orchestration, security, and governance.
+**TAI (Tutelarius Auxilium Intellectus)** - A modular Personal Assistant platform that enables plug-and-play integration of AI modules and capabilities. TAI provides a flexible architecture where core systems (RFS, VFE, QuantumCore) integrate seamlessly as modules. The vision is to create a marketplace ecosystem where developers can build and distribute modules that extend TAI's capabilities, similar to an app store for AI assistants. RFS and VFE modules run locally on edge devices, preserving user data privacy while enabling powerful AI capabilities.
 
-**AIVA (AI Virtual Architecture)** - Comprehensive platform built on the LATTICE ecosystem:
-- **LEF (Lattice Execution Fabric)** - Physics layer: particle-based execution engine that compiles symbolic instructions to native machine code
+**AIVA (AI Virtual Architecture)** - An intent-to-execution system built on the LATTICE ecosystem. AIVA takes natural language intent and automatically decomposes it into executable workflows through three specialized layers:
+- **AIOS (Artificial Intelligence Operating System)** - Intelligence layer: symbolic cognition, brain regions (Prefrontal Cortex, Hippocampus, Amygdala, etc.), and intent-driven orchestration
 - **LQL (Lattice Query Language)** - Chemistry layer: declarative query language transforming intent into mathematically provable execution graphs (DAGs)
-- **AIOS/COE (Cognitive Orchestration Engine)** - Biology layer: intelligence system with symbolic cognition, brain regions (Prefrontal Cortex, Hippocampus, Amygdala, etc.), and intent-driven orchestration
+- **LEF (Lattice Execution Fabric)** - Physics layer: particle-based execution engine that compiles symbolic instructions to native machine code
+
+AIVA enables users to specify their intent in natural language, and the system automatically creates, optimizes, and proves the correctness of the resulting program with built-in governance, traceability, and security.
 
 **Key Projects:**
-- **[TAI](https://github.com/SmartHausGroup/TAI)** - Integrated platform
+- **[TAI](https://github.com/SmartHausGroup/TAI)** - Modular Personal Assistant platform
 - **[AIVA](https://github.com/SmartHausGroup/AIVA)** - LATTICE ecosystem platform
+- **[AIOS](https://github.com/SmartHausGroup/AIOS)** - Artificial Intelligence Operating System
 - **[LEF](https://github.com/SmartHausGroup/LEF)** - Execution fabric
 - **[LQL](https://github.com/SmartHausGroup/LQL)** - Query language
-- **[AIOS](https://github.com/SmartHausGroup/AIOS)** - Cognitive orchestration
 
 ---
 
@@ -84,15 +86,6 @@ This ensures every system is **traceable, secure, and governed by design**—not
 - **[mpsgraph-reduction-bug-repro](https://github.com/SmartHausGroup/mpsgraph-reduction-bug-repro)** - Bug repro case for Apple's MPSGraph
 - Mathematical proofs and lemmas
 - Executable notebooks and validation artifacts
-
----
-
-## 📦 Public Projects
-
-- **[research](https://github.com/SmartHausGroup/research)** - SmartHaus Research
-- **[M365](https://github.com/SmartHausGroup/M365)** - Microsoft 365 Enterprise Platform
-- **[C²](https://github.com/SmartHausGroup/C2)** - Private onion-routing cloud infrastructure
-- **[SIGMA](https://github.com/SmartHausGroup/SIGMA)** - Algorithmic trading platform with 170+ trading signals
 
 ---
 
