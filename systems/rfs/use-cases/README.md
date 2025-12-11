@@ -1,16 +1,11 @@
-# RFS Use Cases — MVP Documentation
+# RFS Use Cases — White Papers
 
-**Status:** Active Development  
-**Owner:** @smarthaus  
-**Last Updated:** 2025-12-10
+**Status:** Public Documentation  
+**Last Updated:** 2025-12-11
 
 ## Overview
 
-This directory contains detailed documentation for five high-value use cases demonstrating Resonant Field Storage (RFS) capabilities. Each use case includes:
-
-- **README.md**: Problem statement, solution overview, MVP scope, demo walkthrough, quick start
-- **NORTH_STAR.md**: Vision, goals, success criteria, user personas, value proposition
-- **EXECUTION_PLAN.md**: MVP phases, implementation steps, timeline, demo milestones
+This directory contains white paper documentation for five high-value use cases demonstrating Resonant Field Storage (RFS) capabilities. Each use case is presented as an educational white paper focusing on problems, solutions, and business value rather than implementation details.
 
 ## Use Cases
 
@@ -18,35 +13,30 @@ This directory contains detailed documentation for five high-value use cases dem
 **Directory:** `01_incident_memory_oncall/`  
 **Problem:** On-call engineers struggle to find related incidents quickly; current keyword search misses relationships  
 **RFS Solution:** Superposition + interference patterns automatically discover related incidents, contradictions, and patterns  
-**MVP Status:** 🟡 In Planning  
 **Key Value:** Reduced MTTR, automatic pattern detection, explainable incident relationships
 
 ### 2. RAG with Proofs (Retrieval-Augmented Generation)
 **Directory:** `02_rag_with_proofs/`  
 **Problem:** LLMs need context but current systems can't prove why documents were selected  
 **RFS Solution:** Resonance-based document selection with interference pattern explanations  
-**MVP Status:** 🟡 In Planning  
 **Key Value:** Explainable AI, better context selection, compliance-ready citations
 
 ### 3. Code Intelligence
 **Directory:** `03_code_intelligence/`  
 **Problem:** Developers need to find similar code patterns; keyword search misses analogies  
 **RFS Solution:** Field-native search discovers code analogies, patterns, and contradictions  
-**MVP Status:** 🟡 In Planning  
 **Key Value:** Faster development, code reuse, pattern discovery
 
 ### 4. Compliance/Legal Archive
 **Directory:** `04_compliance_legal_archive/`  
 **Problem:** Legal teams need to find related documents and prove relationships for evidence  
 **RFS Solution:** Relationship discovery + exact byte recall (AEAD-verified) with explainable connections  
-**MVP Status:** 🟡 In Planning  
 **Key Value:** Faster legal research, audit-ready explanations, exact recall for evidence
 
 ### 5. Research Knowledge Graph
 **Directory:** `05_research_knowledge_graph/`  
 **Problem:** Researchers need to find related papers and understand how concepts evolved over time  
 **RFS Solution:** Temporal field dimension tracks evolution; entanglement graph shows research communities  
-**MVP Status:** 🟡 In Planning  
 **Key Value:** Knowledge discovery, temporal analysis, research community mapping
 
 ## Quick Comparison
@@ -58,23 +48,6 @@ This directory contains detailed documentation for five high-value use cases dem
 | Code Intelligence | Field-native search | Analogy discovery | Faster dev, code reuse |
 | Legal Archive | Relationships + Exact Recall | Explainable connections + AEAD | Audit-ready, faster research |
 | Research Graph | Temporal + Entanglement | Evolution tracking + communities | Knowledge discovery |
-
-## MVP Demo Status
-
-| Use Case | MVP Scope | Demo Ready | Implementation Status |
-|----------|-----------|------------|----------------------|
-| Incident Memory | Basic incident search + relationships | ⏳ Planned | Not started |
-| RAG with Proofs | Document selection + explanations | ⏳ Planned | Not started |
-| Code Intelligence | Code pattern search + analogies | ⏳ Planned | Not started |
-| Legal Archive | Document search + exact recall | ⏳ Planned | Not started |
-| Research Graph | Paper search + temporal analysis | ⏳ Planned | Not started |
-
-## Navigation
-
-- **Start Here:** Read this README to understand all use cases
-- **Deep Dive:** Navigate to each use case subdirectory for detailed documentation
-- **MVP Planning:** See each use case's `EXECUTION_PLAN.md` for implementation roadmap
-- **Vision:** See each use case's `NORTH_STAR.md` for long-term goals
 
 ## Common RFS Capabilities Used
 
@@ -88,16 +61,15 @@ All use cases leverage core RFS features:
 6. **Temporal Dimension**: Track evolution over time (where applicable)
 7. **Entanglement Graph**: Relationship mapping (where applicable)
 
-## Next Steps
+## Navigation
 
-1. Review each use case's README for problem/solution overview
-2. Review NORTH_STAR for vision and success criteria
-3. Review EXECUTION_PLAN for MVP implementation roadmap
-4. Select use case(s) for MVP development
-5. Follow execution plan to build demo-ready MVP
+- **Start Here:** Read this README to understand all use cases
+- **Deep Dive:** Navigate to each use case subdirectory for detailed white paper documentation
+- **RFS Overview:** See [RFS README](../README.md) for technical architecture
+- **SMARTHAUS Vision:** See [SMARTHAUS Vision Document](../../../SMARTHAUS_VISION.md) for the complete vision
 
 ## Related Documentation
 
 - **RFS Overview:** [../README.md](../README.md)
 - **RFS Repository:** [ResonantFieldStorage on GitHub](https://github.com/SmartHausGroup/ResonantFieldStorage)
-- **SMARTHAUS Documentation:** [../../README.md](../../README.md)
+- **SMARTHAUS Documentation:** [../../../SMARTHAUS_VISION.md](../../../SMARTHAUS_VISION.md)
