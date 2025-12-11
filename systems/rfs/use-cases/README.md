@@ -5,7 +5,7 @@
 
 ## Overview
 
-This directory contains white paper documentation for five high-value use cases demonstrating Resonant Field Storage (RFS) capabilities. Each use case is presented as an educational white paper focusing on problems, solutions, and business value rather than implementation details.
+This directory contains white paper documentation for six high-value use cases demonstrating Resonant Field Storage (RFS) capabilities. Each use case is presented as an educational white paper focusing on problems, solutions, and business value rather than implementation details.
 
 ## Use Cases
 
