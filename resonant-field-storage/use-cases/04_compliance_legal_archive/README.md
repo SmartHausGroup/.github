@@ -30,6 +30,103 @@ Legal evidence requires exact original bytes. A document retrieved for evidence 
 
 **The legal liability:** If a document retrieved for evidence isn't exactly the original, it may not be admissible. Legal cases can be lost. Compliance audits can fail.
 
+## Current Solutions: Vector Databases and Their Limitations
+
+### How Vector Databases Are Currently Used
+
+Many legal and compliance systems use vector databases for document search:
+
+1. **Document Embedding**: Legal documents embedded using language models
+2. **Vector Storage**: Embeddings stored with document metadata (case ID, date, type)
+3. **Query Embedding**: Legal query embedded into same vector space
+4. **Similarity Search**: Vector database finds similar documents by cosine similarity
+5. **Result Ranking**: Documents ranked by similarity score
+
+**What this provides:**
+- Semantic search better than keyword matching
+- Fast retrieval for large document collections
+- Scalable to millions of documents
+
+### Why Vector Databases Fall Short for Legal/Compliance
+
+**1. No Mathematical Proof**
+- Vector databases return similarity scores, but can't prove why documents match
+- Can't provide mathematical proof of relationships for legal proceedings
+- Not suitable for evidence that must be provable
+
+**2. No Explainability**
+- Similarity scores don't explain document relationships
+- Can't answer "Why are these documents related?" with proof
+- Black-box results don't satisfy legal requirements
+
+**3. No Exact Recall Guarantees**
+- Vector databases return document IDs, but retrieval is approximate
+- No cryptographic guarantees for document integrity
+- Can't prove documents haven't been modified
+
+**4. No Contradiction Detection**
+- Vector databases return similar documents, but don't flag contradictions
+- Documents that contradict each other both appear in results
+- Lawyers must manually identify conflicts
+
+**5. Non-Deterministic Results**
+- ANN algorithms use approximate search with randomness
+- Same query may return different results
+- Not reproducible for legal proceedings
+
+**6. No Audit Trail**
+- Can't replay exact queries that found documents
+- No mathematical proof of search process
+- Audit trails are incomplete
+
+**7. Storage Overhead**
+- Each document requires separate vector (O(N))
+- Large legal archives require significant storage
+- No superposition benefits
+
+### How RFS Is Different
+
+**1. Mathematical Proofs**
+- Interference patterns provide mathematical proof of document relationships
+- Q_dB scores quantify relationship strength with precision
+- Complete provability for legal proceedings
+
+**2. Explainable Results**
+- Interference patterns explain why documents are related
+- Constructive interference shows agreements
+- Destructive interference shows contradictions
+- Complete explainability for legal requirements
+
+**3. Exact Recall with Cryptographic Guarantees**
+- AEAD-backed byte channel ensures exact document retrieval
+- Cryptographic proof of document integrity
+- Can prove documents haven't been modified
+
+**4. Contradiction Detection**
+- Destructive interference automatically flags contradictory documents
+- System explains why documents conflict
+- Lawyers see conflicts automatically
+
+**5. Deterministic Guarantees**
+- Same query always produces identical results
+- Complete reproducibility for legal proceedings
+- Mathematical guarantees, not probabilistic promises
+
+**6. Complete Audit Trail**
+- WAL (Write-Ahead Log) enables exact query replay
+- Mathematical proof of search process
+- Complete auditability for compliance
+
+**7. Storage Efficiency**
+- All documents superposed in one field (O(D) storage)
+- Significant storage savings for large archives
+- N documents in constant space
+
+**8. Dual Query Paths**
+- `query_simple()`: Fast document search when proofs aren't needed
+- `query()`: Full field-native search with proofs when legal requirements matter
+- Choose the right path per request
+
 ## The RFS Solution: Relationships with Proofs
 
 ### What If Document Relationships Were Provable?

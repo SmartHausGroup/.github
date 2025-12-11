@@ -577,16 +577,30 @@ These axioms are binding across AIOS, LQL, and LEF. Violations must trigger fail
 ### Verification and Enforcement
 
 **Notebook Verification**:
-- Every invariant has a corresponding verification notebook
-- Notebooks use fixed seeds for reproducibility
-- Notebooks export JSON artifacts proving invariants hold
-- CI runs notebooks and validates artifacts
+
+Every invariant has a corresponding verification notebook that proves the invariant holds. These notebooks are not documentation — they are **executable proofs**:
+
+- **Fixed seeds for reproducibility**: All notebooks use fixed seeds (typically seed=42), ensuring deterministic execution. Same notebook always produces same results.
+
+- **JSON artifacts proving invariants hold**: Notebooks export JSON artifacts that prove invariants hold. These artifacts are consumed by CI gates, which validate that invariants are satisfied.
+
+- **CI runs notebooks and validates artifacts**: Every commit triggers notebook execution. Artifacts are validated. If invariants are violated, deployment is blocked.
+
+- **Deterministic execution**: Notebooks run deterministically with fixed seeds. This ensures that verification is reproducible and that artifacts are consistent.
 
 **CI Enforcement**:
-- Pre-commit hooks: Format, lint, YAML validation
-- Pre-push hooks: Full MA validation, invariant checks
-- CI gates: Notebook execution, artifact validation, scorecard aggregation
-- Branch protection: Staging/main require GREEN scorecard
+
+Mathematical guarantees are enforced through a multi-layer CI system:
+
+- **Pre-commit hooks**: Format, lint, YAML validation. Catches syntax errors and formatting issues before code is committed.
+
+- **Pre-push hooks**: Full MA validation, invariant checks. Ensures that all MA phases are complete and that invariants are satisfied before code is pushed.
+
+- **CI gates**: Notebook execution, artifact validation, scorecard aggregation. Runs notebooks, validates artifacts, and generates a scorecard (green/yellow/red) that gates deployment.
+
+- **Branch protection**: Staging/main require GREEN scorecard. Code cannot be merged to staging or main unless the scorecard is green, ensuring that all invariants are satisfied and all proofs are valid.
+
+**The result**: Mathematical guarantees are not just documented — they are **enforced**. Violations block deployment. Proofs are verified automatically. The system cannot be deployed unless all guarantees are satisfied.
 
 ---
 
