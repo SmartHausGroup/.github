@@ -44,7 +44,7 @@ Queries work by exciting resonances in the field:
 - **Semantic Matching**: Finds meaning, not just keywords
 - **Fast Retrieval**: Parallel FFT operations enable rapid search
 - **Relationship Discovery**: Automatically finds related documents
-- **Unified Query System**: Choose `query_simple()` for fast cosine similarity (>1000 QPS) or `query()` for full field-native features (200-300+ QPS) on the same field
+- **Unified Query System**: Choose `query_simple()` for fast cosine similarity or `query()` for full field-native features on the same field (see [Performance Benchmarks](#unified-query-system) for detailed metrics)
 
 ### 3. Interference Patterns
 Wave interference reveals information:
