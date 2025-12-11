@@ -30,6 +30,102 @@ In regulated industries, every decision must be explainable. Why was this docume
 
 **The regulatory risk:** Without explainability, RAG systems can't be used in compliance-critical applications. Financial services, healthcare, legal — all require proof of document selection. Black-box systems don't meet these requirements.
 
+## Current Solutions: Vector Databases and Their Limitations
+
+### How Vector Databases Are Currently Used
+
+Most RAG systems today use vector databases (e.g., Pinecone, Weaviate, Chroma, Qdrant) for document retrieval:
+
+1. **Document Embedding**: Documents are converted into vector embeddings using language models
+2. **Vector Storage**: Embeddings stored in vector database with document metadata
+3. **Query Embedding**: User query is embedded into same vector space
+4. **Similarity Search**: Vector database performs cosine similarity search to find top-k documents
+5. **Context Assembly**: Retrieved documents passed to LLM as context
+
+**What this provides:**
+- Semantic search better than keyword matching
+- Fast retrieval with ANN algorithms
+- Scalable to large document collections
+
+### Why Vector Databases Fall Short for RAG
+
+**1. No Explainability**
+- Vector databases return similarity scores, but don't explain why documents match
+- Can't answer "Why was this document selected?" with mathematical proof
+- Black-box results don't satisfy compliance requirements
+
+**2. No Interference Patterns**
+- Can't show how documents relate to each other in the retrieved set
+- No constructive/destructive interference to explain document interactions
+- Can't identify contradictions or agreements between documents
+
+**3. No Proof of Correctness**
+- Similarity scores are probabilistic, not provable
+- Can't mathematically guarantee why a document was selected
+- Not suitable for regulated industries requiring proof
+
+**4. Static Relationships**
+- Relationships based on embedding similarity at query time
+- No persistent understanding of how documents relate
+- Can't track document relationships over time
+
+**5. No Contradiction Detection**
+- Vector databases return similar documents, but don't flag contradictions
+- Documents that contradict each other both appear in results
+- LLM must manually reconcile conflicts
+
+**6. Storage Overhead**
+- Each document requires separate vector storage (O(N))
+- Large document collections require significant storage
+- No superposition benefits
+
+**7. Non-Deterministic Results**
+- ANN algorithms use approximate search with randomness
+- Same query may return slightly different results
+- Not reproducible for audits
+
+### How RFS Is Different
+
+**1. Mathematical Proofs**
+- Interference patterns provide mathematical proof of why documents were selected
+- Q_dB scores quantify resonance quality with precision
+- Complete explainability for compliance
+
+**2. Interference Pattern Explanations**
+- Constructive interference shows why documents agree
+- Destructive interference shows contradictions
+- System explains document relationships mathematically
+
+**3. Provable Correctness**
+- Results are mathematically guaranteed, not probabilistic
+- Can prove why documents were selected using field physics
+- Suitable for regulated industries
+
+**4. Contradiction Detection**
+- Destructive interference automatically flags contradictory documents
+- System explains why documents conflict
+- LLM receives pre-flagged contradictions
+
+**5. Temporal Context**
+- 4D field includes temporal dimension
+- Can understand how document relevance changes over time
+- Tracks document relationships across time
+
+**6. Storage Efficiency**
+- All documents superposed in one field (O(D) storage)
+- Significant storage savings at scale
+- N documents in constant space
+
+**7. Deterministic Guarantees**
+- Same query always produces identical results
+- Complete reproducibility for audits
+- Mathematical guarantees, not probabilistic promises
+
+**8. Dual Query Paths**
+- `query_simple()`: Fast retrieval when explainability isn't needed
+- `query()`: Full field-native search with proofs when compliance matters
+- Choose the right path per request
+
 ## The RFS Solution: Resonance with Proofs
 
 ### What If Document Selection Was Provable?

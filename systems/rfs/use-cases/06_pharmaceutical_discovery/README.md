@@ -30,6 +30,102 @@ Traditional systems can't predict novel combinations. They can only find known c
 
 **The discovery gap:** Without prediction capabilities, pharmaceutical discovery is limited to known combinations. Novel therapeutic opportunities are missed. The combinatorial space remains unexplored.
 
+## Current Solutions: Vector Databases and Their Limitations
+
+### How Vector Databases Are Currently Used
+
+Many pharmaceutical companies use vector databases for drug and compound search:
+
+1. **Entity Embedding**: Drugs, compounds, targets, pathways embedded using molecular or text models
+2. **Vector Storage**: Embeddings stored with entity metadata (drug name, structure, target, pathway)
+3. **Query Embedding**: Research query (disease, target, pathway) embedded
+4. **Similarity Search**: Vector database finds similar entities by cosine similarity
+5. **Result Ranking**: Entities ranked by similarity score
+
+**What this provides:**
+- Semantic search better than keyword matching
+- Finds drugs/compounds by biological meaning
+- Fast retrieval with ANN algorithms
+
+### Why Vector Databases Fall Short for Pharmaceutical Discovery
+
+**1. No Relationship Discovery**
+- Vector databases find similar drugs, but don't discover relationships automatically
+- Can't discover drug-compound-target-pathway networks
+- Relationships must be manually annotated
+
+**2. No Novel Combination Prediction**
+- Vector databases return known similar drugs, but can't predict novel combinations
+- Can't predict synergy between drugs
+- Limited to what's already known
+
+**3. No Graph Structure for GNNs**
+- Vector databases don't provide graph structure for Graph Neural Networks
+- GNNs need relationship graphs to predict combinations
+- Can't leverage GNN capabilities effectively
+
+**4. Black-Box Results**
+- Similarity scores don't explain why drugs are related
+- Can't verify why drugs were selected
+- No mathematical proof of relationships
+
+**5. No Contradiction Detection**
+- Vector databases return similar drugs, but don't flag contradictions
+- Drugs with adverse interactions both appear in results
+- Safety issues aren't automatically identified
+
+**6. Storage Overhead**
+- Each entity requires separate vector (O(N))
+- Large pharmaceutical databases require significant storage
+- No superposition benefits
+
+**7. Non-Deterministic Results**
+- ANN algorithms use approximate search with randomness
+- Same query may return different results
+- Not reproducible for pharmaceutical research
+
+### How RFS Is Different
+
+**1. Automatic Relationship Discovery**
+- Field interference patterns discover drug relationships automatically
+- Drug-compound-target-pathway networks emerge from interference
+- No manual annotation required
+
+**2. Graph Structure for GNNs**
+- RFS builds entanglement graph from field interference
+- Provides graph structure (nodes, edges, weights) for GNN prediction
+- Enables novel combination prediction with GNNs
+
+**3. Novel Combination Discovery**
+- RFS + GNN enables prediction of novel drug combinations
+- GNNs learn from RFS-discovered relationships
+- Systematic exploration of combinatorial space
+
+**4. Explainable Results**
+- Interference patterns explain why drugs are related
+- Q_dB scores quantify relationship strength
+- Mathematical proof of drug relationships
+
+**5. Contradiction Detection**
+- Destructive interference flags drugs with adverse interactions
+- System explains why drugs conflict
+- Safety issues identified automatically
+
+**6. Storage Efficiency**
+- All entities superposed in one field (O(D) storage)
+- Significant storage savings for large databases
+- N entities in constant space
+
+**7. Deterministic Guarantees**
+- Same query always produces identical results
+- Reproducible for pharmaceutical research
+- Mathematical guarantees, not probabilistic promises
+
+**8. Dual Query Paths**
+- `query_simple()`: Fast drug search when relationships aren't needed
+- `query()`: Full field-native search with relationship discovery when needed
+- Choose the right path per query
+
 ## The RFS Solution: Pharmaceutical Discovery as a Relationship Field
 
 ### What If Drugs Could Reveal Their Relationships?

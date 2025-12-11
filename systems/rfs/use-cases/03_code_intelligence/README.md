@@ -30,6 +30,102 @@ Some code says "use authentication," other code says "no authentication needed."
 
 **The quality issue:** Contradictory code patterns lead to inconsistent behavior. Security policies aren't enforced consistently. Error handling varies. The codebase becomes harder to maintain and more prone to bugs.
 
+## Current Solutions: Vector Databases and Their Limitations
+
+### How Vector Databases Are Currently Used
+
+Many code intelligence tools use vector databases for semantic code search:
+
+1. **Code Embedding**: Code snippets, functions, or files are embedded using code-specific models (e.g., CodeBERT, GraphCodeBERT)
+2. **Vector Storage**: Embeddings stored in vector database with code metadata (file path, function name, language)
+3. **Query Embedding**: Developer query (natural language or code) is embedded
+4. **Similarity Search**: Vector database finds similar code by cosine similarity
+5. **Result Ranking**: Code snippets ranked by similarity score
+
+**What this provides:**
+- Better than grep — finds semantically similar code
+- Can search by intent, not just exact matches
+- Fast retrieval with ANN algorithms
+
+### Why Vector Databases Fall Short for Code Intelligence
+
+**1. No Analogy Discovery**
+- Vector databases find similar code, but don't discover analogies
+- Can't find "code that does the same thing but differently"
+- Misses cross-language or cross-pattern analogies
+
+**2. No Pattern Relationships**
+- Can't show how code patterns relate to each other
+- No understanding of code pattern evolution
+- Can't discover pattern clusters automatically
+
+**3. No Contradiction Detection**
+- Can't identify code that contradicts best practices
+- No detection of anti-patterns or conflicting implementations
+- Developers must manually identify code quality issues
+
+**4. Black-Box Results**
+- Similarity scores don't explain why code matches
+- Can't verify why code was selected
+- No mathematical proof of code relationships
+
+**5. No Cross-Language Understanding**
+- Embeddings may find similar code, but don't understand cross-language patterns
+- Python and JavaScript implementations of same algorithm treated separately
+- Misses opportunities for cross-language learning
+
+**6. Storage Overhead**
+- Each code snippet requires separate vector (O(N))
+- Large codebases require significant storage
+- No superposition benefits
+
+**7. Non-Deterministic Results**
+- ANN algorithms use approximate search
+- Same query may return different results
+- Not reproducible for code review
+
+### How RFS Is Different
+
+**1. Automatic Analogy Discovery**
+- Field interference patterns discover code analogies automatically
+- Finds "code that does the same thing but differently"
+- Cross-language and cross-pattern analogies emerge naturally
+
+**2. Pattern Relationship Discovery**
+- Interference patterns show how code patterns relate
+- Discovers pattern clusters automatically
+- Tracks pattern evolution over time
+
+**3. Contradiction Detection**
+- Destructive interference flags code that contradicts best practices
+- Identifies anti-patterns and conflicting implementations
+- Developers see code quality issues automatically
+
+**4. Explainable Results**
+- Interference patterns explain why code matches
+- Q_dB scores quantify relationship strength
+- Mathematical proof of code relationships
+
+**5. Cross-Language Understanding**
+- Field physics naturally discovers cross-language patterns
+- Python and JavaScript implementations of same algorithm interfere constructively
+- Cross-language learning opportunities emerge
+
+**6. Storage Efficiency**
+- All code superposed in one field (O(D) storage)
+- Significant storage savings for large codebases
+- N code snippets in constant space
+
+**7. Deterministic Guarantees**
+- Same query always produces identical results
+- Reproducible for code review and audits
+- Mathematical guarantees, not probabilistic promises
+
+**8. Dual Query Paths**
+- `query_simple()`: Fast code search when relationships aren't needed
+- `query()`: Full field-native search with analogies and patterns when needed
+- Choose the right path per search
+
 ## The RFS Solution: Code as a Field
 
 ### What If Code Could Understand Itself?
