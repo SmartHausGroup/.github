@@ -140,50 +140,6 @@ TAI follows a rigorous **MA Doc-First** approach:
 - Multi-modal integration
 - Enhanced memory capabilities
 
-## Getting Started
-
-### Prerequisites
-
-- Docker and Docker Compose
-- Python 3.10+ (for local development)
-- GPU (optional, for VFE acceleration)
-
-### Run with Docker Compose
-
-```bash
-docker compose up --build
-```
-
-Services will be available at:
-- Orchestrator API: `http://localhost:8000`
-- Web Interface: `http://localhost:8501`
-- Enterprise Dashboard: `http://localhost:8502`
-
-### Development Setup
-
-```bash
-# Install dependencies
-pip install -r requirements.txt
-
-# Run MA validation
-make ma-validate-quiet
-
-# Run tests
-make test-all
-```
-
-### MA Gates
-
-- `./scripts/ma_gate.sh local-quick` — fast lint + unit marker tests (runs automatically via the `unit-tests-quick` pre-commit hook before push)
-- `./scripts/ma_gate.sh local-full` — full lint surface, MA invariants, integration markers, and native verification before promoting to `staging`/`main`
-
-## Development Workflow
-
-Before committing, always run:
-```bash
-pre-commit run --all-files
-```
-
 ## Component Repositories
 
 TAI integrates with the following standalone services:
@@ -200,10 +156,6 @@ TAI integrates with the following standalone services:
 - **MA Process**: Mathematical Autopsy methodology
 - **Service Docs**: Service architecture overview
 - **API Documentation**: Service API references
-
-## Contributing
-
-See `CONTRIBUTING.md` and `CODE_OF_CONDUCT.md` in the [TAI repository](https://github.com/SmartHausGroup/TAI).
 
 ## Learn More
 

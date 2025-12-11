@@ -202,25 +202,6 @@ RFS excels in scenarios where relationships, explainability, and exact recall ma
 
 See [Use Cases](./use-cases/) for detailed documentation on each scenario.
 
-## Getting Started
-
-### For Users
-See the [Use Cases](./use-cases/) documentation to understand how RFS solves real-world problems.
-
-### For Developers
-Visit the [ResonantFieldStorage repository](https://github.com/SmartHausGroup/ResonantFieldStorage) for:
-- Installation instructions
-- API documentation
-- Code examples
-- Mathematical foundations
-
-### For Researchers
-Explore the mathematical foundations:
-- Field theory and wave mechanics
-- Operator calculus
-- Verification notebooks
-- Invariants and lemmas
-
 ## Development Methodology
 
 RFS follows **notebook-first development** as part of the Mathematical Autopsy (MA) process:

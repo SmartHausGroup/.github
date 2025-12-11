@@ -213,36 +213,6 @@ External systems (e.g., TAI Personal Assistant) integrate with AIVA strictly via
 - No `import` between TAI and AIVA/AIOS/LQL/LEF
 - System holographic memory belongs to AIOS (separate from TAI's user memory)
 
-## Getting Started
-
-### Prerequisites
-
-- Python 3.8+
-- 8GB+ RAM (16GB recommended)
-- Multi-core processor
-
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/SmartHausGroup/AIVA.git
-cd AIVA
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### Basic Usage
-
-AIVA is an architecture specification. Implementation code lives in component repositories:
-- [AIOS](https://github.com/SmartHausGroup/AIOS) — Biology layer
-- [LQL](https://github.com/SmartHausGroup/LQL) — Chemistry layer
-- [LEF](https://github.com/SmartHausGroup/LEF) — Physics layer
-
 ## Documentation
 
 ### Architecture & Theory
