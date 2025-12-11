@@ -339,6 +339,7 @@ RFS follows **notebook-first development** as part of the Mathematical Autopsy (
 - **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../SMARTHAUS_VISION.md)
 - **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
 - **Website**: [smarthaus.ai](https://smarthaus.ai)
+- **Field Theory vs. Vector Space**: [From Vector Space to Field Theory—A New Mathematical Foundation for Memory](./RFS:%20From%20Vector%20Space%20to%20Field%20Theory—A%20New%20Mathematical%20Foundation%20for%20Memory.md) — Comprehensive comparison of field theory mathematics vs. vector space mathematics, explaining why RFS's mathematical foundation enables capabilities that vector databases cannot provide
 
 ## License
 
