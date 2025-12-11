@@ -94,16 +94,48 @@ $$\Psi(x, y, z, t) \in \mathbb{C}$$
 - **`query_simple()`**: Fast cosine similarity on preserved document vectors
   - O(N) complexity
   - <1ms p95 latency
-  - >1000 QPS
   - Simple semantic search without field-native features
 
 - **`query()`**: Full field-native resonance search
   - O(C D log D) complexity
   - 5-50ms latency
-  - 200-300+ QPS
   - Interference patterns, relationship discovery, explainability
 
 Both paths operate on the same underlying field and vectors, ensuring consistency and eliminating duplicate storage.
+
+#### Performance Benchmarks
+
+**Baseline: Mac Studio M2 Ultra (76-core GPU)**
+- **`query_simple()`**: ~1,000 QPS (p95 latency <1ms)
+- **`query()`**: ~200-300 QPS (p95 latency 5-50ms)
+
+*Note: All performance measurements are based on actual benchmarks run on Mac Studio M2 Ultra hardware.*
+
+**Theoretical Cloud Deployment Performance**
+
+*The following performance estimates are theoretical calculations based on publicly available chip specifications and architectural analysis. Actual performance will vary based on workload characteristics, system configuration, and optimization level.*
+
+**Small Deployment: NVIDIA A100 (Single GPU)**
+- **Chip Specs**: 19.5 TFLOPS FP32, 312 TFLOPS FP16 Tensor, 1.6 TB/s memory bandwidth
+- **`query_simple()`**: ~1,500-2,000 QPS (memory-bound, ~1.5-2x baseline)
+- **`query()`**: ~400-600 QPS (compute-bound, ~2x baseline)
+
+**Medium Deployment: NVIDIA H100 (Single GPU)**
+- **Chip Specs**: 60 TFLOPS FP32, 1,000 TFLOPS FP16 Tensor, 3 TB/s memory bandwidth
+- **`query_simple()`**: ~3,000-4,000 QPS (memory-bound, ~3-4x baseline)
+- **`query()`**: ~800-1,200 QPS (compute-bound, ~4x baseline)
+
+**Large Deployment: GPU Clusters (Cerebras WSE-3 or NVIDIA MGX)**
+- **Cerebras WSE-3 Cluster**: 125,000 TFLOPS FP16, 21 PB/s memory bandwidth
+- **NVIDIA MGX Cluster** (8x H100): 8,000 TFLOPS FP16, 24 TB/s aggregate memory bandwidth
+- **`query_simple()`**: ~10,000-50,000+ QPS (scales with cluster size and parallelism)
+- **`query()`**: ~2,000-10,000+ QPS (scales with cluster size and FFT parallelism)
+
+*Performance scaling assumptions:*
+- *`query_simple()` scales primarily with memory bandwidth and parallel matrix-vector operations*
+- *`query()` scales primarily with compute throughput (FFT operations) and field dimension parallelism*
+- *Cluster performance assumes efficient workload distribution and minimal communication overhead*
+- *Actual performance depends on field size (D), document count (N), query complexity (C), and system optimization*
 
 ## Key Benefits
 
