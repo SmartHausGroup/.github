@@ -39,6 +39,12 @@ This directory contains white paper documentation for six high-value use cases d
 **RFS Solution:** Temporal field dimension tracks evolution; entanglement graph shows research communities  
 **Key Value:** Knowledge discovery, temporal analysis, research community mapping
 
+### 6. Pharmaceutical Discovery
+**Directory:** `06_pharmaceutical_discovery/`  
+**Problem:** Pharmaceutical companies need to discover novel drug combinations; manual analysis misses most combinations  
+**RFS Solution:** Relationship discovery through field interference + GNN prediction for novel combinations  
+**Key Value:** Systematic combination discovery, synergy prediction, safety assessment, accelerated drug development
+
 ## Quick Comparison
 
 | Use Case | Primary RFS Feature | Key Differentiator | Enterprise Value |

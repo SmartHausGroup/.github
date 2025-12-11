@@ -30,6 +30,102 @@ Research happens in communities. Researchers collaborate. Ideas flow between gro
 
 **The collaboration gap:** Without community detection, researchers can't find collaborators. Research groups aren't visible. Opportunities for collaboration are missed.
 
+## Current Solutions: Vector Databases and Their Limitations
+
+### How Vector Databases Are Currently Used
+
+Many research institutions use vector databases for paper search:
+
+1. **Paper Embedding**: Research papers embedded using language models (e.g., SciBERT, SPECTER)
+2. **Vector Storage**: Embeddings stored with paper metadata (title, authors, date, venue)
+3. **Query Embedding**: Research query embedded into same vector space
+4. **Similarity Search**: Vector database finds similar papers by cosine similarity
+5. **Result Ranking**: Papers ranked by similarity score
+
+**What this provides:**
+- Semantic search better than keyword matching
+- Finds papers by meaning, not just exact words
+- Fast retrieval with ANN algorithms
+
+### Why Vector Databases Fall Short for Research
+
+**1. No Temporal Analysis**
+- Vector databases find similar papers, but don't track evolution over time
+- Can't answer "How did this concept evolve?"
+- No understanding of temporal relationships
+
+**2. No Community Detection**
+- Vector databases return similar papers, but don't identify research communities
+- Can't discover collaboration patterns
+- Research groups aren't visible
+
+**3. No Relationship Discovery**
+- Similarity scores don't explain how papers relate
+- Can't discover citation relationships automatically
+- No understanding of research networks
+
+**4. Black-Box Results**
+- Similarity scores don't explain why papers match
+- Can't verify why papers were selected
+- No mathematical proof of relationships
+
+**5. No Pattern Evolution**
+- Can't track how research patterns change over time
+- No understanding of concept development
+- Temporal evolution is invisible
+
+**6. Storage Overhead**
+- Each paper requires separate vector (O(N))
+- Large paper collections require significant storage
+- No superposition benefits
+
+**7. Non-Deterministic Results**
+- ANN algorithms use approximate search with randomness
+- Same query may return different results
+- Not reproducible for scientific research
+
+### How RFS Is Different
+
+**1. Temporal Analysis**
+- 4D field includes temporal dimension — tracks concept evolution
+- Can query "How did this concept develop over time?"
+- Understands temporal relationships between papers
+
+**2. Automatic Community Detection**
+- Entanglement graph construction discovers research communities
+- Identifies collaboration patterns automatically
+- Research groups are visible through field interference
+
+**3. Relationship Discovery**
+- Field interference patterns discover paper relationships automatically
+- Citation relationships emerge from interference
+- Research networks discovered, not manually built
+
+**4. Explainable Results**
+- Interference patterns explain why papers are related
+- Q_dB scores quantify relationship strength
+- Mathematical proof of paper relationships
+
+**5. Pattern Evolution Tracking**
+- Temporal dimension tracks how patterns change
+- Understands concept development over time
+- Evolution is visible and queryable
+
+**6. Storage Efficiency**
+- All papers superposed in one field (O(D) storage)
+- Significant storage savings for large collections
+- N papers in constant space
+
+**7. Deterministic Guarantees**
+- Same query always produces identical results
+- Reproducible for scientific research
+- Mathematical guarantees, not probabilistic promises
+
+**8. Dual Query Paths**
+- `query_simple()`: Fast paper search when relationships aren't needed
+- `query()`: Full field-native search with temporal analysis and communities when needed
+- Choose the right path per query
+
 ## The RFS Solution: Research as a Temporal Field
 
 ### What If Research Could Remember Its History?

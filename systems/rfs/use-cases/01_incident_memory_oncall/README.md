@@ -33,6 +33,91 @@ Incident reports often contain contradictory information. One report says "datab
 
 **The trust issue:** When search results include contradictory information without explanation, engineers lose trust in the system. They start ignoring recommendations, falling back to manual processes, and the system becomes less useful over time.
 
+## Current Solutions: Vector Databases and Their Limitations
+
+### How Vector Databases Are Currently Used
+
+Many organizations attempt to solve incident memory problems using vector databases (e.g., Pinecone, Weaviate, Qdrant, Milvus). The typical approach:
+
+1. **Embedding Generation**: Each incident report is converted into a vector embedding using a language model (e.g., OpenAI embeddings, sentence transformers)
+2. **Vector Storage**: Embeddings are stored in a vector database with metadata (incident ID, timestamp, severity)
+3. **Similarity Search**: When querying, the query text is embedded and the database performs cosine similarity search to find the k-nearest neighbors
+4. **Result Ranking**: Results are ranked by similarity score
+
+**What this provides:**
+- Better than keyword search — finds semantically similar incidents
+- Fast similarity search with approximate nearest neighbor (ANN) algorithms
+- Scalable to millions of vectors
+
+### Why Vector Databases Fall Short
+
+**1. No Relationship Discovery**
+- Vector databases find similar incidents, but they don't discover relationships automatically
+- Engineers still must manually understand why incidents are related
+- No automatic pattern detection across incident clusters
+
+**2. Black-Box Results**
+- Similarity scores don't explain why incidents are related
+- No interference patterns showing contradictions or agreements
+- Engineers can't verify why results were returned
+
+**3. No Contradiction Detection**
+- Vector databases return similar incidents, but don't identify contradictions
+- An incident saying "database is fine" and another saying "database failures" both appear in results
+- Engineers must manually reconcile conflicts
+
+**4. Static Relationships**
+- Relationships are based on embedding similarity at query time
+- No persistent relationship graph that evolves over time
+- Can't track how incident patterns change over time
+
+**5. Storage Overhead**
+- Each incident requires a separate vector (O(N) storage)
+- Large-scale deployments require significant storage and memory
+- No superposition — each incident stored independently
+
+**6. Non-Deterministic Results**
+- ANN algorithms use approximate search with randomness
+- Same query may return slightly different results
+- Not suitable for audit trails or reproducibility requirements
+
+### How RFS Is Different
+
+**1. Automatic Relationship Discovery**
+- RFS discovers relationships through field interference patterns
+- No manual annotation required — relationships emerge from the physics of wave superposition
+- Pattern detection is automatic and continuous
+
+**2. Explainable Results**
+- Interference patterns explain why incidents are related
+- Constructive interference shows agreements; destructive interference shows contradictions
+- Q_dB scores quantify relationship strength with mathematical precision
+
+**3. Contradiction Detection**
+- Destructive interference automatically flags contradictory incidents
+- System explains why incidents contradict each other
+- Engineers can immediately see conflicts without manual analysis
+
+**4. Temporal Evolution**
+- 4D field includes temporal dimension — tracks how patterns evolve
+- Can query for "how did this pattern change over time?"
+- Relationship graph evolves as new incidents are added
+
+**5. Storage Efficiency**
+- All incidents superposed in one field (O(D) storage, not O(N))
+- N incidents stored in constant space regardless of count
+- Significant storage savings at scale
+
+**6. Deterministic Guarantees**
+- Same query always produces identical results
+- Mathematical guarantees, not probabilistic promises
+- Complete reproducibility for audits and debugging
+
+**7. Dual Query Paths**
+- `query_simple()`: Fast cosine similarity (like vector DBs) when relationships aren't needed
+- `query()`: Full field-native search with interference patterns when relationships matter
+- One system, two capabilities — no need to choose
+
 ## The RFS Solution: Memory as a Field
 
 ### What If Incidents Could Remember Each Other?
