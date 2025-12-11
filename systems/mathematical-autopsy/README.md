@@ -109,8 +109,7 @@ Mathematical Autopsy reverses the traditional approach:
 
 **Good (formal math):**
 
-```math
-## Definitions
+**Definitions:**
 
 - **User set**: U = {u₁, u₂, ..., uₙ} where n = |U| is the number of users
 - **Product set**: P = {p₁, p₂, ..., pₘ} where m = |P| is the number of products
@@ -118,33 +117,34 @@ Mathematical Autopsy reverses the traditional approach:
 - **User embedding**: vᵤ ∈ ℝᵈ for user u, where d is the embedding dimension
 - **Product embedding**: vₚ ∈ ℝᵈ for product p
 
-## Master Equation
+**Master Equation:**
 
 The recommendation score for user u and product p is:
 
+```
 score(u, p) = cosine_similarity(vᵤ, vₚ) = (vᵤ · vₚ) / (||vᵤ|| · ||vₚ||)
+```
 
-## Constraints
+**Constraints:**
 
 1. **Non-negativity**: score(u, p) ∈ [0, 1] (cosine similarity is normalized)
 2. **Sparsity**: ||R||₀ ≤ k · n · m where k is the sparsity factor (typically k < 0.01)
 3. **Latency bound**: P95(query_latency) ≤ 100ms
 4. **Accuracy bound**: nDCG@10 ≥ 0.75
 
-## Complexity Analysis
+**Complexity Analysis:**
 
 - **Embedding computation**: O(d) per user/product
 - **Similarity computation**: O(d) per user-product pair
 - **Top-K retrieval**: O(m log K) using heap-based selection
 - **Total query complexity**: O(d + m log K) where K is the number of recommendations
 
-## Implementation Notes
+**Implementation Notes:**
 
 - Use approximate nearest neighbor (ANN) for scalability (e.g., HNSW)
 - Cache user embeddings to reduce computation
 - Batch product embeddings for efficient similarity computation
 - Use quantized embeddings (int8) to reduce memory footprint
-```
 
 **Deliverables:**
 - Mathematical definitions (all symbols, variables, operators)
@@ -575,22 +575,23 @@ Proofs must be executable. Notebooks prove invariants with actual code. Artifact
 - **Success Criteria**: Zero rounding errors, 100% accuracy, P95 latency ≤ 50ms
 
 **Phase 2 (Math):**
-```math
-## Currency Conversion
+
+**Currency Conversion:**
 
 Given:
 - Amount: a ∈ ℝ⁺ (amount in source currency)
 - Exchange rate: r ∈ ℝ⁺ (target currency per source currency)
 - Precision: p ∈ ℕ (decimal places, typically p = 2)
 
+```
 Conversion: amount_target = round(a · r, p)
+```
 
-## Guarantees
+**Guarantees:**
 
 1. **Accuracy**: |amount_target - a · r| ≤ 0.5 · 10⁻ᵖ
 2. **Reversibility**: Converting back should recover original (within precision)
 3. **Monotonicity**: If a₁ < a₂, then amount_target(a₁) ≤ amount_target(a₂)
-```
 
 **Phase 3 (Invariant):**
 - **INV-0050**: Currency conversion accuracy bound
@@ -617,10 +618,12 @@ Conversion: amount_target = round(a · r, p)
 - **Success Criteria**: nDCG@10 ≥ 0.80, P95 latency ≤ 100ms
 
 **Phase 2 (Math):**
-```math
-## Ranking Score
 
+**Ranking Score:**
+
+```
 score(d, q) = α · relevance(d, q) + β · popularity(d) + γ · freshness(d)
+```
 
 where:
 - relevance(d, q): Semantic similarity between document d and query q
@@ -628,12 +631,11 @@ where:
 - freshness(d): Document recency score
 - α, β, γ: Weight parameters (α + β + γ = 1)
 
-## Guarantees
+**Guarantees:**
 
 1. **Monotonicity**: If relevance(d₁, q) > relevance(d₂, q), then score(d₁, q) ≥ score(d₂, q)
 2. **Boundedness**: score(d, q) ∈ [0, 1]
 3. **Consistency**: Same query → same ranking (deterministic)
-```
 
 **Phase 3 (Invariant):**
 - **INV-0051**: Ranking score monotonicity
