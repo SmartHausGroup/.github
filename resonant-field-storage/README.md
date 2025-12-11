@@ -12,6 +12,8 @@ Resonant Field Storage (RFS) is a revolutionary approach to information storage 
 
 **Core Innovation**: RFS implements a resonant field representation using standard digital signal processing (DSP) — Fast Fourier Transforms (FFTs) and wavelets — and controlled superposition. The value comes from the operational guardrails and mathematical guarantees layered on top.
 
+**Mathematical Foundation**: RFS is built on field theory mathematics, not vector space mathematics. This fundamental difference enables capabilities that vector databases cannot provide: relationships as physics (interference patterns), explainability built into the mathematics, contradiction detection through destructive interference, deterministic guarantees, and temporal intelligence. For a detailed comparison of field theory vs. vector space mathematics, see [From Vector Space to Field Theory—A New Mathematical Foundation for Memory](./RFS:%20From%20Vector%20Space%20to%20Field%20Theory—A%20New%20Mathematical%20Foundation%20for%20Memory.md).
+
 ## What Makes RFS Different?
 
 ### Traditional Systems
@@ -39,6 +41,14 @@ All documents are stored together in a single 4D field `(x, y, z, t)`. This mean
 - **Unified Storage**: One field, not separate indexes
 - **Temporal Dimension**: Track evolution over time (4th dimension)
 
+**How It Works**: Each document is encoded as a waveform ψ_d(x, y, z, t) through a multi-stage process:
+1. **Text Encoding**: Document → embedding vector (via ThetaTextEncoder or similar)
+2. **Field Encoding**: Embedding → 4D waveform via ResonantFieldEncoder using FFT operations
+3. **Projection**: Waveform → associative band via AssociativeProjector (band-limited projection using Π_assoc = ℱ⁻¹ · M_assoc · ℱ)
+4. **Superposition**: Individual waveforms combine linearly into the total field: Ψ = Σ_d ψ_d
+
+The superposition is mathematically precise—wave addition is linear and energy-preserving under Parseval's theorem (‖Ψ‖₂² = ‖ℱΨ‖₂²). This means relationships are not computed—they are measured through interference patterns Λ_ij = ⟨ψ_i, ψ_j⟩.
+
 ### 2. Resonance Search
 Queries work by exciting resonances in the field:
 - **Semantic Matching**: Finds meaning, not just keywords
@@ -60,6 +70,21 @@ AEAD-backed byte channel ensures:
 - **Audit Trail**: Complete provenance for compliance
 - **Dual Fidelity**: Associative (fast, approximate) and recall (exact, bounded-error) modes
 
+**How Dual Fidelity Works**: The field uses spectral separation to store both semantic content and exact byte data in the same 4D field:
+- **Semantic Band (𝔅_sem)**: Stores waveforms for associative retrieval via FFT operations with band-limited projection
+- **Byte Band (𝔅_byte)**: Stores exact byte data as compressed bytes + FEC codes, protected by AEAD seals
+- **Guard Bands**: Mathematical isolation between bands enforced by projector Π_assoc = ℱ⁻¹ · M_assoc · ℱ
+
+The bandplan ensures Σ(M_assoc ∧ M_byte) = 0: semantic and byte bands are disjoint. This mathematical guarantee enables dual fidelity: approximate similarity and exact recall in the same field without interference.
+
+**Exact Recall Process**: When retrieving exact bytes:
+1. Extract byte carriers from field using band-limited projection
+2. Use error-correcting codes (FEC) to recover exact bytes
+3. Verify cryptographic seal (AEAD) to ensure integrity
+4. Decompress to recover original document bytes
+
+If any step fails (corruption, tampering, insufficient redundancy), retrieval fails closed—no silent corruption.
+
 ### 5. Mathematical Guarantees
 Every operation is mathematically proven:
 - **42+ Invariants**: Validated in continuous integration
@@ -67,6 +92,20 @@ Every operation is mathematically proven:
 - **Deterministic**: Same inputs always produce same outputs
 - **Energy Conservation**: All operations preserve mathematical properties (Parseval's theorem)
 - **Formal Proofs**: Lemmas and theorems document every guarantee
+
+**How Determinism Works**: RFS is deterministic by mathematical design:
+- **Deterministic Encoding**: Same document always produces the same waveform (seeded randomness, deterministic transforms)
+- **Deterministic Superposition**: Wave addition is mathematically precise (linear superposition: Ψ = Σ_d ψ_d)
+- **Deterministic Interference**: Overlap tensor is mathematically exact (Λ_ij = ⟨ψ_i, ψ_j⟩)
+- **Deterministic Retrieval**: Same query always produces the same results (matched filter correlation is deterministic)
+
+**Energy Accounting**: RFS uses Parseval's theorem for precise energy accounting. Under unitary FFT scaling, energy is preserved: ‖Ψ‖₂² = ‖ℱΨ‖₂². The field tracks:
+- Total field energy: E_total = ‖Ψ‖₂²
+- Energy budgets: Per-document energy constraints
+- Interference energy: Destructive energy from interference
+- Capacity margins: Headroom for additional documents (P99 ≥ 1.3×)
+
+This is not monitoring—it is mathematical accounting. The field theory foundation provides energy conservation through Parseval's theorem.
 
 ## Architecture
 
@@ -83,9 +122,27 @@ $$\Psi(x, y, z, t) \in \mathbb{C}$$
 ### Architectural Stack
 
 1. **Field Dynamics Layer** — Maintains the complex amplitude/phase field in GPU memory
+   - 4D complex tensor Ψ(x, y, z, t) ∈ ℂᴰ where D = n³·S
+   - FFT/IFFT operations with unitary scaling (Parseval equivalence)
+   - Optional PDE evolution (feature-gated, default off) for predictive capabilities
+   - Decay-first dynamics: per-document exponential decay with periodic re-projection
+
 2. **Field-Native Semantic Encoding Layer** — Maps tokens/features into waveform primitives
+   - Text → embedding via ThetaTextEncoder
+   - Embedding → 4D waveform via ResonantFieldEncoder (FFT operations)
+   - Band-limited projection via AssociativeProjector (Π_assoc = ℱ⁻¹ · M_assoc · ℱ)
+   - Deterministic phase masks and spatial transforms
+
 3. **Resonance Query & Retrieval Layer** — Unified field with dual query paths (`query_simple()` and `query()`)
+   - `query_simple()`: Fast cosine similarity on preserved document vectors (O(N) complexity)
+   - `query()`: Full field-native resonance via matched filter correlation (O(C D log D) complexity)
+   - Both paths operate on the same underlying field and vectors
+
 4. **Ops, Integrity & Governance Layer** — Metadata, persistence, snapshots, WAL, guardrails
+   - Write-Ahead Log (WAL): Every operation logged with canonical parameters
+   - Snapshots: Field states captured and restored exactly
+   - Mathematical provenance: Every result traceable to its mathematical origin
+   - Guardrails: Q_dB, η, capacity margins, recall error budgets
 
 ### Unified Query System
 
@@ -169,6 +226,34 @@ Both paths operate on the same underlying field and vectors, ensuring consistenc
 - **Edge Deployment**: Runs locally, preserving data privacy
 - **Deterministic**: All operations are mathematically guaranteed to be deterministic
 - **Notebook-First Development**: Code originates in notebooks, then extracted to codebase
+
+### Field Theory Foundation
+
+RFS is built on field theory mathematics, not vector space mathematics. This fundamental difference enables:
+
+- **Relationships as Physics**: Interference patterns (Λ_ij = ⟨ψ_i, ψ_j⟩) encode relationships, not computed distances
+- **Explainability Built-In**: Interference patterns, resonance quality (Q_dB), and destructive energy ratio (η) provide explanation
+- **Contradiction Detection**: Destructive interference (Re(Λ_ij) < 0) automatically detects contradictions
+- **Deterministic Guarantees**: Field theory enables deterministic operations validated through 42+ invariants
+- **Temporal Intelligence**: Time is a native dimension of the field, not external metadata
+- **Unified Storage**: One field stores semantic content, exact bytes, relationships, and temporal evolution
+- **Energy Accounting**: Parseval's theorem enables precise energy tracking and capacity planning
+
+### Spectral Separation
+
+The field uses guard bands to mathematically isolate semantic content from exact byte data:
+- **Projector**: Π_assoc = ℱ⁻¹ · M_assoc · ℱ enforces spectral separation
+- **Bandplan**: Semantic frequencies (𝔅_sem) and byte carriers (𝔅_byte) are disjoint
+- **Mathematical Guarantee**: Σ(M_assoc ∧ M_byte) = 0 (bands don't overlap)
+- **Dual Fidelity**: Approximate similarity (semantic band) and exact recall (byte band) in the same field
+
+### Entanglement Graphs
+
+RFS automatically builds relationship networks from interference patterns:
+- **Overlap Tensor**: Λ_ij = ⟨ψ_i, ψ_j⟩ directly encodes relationships
+- **Community Detection**: Leiden algorithm on interference-based weights finds natural clusters
+- **Automatic Updates**: Graph updates as field evolves, no external computation required
+- **Contradiction Detection**: Destructive interference surfaces conflicts automatically
 
 ## Implementation Status
 

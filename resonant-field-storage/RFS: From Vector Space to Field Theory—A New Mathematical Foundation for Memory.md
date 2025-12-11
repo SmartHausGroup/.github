@@ -899,4 +899,10 @@ For applications that need more than fast similarity search—that need to under
 
 ## Further Reading
 
-For comprehensive technical documentation, use cases, performance benchmarks, and implementation details, see the [RFS README](./README.md).
+For comprehensive technical documentation, use cases, performance benchmarks, implementation details, and production capabilities, see the [RFS README](./README.md). The README provides detailed information on:
+- Architecture and implementation status
+- Performance benchmarks (actual and theoretical)
+- Use cases with detailed white papers
+- Mathematical guarantees and invariants
+- Development methodology
+- Production-ready capabilities
