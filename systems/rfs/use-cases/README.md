@@ -48,6 +48,7 @@ This directory contains white paper documentation for six high-value use cases d
 | Code Intelligence | Field-native search | Analogy discovery | Faster dev, code reuse |
 | Legal Archive | Relationships + Exact Recall | Explainable connections + AEAD | Audit-ready, faster research |
 | Research Graph | Temporal + Entanglement | Evolution tracking + communities | Knowledge discovery |
+| Pharmaceutical Discovery | Entanglement + GNN | Novel combination prediction | Accelerated drug development, systematic discovery |
 
 ## Common RFS Capabilities Used
 
