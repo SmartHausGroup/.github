@@ -69,6 +69,24 @@ Field interference patterns reveal research communities:
 
 **The collaboration benefit:** Researchers can find collaborators. Research communities are visible. Opportunities for collaboration are discovered.
 
+### Deterministic Results: Same Query, Same Papers, Always
+
+**The mathematical guarantee:** RFS provides deterministic paper discovery — the same query always finds the same papers in the same order. This isn't a probabilistic promise; it's a mathematical guarantee enforced at every layer.
+
+**Why this matters for research:**
+- **Scientific reproducibility**: When a researcher queries "quantum entanglement," they get the same results every time. No randomness. No variation. Complete consistency. Research findings are reproducible.
+- **Research validation**: When validating research findings, you can replay the exact query that found related papers. You can verify why papers were selected. Complete reproducibility for research validation.
+- **Collaboration**: Researchers can share query results with confidence, knowing others will see the same results. **Deterministic results ensure consistency** — every researcher sees the same paper relationships.
+- **Publication integrity**: Research based on paper discovery is provably reproducible. You can defend paper selections in publications, knowing they're consistent. Complete publication integrity.
+
+**The technical guarantee:**
+- All operations use deterministic seeds and fixed algorithms
+- Same query + same field → same paper results, always
+- Reproducible across deployments (CUDA, ROCm, Metal)
+- Complete audit trail with WAL (Write-Ahead Log) replay
+
+**The research value:** For scientific research, deterministic results are required. RFS provides mathematical guarantees, not probabilistic promises. Every paper discovery is provably reproducible.
+
 ## Real-World Impact: Understanding Research at Scale
 
 ### For Researchers

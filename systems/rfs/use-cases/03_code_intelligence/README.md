@@ -69,6 +69,24 @@ Destructive interference automatically flags contradictory code patterns. The sy
 
 **The quality benefit:** Contradictions are surfaced immediately. Developers can reconcile inconsistencies. Code quality improves. Bugs are prevented.
 
+### Deterministic Results: Same Query, Same Code, Always
+
+**The mathematical guarantee:** RFS provides deterministic code search — the same query always finds the same code in the same order. This isn't a probabilistic promise; it's a mathematical guarantee enforced at every layer.
+
+**Why this matters for code intelligence:**
+- **Developer trust**: When a developer queries "authentication middleware," they get the same results every time. No randomness. No variation. Complete consistency. Developers can share search results with confidence.
+- **Code review**: When reviewing code, you can replay the exact query that found similar patterns. You can verify why code was selected. Complete reproducibility for code review.
+- **Quality assurance**: Code search quality is measurable and consistent. You can test improvements and verify they work, knowing results won't vary randomly.
+- **Debugging**: When code search misses something, you can replay the exact query to understand why. Complete reproducibility for debugging.
+
+**The technical guarantee:**
+- All operations use deterministic seeds and fixed algorithms
+- Same query + same field → same code results, always
+- Reproducible across deployments (CUDA, ROCm, Metal)
+- Complete audit trail with WAL (Write-Ahead Log) replay
+
+**The engineering value:** Deterministic results eliminate "works on my machine" issues. Every developer sees the same search results. Code discovery is consistent and reliable.
+
 ## Real-World Impact: The Numbers That Matter
 
 ### For Developers
