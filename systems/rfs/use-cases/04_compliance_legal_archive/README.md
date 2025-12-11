@@ -146,8 +146,6 @@ When retrieving a document for evidence:
 
 **The legal guarantee:** Documents retrieved are exactly the original, with cryptographic proof of integrity. Legal admissibility is maintained.
 
-**Combined guarantee:** Deterministic relationship discovery + exact byte recall = complete legal confidence. Every relationship is provably reproducible. Every document is provably authentic. Legal and compliance teams can trust the system completely.
-
 ## Use Case Scenarios: Real Situations, Real Impact
 
 ### Scenario 1: The Regulatory Audit
@@ -162,7 +160,7 @@ When retrieving a document for evidence:
 - Relationship explanations showing why documents are connected
 - Complete audit trail of the discovery process
 
-**The Impact:** The regulator can verify relationships. The company can defend their document selection. Compliance is maintained. The audit proceeds smoothly.
+**The Impact:** The regulator can verify relationships. The company can defend their document selection. **Deterministic results ensure the regulator can run the same query and get identical results** — complete reproducibility builds trust. Compliance is maintained. The audit proceeds smoothly.
 
 ### Scenario 2: The Legal Evidence Request
 
