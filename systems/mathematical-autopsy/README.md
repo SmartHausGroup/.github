@@ -820,7 +820,7 @@ Organizations that use MA have a significant competitive advantage:
 ## Learn More
 
 - **Repository**: [MathematicalAutopsy on GitHub](https://github.com/SmartHausGroup/MathematicalAutopsy)
-- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../SMARTHAUS_VISION.md)
+- **Documentation**: Complete methodology documentation, templates, and examples
 - **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
 
 ---
