@@ -1,8 +1,6 @@
 # Use Case 2: RAG with Proofs (Retrieval-Augmented Generation)
 
-**Status:** MVP Planning  
-**Owner:** @smarthaus  
-**Last Updated:** 2025-12-10
+**A White Paper on Explainable Document Selection for LLM Context**
 
 ## Problem Statement
 
@@ -42,394 +40,161 @@ Retrieval-Augmented Generation (RAG) systems face critical challenges:
 ### How RFS Solves This
 
 **1. Resonance-Based Selection: Documents Selected by Meaning**
-```
-Query: "What are security best practices?"
-    ↓
-Query field resonates with document field
-    ↓
-Documents selected by RESONANCE (meaning), not just similarity
-    ↓
-High Q_dB = high quality match
-```
+
+Queries resonate with the document field, selecting documents by semantic resonance rather than just vector similarity. High Q_dB scores indicate high-quality matches based on meaning.
 
 **2. Interference Patterns: Explain Why Documents Were Selected**
-```
-For each selected document:
-    ↓
-Compute interference pattern with query
-    ↓
-Show:
-- Constructive interference: Why document matches
+
+For each selected document, RFS computes interference patterns with the query, showing:
+- Constructive interference: Why the document matches
 - Destructive interference: Contradictions detected
-- Resonance quality: Q_dB score
-    ↓
-Explainable proof of selection
-```
+- Resonance quality: Q_dB score indicating match confidence
+
+This provides explainable proof of selection.
 
 **3. Relationship Awareness: Leverage Document Relationships**
-```
-Selected documents interact in field
-    ↓
-Constructive interference: Documents reinforce each other
-    ↓
-Better context: Related documents provide richer context
-```
+
+Selected documents interact in the field through constructive interference, where related documents reinforce each other, providing richer context than isolated documents.
 
 **4. Contradiction Detection: Avoid Conflicting Information**
-```
-Destructive interference detected
-    ↓
-Contradictory documents flagged
-    ↓
-LLM can handle contradictions explicitly
-```
 
-## MVP Scope
+Destructive interference automatically flags contradictory documents, allowing LLMs to handle contradictions explicitly rather than including conflicting information.
 
-### Phase 1: Basic RAG with Explanations (MVP Demo)
+## Key Benefits
 
-**Features:**
-- Ingest documents (knowledge base)
-- Query documents via RFS
-- Return top-K documents with explanations
-- Generate LLM response with citations
-- Show interference patterns (proofs)
+### For LLM Applications
 
-**Demo Flow:**
-1. Load knowledge base (100-1000 documents)
-2. Ingest into RFS field
-3. Query: "What are security best practices?"
-4. RFS returns:
-   - Top-K documents
-   - Resonance scores (Q_dB)
-   - Interference patterns (why selected)
-   - Contradiction flags
-5. LLM generates answer with citations
-6. Show proofs: Why each document was selected
+- **Better Context**: Documents selected by meaning, not just similarity
+- **Explainable Selection**: Proof of why each document was chosen
+- **Contradiction Handling**: Conflicting documents automatically flagged
+- **Relationship Awareness**: Related documents provide richer context
 
-**Success Criteria:**
-- Documents selected by meaning (not just similarity)
-- Explanations generated for all selections
-- Contradictions detected and flagged
-- LLM answers are accurate and cited
+### For Compliance & Auditing
 
-### Phase 2: Advanced RAG Features (Post-MVP)
+- **Audit Trail**: Complete record of document selection with proofs
+- **Regulatory Compliance**: Can explain document selection to regulators
+- **Transparency**: Interference patterns provide mathematical proof
+- **Accountability**: Every selection has an explanation
 
-**Features:**
-- Multi-document relationship analysis
-- Contextual document ranking
-- Automatic contradiction resolution
-- Relationship-aware context building
+### For Users
 
-### Phase 3: Production Features (Future)
+- **Trust**: Understand why documents were selected
+- **Quality**: Better answers from better document selection
+- **Debugging**: Can trace why answers are correct or incorrect
+- **Verification**: Can verify document relevance independently
 
-**Features:**
-- Real-time document updates
-- Multi-query batching
-- Relationship graph visualization
-- Compliance reporting
+## Architecture Overview
 
-## Architecture
+### High-Level Flow
 
-### Components
+1. **Ingest**: Knowledge base documents are encoded into the RFS field
+2. **Superpose**: All documents are combined in a single superposed field
+3. **Query**: User questions are converted to query fields
+4. **Resonate**: Query fields resonate with the superposed field
+5. **Select**: Top-K documents are selected with explanations
+6. **Generate**: LLM generates answer with citations and proofs
+7. **Prove**: Return answer with interference pattern proofs
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Knowledge Base                        │
-│  (Documents: articles, docs, FAQs, etc.)                │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              RFS Field-Native Encoder                    │
-│  • Encode documents into 4D field                       │
-│  • Superpose all documents                              │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              User Query                                  │
-│  "What are security best practices?"                    │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              RFS Resonance Search                        │
-│  • Query field resonates with superposed field          │
-│  • Returns top-K documents with explanations            │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Document Selection + Proofs                 │
-│  • Selected documents                                   │
-│  • Interference patterns (why selected)                 │
-│  • Contradiction flags                                  │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              LLM Generation                              │
-│  • Context: Selected documents                          │
-│  • Citations: Document IDs + proofs                     │
-│  • Answer: Generated with citations                     │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Response with Proofs                        │
-│  • Answer text                                          │
-│  • Citations with explanations                          │
-│  • Interference patterns (proofs)                       │
-└─────────────────────────────────────────────────────────┘
-```
+### Key Components
 
-### Data Flow
+- **Field-Native Encoder**: Converts documents into 4D field representations
+- **Superposed Field**: Single field containing all documents
+- **Resonance Search**: Finds documents by semantic meaning
+- **Interference Analysis**: Generates explanations for document selection
+- **Proof Generation**: Creates mathematical proofs of selection
 
-1. **Ingest**: Knowledge base documents → RFS field
-2. **Superpose**: All documents combined in one field
-3. **Query**: User question → query field
-4. **Resonate**: Query field resonates with superposed field
-5. **Select**: Top-K documents with explanations
-6. **Generate**: LLM generates answer with citations
-7. **Prove**: Return answer + proofs (interference patterns)
+## Use Case Scenarios
 
-## Demo Walkthrough
+### Scenario 1: Explainable Document Selection
 
-### Step 1: Prepare Knowledge Base
+**Problem**: LLM needs context, but users can't verify why documents were selected
 
-**Sample Document Format:**
-```json
-{
-  "doc_id": "DOC-001",
-  "title": "Security Best Practices",
-  "content": "Use strong passwords, enable 2FA, keep software updated...",
-  "category": "security",
-  "metadata": {
-    "author": "Security Team",
-    "last_updated": "2025-12-01"
-  }
-}
-```
+**Traditional Approach**: Vector similarity returns documents, but no explanation
 
-**Dataset:**
-- 100-1000 documents
-- Mix of topics (security, operations, development)
-- Some overlapping/contradictory content
-- Various formats (articles, FAQs, docs)
+**RFS Approach**: Resonance search returns:
+- Selected documents with Q_dB scores
+- Interference patterns explaining why each document matches
+- Contradiction flags for conflicting documents
 
-### Step 2: Ingest into RFS
+**Value**: Users can verify and trust document selection
 
-```python
-from src.rfs.retrieval import FieldRetriever, FieldRetrieverConfig
+### Scenario 2: Compliance-Ready RAG
 
-# Load documents
-docs = load_documents("knowledge_base.jsonl")
+**Problem**: Regulatory requirements demand explainable document selection
 
-# Extract text (title + content)
-doc_texts = [f"{doc['title']} {doc['content']}" for doc in docs]
-doc_ids = [doc['doc_id'] for doc in docs]
+**Traditional Approach**: Black-box selection, can't prove relevance
 
-# Encode to vectors
-vectors = encode_documents(doc_texts)
+**RFS Approach**: Every selection includes:
+- Mathematical proof (interference patterns)
+- Resonance quality scores (Q_dB)
+- Relationship explanations
 
-# Build RFS retriever
-config = FieldRetrieverConfig(
-    field_shape=(32, 32, 32, 4),
-    n_symbols=1024,
-    use_metal=True,
-)
-retriever = FieldRetriever(vectors, doc_ids, config=config)
-```
+**Value**: Audit-ready documentation for compliance
 
-### Step 3: Query Documents
+### Scenario 3: Contradiction Handling
 
-```python
-# User query
-query_text = "What are security best practices?"
-query_vector = encode_query(query_text)
+**Problem**: Contradictory documents included in context confuse LLM
 
-# Search with RFS
-results = retriever.query(query_vector, top_k=5)
+**Traditional Approach**: All similar documents included, contradictions missed
 
-# Results with explanations
-for doc_id, score in results:
-    explanation = get_explanation(query_field, doc_field)
-    print(f"{doc_id}: score={score}, Q_dB={explanation['q_dB']}")
-    print(f"  Why: {explanation['reason']}")
-    print(f"  Constructive: {explanation['constructive']}")
-    print(f"  Destructive: {explanation['destructive']}")
-```
+**RFS Approach**: Destructive interference automatically:
+- Detects contradictory documents
+- Flags them for explicit handling
+- Prevents conflicting information in context
 
-### Step 4: Generate LLM Response
-
-```python
-# Get selected documents
-selected_docs = [get_doc(doc_id) for doc_id, _ in results]
-
-# Build context with proofs
-context = build_context_with_proofs(selected_docs, explanations)
-
-# Generate answer with LLM
-answer = llm.generate(
-    query=query_text,
-    context=context,
-    citations=[(doc_id, explanation) for doc_id, explanation in zip(doc_ids, explanations)]
-)
-
-# Return answer + proofs
-response = {
-    "answer": answer,
-    "citations": [
-        {
-            "doc_id": doc_id,
-            "score": score,
-            "q_dB": explanation['q_dB'],
-            "proof": explanation['interference_pattern'],
-            "reason": explanation['reason']
-        }
-        for doc_id, score, explanation in zip(doc_ids, scores, explanations)
-    ]
-}
-```
-
-### Step 5: Show Proofs
-
-```python
-# Display answer with proofs
-print(f"Answer: {response['answer']}")
-print("\nCitations with Proofs:")
-for citation in response['citations']:
-    print(f"\n{citation['doc_id']}:")
-    print(f"  Resonance: Q_dB = {citation['q_dB']}")
-    print(f"  Why Selected: {citation['reason']}")
-    print(f"  Proof: {citation['proof']}")
-```
-
-## Quick Start Guide
-
-### Prerequisites
-
-- RFS installed and configured
-- Knowledge base documents
-- LLM API access (OpenAI, Anthropic, etc.)
-- Python 3.12+
-
-### Setup
-
-```bash
-# 1. Navigate to project root
-cd /path/to/ResonantFieldStorage
-
-# 2. Activate virtual environment
-source .venv/bin/activate
-
-# 3. Prepare knowledge base
-python scripts/use_cases/02_rag_with_proofs/prepare_kb.py
-```
-
-### Run MVP Demo
-
-```bash
-# Run demo script
-python scripts/use_cases/02_rag_with_proofs/demo.py \
-    --kb artifacts/use_cases/02_rag_with_proofs/knowledge_base.jsonl \
-    --query "What are security best practices?" \
-    --top-k 5 \
-    --llm openai \
-    --show-proofs
-```
-
-### Expected Output
-
-```
-Query: "What are security best practices?"
-
-Selected Documents:
-1. DOC-001: score=0.94, Q_dB=23.5
-   Why: Direct match on "security best practices"
-   Proof: High constructive interference (0.91)
-
-2. DOC-042: score=0.87, Q_dB=21.2
-   Why: Related concept "authentication methods"
-   Proof: Medium constructive interference (0.76)
-
-3. DOC-089: score=0.82, Q_dB=19.8
-   Why: Related concept "access control"
-   Proof: Medium constructive interference (0.68)
-
-4. DOC-156: score=0.15, Q_dB=7.3
-   Why: Contradictory "no security needed"
-   Proof: High destructive interference (0.82) - FLAGGED
-
-Generated Answer:
-"Security best practices include using strong passwords, enabling 
-two-factor authentication, keeping software updated, and implementing 
-access controls. [Citation: DOC-001, DOC-042, DOC-089]
-
-Note: DOC-156 contradicts the query and was excluded from context."
-
-Proofs:
-- DOC-001: Selected because query field strongly resonates (Q_dB=23.5)
-- DOC-042: Selected because related authentication concepts reinforce query
-- DOC-089: Selected because access control concepts match query intent
-- DOC-156: Flagged as contradictory (destructive interference detected)
-```
+**Value**: Better LLM answers, fewer contradictions
 
 ## Key Metrics & KPIs
 
 ### RAG Quality
 
-- **Answer Accuracy**: % of correct answers (human evaluation)
-- **Citation Quality**: % of citations that support the answer
-- **Contradiction Detection**: % of contradictions correctly flagged
+- **Answer Accuracy**: Percentage of correct answers (human evaluation)
+- **Citation Quality**: Percentage of citations that support the answer
+- **Contradiction Detection**: Percentage of contradictions correctly flagged
 - **Explanation Quality**: Human evaluation of explanation clarity
 
 ### RFS Performance
 
-- **Resonance Quality**: Q_dB ≥ 20 (target: 25+)
-- **Recall@K**: % of relevant documents in top-K
-- **Query Latency**: P95 ≤ 50ms
-- **Explanation Generation**: < 10ms per document
+- **Resonance Quality**: Q_dB ≥ 20 (target: 25+ for high-confidence matches)
+- **Recall@K**: Percentage of relevant documents in top-K results
+- **Query Latency**: P95 ≤ 50ms for document selection
+- **Explanation Generation**: Fast generation of interference pattern proofs
 
 ### Business Impact
 
-- **User Trust**: % of users who trust answers with proofs
-- **Compliance**: % of queries with audit-ready proofs
-- **Answer Quality**: Improvement vs baseline RAG
+- **User Trust**: Percentage of users who trust answers with proofs
+- **Compliance**: Percentage of queries with audit-ready proofs
+- **Answer Quality**: Improvement vs baseline RAG systems
 
 ## Integration Points
 
 ### LLM Providers
 
+RFS works with any LLM provider:
 - **OpenAI**: GPT-4, GPT-3.5
 - **Anthropic**: Claude
-- **Local Models**: Llama, Mistral (via Ollama)
+- **Local Models**: Llama, Mistral (via standard APIs)
 
 ### Knowledge Base Sources
 
+RFS can ingest from various sources:
 - **Documentation**: Markdown, HTML, PDF
 - **Wikis**: Confluence, Notion
-- **Code Repos**: GitHub, GitLab
+- **Code Repos**: GitHub, GitLab documentation
 - **Custom**: JSON, CSV imports
 
 ### Output Formats
 
 - **REST API**: Query endpoint with proofs
-- **Streaming**: Real-time answer generation
-- **Export**: Proofs in JSON format for audit
+- **Streaming**: Real-time answer generation with proofs
+- **Export**: Proofs in JSON format for audit trails
 
-## Next Steps
+## Learn More
 
-1. **Review NORTH_STAR.md**: Understand vision and success criteria
-2. **Review EXECUTION_PLAN.md**: See MVP implementation roadmap
-3. **Prepare Knowledge Base**: Create sample document dataset
-4. **Implement MVP**: Follow execution plan phases
-5. **Demo**: Show MVP to stakeholders
+- **RFS Overview**: [RFS README](../README.md)
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../../SMARTHAUS_VISION.md)
+- **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
 
-## Related Documentation
+---
 
-- **North Star:** `NORTH_STAR.md`
-- **Execution Plan:** `EXECUTION_PLAN.md`
-- **RFS Architecture:** `../../RFS_NORTH_STAR_V4.md`
-- **Field Retriever:** `../../src/rfs/retrieval/field_retriever.py`
+**RFS enables RAG systems that are explainable, compliant, and trustworthy through mathematical proofs of document selection.**

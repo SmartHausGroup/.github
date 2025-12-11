@@ -1,8 +1,6 @@
 # Use Case 5: Research Knowledge Graph
 
-**Status:** MVP Planning  
-**Owner:** @smarthaus  
-**Last Updated:** 2025-12-10
+**A White Paper on Temporal Analysis and Research Community Discovery**
 
 ## Problem Statement
 
@@ -42,373 +40,162 @@ Researchers face critical challenges when searching academic papers:
 ### How RFS Solves This
 
 **1. Semantic Paper Search: Find by Meaning, Not Keywords**
-```
-Query: "quantum entanglement"
-    ↓
-Query field resonates with paper field
-    ↓
-Finds papers by MEANING, not just keywords:
+
+When querying for "quantum entanglement," the query field resonates with the paper field, finding papers by meaning:
 - Direct matches: "quantum entanglement" papers
 - Related: "quantum correlation" papers (constructive interference)
 - Related: "Bell inequality" papers (constructive interference)
 - Evolution: Papers showing concept development over time
-```
 
 **2. Temporal Analysis: Track Concept Evolution**
-```
-All papers → encode → superpose in field
-    ↓
-Temporal dimension (t) tracks time
-    ↓
-Can see how concepts evolved over time
-    ↓
-Timeline of research development
-```
+
+RFS's 4D field includes a temporal dimension (t) that tracks time. Papers are encoded with their publication dates, enabling:
+- Timeline visualization of concept development
+- Evolution tracking over time
+- Historical context for research
 
 **3. Entanglement Graph: Visualize Research Communities**
-```
-Field interference patterns → entanglement graph
-    ↓
-Shows:
+
+Field interference patterns are used to build an entanglement graph that shows:
 - Paper clusters (research communities)
 - Related papers (connections)
 - Research groups (communities)
-```
 
 **4. Relationship Discovery: Understand Research Connections**
-```
+
 Interference patterns reveal:
 - Constructive: Related papers (reinforce each other)
 - Destructive: Contradictory papers (cancel each other)
-- Temporal: How concepts evolved
-```
+- Temporal: How concepts evolved over time
 
-## MVP Scope
+## Key Benefits
 
-### Phase 1: Basic Paper Search + Temporal Analysis (MVP Demo)
+### For Researchers
 
-**Features:**
-- Ingest research papers (abstracts, titles, metadata)
-- Query papers by natural language
-- Return ranked papers with explanations
-- Show temporal evolution (how concepts changed over time)
-- Basic relationship visualization
+- **Faster Discovery**: Find related papers by meaning, not just keywords
+- **Temporal Context**: Understand how concepts evolved over time
+- **Community Discovery**: Identify research communities and collaborators
+- **Relationship Understanding**: See how papers connect and relate
 
-**Demo Flow:**
-1. Load paper dataset (100-1000 papers)
-2. Ingest into RFS field (with temporal dimension)
-3. Query: "quantum entanglement"
-4. Show results:
-   - Ranked paper IDs
-   - Resonance scores (Q_dB)
-   - Temporal evolution (papers over time)
-   - Relationship explanations
-5. Show entanglement graph (basic)
+### For Research Institutions
 
-**Success Criteria:**
-- Papers found by meaning (not just keywords)
-- Temporal evolution visible
-- Relationships discovered
-- Explanations generated
+- **Knowledge Mapping**: Visualize research relationships and communities
+- **Collaboration**: Identify collaboration opportunities
+- **Trend Analysis**: Track research trends and evolution
+- **Impact Assessment**: Understand research influence and connections
 
-### Phase 2: Entanglement Graph (Post-MVP)
+### For Academic Publishing
 
-**Features:**
-- Full entanglement graph construction
-- Research community detection
-- Collaboration pattern analysis
-- Graph visualization
+- **Paper Discovery**: Help readers find related research
+- **Citation Analysis**: Understand citation relationships
+- **Trend Identification**: Identify emerging research areas
+- **Community Mapping**: Visualize research communities
 
-### Phase 3: Production Features (Future)
+## Architecture Overview
 
-**Features:**
-- Real-time paper indexing
-- Integration with academic databases
-- Advanced temporal analysis
-- Research trend prediction
+### High-Level Flow
 
-## Architecture
+1. **Ingest**: Research papers are encoded into the RFS 4D field (with temporal dimension)
+2. **Superpose**: All papers are combined in a single superposed field
+3. **Query**: Natural language queries are converted to query fields
+4. **Resonate**: Query fields resonate with the paper field
+5. **Temporal**: Track evolution over time using the temporal dimension
+6. **Graph**: Build entanglement graph showing research communities
 
-### Components
+### Key Components
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Research Papers                       │
-│  (Abstracts, titles, metadata, dates)                  │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              RFS Field-Native Encoder                    │
-│  • Encode papers into 4D field (with temporal)        │
-│  • Temporal dimension (t) encodes publication date     │
-│  • Superpose all papers in field                       │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              User Query                                  │
-│  "quantum entanglement"                                 │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              RFS Resonance Search                        │
-│  • Query field resonates with paper field              │
-│  • Returns papers with temporal context                │
-│  • Shows relationships and evolution                   │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Entanglement Graph                          │
-│  • Build graph from interference patterns              │
-│  • Detect research communities                         │
-│  • Visualize relationships                             │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Results + Temporal + Graph                  │
-│  • Ranked papers                                       │
-│  • Temporal evolution                                  │
-│  • Research communities                                │
-│  • Relationship explanations                           │
-└─────────────────────────────────────────────────────────┘
-```
+- **Field-Native Encoder**: Converts papers into 4D field representations
+- **Temporal Dimension**: Encodes publication dates for time-based analysis
+- **Superposed Field**: Single field containing all papers with interference patterns
+- **Resonance Search**: Finds papers by semantic meaning
+- **Temporal Analysis**: Tracks concept evolution over time
+- **Entanglement Graph**: Visualizes research communities and relationships
 
-### Data Flow
+## Use Case Scenarios
 
-1. **Ingest**: Research papers → RFS field (with temporal dimension)
-2. **Superpose**: All papers combined in one field
-3. **Query**: Natural language query → query field
-4. **Resonate**: Query field resonates with paper field
-5. **Temporal**: Track evolution over time (temporal dimension)
-6. **Graph**: Build entanglement graph (research communities)
+### Scenario 1: Finding Related Research
 
-## Demo Walkthrough
+**Problem**: Researcher needs to find papers related to "quantum entanglement"
 
-### Step 1: Prepare Paper Dataset
+**Traditional Approach**: Keyword search finds only exact matches
 
-**Paper Format:**
-```json
-{
-  "paper_id": "PAPER-001",
-  "title": "Quantum Entanglement in Many-Body Systems",
-  "abstract": "We investigate quantum entanglement...",
-  "authors": ["Alice", "Bob"],
-  "publication_date": "2020-01-15",
-  "venue": "Physical Review",
-  "metadata": {
-    "citations": 150,
-    "keywords": ["quantum", "entanglement", "many-body"]
-  }
-}
-```
+**RFS Approach**: Resonance search finds:
+- Direct matches: "quantum entanglement" papers
+- Related: "quantum correlation" papers
+- Related: "Bell inequality" papers
+- Temporal: Papers showing evolution of the concept
 
-**Dataset:**
-- 100-1000 research papers
-- Mix of topics (quantum, ML, physics, etc.)
-- Various publication dates (temporal spread)
-- Some related/contradictory papers
+**Value**: Complete research context with temporal evolution
 
-### Step 2: Ingest into RFS
+### Scenario 2: Temporal Evolution Analysis
 
-```python
-from src.rfs.retrieval import FieldRetriever, FieldRetrieverConfig
+**Problem**: Understand how a research concept developed over time
 
-# Load papers
-papers = load_papers("papers.jsonl")
+**Traditional Approach**: Manual timeline construction required
 
-# Extract text (title + abstract)
-paper_texts = [f"{p['title']} {p['abstract']}" for p in papers]
-paper_ids = [p['paper_id'] for p in papers]
-paper_dates = [p['publication_date'] for p in papers]
+**RFS Approach**: Temporal dimension automatically shows:
+- Concept evolution timeline
+- Key papers at different time periods
+- Research trends and patterns
 
-# Encode to vectors
-vectors = encode_papers(paper_texts)
+**Value**: Automatic temporal analysis of research evolution
 
-# Build RFS retriever (with temporal dimension)
-config = FieldRetrieverConfig(
-    field_shape=(32, 32, 32, 16),  # Larger t dimension for temporal
-    n_symbols=1024,
-    use_metal=True,
-)
-retriever = FieldRetriever(vectors, paper_ids, config=config)
+### Scenario 3: Research Community Discovery
 
-# Store temporal metadata
-retriever.store_temporal_metadata(paper_ids, paper_dates)
-```
+**Problem**: Identify research communities and collaboration patterns
 
-### Step 3: Query Papers
+**Traditional Approach**: Manual analysis of citations and authors
 
-```python
-# Query: "quantum entanglement"
-query_text = "quantum entanglement"
-query_vector = encode_query(query_text)
+**RFS Approach**: Entanglement graph automatically reveals:
+- Paper clusters (research communities)
+- Related researchers
+- Collaboration patterns
 
-# Search
-results = retriever.query(query_vector, top_k=10)
-
-# Results with temporal context
-for paper_id, score in results:
-    paper = get_paper(paper_id)
-    explanation = get_explanation(query_field, paper_field)
-    temporal_info = get_temporal_info(paper_id)
-    
-    print(f"{paper['title']} ({paper['publication_date']})")
-    print(f"  Score: {score}, Q_dB: {explanation['q_dB']}")
-    print(f"  Temporal Position: {temporal_info['t_slice']}")
-    print(f"  Why: {explanation['reason']}")
-```
-
-### Step 4: Show Temporal Evolution
-
-```python
-# Get temporal evolution
-evolution = get_temporal_evolution(results, time_slices=16)
-
-print("Temporal Evolution:")
-for time_slice, papers in evolution.items():
-    print(f"\nTime Slice {time_slice}:")
-    for paper_id in papers:
-        paper = get_paper(paper_id)
-        print(f"  - {paper['title']} ({paper['publication_date']})")
-```
-
-### Step 5: Show Entanglement Graph
-
-```python
-# Build entanglement graph
-from src.rfs.semantic.entanglement import build_entanglement_graph
-
-graph = build_entanglement_graph(doc_coeffs, config)
-
-# Visualize research communities
-communities = detect_communities(graph)
-
-print("Research Communities:")
-for community_id, papers in communities.items():
-    print(f"\nCommunity {community_id}:")
-    for paper_id in papers:
-        paper = get_paper(paper_id)
-        print(f"  - {paper['title']}")
-```
-
-## Quick Start Guide
-
-### Prerequisites
-
-- RFS installed and configured
-- Research paper dataset
-- Python 3.12+
-- Metal/GPU available
-
-### Setup
-
-```bash
-# 1. Navigate to project root
-cd /path/to/ResonantFieldStorage
-
-# 2. Activate virtual environment
-source .venv/bin/activate
-
-# 3. Prepare paper dataset
-python scripts/use_cases/05_research_knowledge_graph/prepare_papers.py
-```
-
-### Run MVP Demo
-
-```bash
-# Run demo script
-python scripts/use_cases/05_research_knowledge_graph/demo.py \
-    --data artifacts/use_cases/05_research_knowledge_graph/papers.jsonl \
-    --query "quantum entanglement" \
-    --top-k 10 \
-    --show-temporal \
-    --show-graph
-```
-
-### Expected Output
-
-```
-Query: "quantum entanglement"
-
-Results:
-1. PAPER-001: "Quantum Entanglement in Many-Body Systems" (2020-01-15)
-   Score: 0.95, Q_dB: 24.1
-   Temporal: Slice 8 (2020)
-   Why: Direct match on "quantum entanglement"
-
-2. PAPER-042: "Quantum Correlation in Spin Chains" (2019-06-20)
-   Score: 0.88, Q_dB: 21.5
-   Temporal: Slice 6 (2019)
-   Why: Related concept "quantum correlation", constructive interference
-
-3. PAPER-089: "Bell Inequality Violations" (2021-03-10)
-   Score: 0.83, Q_dB: 20.2
-   Temporal: Slice 10 (2021)
-   Why: Related concept "Bell inequality", constructive interference
-
-Temporal Evolution:
-Slice 6 (2019): 5 papers (early work on quantum correlation)
-Slice 8 (2020): 12 papers (peak: quantum entanglement)
-Slice 10 (2021): 8 papers (later: Bell inequality)
-
-Research Communities:
-Community 0: Quantum Entanglement (15 papers)
-  - PAPER-001, PAPER-042, PAPER-089, ...
-Community 1: Many-Body Systems (8 papers)
-  - PAPER-023, PAPER-067, ...
-```
+**Value**: Automatic discovery of research communities
 
 ## Key Metrics & KPIs
 
 ### Search Quality
 
-- **Recall@10**: % of relevant papers found
-- **Temporal Accuracy**: % of papers in correct time slices
-- **Community Detection**: % of papers in correct communities
-- **Q_dB**: Resonance quality (target: ≥20)
+- **Recall@10**: Percentage of relevant papers found
+- **Temporal Accuracy**: Percentage of papers in correct time slices
+- **Community Detection**: Percentage of papers in correct communities
+- **Q_dB**: Resonance quality (target: ≥20 for high-confidence matches)
 
 ### Research Value
 
-- **Relationship Discovery**: % of relationships discovered
-- **Temporal Coverage**: % of time period covered
-- **Community Coverage**: % of papers in communities
+- **Relationship Discovery**: Percentage of relationships discovered automatically
+- **Temporal Coverage**: Percentage of time period covered
+- **Community Coverage**: Percentage of papers in identified communities
 
 ### Performance
 
-- **Query Latency**: P95 ≤ 50ms
+- **Query Latency**: P95 ≤ 50ms for paper search
 - **Graph Construction**: Time to build entanglement graph
-- **Temporal Analysis**: Time for temporal evolution
+- **Temporal Analysis**: Time for temporal evolution analysis
 
 ## Integration Points
 
 ### Paper Sources
 
-- **Academic Databases**: arXiv, PubMed, etc.
-- **Local Repositories**: PDF collections
-- **Citation Networks**: Citation data import
+RFS can integrate with various academic sources:
+- **Academic Databases**: arXiv, PubMed, and other academic repositories
+- **Local Repositories**: PDF collections and institutional repositories
+- **Citation Networks**: Citation data import for relationship analysis
 
 ### Output Formats
 
 - **REST API**: Query endpoint for paper search
-- **Graph Export**: Entanglement graph (JSON/GraphML)
-- **Temporal Export**: Timeline data (JSON/CSV)
+- **Graph Export**: Entanglement graph (JSON/GraphML formats)
+- **Temporal Export**: Timeline data (JSON/CSV formats)
 - **Visualization**: Graph and temporal visualizations
 
-## Next Steps
+## Learn More
 
-1. **Review NORTH_STAR.md**: Understand vision and success criteria
-2. **Review EXECUTION_PLAN.md**: See MVP implementation roadmap
-3. **Prepare Papers**: Create sample paper dataset
-4. **Implement MVP**: Follow execution plan phases
-5. **Demo**: Show MVP to stakeholders
+- **RFS Overview**: [RFS README](../README.md)
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../../SMARTHAUS_VISION.md)
+- **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
 
-## Related Documentation
+---
 
-- **North Star:** `NORTH_STAR.md`
-- **Execution Plan:** `EXECUTION_PLAN.md`
-- **RFS Architecture:** `../../RFS_NORTH_STAR_V4.md`
-- **Entanglement:** `../../src/rfs/semantic/entanglement.py`
+**RFS enables research knowledge graphs that discover relationships, track evolution, and visualize communities through mathematical field analysis.**

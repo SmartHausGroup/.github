@@ -1,8 +1,6 @@
 # Use Case 4: Compliance/Legal Archive
 
-**Status:** MVP Planning  
-**Owner:** @smarthaus  
-**Last Updated:** 2025-12-10
+**A White Paper on Audit-Ready Document Relationships with Exact Recall**
 
 ## Problem Statement
 
@@ -42,370 +40,153 @@ Legal and compliance teams face critical challenges:
 ### How RFS Solves This
 
 **1. Relationship Discovery: Automatic Document Connection**
-```
-All legal documents → encode → superpose in field
-    ↓
-Interference patterns reveal relationships
-    ↓
-Documents automatically connected by meaning
-    ↓
-Entanglement graph shows document relationships
-```
+
+All legal documents are encoded and superposed in the field. Interference patterns automatically reveal relationships, with documents connected by meaning rather than manual tagging.
 
 **2. Explainable Relationships: Prove Why Documents Connect**
-```
-Query: "data breach incident"
-    ↓
-Resonance finds related documents
-    ↓
-Shows interference patterns (why they're related)
-    ↓
-Mathematical proofs of relationships
-```
+
+When querying for "data breach incident," resonance finds related documents and shows interference patterns that mathematically prove why they're related. This provides audit-ready explanations.
 
 **3. Exact Recall: Get Original Bytes (AEAD-Verified)**
-```
-Document ID → byte channel lookup
-    ↓
-Extract bytes from field
-    ↓
-AEAD decryption + verification
-    ↓
-Return exact original bytes (proven integrity)
-```
+
+RFS maintains a separate byte channel alongside the semantic field. Documents can be retrieved with exact original bytes, verified through AEAD (Authenticated Encryption with Associated Data) for cryptographic integrity.
 
 **4. Audit Trail: Complete Provenance**
-```
-Every query logged with:
+
+Every query is logged with:
 - Documents selected
-- Interference patterns (proofs)
+- Interference patterns (mathematical proofs)
 - Exact recall operations
 - Timestamps and metadata
-```
 
-## MVP Scope
+This provides a complete audit trail for compliance.
 
-### Phase 1: Basic Document Search + Exact Recall (MVP Demo)
+## Key Benefits
 
-**Features:**
-- Ingest legal documents (contracts, policies, reports)
-- Query documents via RFS
-- Return ranked documents with relationship explanations
-- Exact byte recall (AEAD-verified)
-- Show interference patterns (proofs)
+### For Legal Teams
 
-**Demo Flow:**
-1. Load legal document dataset (100-500 documents)
-2. Ingest into RFS field
-3. Query: "data breach incident"
-4. Show results:
-   - Ranked document IDs
-   - Resonance scores (Q_dB)
-   - Relationship explanations
-   - Interference patterns (proofs)
-5. Exact recall: Get original bytes for selected document
-6. Show audit trail: Query + results + proofs
+- **Faster Research**: Quickly find related documents and relationships
+- **Explainable Results**: Mathematical proofs of document relationships
+- **Exact Evidence**: Retrieve original document bytes for legal proceedings
+- **Audit Ready**: Complete provenance and audit trails
 
-**Success Criteria:**
-- Documents found by meaning (not just keywords)
-- Relationships discovered automatically
-- Explanations generated (proofs)
-- Exact recall works (AEAD-verified)
-- Audit trail complete
+### For Compliance Teams
 
-### Phase 2: Relationship Graph (Post-MVP)
+- **Regulatory Compliance**: Can prove document relationships to regulators
+- **Audit Trails**: Complete record of all operations with proofs
+- **Integrity Verification**: AEAD ensures document authenticity
+- **Transparency**: Mathematical proofs provide verifiable explanations
 
-**Features:**
-- Entanglement graph visualization
-- Document relationship mapping
-- Timeline analysis
-- Relationship export
+### For Organizations
 
-### Phase 3: Production Features (Future)
+- **Risk Reduction**: Better compliance through explainable operations
+- **Cost Efficiency**: Faster legal research reduces costs
+- **Evidence Quality**: Exact recall ensures legal evidence integrity
+- **Regulatory Confidence**: Audit-ready documentation builds trust
 
-**Features:**
-- Real-time document ingestion
-- Integration with legal systems
-- Compliance reporting
-- Advanced relationship analysis
+## Architecture Overview
 
-## Architecture
+### High-Level Flow
 
-### Components
-
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Legal Documents                       │
-│  (Contracts, policies, reports, emails)                │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              RFS Dual-Path Encoding                      │
-│  • Semantic path: document → field (for search)        │
-│  • Byte path: document → byte channel (for exact recall)│
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Superposed Field + Byte Channel            │
-│  • Semantic field: all documents combined              │
-│  • Byte channel: exact bytes (AEAD-encrypted)          │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Query & Resonance Search                    │
-│  • Query field resonates with semantic field           │
-│  • Returns documents with relationship explanations    │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Exact Recall (AEAD-Verified)                │
-│  • Document ID → byte channel lookup                   │
-│  • Extract bytes → AEAD decrypt + verify               │
-│  • Return exact original bytes                         │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Results + Proofs + Exact Bytes              │
-│  • Ranked documents                                    │
-│  • Relationship explanations (proofs)                  │
-│  • Exact document bytes (AEAD-verified)                │
-│  • Audit trail                                         │
-└─────────────────────────────────────────────────────────┘
-```
-
-### Data Flow
-
-1. **Ingest**: Legal documents → RFS (semantic + byte paths)
-2. **Superpose**: All documents in semantic field
-3. **Query**: Natural language query → query field
-4. **Resonate**: Query field resonates with semantic field
-5. **Explain**: Return documents + relationship proofs
+1. **Ingest**: Legal documents are encoded via dual paths (semantic + byte)
+2. **Superpose**: All documents are combined in the semantic field
+3. **Query**: Natural language queries are converted to query fields
+4. **Resonate**: Query fields resonate with the semantic field
+5. **Explain**: Return documents with relationship proofs
 6. **Recall**: Get exact bytes (AEAD-verified) for evidence
 
-## Demo Walkthrough
+### Key Components
 
-### Step 1: Prepare Legal Documents
+- **Dual-Path Encoding**: Semantic field for search, byte channel for exact recall
+- **Superposed Field**: Single field containing all documents
+- **Resonance Search**: Finds documents by semantic meaning
+- **Interference Analysis**: Generates mathematical proofs of relationships
+- **AEAD Byte Channel**: Cryptographic integrity for exact recall
+- **Audit Logging**: Complete provenance and audit trails
 
-**Document Format:**
-```json
-{
-  "doc_id": "DOC-001",
-  "title": "Data Breach Incident Report",
-  "content": "On 2025-12-01, unauthorized access detected...",
-  "type": "incident_report",
-  "date": "2025-12-01",
-  "metadata": {
-    "author": "Security Team",
-    "classification": "confidential",
-    "related_contracts": ["CONTRACT-042"]
-  }
-}
-```
+## Use Case Scenarios
 
-**Dataset:**
-- 100-500 legal documents
-- Mix of types (contracts, policies, reports, emails)
-- Some related/contradictory documents
-- Various dates and classifications
+### Scenario 1: Document Relationship Discovery
 
-### Step 2: Ingest into RFS
+**Problem**: Legal team needs to find all documents related to a data breach incident
 
-```python
-from src.rfs.recall import ResonantFieldStorage
-from src.rfs.retrieval import FieldRetriever
+**Traditional Approach**: Manual keyword search, relationships missed
 
-# Ingest documents (semantic + byte paths)
-storage = ResonantFieldStorage(...)
-retriever = FieldRetriever(...)
+**RFS Approach**: Resonance search finds:
+- Direct matches: Incident reports
+- Related documents: Contracts with data breach clauses
+- Related documents: Policies covering incident response
+- Relationship proofs: Interference patterns explain connections
 
-for doc in documents:
-    # Semantic path: for search
-    doc_text = f"{doc['title']} {doc['content']}"
-    doc_vector = encode_document(doc_text)
-    
-    # Byte path: for exact recall
-    doc_bytes = doc['content'].encode('utf-8')
-    storage.encode(doc['doc_id'], doc_bytes)
-    
-    # Add to retriever
-    retriever.add_document(doc_vector, doc['doc_id'])
-```
+**Value**: Complete document context with explainable relationships
 
-### Step 3: Query Documents
+### Scenario 2: Exact Evidence Retrieval
 
-```python
-# Query: "data breach incident"
-query_text = "data breach incident"
-query_vector = encode_query(query_text)
+**Problem**: Need original document bytes for legal evidence
 
-# Search
-results = retriever.query(query_vector, top_k=10)
+**Traditional Approach**: Systems only return document IDs or summaries
 
-# Results with explanations
-for doc_id, score in results:
-    explanation = get_relationship_explanation(query_field, doc_field)
-    print(f"{doc_id}: score={score}, Q_dB={explanation['q_dB']}")
-    print(f"  Relationship: {explanation['relationship_type']}")
-    print(f"  Why: {explanation['reason']}")
-    print(f"  Proof: {explanation['interference_pattern']}")
-```
+**RFS Approach**: Dual-path system provides:
+- Semantic search: Find documents by meaning
+- Exact recall: Retrieve original bytes (AEAD-verified)
+- Integrity proof: Cryptographic verification of authenticity
 
-### Step 4: Exact Recall
+**Value**: Legal-grade evidence with integrity guarantees
 
-```python
-# Get exact bytes for evidence
-doc_id = "DOC-001"
-exact_bytes = storage.recall(doc_id)
+### Scenario 3: Compliance Audit
 
-# Verify integrity (AEAD)
-if exact_bytes:
-    print(f"Retrieved {len(exact_bytes)} bytes")
-    print(f"Integrity: AEAD-verified")
-    print(f"Original document: {exact_bytes.decode('utf-8')}")
-```
+**Problem**: Regulators require proof of document relationships
 
-### Step 5: Show Audit Trail
+**Traditional Approach**: Black-box search, can't prove relationships
 
-```python
-# Audit trail
-audit_log = {
-    "query": query_text,
-    "timestamp": "2025-12-10T10:30:00Z",
-    "results": [
-        {
-            "doc_id": doc_id,
-            "score": score,
-            "q_dB": explanation['q_dB'],
-            "proof": explanation['interference_pattern'],
-            "exact_recall": {
-                "retrieved": True,
-                "aead_verified": True,
-                "bytes_length": len(exact_bytes)
-            }
-        }
-        for doc_id, score, explanation in results
-    ]
-}
-```
+**RFS Approach**: Every operation includes:
+- Mathematical proofs (interference patterns)
+- Complete audit trail
+- Verifiable explanations
 
-## Quick Start Guide
-
-### Prerequisites
-
-- RFS installed and configured
-- Legal document dataset
-- Python 3.12+
-- Metal/GPU available
-
-### Setup
-
-```bash
-# 1. Navigate to project root
-cd /path/to/ResonantFieldStorage
-
-# 2. Activate virtual environment
-source .venv/bin/activate
-
-# 3. Prepare legal documents
-python scripts/use_cases/04_compliance_legal_archive/prepare_documents.py
-```
-
-### Run MVP Demo
-
-```bash
-# Run demo script
-python scripts/use_cases/04_compliance_legal_archive/demo.py \
-    --data artifacts/use_cases/04_compliance_legal_archive/documents.jsonl \
-    --query "data breach incident" \
-    --top-k 10 \
-    --exact-recall \
-    --show-proofs \
-    --audit-trail
-```
-
-### Expected Output
-
-```
-Query: "data breach incident"
-
-Results:
-1. DOC-001: score=0.95, Q_dB=24.2
-   Relationship: Direct match
-   Why: Direct match on "data breach incident"
-   Proof: High constructive interference (0.92)
-
-2. DOC-042: score=0.88, Q_dB=21.5
-   Relationship: Related contract
-   Why: Contract mentions "data breach" clauses
-   Proof: Medium constructive interference (0.78)
-
-3. DOC-089: score=0.83, Q_dB=20.1
-   Relationship: Related policy
-   Why: Policy covers "incident response"
-   Proof: Medium constructive interference (0.71)
-
-Exact Recall:
-DOC-001: Retrieved 2,543 bytes (AEAD-verified)
-Original: "On 2025-12-01, unauthorized access detected..."
-
-Audit Trail:
-- Query: "data breach incident"
-- Timestamp: 2025-12-10T10:30:00Z
-- Results: 10 documents
-- Proofs: All documents have interference pattern proofs
-- Exact Recall: DOC-001 retrieved and verified
-```
+**Value**: Audit-ready documentation for regulatory compliance
 
 ## Key Metrics & KPIs
 
 ### Search Quality
 
-- **Recall@10**: % of relevant documents found
-- **Relationship Discovery**: % of relationships discovered
-- **Q_dB**: Resonance quality (target: ≥20)
+- **Recall@10**: Percentage of relevant documents found
+- **Relationship Discovery**: Percentage of relationships discovered automatically
+- **Q_dB**: Resonance quality (target: ≥20 for high-confidence matches)
 
 ### Compliance
 
 - **Exact Recall Success**: 100% (AEAD-verified)
-- **Audit Trail Completeness**: 100%
-- **Proof Generation**: 100% of results have proofs
+- **Audit Trail Completeness**: 100% of operations logged
+- **Proof Generation**: 100% of results have mathematical proofs
 
 ### Performance
 
-- **Query Latency**: P95 ≤ 50ms
-- **Exact Recall Latency**: P95 ≤ 200ms
-- **Ingest Throughput**: Documents/second
+- **Query Latency**: P95 ≤ 50ms for document search
+- **Exact Recall Latency**: P95 ≤ 200ms for byte retrieval
+- **Ingest Throughput**: Documents processed per second
 
 ## Integration Points
 
 ### Legal Systems
 
-- **Document Management**: Integration with legal DMS
-- **Case Management**: Integration with case systems
-- **Compliance Tools**: Integration with compliance platforms
+RFS can integrate with legal and compliance platforms:
+- **Document Management**: Integration with legal DMS systems
+- **Case Management**: Integration with case management platforms
+- **Compliance Tools**: Integration with compliance monitoring systems
 
 ### Output Formats
 
 - **REST API**: Query and exact recall endpoints
-- **Audit Export**: JSON/CSV export for compliance
-- **Evidence Format**: Original bytes + proofs
+- **Audit Export**: JSON/CSV export for compliance reporting
+- **Evidence Format**: Original bytes with cryptographic proofs
 
-## Next Steps
+## Learn More
 
-1. **Review NORTH_STAR.md**: Understand vision and success criteria
-2. **Review EXECUTION_PLAN.md**: See MVP implementation roadmap
-3. **Prepare Documents**: Create sample legal document dataset
-4. **Implement MVP**: Follow execution plan phases
-5. **Demo**: Show MVP to stakeholders
+- **RFS Overview**: [RFS README](../README.md)
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../../SMARTHAUS_VISION.md)
+- **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
 
-## Related Documentation
+---
 
-- **North Star:** `NORTH_STAR.md`
-- **Execution Plan:** `EXECUTION_PLAN.md`
-- **RFS Architecture:** `../../RFS_NORTH_STAR_V4.md`
-- **Byte Channel:** `../../src/rfs/recall.py`
+**RFS enables compliance and legal archives that are audit-ready, explainable, and provide exact evidence retrieval with cryptographic integrity.**

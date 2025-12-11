@@ -1,8 +1,6 @@
 # Use Case 3: Code Intelligence
 
-**Status:** MVP Planning  
-**Owner:** @smarthaus  
-**Last Updated:** 2025-12-10
+**A White Paper on Semantic Code Search and Pattern Discovery**
 
 ## Problem Statement
 
@@ -42,357 +40,157 @@ Developers face critical challenges when searching code:
 ### How RFS Solves This
 
 **1. Semantic Code Search: Find by Meaning, Not Keywords**
-```
-Query: "authentication middleware"
-    ↓
-Query field resonates with code field
-    ↓
-Finds code by MEANING, not just keywords:
+
+When querying for "authentication middleware," the query field resonates with the code field, finding code by meaning rather than just keywords:
 - Direct matches: "authentication middleware" code
 - Analogies: "authorization filters" (constructive interference)
 - Analogies: "session management" (constructive interference)
 - Contradictions: "no authentication needed" (destructive interference)
-```
 
 **2. Pattern Discovery: Automatic Code Pattern Detection**
-```
-All code → encode → superpose in field
-    ↓
-Interference patterns reveal code patterns
-    ↓
-Similar code patterns cluster together
-    ↓
-Automatic pattern detection
-```
+
+All code is encoded and superposed in the field. Interference patterns automatically reveal code patterns, with similar code patterns clustering together through constructive interference.
 
 **3. Code Relationships: Understand How Code Connects**
-```
-Entanglement graph shows:
+
+The entanglement graph shows:
 - Code pattern clusters
 - Related implementations
 - Code evolution over time
-```
 
 **4. Contradiction Detection: Find Conflicting Code**
-```
-Destructive interference detected
-    ↓
-Conflicting implementations flagged
-    ↓
-Developers can reconcile inconsistencies
-```
 
-## MVP Scope
+Destructive interference automatically detects conflicting implementations, flagging them so developers can reconcile inconsistencies.
 
-### Phase 1: Basic Code Search (MVP Demo)
+## Key Benefits
 
-**Features:**
-- Ingest code (functions, classes, files)
-- Query code by natural language
-- Return ranked code results with explanations
-- Show code analogies (similar patterns)
-- Detect contradictions
+### For Developers
 
-**Demo Flow:**
-1. Load codebase (100-500 code files)
-2. Extract code snippets (functions, classes)
-3. Ingest into RFS field
-4. Query: "authentication middleware"
-5. Show results:
-   - Ranked code snippets
-   - Resonance scores (Q_dB)
-   - Analogies (similar patterns)
-   - Contradictions (conflicting code)
+- **Faster Code Discovery**: Find code by meaning, not just keywords
+- **Pattern Recognition**: Automatic discovery of similar code patterns
+- **Code Reuse**: Identify opportunities for refactoring and reuse
+- **Consistency**: Detect and resolve conflicting implementations
 
-**Success Criteria:**
-- Code found by meaning (not just keywords)
-- Analogies discovered automatically
-- Contradictions detected
-- Explanations generated
+### For Engineering Teams
 
-### Phase 2: Pattern Discovery (Post-MVP)
+- **Reduced Duplication**: Automatic pattern detection enables code consolidation
+- **Better Architecture**: Understand how code patterns relate across codebase
+- **Knowledge Sharing**: Code relationships are visible and searchable
+- **Quality Improvement**: Contradiction detection improves code consistency
 
-**Features:**
-- Code pattern clustering
-- Pattern visualization
-- Code reuse recommendations
-- Pattern evolution tracking
+### For Organizations
 
-### Phase 3: Production Features (Future)
+- **Faster Development**: Less time searching, more time building
+- **Code Quality**: Better consistency and fewer contradictions
+- **Knowledge Retention**: Code relationships are captured and preserved
+- **Maintainability**: Easier to understand and maintain large codebases
 
-**Features:**
-- Real-time code indexing
-- IDE integration
-- Code review assistance
-- Automated refactoring suggestions
+## Architecture Overview
 
-## Architecture
+### High-Level Flow
 
-### Components
+1. **Extract**: Code repository is parsed into code snippets (functions, classes)
+2. **Encode**: Code snippets are encoded into the RFS 4D field
+3. **Superpose**: All code is combined in a single superposed field
+4. **Query**: Natural language queries are converted to query fields
+5. **Resonate**: Query fields resonate with the code field
+6. **Explain**: Return code results with analogies and contradiction flags
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    Code Repository                       │
-│  (Functions, classes, files, commits)                  │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Code Extraction & Encoding                  │
-│  • Extract code snippets (functions, classes)          │
-│  • Encode code into RFS field                          │
-│  • Superpose all code in field                         │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              User Query                                  │
-│  "authentication middleware"                            │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              RFS Resonance Search                        │
-│  • Query field resonates with code field               │
-│  • Returns code snippets with explanations             │
-│  • Shows analogies and contradictions                  │
-└────────────────────┬────────────────────────────────────┘
-                     │
-                     ▼
-┌─────────────────────────────────────────────────────────┐
-│              Code Results + Explanations                │
-│  • Ranked code snippets                                │
-│  • Analogies (similar patterns)                        │
-│  • Contradictions (conflicting code)                   │
-│  • Explanations (why code matches)                     │
-└─────────────────────────────────────────────────────────┘
-```
+### Key Components
 
-### Data Flow
+- **Code Extraction**: Parses code repositories into semantic units
+- **Field-Native Encoder**: Converts code into 4D field representations
+- **Superposed Field**: Single field containing all code with interference patterns
+- **Resonance Search**: Finds code by semantic meaning
+- **Pattern Analysis**: Discovers code patterns through interference
+- **Entanglement Graph**: Visualizes code relationships and clusters
 
-1. **Extract**: Code repository → code snippets
-2. **Encode**: Code snippets → RFS field
-3. **Superpose**: All code combined in one field
-4. **Query**: Natural language query → query field
-5. **Resonate**: Query field resonates with code field
-6. **Explain**: Return code + analogies + contradictions
+## Use Case Scenarios
 
-## Demo Walkthrough
+### Scenario 1: Finding Code Analogies
 
-### Step 1: Prepare Codebase
+**Problem**: Developer needs to find code similar to "authentication middleware"
 
-**Code Snippet Format:**
-```json
-{
-  "code_id": "CODE-001",
-  "file_path": "src/auth/middleware.py",
-  "snippet": "def authenticate(request):\n    token = request.headers.get('Authorization')\n    ...",
-  "language": "python",
-  "type": "function",
-  "metadata": {
-    "author": "alice",
-    "commit": "abc123",
-    "date": "2025-12-01"
-  }
-}
-```
+**Traditional Approach**: Keyword search finds only exact matches
 
-**Dataset:**
-- 100-500 code files
-- Mix of languages (Python, JavaScript, etc.)
-- Various patterns (auth, logging, error handling)
-- Some similar/contradictory implementations
+**RFS Approach**: Resonance search finds:
+- Direct matches: "authentication middleware" implementations
+- Analogies: "authorization filters", "session management"
+- Related patterns: Similar authentication/authorization code
 
-### Step 2: Extract & Ingest Code
+**Value**: Developer discovers related code patterns automatically
 
-```python
-from src.use_cases.code_intelligence import CodeExtractor, CodeIngester
+### Scenario 2: Pattern Discovery
 
-# Extract code snippets
-extractor = CodeExtractor()
-snippets = extractor.extract_from_repo("path/to/repo")
+**Problem**: Similar code patterns exist but aren't visible
 
-# Encode to vectors
-vectors = encode_code_snippets(snippets)
+**Traditional Approach**: Manual code review required
 
-# Ingest into RFS
-ingester = CodeIngester()
-retriever = ingester.ingest(vectors, snippet_ids)
-```
+**RFS Approach**: Interference patterns automatically reveal:
+- Code pattern clusters
+- Similar implementations across codebase
+- Opportunities for code consolidation
 
-### Step 3: Query Code
+**Value**: Automatic pattern detection enables refactoring
 
-```python
-# Query: "authentication middleware"
-query_text = "authentication middleware"
-query_vector = encode_query(query_text)
+### Scenario 3: Contradiction Detection
 
-# Search
-results = retriever.query(query_vector, top_k=10)
+**Problem**: Conflicting implementations cause bugs
 
-# Results with explanations
-for code_id, score in results:
-    snippet = get_snippet(code_id)
-    explanation = get_explanation(query_field, snippet_field)
-    print(f"{snippet['file_path']}:{snippet['line']}")
-    print(f"  Score: {score}, Q_dB: {explanation['q_dB']}")
-    print(f"  Analogy: {explanation['is_analogy']}")
-    print(f"  Contradiction: {explanation['is_contradiction']}")
-    print(f"  Why: {explanation['reason']}")
-```
+**Traditional Approach**: Manual review, contradictions often missed
 
-### Step 4: Show Analogies
+**RFS Approach**: Destructive interference automatically flags:
+- Conflicting authentication requirements
+- Inconsistent error handling
+- Contradictory business logic
 
-```python
-# Find code analogies
-analogies = find_analogies(results, threshold=0.7)
-
-print("Code Analogies:")
-for group in analogies:
-    print(f"\nPattern: {group['pattern']}")
-    for code_id in group['codes']:
-        snippet = get_snippet(code_id)
-        print(f"  - {snippet['file_path']}:{snippet['line']}")
-```
-
-### Step 5: Show Contradictions
-
-```python
-# Find contradictions
-contradictions = find_contradictions(results)
-
-print("Contradictions Detected:")
-for contradiction in contradictions:
-    print(f"\n{contradiction['code1']} vs {contradiction['code2']}")
-    print(f"  Reason: {contradiction['reason']}")
-```
-
-## Quick Start Guide
-
-### Prerequisites
-
-- RFS installed and configured
-- Code repository access
-- Code parsing library (tree-sitter, etc.)
-- Python 3.12+
-
-### Setup
-
-```bash
-# 1. Navigate to project root
-cd /path/to/ResonantFieldStorage
-
-# 2. Activate virtual environment
-source .venv/bin/activate
-
-# 3. Prepare codebase
-python scripts/use_cases/03_code_intelligence/extract_code.py \
-    --repo path/to/repo \
-    --output artifacts/use_cases/03_code_intelligence/code_snippets.jsonl
-```
-
-### Run MVP Demo
-
-```bash
-# Run demo script
-python scripts/use_cases/03_code_intelligence/demo.py \
-    --code artifacts/use_cases/03_code_intelligence/code_snippets.jsonl \
-    --query "authentication middleware" \
-    --top-k 10 \
-    --show-analogies \
-    --show-contradictions
-```
-
-### Expected Output
-
-```
-Query: "authentication middleware"
-
-Results:
-1. src/auth/middleware.py:42
-   Score: 0.94, Q_dB: 23.1
-   Analogy: No (direct match)
-   Contradiction: No
-   Why: Direct match on "authentication middleware"
-
-2. src/auth/filters.py:18
-   Score: 0.87, Q_dB: 21.3
-   Analogy: Yes (similar pattern: authorization filter)
-   Contradiction: No
-   Why: Related concept "authorization", constructive interference
-
-3. src/session/manager.py:56
-   Score: 0.82, Q_dB: 19.7
-   Analogy: Yes (similar pattern: session management)
-   Contradiction: No
-   Why: Related concept "session", constructive interference
-
-4. src/public/api.py:123
-   Score: 0.12, Q_dB: 6.8
-   Analogy: No
-   Contradiction: Yes (no authentication needed)
-   Why: Contradicts query intent, destructive interference
-
-Code Analogies:
-Pattern: Authentication/Authorization
-  - src/auth/middleware.py:42
-  - src/auth/filters.py:18
-  - src/auth/handlers.py:67
-
-Contradictions:
-src/auth/middleware.py:42 vs src/public/api.py:123
-  Reason: One requires authentication, other explicitly disables it
-```
+**Value**: Proactive detection of code inconsistencies
 
 ## Key Metrics & KPIs
 
 ### Search Quality
 
-- **Recall@10**: % of relevant code found in top 10
-- **Analogy Discovery**: % of analogies correctly identified
-- **Contradiction Detection**: % of contradictions detected
-- **Q_dB**: Resonance quality (target: ≥20)
+- **Recall@10**: Percentage of relevant code found in top 10 results
+- **Analogy Discovery**: Percentage of analogies correctly identified
+- **Contradiction Detection**: Percentage of contradictions detected
+- **Q_dB**: Resonance quality (target: ≥20 for high-confidence matches)
 
 ### Developer Value
 
 - **Time Saved**: Minutes saved per code search
-- **Code Reuse**: % increase in code reuse
-- **Pattern Detection**: Number of patterns discovered
-- **Consistency**: % reduction in contradictory code
+- **Code Reuse**: Percentage increase in code reuse
+- **Pattern Detection**: Number of patterns discovered automatically
+- **Consistency**: Percentage reduction in contradictory code
 
 ### Performance
 
-- **Query Latency**: P95 ≤ 50ms
-- **Indexing Throughput**: Code files/second
-- **Field Size**: Memory usage per code snippet
+- **Query Latency**: P95 ≤ 50ms for code search
+- **Indexing Throughput**: Code files processed per second
+- **Field Size**: Memory efficiency per code snippet
 
 ## Integration Points
 
 ### Code Sources
 
+RFS can integrate with various code sources:
 - **Git Repositories**: GitHub, GitLab, Bitbucket
-- **Local Repos**: File system access
-- **Code Review**: PR/MR integration
-- **IDE**: Editor integration (future)
+- **Local Repositories**: File system access
+- **Code Review**: PR/MR integration for review assistance
+- **IDE**: Editor integration for real-time code intelligence
 
 ### Output Formats
 
 - **REST API**: Query endpoint for code search
-- **CLI**: Command-line tool
-- **IDE Plugin**: Editor integration (future)
-- **Web UI**: Code search interface (future)
+- **CLI**: Command-line tool for code discovery
+- **IDE Plugin**: Editor integration for inline code intelligence
+- **Web UI**: Code search interface with visualization
 
-## Next Steps
+## Learn More
 
-1. **Review NORTH_STAR.md**: Understand vision and success criteria
-2. **Review EXECUTION_PLAN.md**: See MVP implementation roadmap
-3. **Prepare Codebase**: Extract code snippets for demo
-4. **Implement MVP**: Follow execution plan phases
-5. **Demo**: Show MVP to stakeholders
+- **RFS Overview**: [RFS README](../README.md)
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../../SMARTHAUS_VISION.md)
+- **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
 
-## Related Documentation
+---
 
-- **North Star:** `NORTH_STAR.md`
-- **Execution Plan:** `EXECUTION_PLAN.md`
-- **RFS Architecture:** `../../RFS_NORTH_STAR_V4.md`
-- **Field Retriever:** `../../src/rfs/retrieval/field_retriever.py`
+**RFS enables code intelligence that understands meaning, discovers patterns automatically, and maintains consistency through mathematical interference analysis.**
