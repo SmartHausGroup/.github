@@ -63,12 +63,12 @@ SMARTHAUS builds two main product archetypes, both built on **Resonant Field Sto
    - Brain-inspired regions coordinate behavior
    - Working toward measurable integrated awareness
 
-2. **⚗️ Chemistry Layer (AQL)** — Symbolic query language
+2. **⚗️ Chemistry Layer (LQL)** — Symbolic query language
    - Transforms intent into mathematically provable execution graphs
    - Ensures correctness through formal verification
    - Compiles to deterministic DAGs
 
-3. **⚛️ Physics Layer (AEF)** — Particle-based execution
+3. **⚛️ Physics Layer (LEF)** — Particle-based execution
    - Quantum-inspired particles execute computations
    - Energy-based resource management
    - Parallel execution with built-in telemetry
@@ -76,8 +76,8 @@ SMARTHAUS builds two main product archetypes, both built on **Resonant Field Sto
 **Repositories**:
 - **AIVA** — Architecture documentation and specifications
 - **AIOS** — Biology layer implementation
-- **AQL** — Chemistry layer (LATTICE Query Language)
-- **AEF** — Physics layer (Lattice Execution Fabric)
+- **LQL** — Chemistry layer (LATTICE Query Language)
+- **LEF** — Physics layer (Lattice Execution Fabric)
 
 ## 🔬 The Mathematical Foundation
 
