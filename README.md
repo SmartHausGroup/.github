@@ -30,7 +30,7 @@ All AI modules (transformers, CNNs, RNNs, etc.) project into a shared 4D field u
 
 ## 🏗️ Architecture Overview
 
-SMARTHAUS consists of two main archetypes, both built on the same mathematical foundation:
+SMARTHAUS builds two main product archetypes, both built on **Resonant Field Storage (RFS)** — our core mathematical substrate:
 
 ### 🎯 Archetype 1: TAI (Personal Assistant)
 
@@ -100,7 +100,7 @@ At the heart of SMARTHAUS is **Resonant Field Storage** — a 4D mathematical fi
 
 ### Mathematical Guarantees
 
-Every component in SMARTHAUS is **mathematically proven**, not just tested:
+Every component SMARTHAUS builds is **mathematically proven**, not just tested:
 
 #### Invariants & Validation
 
@@ -216,7 +216,7 @@ Working toward systems where the whole is aware of its parts:
 
 ## 📦 Repository Structure
 
-SMARTHAUS is organized into focused repositories, each with clear responsibilities:
+SMARTHAUS's work is organized into focused repositories, each with clear responsibilities:
 
 ### Core Substrate
 - **[ResonantFieldStorage](https://github.com/SmartHausGroup/ResonantFieldStorage)** — The 4D field storage substrate
@@ -287,7 +287,7 @@ See individual repository LICENSE files. Most components use MIT or Apache 2.0.
 
 ## 🙏 Acknowledgments
 
-SMARTHAUS is built on rigorous mathematical foundations, drawing inspiration from:
+SMARTHAUS systems are built on rigorous mathematical foundations, drawing inspiration from:
 - Physics (Hilbert spaces, wave dynamics, energy conservation)
 - Chemistry (reaction constraints, homeostasis, regulatory loops)
 - Biology (modular architectures, attractor-based goals, global workspace theory)
