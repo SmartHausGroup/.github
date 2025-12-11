@@ -1,0 +1,13 @@
+# Cursor IDE workspace files
+.cursor-workspace
+
+# Common IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
