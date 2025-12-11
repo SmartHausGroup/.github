@@ -231,6 +231,7 @@ RFS excels in scenarios where relationships, explainability, and exact recall ma
 3. **Code Intelligence** — Find code analogies and patterns automatically
 4. **Compliance/Legal Archive** — Audit-ready document relationships with exact recall
 5. **Research Knowledge Graph** — Track concept evolution and research communities
+6. **Pharmaceutical Discovery** — Discover novel drug combinations through relationship discovery and GNN prediction
 
 See [Use Cases](./use-cases/) for detailed documentation on each scenario.
 
