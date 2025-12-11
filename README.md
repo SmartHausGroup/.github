@@ -236,6 +236,7 @@ SMARTHAUS is organized into focused repositories, each with clear responsibiliti
 
 ### Infrastructure
 - **[MathematicalAutopsy](https://github.com/SmartHausGroup/MathematicalAutopsy)** — Mathematical validation framework
+  - **Process Documentation**: [Mathematical Autopsy Methodology](../systems/mathematical-autopsy/README.md) — The math-first development process used across all SMARTHAUS systems
 
 
 
