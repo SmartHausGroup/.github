@@ -54,6 +54,24 @@ For each relationship, RFS provides:
 
 **The compliance value:** Every relationship has a proof. Regulators can verify. Courts can trust. Compliance is maintained through transparency.
 
+### Deterministic Results: Same Query, Same Relationships, Always
+
+**The mathematical guarantee:** RFS provides deterministic relationship discovery — the same query always discovers the same relationships. This isn't a probabilistic promise; it's a mathematical guarantee enforced at every layer.
+
+**Why this matters for legal/compliance:**
+- **Legal admissibility**: When a court asks "What documents are related to this contract?", the answer is provably the same every time. Every legal query is reproducible. Complete legal confidence.
+- **Regulatory audits**: When a regulator audits document relationships, they can run the same query and get identical results. **Deterministic results ensure every audit query is reproducible** — regulators can verify results independently.
+- **Evidence integrity**: Document relationships are provably consistent. You can defend relationship discoveries in court, knowing they're reproducible. Complete evidence integrity.
+- **Compliance confidence**: Organizations can prove document relationships are discovered consistently. There's no randomness that could be questioned in audits or legal proceedings.
+
+**The technical guarantee:**
+- All operations use deterministic seeds and fixed algorithms
+- Same query + same field → same relationships, always
+- Reproducible across deployments (CUDA, ROCm, Metal)
+- Complete audit trail with WAL (Write-Ahead Log) replay
+
+**The legal value:** For legal and compliance work, deterministic results are required. RFS provides mathematical guarantees, not probabilistic promises. Every relationship discovery is provably reproducible.
+
 ### Exact Recall: Cryptographic Integrity
 
 RFS maintains a separate byte channel alongside the semantic field. Documents can be retrieved with exact original bytes, verified through AEAD (Authenticated Encryption with Associated Data) for cryptographic integrity.
@@ -127,6 +145,8 @@ When retrieving a document for evidence:
 4. **Exact Bytes**: Return bit-for-bit identical original bytes
 
 **The legal guarantee:** Documents retrieved are exactly the original, with cryptographic proof of integrity. Legal admissibility is maintained.
+
+**Combined guarantee:** Deterministic relationship discovery + exact byte recall = complete legal confidence. Every relationship is provably reproducible. Every document is provably authentic. Legal and compliance teams can trust the system completely.
 
 ## Use Case Scenarios: Real Situations, Real Impact
 

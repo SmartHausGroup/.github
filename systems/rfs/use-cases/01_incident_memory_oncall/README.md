@@ -62,6 +62,24 @@ RFS doesn't just find related incidents — it explains why they're related. Thr
 
 **The explainability advantage:** Engineers don't have to trust black-box results. They can see the mathematical proof of why incidents are related, building confidence in the system's recommendations.
 
+### Deterministic Results: Same Query, Same Results, Always
+
+**The mathematical guarantee:** RFS provides deterministic results — the same query on the same field always produces identical results. This isn't a probabilistic promise; it's a mathematical guarantee enforced at every layer.
+
+**Why this matters for incident management:**
+- **Reproducibility**: When an engineer queries "database connection timeout" at 3:47 AM, they get the same results as when they query it again at 8:00 AM. No randomness. No variation. Complete consistency.
+- **Audit trail**: Every query can be replayed exactly. When a post-incident review asks "What incidents did the system find?", the answer is provably the same every time. Complete auditability.
+- **Trust**: Engineers can trust that results won't change between queries. They can share query results with confidence, knowing others will see the same results.
+- **Debugging**: When something goes wrong, you can replay the exact query that found (or missed) an incident. Complete reproducibility for debugging.
+
+**The technical guarantee:**
+- All operations use deterministic seeds and fixed algorithms
+- Same query + same field → same results, always
+- Reproducible across deployments (CUDA, ROCm, Metal)
+- Complete audit trail with WAL (Write-Ahead Log) replay
+
+**The compliance value:** For regulated industries, deterministic results are required. RFS provides mathematical guarantees, not probabilistic promises. Every query result is provably reproducible.
+
 ### Pattern Discovery: Learning from History
 
 Over time, as incidents accumulate in the field, patterns emerge automatically. The system discovers:
@@ -100,9 +118,9 @@ Over time, as incidents accumulate in the field, patterns emerge automatically. 
 
 **Operational Excellence:** Faster incident resolution means better service reliability, higher customer satisfaction, and reduced operational costs. Every minute saved during an incident translates to real business value.
 
-**Compliance & Audit:** Complete audit trails of incident relationships, with mathematical proofs of why incidents are related. This provides transparency and accountability for incident management processes.
+**Compliance & Audit:** Complete audit trails of incident relationships, with mathematical proofs of why incidents are related. **Deterministic results ensure every audit query is reproducible** — regulators can verify results independently. This provides transparency and accountability for incident management processes.
 
-**Continuous Improvement:** Pattern detection enables data-driven improvements. Teams can identify systemic issues, prioritize fixes, and measure the impact of changes over time.
+**Continuous Improvement:** Pattern detection enables data-driven improvements. Teams can identify systemic issues, prioritize fixes, and measure the impact of changes over time. **Deterministic results ensure metrics are consistent** — improvement measurements are reliable, not subject to random variation.
 
 ## The Architecture: How It Works
 

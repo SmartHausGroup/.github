@@ -83,7 +83,7 @@ Destructive interference automatically flags contradictory code patterns. The sy
 - Percentage of code analogies discovered: >90%
 - Code duplication rate: Reduced (patterns are visible, reuse is easier)
 
-**The human impact:** Developers spend less time searching, more time building. They find code patterns faster. They reuse code instead of duplicating it. They maintain consistency.
+**The human impact:** Developers spend less time searching, more time building. They find code patterns faster. They reuse code instead of duplicating it. They maintain consistency. **Deterministic results ensure consistency** — every developer sees the same search results, eliminating confusion and "works on my machine" issues.
 
 ### For Engineering Teams
 

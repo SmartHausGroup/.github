@@ -54,6 +54,24 @@ For each selected document, RFS computes interference patterns that show:
 
 **The explainability advantage:** Users don't have to trust the system blindly. They can see the mathematical proof of why each document was selected. They can verify relevance independently. Regulators can audit the selection process.
 
+### Deterministic Results: Same Query, Same Documents, Always
+
+**The mathematical guarantee:** RFS provides deterministic document selection — the same query always selects the same documents in the same order. This isn't a probabilistic promise; it's a mathematical guarantee enforced at every layer.
+
+**Why this matters for RAG:**
+- **Regulatory compliance**: When a regulator asks "Why did the system select these documents?", the answer is provably the same every time. Every audit query is reproducible. Complete compliance confidence.
+- **User trust**: Users can verify results independently. They can run the same query multiple times and get identical results. No randomness. No variation. Complete consistency.
+- **Debugging**: When an answer is wrong, you can replay the exact query that selected the documents. You can trace why documents were selected. Complete reproducibility for debugging.
+- **Quality assurance**: Document selection quality is measurable and consistent. You can test improvements and verify they work, knowing results won't vary randomly.
+
+**The technical guarantee:**
+- All operations use deterministic seeds and fixed algorithms
+- Same query + same field → same document selection, always
+- Reproducible across deployments (CUDA, ROCm, Metal)
+- Complete audit trail with WAL (Write-Ahead Log) replay
+
+**The compliance value:** For regulated industries (financial services, healthcare, legal), deterministic document selection is required. RFS provides mathematical guarantees, not probabilistic promises. Every document selection is provably reproducible.
+
 ### Relationship Awareness: Richer Context
 
 Selected documents don't exist in isolation — they interact in the field. Related documents reinforce each other through constructive interference, providing richer context than isolated documents. The LLM gets better context, leading to better answers.
@@ -80,11 +98,11 @@ Selected documents don't exist in isolation — they interact in the field. Rela
 
 ### For Compliance Teams
 
-**Regulatory Compliance:** Every document selection comes with a mathematical proof. Regulators can verify why documents were chosen. Audit trails are complete and verifiable.
+**Regulatory Compliance:** Every document selection comes with a mathematical proof. Regulators can verify why documents were chosen. **Deterministic results ensure every audit query is reproducible** — regulators can run the same query and get identical results. Audit trails are complete and verifiable.
 
-**Risk Reduction:** Explainable selection reduces compliance risk. Organizations can prove document relevance. They can defend their AI decisions. They can meet regulatory requirements.
+**Risk Reduction:** Explainable selection reduces compliance risk. Organizations can prove document relevance. They can defend their AI decisions. They can meet regulatory requirements. **Deterministic results eliminate randomness risk** — there's no variation that could be questioned in audits.
 
-**Transparency:** Complete transparency builds trust with regulators. Mathematical proofs provide verifiable explanations. Audit trails document every decision.
+**Transparency:** Complete transparency builds trust with regulators. Mathematical proofs provide verifiable explanations. **Deterministic results provide complete reproducibility** — every query can be replayed exactly. Audit trails document every decision.
 
 ### For Users
 
