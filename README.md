@@ -1,6 +1,6 @@
 # SMARTHAUS: Mathematics as the Nervous System of AI
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)](https://github.com/SmartHausGroup)
 
 **SMARTHAUS** is a technology organization building AI systems where **mathematics serves as the nervous system**. At the core of our work is **Resonant Field Storage (RFS)** — a unified field-theoretic substrate that enables disparate AI components to communicate, exhibit collective awareness, and operate with mathematical guarantees.
@@ -283,7 +283,11 @@ Each repository contains comprehensive documentation in its `docs/` directory:
 
 ## 📄 License
 
-See individual repository LICENSE files. Most components use MIT or Apache 2.0.
+**PROPRIETARY SOFTWARE** — All content in this repository is proprietary and confidential property of SmartHaus Group. All rights reserved. Unauthorized copying, modification, distribution, or use is strictly prohibited.
+
+For licensing inquiries, please contact: **Philip Siniscalchi** at phil@smarthausgroup.com
+
+See [LICENSE](LICENSE) file for full terms.
 
 ## 🙏 Acknowledgments
 
@@ -295,6 +299,23 @@ SMARTHAUS systems are built on rigorous mathematical foundations, drawing inspir
 ## 🔗 Organization
 
 - **GitHub Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
+
+## 🤝 Join SMARTHAUS
+
+Interested in what you see? We're always looking for talented individuals who share our vision of mathematics as the nervous system of AI.
+
+**Contact us:**
+- **Philip Siniscalchi** — phil@smarthausgroup.com
+- **LinkedIn**: [Connect with us on LinkedIn](https://www.linkedin.com/company/smarthausgroup)
+
+Whether you're interested in:
+- Contributing to our mathematical foundations
+- Building on our RFS substrate
+- Exploring our TAI or AIVA archetypes
+- Research collaboration
+- Commercial partnerships
+
+We'd love to hear from you.
 
 ---
 

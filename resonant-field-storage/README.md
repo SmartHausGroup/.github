@@ -343,7 +343,11 @@ RFS follows **notebook-first development** as part of the Mathematical Autopsy (
 
 ## License
 
-See the [ResonantFieldStorage repository](https://github.com/SmartHausGroup/ResonantFieldStorage) for license information.
+**PROPRIETARY SOFTWARE** — All content in this repository is proprietary and confidential property of SmartHaus Group. All rights reserved. Unauthorized copying, modification, distribution, or use is strictly prohibited.
+
+For licensing inquiries, please contact: **Philip Siniscalchi** at phil@smarthausgroup.com
+
+See [LICENSE](../LICENSE) file for full terms.
 
 ---
 

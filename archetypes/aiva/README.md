@@ -253,7 +253,11 @@ External systems (e.g., TAI Personal Assistant) integrate with AIVA strictly via
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/SmartHausGroup/AIVA/blob/main/LICENSE) file for details.
+**PROPRIETARY SOFTWARE** — All content in this repository is proprietary and confidential property of SmartHaus Group. All rights reserved. Unauthorized copying, modification, distribution, or use is strictly prohibited.
+
+For licensing inquiries, please contact: **Philip Siniscalchi** at phil@smarthausgroup.com
+
+See [LICENSE](../../LICENSE) file for full terms.
 
 ---
 
