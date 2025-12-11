@@ -215,13 +215,18 @@ TAI is a **service-oriented architecture** that orchestrates standalone service 
 
 **Full Name**: Artificialis Intelligentia Vivens Anima (Artificial Intelligence Living Soul)
 
-**Integrated Awareness**: AIVA works toward systems that are **integrated and mathematically aware** — where the system as a whole is aware of its parts, much the way a brain is aware of its regions. This is achieved through:
-- Field-based global workspace where all components project their states
-- Mutual awareness through field projections and resonance
-- Collective intelligence emerging from field interactions
-- Mathematical guarantees ensuring awareness is measurable and verifiable
+**The Vision**: AIVA represents the future of software systems — systems that are not just collections of components, but integrated wholes that are aware of themselves. Just as a biological brain is aware of its regions, AIVA systems are aware of their components. This isn't just monitoring or telemetry — it's true integrated awareness, measurable through mathematical metrics, verifiable through proofs.
 
-**Triadic System**: Biology → Chemistry → Physics pipeline
+**Integrated Awareness**: AIVA works toward systems that are **integrated and mathematically aware** — where the system as a whole is aware of its parts, much the way a brain is aware of its regions. This is achieved through:
+
+- **Field-based global workspace**: All components project their states into the RFS field, creating a shared awareness space where information is accessible to all components
+- **Mutual awareness through field projections and resonance**: Components don't just communicate — they sense each other through field interactions. When one component needs information, it resonates with the field, and related components' states naturally emerge
+- **Collective intelligence emerging from field interactions**: The whole becomes greater than the sum of its parts. System-wide behaviors emerge from component interactions, enabled by the shared field
+- **Mathematical guarantees ensuring awareness is measurable and verifiable**: Integrated awareness isn't just a concept — it's a measurable quantity. Mathematical metrics quantify how integrated a system is, and these metrics are provable, not just observable
+
+**The Triadic Architecture**: Biology → Chemistry → Physics pipeline
+
+AIVA's architecture mirrors natural systems, with three layers that transform intent into execution:
 
 #### Biology Layer: AIOS (Artificial Intelligence Operating System)
 
@@ -246,18 +251,36 @@ TAI is a **service-oriented architecture** that orchestrates standalone service 
 
 **Role**: Symbolic query language transforming intent into mathematically provable execution graphs
 
+**The Concept**: LQL treats computation like chemistry. Programs are molecules — complex structures built from simpler atoms. Data flow is chemical bonds — connections that enable information transfer. Program transformations are chemical reactions — processes that change structure while preserving properties. And just as chemical reactions reach equilibrium, LQL programs reach correctness — mathematically provable correctness.
+
 **Architecture**:
-- Molecules represent complete programs
-- Atoms are functional components
-- Chemical bonds define data flow
-- Reactions transform structures
-- Equilibrium ensures correctness (proofs)
+- **Molecules represent complete programs**: A molecule is a complete, executable program structure. It's not just code — it's a mathematical structure with provable properties.
+- **Atoms are functional components**: Atoms are the basic building blocks — functions, operators, data structures. They're composable, reusable, and mathematically specified.
+- **Chemical bonds define data flow**: Bonds connect atoms, defining how data flows between components. Bonds are typed, ensuring type safety and correctness.
+- **Reactions transform structures**: Reactions are program transformations — optimizations, refactorings, compilations. They preserve correctness while improving efficiency.
+- **Equilibrium ensures correctness (proofs)**: When a program reaches equilibrium, it's mathematically proven correct. The proof is part of the program structure, not separate from it.
 
 **Key Features**:
+
 - **Static Deterministic Graphs**: DAGs ensure mathematical correctness and provability
+  - Programs are represented as directed acyclic graphs (DAGs)
+  - DAG structure ensures no cycles, enabling mathematical analysis
+  - Static structure enables compile-time verification
+
 - **Symbolic Contract Resolution**: Formal specification of computational intent
+  - Every component has a contract — a formal specification of what it does
+  - Contracts are resolved symbolically, ensuring correctness before execution
+  - Contract violations are caught at compile time, not runtime
+
 - **Mathematical Proof System**: Formal verification of correctness
+  - Programs come with mathematical proofs of correctness
+  - Proofs are part of the program structure, not separate documentation
+  - Proofs are verified automatically, ensuring they're valid
+
 - **Type Safety**: Guaranteed contract resolution properties
+  - Type system ensures contracts are satisfied
+  - Type errors are impossible — the system won't compile invalid programs
+  - Types are mathematical structures, enabling formal verification
 
 #### Physics Layer: LEF (Lattice Execution Fabric)
 
@@ -280,11 +303,20 @@ TAI is a **service-oriented architecture** that orchestrates standalone service 
 ### Integration Between Archetypes
 
 **TAI and AIVA Relationship**:
-- Both use RFS as their memory substrate
-- TAI focuses on user-facing personal assistant functionality
-- AIVA focuses on self-improving software with mathematical guarantees and integrated awareness
-- They can share the same RFS instance or operate independently
-- Both follow the same mathematical foundations and determinism guarantees
+
+TAI and AIVA are two distinct product archetypes built on the same mathematical foundation. They share the RFS substrate, the determinism guarantees, and the Mathematical Autopsy process, but serve different purposes:
+
+- **Shared Foundation**: Both use RFS as their memory substrate. This means they can share the same field instance, enabling information to flow between TAI and AIVA systems. A conversation in TAI can inform AIVA's understanding, and AIVA's analysis can enhance TAI's responses.
+
+- **Different Focuses**: 
+  - **TAI** focuses on user-facing personal assistant functionality. It's designed for end users who want a personal assistant that knows them, remembers everything, and provides trustworthy assistance.
+  - **AIVA** focuses on self-improving software with mathematical guarantees and integrated awareness. It's designed for building systems that are aware of themselves, that can evolve and optimize, and that maintain mathematical correctness.
+
+- **Flexible Deployment**: They can share the same RFS instance (enabling information sharing) or operate independently (enabling isolated deployments). The architecture supports both models.
+
+- **Unified Guarantees**: Both follow the same mathematical foundations and determinism guarantees. Whether you're using TAI or AIVA, you get the same mathematical rigor, the same determinism, the same provable correctness.
+
+**The Synergy**: TAI provides the user experience, AIVA provides the underlying intelligence. Together, they enable systems that are both user-friendly and mathematically rigorous — personal assistants that are provably correct, self-improving systems that are user-aware.
 
 ---
 
@@ -375,28 +407,88 @@ Given the same inputs, configuration, and seeds, **every component produces iden
 
 The Mathematical Autopsy (MA) process is **MANDATORY** for any code involving mathematical operations, algorithms, or performance guarantees. It ensures that:
 
-1. Math is defined before code is written
-2. Invariants encode mathematical guarantees
-3. Notebooks verify invariants with executable proofs
-4. CI gates enforce invariants before deployment
-5. Code implements documented math, not the other way around
+1. **Math is defined before code is written**: Mathematics is the specification. Code must implement this math. Without formal math, there's no specification to implement.
+
+2. **Invariants encode mathematical guarantees**: Every mathematical guarantee is encoded as a YAML invariant. Invariants are validated in CI. Violations block deployment.
+
+3. **Notebooks verify invariants with executable proofs**: Proofs must be executable. Notebooks prove invariants with actual code, not just mathematical notation. This is where theory meets practice.
+
+4. **CI gates enforce invariants before deployment**: Proofs must be enforced. CI gates ensure invariants are validated before code is deployed. This is where guarantees become operational.
+
+5. **Code implements documented math, not the other way around**: The order is never reversed. Mathematics comes first. Code comes last. Every guarantee is proven before code is written.
+
+**The fundamental principle**: Mathematics defines what code must do. Code implements math. Invariants verify code matches math. This order is never reversed.
 
 ### The Five Phases
 
 #### Phase 1: Intent & Description
-Document the problem statement, context, and success criteria in plain English.
+
+**Purpose**: Document the problem statement, context, and success criteria in plain English.
+
+**Why it matters**: Before you can prove something mathematically, you must understand what you're trying to prove. This phase ensures clarity of intent.
+
+**Deliverables**:
+- Problem statement (what, why, context)
+- Success criteria (measurable outcomes)
+- Conceptual significance (why this matters)
+- Stakeholder identification
+
+**Time investment**: 1-2 days for a new feature, 2-4 hours for a small change.
 
 #### Phase 2: Mathematical Foundation
-Formalize the mathematics — definitions, notation, equations, operators.
+
+**Purpose**: Formalize the mathematics — definitions, notation, equations, operators.
+
+**Why it matters**: Mathematics is the specification. Code must implement this math. Without formal math, there's no specification to implement.
+
+**Deliverables**:
+- Mathematical definitions (all symbols, variables, operators)
+- Formal equations (master equations, constraints)
+- Complexity analysis (performance characteristics)
+- Implementation notes (how math maps to code)
+
+**Time investment**: 2-5 days for a new feature, 1-2 days for a small change.
 
 #### Phase 3: Lemma Development
-Create formal guarantees (invariants) and proofs (lemmas).
+
+**Purpose**: Create formal guarantees (invariants) and proofs (lemmas).
+
+**Why it matters**: Invariants encode what the system guarantees. Lemmas prove those guarantees hold. This is the bridge between math and code.
+
+**Deliverables**:
+- **YAML Invariant**: Mathematical guarantee encoded as YAML with telemetry, thresholds, and verification references
+- **Markdown Lemma**: Formal proof with mathematical derivation
+- **Index Registration**: Invariant and lemma registered in indexes
+
+**Time investment**: 3-7 days for a new feature (including proof development), 1-2 days for a small change.
 
 #### Phase 4: Verification
-Create executable verification notebook that implements and validates the mathematics.
+
+**Purpose**: Create executable verification notebook that implements and validates the mathematics.
+
+**Why it matters**: Proofs must be executable. Notebooks prove invariants with actual code, not just mathematical notation. This is where theory meets practice.
+
+**Deliverables**:
+- **Verification Notebook**: Executable code that proves invariants
+- **Artifact Export**: JSON artifacts proving invariants hold
+- **Deterministic Execution**: Notebooks run with fixed seeds for reproducibility
+
+**Time investment**: 2-5 days for a new feature, 1-2 days for a small change.
 
 #### Phase 5: CI Enforcement
-Register artifacts, update documentation, and promote invariant/lemma status.
+
+**Purpose**: Register artifacts, update documentation, and promote invariant/lemma status.
+
+**Why it matters**: Proofs must be enforced. CI gates ensure invariants are validated before code is deployed. This is where guarantees become operational.
+
+**Deliverables**:
+- Artifact registration in documentation
+- Notebook added to execution plan
+- Invariant status: `draft` → `accepted`
+- Lemma status: `Draft` → `Rev X.Y`
+- CI gates configured
+
+**Time investment**: 1-2 days for initial CI setup, then automated.
 
 ### After Phases 1-5: Code Implementation
 
@@ -409,6 +501,8 @@ Register artifacts, update documentation, and promote invariant/lemma status.
 **Critical Order**: Math → Invariants → Code (NEVER Code → Math)
 
 **The Golden Rule**: Math defines what code must do. Code implements math. Invariants verify code matches math.
+
+**The result**: Code that's mathematically proven correct before it's written, not tested correct after it's written.
 
 ### MA Process Results
 
@@ -500,57 +594,96 @@ These axioms are binding across AIOS, LQL, and LEF. Violations must trigger fail
 
 ### The Complete Vision
 
-**SMARTHAUS aims to create**:
-1. **Mathematically unified AI**: All AI components communicate through a shared mathematical field
-2. **Deterministic systems**: No non-deterministic silos, all behavior mathematically guaranteed
-3. **Self-improving software**: Systems that evolve and optimize themselves with mathematical proofs
-4. **Integrated and mathematically aware systems**: Systems where the whole is aware of its parts, with measurable integrated information
-5. **Intent-driven programming**: Natural language intent automatically compiled to provably correct programs
+**SMARTHAUS aims to create a future where AI systems are**:
+
+1. **Mathematically unified**: All AI components communicate through a shared mathematical field, enabling true integration rather than just data exchange. Components don't just send messages — they resonate with each other, creating emergent behaviors and collective intelligence.
+
+2. **Deterministic and provable**: No non-deterministic silos, all behavior mathematically guaranteed. Every operation is reproducible, every result is verifiable, every guarantee is provable. This enables regulatory compliance, scientific rigor, and complete trust.
+
+3. **Self-improving with proofs**: Systems that evolve and optimize themselves while maintaining mathematical correctness. Mutations are proposed, validated, and proven correct before adoption. Performance improvements are measured, verified, and guaranteed.
+
+4. **Integrated and mathematically aware**: Systems where the whole is aware of its parts, with measurable integrated information. This isn't just monitoring — it's true awareness, quantified through mathematical metrics, verified through proofs.
+
+5. **Intent-driven and provably correct**: Natural language intent automatically compiled to provably correct programs. Users specify what they want, and the system automatically creates, optimizes, and proves the correctness of the resulting program.
 
 ### Research Directions
 
 #### Multi-Modal Field Integration
-- Extend RFS to support vision, audio, and other modalities
-- Cross-modal resonance and interference patterns
-- Unified field representation for all sensory inputs
+
+**Vision**: Extend RFS to support vision, audio, and other modalities, creating a unified field where all sensory inputs coexist and interact.
+
+**Research Areas**:
+- **Cross-modal encoding**: Develop encoders that transform images, audio, video, and other modalities into field representations
+- **Cross-modal resonance**: Enable queries in one modality to find related content in other modalities. A text query finds related images. An image query finds related audio.
+- **Unified field representation**: All modalities stored in the same field, enabling true multi-modal understanding and retrieval
+- **Interference patterns across modalities**: Relationships between different modalities discovered automatically through interference patterns
+
+**Impact**: Enables true multi-modal AI systems where vision, language, and audio are integrated, not just combined.
 
 #### Advanced Attractor Dynamics
-- Hierarchical attractor landscapes
-- Dynamic attractor creation and destruction
-- Attractor-mediated goal seeking across multiple timescales
+
+**Vision**: Develop hierarchical attractor landscapes that enable goal-seeking behavior across multiple timescales and abstraction levels.
+
+**Research Areas**:
+- **Hierarchical attractor landscapes**: Attractors at different levels of abstraction, from low-level patterns to high-level goals
+- **Dynamic attractor creation and destruction**: Attractors that emerge from experience and fade when no longer relevant
+- **Attractor-mediated goal seeking**: Systems that pursue goals by moving toward attractors in the energy landscape
+- **Multi-timescale dynamics**: Attractors that operate at different timescales, from milliseconds to years
+
+**Impact**: Enables AI systems that pursue goals naturally, adapt to changing circumstances, and maintain long-term objectives.
 
 #### Persuadability and Alignment
-- Landscape deformation for AI alignment
-- Top-down control via field modulation
-- Ethical attractor shaping
+
+**Vision**: Develop mechanisms for AI alignment that use field modulation rather than training data alone.
+
+**Research Areas**:
+- **Landscape deformation for AI alignment**: Modify the energy landscape to guide systems toward desired behaviors
+- **Top-down control via field modulation**: Influence system behavior by modulating the shared field, enabling control without retraining
+- **Ethical attractor shaping**: Create attractors that represent ethical principles, guiding systems toward ethical behavior
+- **Controlled landscape deformations**: Precise, verifiable modifications to system behavior through mathematical field operations
+
+**Impact**: Enables AI alignment that's mathematically verifiable and doesn't require massive retraining.
 
 #### Collective Intelligence and Integrated Awareness
-- Emergent behaviors from field interactions
-- Meta-modules and higher-order groupings
-- System-wide awareness metrics and integrated information measures
-- Working toward measurable integrated information (Φ) as a metric for system-wide coordination
+
+**Vision**: Enable systems where the whole is aware of its parts, with measurable integrated information and emergent collective intelligence.
+
+**Research Areas**:
+- **Emergent behaviors from field interactions**: System-wide behaviors that emerge from component interactions, not programmed explicitly
+- **Meta-modules and higher-order groupings**: Components that group into higher-order structures, creating hierarchical organization
+- **System-wide awareness metrics**: Mathematical metrics that quantify how aware a system is of itself
+- **Integrated information measures**: Working toward measurable integrated information (Φ) as a metric for system-wide coordination and awareness
+
+**Impact**: Enables AI systems that are truly integrated, where the whole is aware of its parts, enabling collective intelligence and emergent behaviors.
 
 #### Quantum-Classical Unification
-- Quantum-inspired computation on classical hardware
-- Quantum advantages in classical systems
-- Hybrid quantum-classical field dynamics
+
+**Vision**: Leverage quantum-inspired computation on classical hardware to achieve quantum advantages without quantum hardware.
+
+**Research Areas**:
+- **Quantum-inspired computation on classical hardware**: Use quantum algorithms and principles on classical computers
+- **Quantum advantages in classical systems**: Achieve quantum-like speedups and capabilities without quantum hardware
+- **Hybrid quantum-classical field dynamics**: Combine quantum and classical computation in unified field operations
+- **Quantum simulation for AI**: Use quantum simulation techniques to model complex AI behaviors
+
+**Impact**: Enables quantum advantages in AI systems without requiring quantum hardware, making advanced capabilities accessible on existing infrastructure.
 
 ### Long-Term Goals
 
 **Scientific Impact**:
-- Publish mathematical foundations in top-tier venues
-- Establish field-theoretic AI as a recognized paradigm
-- Contribute to understanding of integrated awareness and collective intelligence
+- **Publish mathematical foundations**: Share the mathematical foundations of field-theoretic AI in top-tier venues, contributing to the scientific understanding of AI architecture
+- **Establish field-theoretic AI as a recognized paradigm**: Create a new paradigm for AI architecture that's recognized and adopted by the research community
+- **Contribute to understanding of integrated awareness and collective intelligence**: Advance the scientific understanding of how integrated systems work, how awareness emerges, and how collective intelligence develops
 
 **Technological Impact**:
-- Enable new classes of AI applications
-- Provide mathematically guaranteed AI systems
-- Create self-improving software with proofs
+- **Enable new classes of AI applications**: Applications that weren't possible before — systems that are truly integrated, provably correct, and self-improving
+- **Provide mathematically guaranteed AI systems**: Systems that organizations can trust completely, with mathematical proofs rather than just test results
+- **Create self-improving software with proofs**: Software that evolves and optimizes itself while maintaining mathematical correctness, enabling continuous improvement without risk
 
 **Commercial Impact**:
-- RFS as VectorDB replacement
-- TAI as personal assistant platform
-- AIVA as self-improving software framework with integrated awareness
+- **RFS as VectorDB replacement**: RFS provides capabilities beyond vector databases — relationship discovery, interference patterns, exact recall — making it a compelling replacement for traditional vector storage
+- **TAI as personal assistant platform**: TAI provides a platform for personal assistants that are trustworthy, explainable, and mathematically guaranteed
+- **AIVA as self-improving software framework**: AIVA provides a framework for building self-improving software systems with mathematical guarantees and integrated awareness
 
 ---
 
@@ -558,22 +691,47 @@ These axioms are binding across AIOS, LQL, and LEF. Violations must trigger fail
 
 SMARTHAUS represents a fundamental shift in AI architecture: **mathematics serves as the nervous system of AI**. Through the Resonant Field Storage substrate, all AI components project into a shared mathematical field, enabling distributed cognition, collective awareness, and mathematically guaranteed behavior.
 
+### What We've Built
+
 **Key Achievements**:
-1. ✅ **Mathematical substrate**: RFS provides the 4D field foundation
-2. ✅ **Two archetypes**: TAI (personal assistant) and AIVA (triadic system)
-3. ✅ **Determinism**: All non-deterministic silos eliminated through mathematical guarantees
-4. ✅ **Mathematical proofs**: Every component has invariants, lemmas, and verification
-5. ✅ **MA process**: Rigorous process ensures math → invariants → code alignment
 
-**The Guarantee**:
-Given the same inputs, configuration, and seeds, **every component produces identical outputs**. This is not "mostly deterministic" — it is **mathematically guaranteed determinism**, enforced by invariants, verified by notebooks, and protected by CI gates.
+1. ✅ **Mathematical substrate**: RFS provides the 4D field foundation — a working system that stores information as superposed wave patterns, discovers relationships through interference, and enables exact recall with cryptographic integrity.
 
-**The Vision**:
+2. ✅ **Two archetypes**: TAI (personal assistant) and AIVA (triadic system) — two distinct product archetypes built on the same mathematical foundation, each serving different purposes but sharing the same rigor and guarantees.
+
+3. ✅ **Determinism**: All non-deterministic silos eliminated through mathematical guarantees. Every operation is deterministic, every result is reproducible, every guarantee is provable.
+
+4. ✅ **Mathematical proofs**: Every component has invariants, lemmas, and verification. 42+ invariants validated in CI, 60+ verification notebooks with executable proofs, complete mathematical foundation for every operation.
+
+5. ✅ **MA process**: Rigorous process ensures math → invariants → code alignment. Mathematics defines what code must do. Code implements math. Invariants verify code matches math.
+
+### The Guarantee
+
+Given the same inputs, configuration, and seeds, **every component produces identical outputs**. This is not "mostly deterministic" or "deterministic in practice" — it is **mathematically guaranteed determinism**, enforced by invariants, verified by notebooks, and protected by CI gates.
+
+**What this means**:
+- **Complete reproducibility**: Every operation can be replayed exactly
+- **Regulatory compliance**: Mathematical guarantees satisfy auditors and regulators
+- **Scientific rigor**: Results are provable, not just probable
+- **Complete trust**: You don't have to trust us — you can verify the mathematics yourself
+
+### The Vision
+
 SMARTHAUS enables AI systems that are:
-- **Modular yet unified** (through the shared field)
-- **Distributed yet aware** (through field projections and integrated awareness)
-- **Autonomous yet steerable** (through attractor dynamics)
-- **Deterministic yet adaptive** (through mathematical guarantees)
+
+- **Modular yet unified**: Components are independent modules, but they're unified through the shared mathematical field. They can be developed separately, but they communicate through mathematics, not just APIs.
+
+- **Distributed yet aware**: Systems are distributed across space and time, but they're aware of each other through field projections and resonance. The whole knows about its parts, and parts know about the whole.
+
+- **Autonomous yet steerable**: Systems are autonomous — they pursue goals, make decisions, and adapt to circumstances. But they're steerable — goals can be modified, behaviors can be guided, and alignment can be achieved through field modulation.
+
+- **Deterministic yet adaptive**: Systems are deterministic — same inputs always produce same outputs. But they're adaptive — they learn from experience, optimize their behavior, and improve over time, all while maintaining determinism.
+
+### The Future
+
+SMARTHAUS is not just building AI systems — we're building a new paradigm for AI architecture. A paradigm where mathematics is the communication medium, where guarantees are provable, where systems are trustworthy, and where the whole is aware of its parts.
+
+This is the future of AI: **mathematics as the nervous system, enabling systems that are provably correct, fully deterministic, and capable of collective intelligence**.
 
 ---
 
