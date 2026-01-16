@@ -88,6 +88,7 @@ We adhere to a **Math-First** engineering doctrine:
 
 ## 🔗 Connect
 
-- **Website:** [philipsiniscalchi.com](https://philipsiniscalchi.com)
-- **LinkedIn:** [The SmartHaus Group](https://www.linkedin.com/company/smarthausgroup/)
+- **Personal Website:** [philipsiniscalchi.com](https://philipsiniscalchi.com)
+- **SMARTHAUS Website:** [smarthaus.ai](https://smarthaus.ai)
+- **LinkedIn:** [The SmartHaus Group](https://www.linkedin.com/company/smarthaus-ai/)
 - **Founder:** [Philip Siniscalchi](https://www.linkedin.com/in/philipsiniscalchi/)
