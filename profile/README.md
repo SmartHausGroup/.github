@@ -1,8 +1,8 @@
-# SmartHaus Group
+# The SmartHaus Group
 
 **Mathematics as the Nervous System of AI.**
 
-SmartHaus builds **compound AI systems** where every interaction is governed by formal models of control, memory, and intent. We replace "vibe coding" and black-box guesswork with deterministic, field-native architectures.
+SMARTHAUS builds **compound AI systems** where every interaction is governed by formal models of control, memory, and intent. We replace "vibe coding" and black-box guesswork with deterministic, field-native architectures.
 
 > "The system owns the structure; the model operates within it."
 
@@ -10,7 +10,7 @@ SmartHaus builds **compound AI systems** where every interaction is governed by 
 
 ## 🏗️ The Archetypes
 
-SmartHaus defines two primary archetypes for AI systems, each built on our shared mathematical substrate.
+SMARTHAUS defines two primary archetypes for AI systems, each built on our shared mathematical substrate.
 
 ### 1. **TAI** (Tutelarius Auxilium Intellectus)
 **The Personal Assistant Layer.**
@@ -61,7 +61,7 @@ We adhere to a **Math-First** engineering doctrine:
 
 ## 🔐 Core Technology
 
-*The core SmartHaus repositories are currently proprietary. Access is granted to strategic partners and enterprise clients.*
+*The core SMARTHAUS repositories are currently proprietary. Access is granted to strategic partners and enterprise clients.*
 
 **[Request Access](https://philipsiniscalchi.com/consulting)**
 
@@ -70,5 +70,5 @@ We adhere to a **Math-First** engineering doctrine:
 ## 🔗 Connect
 
 - **Website:** [philipsiniscalchi.com](https://philipsiniscalchi.com)
-- **LinkedIn:** [SmartHaus Group](https://www.linkedin.com/company/smarthausgroup/)
+- **LinkedIn:** [The SmartHaus Group](https://www.linkedin.com/company/smarthausgroup/)
 - **Founder:** [Philip Siniscalchi](https://www.linkedin.com/in/philipsiniscalchi/)
