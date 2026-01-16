@@ -8,16 +8,36 @@ SmartHaus builds **compound AI systems** where every interaction is governed by 
 
 ---
 
-## 🏗️ The Architecture
+## 🏗️ The Archetypes
 
-Our stack is built on a shared mathematical substrate, ensuring that disparate AI components operate as a coherent system.
+SmartHaus defines two primary archetypes for AI systems, each built on our shared mathematical substrate.
 
-| Component | Name | Role | Type |
-|-----------|------|------|------|
-| **🧠 TAI** | **Tutelarius Auxilium Intellectus** | The Cognitive Orchestrator | *Agentic System* |
-| **🌌 RFS** | **Resonant Field Storage** | Memory as a Topological Field | *Storage Substrate* |
-| **⚡ VFE** | **Verbum Field Engine** | Deterministic Inference | *Compute Engine* |
-| **🛡️ MGE** | **Mathematical Governance Engine** | Compliance Sidecar | *Governance* |
+### 1. **TAI** (Tutelarius Auxilium Intellectus)
+**The Personal Assistant Layer.**
+TAI sits between the user/developer and the AI ecosystem, acting as a sovereign orchestrator. It is not just an agent; it is the interface layer that manages intent, memory, and execution.
+
+**Core Services (Standalone or Integrated):**
+- **MAIA** (Mathematical AI Intent Analyzer): Intent classification & field measurement.
+- **CAIO** (Control AI Orchestrator): Deterministic routing and governance.
+- **RFS** (Resonant Field Storage): Field-native memory substrate.
+- **NME** (Narrative Memory Engine): Narrative construction and trait extraction.
+- **VFE** (Verbum Field Engine): Deterministic inference engine.
+- **VEE** (Variational Evidence Estimator): Probabilistic truth estimation.
+
+### 2. **AIVA** (Artificialis Intelligentia Vivens Anima)
+**The Living System.**
+AIVA is a triadic architecture designed for autonomous, self-evolving intelligence.
+
+**The Triad:**
+- **AiOS:** The Biological Layer (Cognition & Homeostasis).
+- **LQL:** The Chemical Layer (Language & Reaction).
+- **LEF:** The Physical Layer (Execution & Energy).
+
+---
+
+## 🛡️ Governance
+
+- **MGE** (Mathematical Governance Engine): A standalone sidecar for **Mathematical Autopsy**. It enforces rules, invariants, and compliance across all systems (TAI or AIVA) but is distinct from the operational layers.
 
 ---
 
@@ -39,7 +59,16 @@ We adhere to a **Math-First** engineering doctrine:
 
 ---
 
+## 🔐 Core Technology
+
+*The core SmartHaus repositories are currently proprietary. Access is granted to strategic partners and enterprise clients.*
+
+**[Request Access](https://philipsiniscalchi.com/consulting)**
+
+---
+
 ## 🔗 Connect
 
 - **Website:** [philipsiniscalchi.com](https://philipsiniscalchi.com)
-- **LinkedIn:** [SmartHaus Group](https://www.linkedin.com/in/philipsiniscalchi/) *(Founder's Profile)*
+- **LinkedIn:** [SmartHaus Group](https://www.linkedin.com/company/smarthausgroup/)
+- **Founder:** [Philip Siniscalchi](https://www.linkedin.com/in/philipsiniscalchi/)
