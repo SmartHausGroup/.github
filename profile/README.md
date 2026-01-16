@@ -8,6 +8,25 @@ SMARTHAUS builds **compound AI systems** where every interaction is governed by 
 
 ---
 
+## 🔬 Mathematical Autopsy (The Methodology)
+
+Before a single line of code is written, we apply **Mathematical Autopsy (MA)**. This is not just debugging; it is a forensic dissection of the problem space to derive the mathematical truths that must govern the solution.
+
+We treat software engineering like physics: **derive the laws first, then build the universe.**
+
+### The 5-Phase Process
+Every SMARTHAUS system must pass through this rigorous pipeline:
+
+1.  **Phase 1: Intent & Description** — What is the problem? Define success criteria in plain English.
+2.  **Phase 2: Mathematical Foundation** — Define the operators, equations, and complexity limits.
+3.  **Phase 3: Lemma Development** — Create formal YAML invariants (`INV-001`) and logical lemmas.
+4.  **Phase 4: Verification (Notebook-First)** — Prove the math in executable notebooks. **No production code exists yet.**
+5.  **Phase 5: CI Enforcement** — Lock the invariants into the CI/CD pipeline via **MGE**.
+
+**Only after Phase 5 is the "Production Code" written.** This ensures that our systems are correct by design, not by accident.
+
+---
+
 ## 🏗️ The Archetypes
 
 SMARTHAUS defines two primary archetypes for AI systems, each built on our shared mathematical substrate.
@@ -37,7 +56,7 @@ AIVA is a triadic architecture designed for autonomous, self-evolving intelligen
 
 ## 🛡️ Governance
 
-- **MGE** (Mathematical Governance Engine): A standalone sidecar for **Mathematical Autopsy**. It enforces rules, invariants, and compliance across all systems (TAI or AIVA) but is distinct from the operational layers.
+- **MGE** (Mathematical Governance Engine): A standalone sidecar for **Mathematical Autopsy**. It is the enforcer. MGE ingests the invariants from Phase 3 and blocks any action that violates the mathematical laws of the system.
 
 ---
 
