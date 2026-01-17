@@ -28,6 +28,18 @@ We're building the future where mathematics serves as the nervous system of AI, 
 
 All AI modules (transformers, CNNs, RNNs, etc.) project into a shared 4D field using linear operators. Information flows through field superposition, interference patterns, and resonance — all governed by mathematical laws that ensure stability, determinism, and provable correctness.
 
+## 📜 Philosophy & Mathematical Foundation
+
+We adhere to a Math-First engineering doctrine, formalized in our core thesis: **"Mathematics as the Nervous System of AI."**
+
+1.  **Determinism:** Replace probabilistic coin-flips with calculated utilities.
+2.  **Invariants:** Enforce safety constraints physically within the control logic.
+3.  **Conservation:** Treat information state like energy—never lost, always accounted for.
+
+### Evidence
+*   👉 **[Read the Manifesto](https://github.com/SmartHausGroup/SmartHaus-Manifesto)** (The Vision & Values)
+*   👉 **[Read the Mathematical Thesis](thesis/MATH_THESIS_v5.md)** (The Proof: Field Theory, 44 Invariants, & Benchmarks)
+
 ## 🏗️ Architecture Overview
 
 SMARTHAUS builds two main product archetypes, both built on **Resonant Field Storage (RFS)** — our core mathematical substrate:
