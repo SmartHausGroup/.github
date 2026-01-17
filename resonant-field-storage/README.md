@@ -5,6 +5,7 @@
 [![Repository](https://img.shields.io/badge/Repository-ResonantFieldStorage-blue)](https://github.com/SmartHausGroup/ResonantFieldStorage)
 [![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)](https://github.com/SmartHausGroup/ResonantFieldStorage)
 [![Invariants](https://img.shields.io/badge/Invariants-42%2B%20Validated-success)](https://github.com/SmartHausGroup/ResonantFieldStorage)
+[![NVIDIA Inception](https://img.shields.io/badge/NVIDIA%20Inception-Member-76b900.svg)](https://www.nvidia.com/en-us/startups/)
 
 ## Overview
 
@@ -266,7 +267,7 @@ RFS automatically builds relationship networks from interference patterns:
 - AEAD-backed exact recall
 - **42 mathematical invariants** validated
 - **60+ verification notebooks** with executable proofs
-- Benchmark results (+7.3% nDCG@10 vs dense baseline on BEIR SciFact)
+- **Latest Benchmark:** 44% Recall@10 in fully superposed field (Optimization in progress)
 - Unified query system (dual query paths)
 
 ### 🚧 In Development
