@@ -1,5 +1,7 @@
 # The SmartHaus Group
 
+[![NVIDIA Inception](https://img.shields.io/badge/NVIDIA%20Inception-Member-76b900.svg)](https://www.nvidia.com/en-us/startups/)
+
 **Mathematics as the Nervous System of AI.**
 
 SMARTHAUS builds **compound AI systems** where every interaction is governed by formal models of control, memory, and intent. We replace "vibe coding" and black-box guesswork with deterministic, field-native architectures.
@@ -38,7 +40,7 @@ TAI sits between the user/developer and the AI ecosystem, acting as a sovereign 
 **Core Services (Standalone or Integrated):**
 - **MAIA** (Mathematical AI Intent Analyzer): Intent classification & field measurement.
 - **CAIO** (Control AI Orchestrator): Deterministic routing and governance.
-- **RFS** (Resonant Field Storage): Field-native memory substrate.
+- **RFS** (Resonant Field Storage): Field-native memory substrate. **(Production Ready - NVIDIA Inception Accelerated)**
 - **NME** (Narrative Memory Engine): Narrative construction and trait extraction.
 - **VFE** (Verbum Field Engine): Deterministic inference engine.
 - **VEE** (Variational Evidence Estimator): Probabilistic truth estimation.
