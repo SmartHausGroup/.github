@@ -43,7 +43,7 @@ We adhere to a Math-First engineering doctrine, formalized in our core thesis: *
 
 ## 🏗️ Architecture Overview
 
-SMARTHAUS builds two main product archetypes, both built on **Resonant Field Storage (RFS)** — our core mathematical substrate:
+SMARTHAUS builds **three main product archetypes**, all built on **Resonant Field Storage (RFS)** — our core mathematical substrate:
 
 ### 🎯 Archetype 1: TAI (Personal Assistant)
 
@@ -91,6 +91,24 @@ SMARTHAUS builds two main product archetypes, both built on **Resonant Field Sto
 - **AIOS** — Biology layer implementation
 - **LQL** — Chemistry layer (LATTICE Query Language)
 - **LEF** — Physics layer (Lattice Execution Fabric)
+
+### 🛡️ Archetype 3: MGE (Mathematical Governance Engine)
+
+**Certus Securitas Ex Machina** — Deterministic AI governance through cryptographic mathematics.
+
+**Key Features**:
+- **Cryptographic Receipts**: HMAC-SHA256 signed proof of compliance for every AI decision
+- **Multi-Format Rules**: Support for human-readable MDC, structured YAML, and programmatic JSON
+- **Enterprise Scale**: Sub-millisecond governance checks for high-throughput AI systems
+- **Cross-Archetype Security**: Provides unified governance across TAI and AIVA systems
+- **Mathematical Guarantees**: Every decision is formally verified, not just statistically monitored
+
+**Vision**: Replace probabilistic AI safety with mathematical certainty. Every AI action is cryptographically signed and verified before execution.
+
+**Repositories**:
+- **MGE** — Public documentation, installation guides, and licensing
+- **mge-core** — Internal service implementation with cryptographic engine
+- **mge-sdk** — SDK for developing custom governance rules and policies
 
 ## 🔬 The Mathematical Foundation
 
@@ -247,6 +265,11 @@ SMARTHAUS's work is organized into focused repositories, each with clear respons
 - **[LQL](https://github.com/SmartHausGroup/LQL)** — Chemistry layer
 - **[LEF](https://github.com/SmartHausGroup/LEF)** — Physics layer
 
+### MGE Archetype
+- **[MGE](https://github.com/SmartHausGroup/MGE)** — Public documentation and licensing
+- **[mge-core](https://github.com/SmartHausGroup/mge-core)** — Internal service implementation
+- **[mge-sdk](https://github.com/SmartHausGroup/mge-sdk)** — SDK for rule development
+
 ### Infrastructure
 - **[MathematicalAutopsy](https://github.com/SmartHausGroup/MathematicalAutopsy)** — Mathematical validation framework
   - **Process Documentation**: [Mathematical Autopsy Methodology](../mathematical-autopsy/README.md) — The math-first development process used across all SMARTHAUS systems
@@ -263,6 +286,7 @@ SMARTHAUS's work is organized into focused repositories, each with clear respons
 ### 🚧 In Development
 - **TAI**: Voice interface and user learning module
 - **AIVA**: Full triadic integration and integrated awareness metrics
+- **MGE**: Enterprise deployment and advanced rule engine features
 - **VFE**: Metal backend and expanded model support
 
 ### 🔬 Research
