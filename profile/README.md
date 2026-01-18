@@ -43,7 +43,7 @@ We adhere to a Math-First engineering doctrine, formalized in our core thesis: *
 
 ## 🏗️ Architecture Overview
 
-SMARTHAUS builds **three main product archetypes**, all built on **Resonant Field Storage (RFS)** — our core mathematical substrate:
+SMARTHAUS builds **AI Archetypes** and **Governance Services** on our **Mathematical Autopsy (MA)** methodology and **Resonant Field Storage (RFS)** substrate:
 
 ### 🎯 Archetype 1: TAI (Personal Assistant)
 
@@ -92,23 +92,34 @@ SMARTHAUS builds **three main product archetypes**, all built on **Resonant Fiel
 - **LQL** — Chemistry layer (LATTICE Query Language)
 - **LEF** — Physics layer (Lattice Execution Fabric)
 
-### 🛡️ Archetype 3: MGE (Mathematical Governance Engine)
+## 🧮 The Mathematical Autopsy (MA) Framework
 
-**Certus Securitas Ex Machina** — Deterministic AI governance through cryptographic mathematics.
+**Mathematical Autopsy** is our core agentic application and methodology for mathematically rigorous AI development:
+
+### MA Core Components
+- **MA Application**: Native macOS agentic application for mathematical code validation
+- **MA Methodology**: Notebook-first, math-driven development with CI gates and artifacts
+- **MA SDK**: Development tools for building MA-compatible applications
+- **MGE Governance**: Cryptographic governance layer that secures MA operations
+
+### MGE (Mathematical Governance Engine)
+
+**Certus Securitas Ex Machina** — The governance layer that enables MA's mathematical guarantees.
+
+**Built specifically for MA**: MGE provides the cryptographic receipts and rule enforcement that make MA's "Receipt of Truth" possible.
 
 **Key Features**:
-- **Cryptographic Receipts**: HMAC-SHA256 signed proof of compliance for every AI decision
-- **Multi-Format Rules**: Support for human-readable MDC, structured YAML, and programmatic JSON
-- **Enterprise Scale**: Sub-millisecond governance checks for high-throughput AI systems
-- **Cross-Archetype Security**: Provides unified governance across TAI and AIVA systems
-- **Mathematical Guarantees**: Every decision is formally verified, not just statistically monitored
-
-**Vision**: Replace probabilistic AI safety with mathematical certainty. Every AI action is cryptographically signed and verified before execution.
+- **Cryptographic Receipts**: HMAC-SHA256 signed proof of compliance for MA's AI-generated code
+- **MA Integration**: Native integration with MA's execution layer and MCP bridge
+- **Receipt Verification**: Cryptographic validation of MA's "Receipt of Truth"
+- **Rule Engine**: MDC/YAML/JSON rule formats for mathematical governance
+- **Enterprise Scale**: Sub-millisecond governance for MA's high-throughput validation
 
 **Repositories**:
-- **MGE** — Public documentation, installation guides, and licensing
-- **mge-core** — Internal service implementation with cryptographic engine
-- **mge-sdk** — SDK for developing custom governance rules and policies
+- **MathematicalAutopsy** — MA application and methodology framework
+- **MGE** — Public MGE documentation, installation guides, and licensing
+- **mge-core** — Internal MGE service implementation with cryptographic engine
+- **mge-sdk** — SDK for developing custom MA governance rules
 
 ## 🔬 The Mathematical Foundation
 
@@ -265,10 +276,26 @@ SMARTHAUS's work is organized into focused repositories, each with clear respons
 - **[LQL](https://github.com/SmartHausGroup/LQL)** — Chemistry layer
 - **[LEF](https://github.com/SmartHausGroup/LEF)** — Physics layer
 
-### MGE Archetype
-- **[MGE](https://github.com/SmartHausGroup/MGE)** — Public documentation and licensing
-- **[mge-core](https://github.com/SmartHausGroup/mge-core)** — Internal service implementation
-- **[mge-sdk](https://github.com/SmartHausGroup/mge-sdk)** — SDK for rule development
+### Governance Services
+
+* **MGE** — Mathematical Governance Engine (enterprise AI governance)
+  - **MGE** — Public documentation, installation guides, and licensing
+  - **mge-core** — Internal service implementation with cryptographic engine
+  - **mge-sdk** — SDK for developing custom governance rules
+
+### Infrastructure Components
+
+* **RFS** — Resonant Field Storage (4D memory substrate)
+* **VFE** — Verbum Field Engine (GPU-first LLM inference)
+* **VEE** — Voluntas Engine (intent classification and quantum-inspired math)
+* **CAIO** — Service routing and access control
+* **MAIA** — Attention mechanisms and intent processing
+
+### MA Framework & Methodology
+
+* **MathematicalAutopsy** — Core MA agentic application and methodology framework
+  - **MA Application**: Native macOS agent for mathematical code validation
+  - **MA Methodology**: Notebook-first development with CI gates and artifacts
 
 ### Infrastructure
 - **[MathematicalAutopsy](https://github.com/SmartHausGroup/MathematicalAutopsy)** — Mathematical validation framework
@@ -284,9 +311,10 @@ SMARTHAUS's work is organized into focused repositories, each with clear respons
 - **Determinism**: All components mathematically guaranteed
 
 ### 🚧 In Development
+- **MathematicalAutopsy**: Native macOS agentic application and MCP bridge
+- **MGE**: Enterprise deployment and MA integration features
 - **TAI**: Voice interface and user learning module
 - **AIVA**: Full triadic integration and integrated awareness metrics
-- **MGE**: Enterprise deployment and advanced rule engine features
 - **VFE**: Metal backend and expanded model support
 
 ### 🔬 Research

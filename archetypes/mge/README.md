@@ -173,6 +173,8 @@ async def check_governance(action, context):
 
 ### SDK Integration
 
+For comprehensive SDK documentation and examples, see **[mge-sdk](https://github.com/SmartHausGroup/mge-sdk)**.
+
 ```python
 from mge_sdk import MGEClient
 
@@ -189,6 +191,12 @@ else:
     # Action blocked with clear reasoning
     log_security_violation(decision)
 ```
+
+**SDK Resources:**
+- **[Installation Guide](https://github.com/SmartHausGroup/mge-sdk#installation)** - Get started with the SDK
+- **[API Reference](https://github.com/SmartHausGroup/mge-sdk/docs/SDK_REFERENCE.md)** - Complete SDK documentation
+- **[Integration Guide](https://github.com/SmartHausGroup/mge-sdk/docs/INTEGRATION_GUIDE.md)** - Integration patterns and best practices
+- **[Rule Creation Guide](https://github.com/SmartHausGroup/mge-sdk/docs/RULE_CREATION_GUIDE.md)** - Creating custom governance rules
 
 ### Sidecar Deployment
 
@@ -248,7 +256,7 @@ spec:
 ### Public Repositories
 
 - **[MGE](https://github.com/SmartHausGroup/MGE)** — Public documentation, installation guides, and licensing
-- **[mge-sdk](https://github.com/SmartHausGroup/mge-sdk)** — SDK for developing custom governance rules
+- **[mge-sdk](https://github.com/SmartHausGroup/mge-sdk)** — SDK for developing custom governance rules and MA integration
 
 ### Internal Repositories
 
@@ -305,7 +313,7 @@ MGE provides governance across all SMARTHAUS archetypes:
 
 1. **Get MGE**: Contact SmartHaus for enterprise licensing
 2. **Deploy Service**: Use Docker or Kubernetes manifests
-3. **Configure Rules**: Use SDK or direct API to define policies
+3. **Configure Rules**: Use **[mge-sdk](https://github.com/SmartHausGroup/mge-sdk)** or direct API to define policies
 4. **Integrate Systems**: Add governance checks to your AI applications
 5. **Monitor**: Set up monitoring and alerting for governance metrics
 
@@ -316,7 +324,7 @@ MGE provides governance across all SMARTHAUS archetypes:
 git clone https://github.com/SmartHausGroup/mge-core.git
 git clone https://github.com/SmartHausGroup/mge-sdk.git
 
-# Install SDK
+# Install SDK (see [mge-sdk](https://github.com/SmartHausGroup/mge-sdk) for full installation guide)
 cd mge-sdk
 pip install -e .
 
@@ -377,7 +385,7 @@ with open("my-rule.mdc", "w") as f:
 ### Community Resources
 - **GitHub Issues** - Bug reports and feature requests
 - **Community Forum** - Peer support and knowledge sharing
-- **SDK Repository** - Rule development support and examples
+- **[mge-sdk Repository](https://github.com/SmartHausGroup/mge-sdk)** - Rule development support and examples
 
 ### Contact
 - **Sales**: sales@smarthaus.group
