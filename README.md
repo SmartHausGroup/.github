@@ -64,9 +64,9 @@ SMARTHAUS builds two main product archetypes, both built on **Resonant Field Sto
 - **CAIO** — Service routing and access control
 - **MAIA** — Attention mechanisms and intent processing
 
-### 🧬 Archetype 2: AIVA (Triadic System)
+### 🧬 Archetype 2: AIVA (Triadic AI Execution System)
 
-**Artificialis Intelligentia Vivens Anima** — A triadic computational system working toward integrated and mathematically aware AI.
+**Artificialis Intelligentia Vivens Anima** — A triadic computational system working toward integrated and mathematically aware AI execution.
 
 **The Three Layers**:
 
