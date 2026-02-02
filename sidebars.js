@@ -8,11 +8,11 @@ const sidebars = {
       collapsed: false,
       items: ['intro', 'about', 'vision'],
     },
-    // Framework (why)
+    // Core Thesis
     {
       type: 'category',
-      label: 'Framework',
-      items: ['thesis/framework'],
+      label: 'Core Thesis',
+      items: [{ type: 'doc', id: 'thesis/framework', label: 'Mathematics as the Nervous System of AI' }],
     },
     // RFS (core tech)
     {

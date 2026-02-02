@@ -55,11 +55,7 @@ SMARTHAUS builds **AI Archetypes** and **Governance Services** on our **Mathemat
 
 ### 🧬 AIVA — Triadic AI System
 
-**Artificialis Intelligentia Vivens Anima** — A triadic computational system working toward integrated and mathematically aware AI.
-
-**The Three Layers:** Biology (AIOS), Chemistry (AQL), Physics (AEF). See [AIVA](/archetypes/aiva) for details.
-
-**→** [AIVA](/archetypes/aiva)
+**Artificialis Intelligentia Vivens Anima** — A triadic computational system working toward integrated and mathematically aware AI. The three layers are **Biology (AIOS)** — Central Nervous System (COE + SNS + ANS), **Chemistry (AQL)** — AIVA Query Language, and **Physics (AEF)** — AIVA Execution Fabric; see [AIVA](/archetypes/aiva) for details.
 
 ---
 

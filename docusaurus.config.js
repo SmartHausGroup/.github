@@ -42,7 +42,7 @@ const config = {
             items: [
               { label: 'Intro', to: '/' },
               { label: 'About', to: '/about' },
-              { label: 'Framework', to: '/thesis/framework' },
+              { label: 'Core Thesis', to: '/thesis/framework' },
               { label: 'RFS', to: '/rfs/overview' },
               { label: 'Methodology (MA)', to: '/mathematical-autopsy/overview' },
             ],
