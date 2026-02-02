@@ -42,7 +42,7 @@ SMARTHAUS builds two distinct product archetypes on the RFS foundation:
 
 2. **AIVA (Artificialis Intelligentia Vivens Anima)**: A triadic computational architecture working toward integrated and mathematically aware systems. AIVA uses RFS as its memory substrate while building toward systems where the whole is aware of its parts — measurable integrated awareness, not just isolated components.
 
-Both archetypes share the same mathematical foundation, the same determinism guarantees, and the same rigorous verification process.
+**RFS is the mathematical memory substrate for both TAI and AIVA.** Both archetypes share the same mathematical foundation, the same determinism guarantees, and the same rigorous verification process.
 
 ### Mathematical Guarantees: Not Just Tested, But Proven
 
@@ -207,7 +207,7 @@ SMARTHAUS is built around two distinct archetypes, both grounded in the RFS math
 5. **Mathematical Guarantees**: All operations mathematically verified via MA process
 
 **Service Architecture**:
-TAI is a **service-oriented architecture** that orchestrates standalone service packages via HTTP APIs, ensuring modularity and hot-swappable components.
+TAI is a **service-oriented architecture** that orchestrates standalone service packages via HTTP APIs, ensuring modularity and hot-swappable components. Key services include **NME** (Nota Memoria Engine: memory structuring / trait extraction), **VFE** (Verbum Field Engine: GPU-first LLM inference), **MAIA** (attention mechanisms and intent processing), **VEE** (Voluntas Engine: intent classification and quantum-inspired math), and **CAIO** (service routing and access control). Some of these may align with or become parts of the COE (Cognitive Orchestration Engine) in AIVA's biology layer.
 
 ### Archetype 2: AIVA (Artificialis Intelligentia Vivens Anima)
 
@@ -247,11 +247,11 @@ AIVA's architecture mirrors natural systems, with three layers that transform in
 
 **Integrated Information**: Working toward measurable integrated information (Φ) as a metric for system-wide awareness and coordination.
 
-#### Chemistry Layer: LQL (LATTICE Query Language)
+#### Chemistry Layer: AQL (AIVA Query Language)
 
 **Role**: Symbolic query language transforming intent into mathematically provable execution graphs
 
-**The Concept**: LQL treats computation like chemistry. Programs are molecules — complex structures built from simpler atoms. Data flow is chemical bonds — connections that enable information transfer. Program transformations are chemical reactions — processes that change structure while preserving properties. And just as chemical reactions reach equilibrium, LQL programs reach correctness — mathematically provable correctness.
+**The Concept**: AQL treats computation like chemistry. Programs are molecules — complex structures built from simpler atoms. Data flow is chemical bonds — connections that enable information transfer. Program transformations are chemical reactions — processes that change structure while preserving properties. And just as chemical reactions reach equilibrium, AQL programs reach correctness — mathematically provable correctness.
 
 **Architecture**:
 - **Molecules represent complete programs**: A molecule is a complete, executable program structure. It's not just code — it's a mathematical structure with provable properties.
@@ -282,9 +282,9 @@ AIVA's architecture mirrors natural systems, with three layers that transform in
   - Type errors are impossible — the system won't compile invalid programs
   - Types are mathematical structures, enabling formal verification
 
-#### Physics Layer: LEF (Lattice Execution Fabric)
+#### Physics Layer: AEF (AIVA Execution Fabric)
 
-**Role**: Execution engine that compiles and runs LQL particle instructions
+**Role**: Execution engine that compiles and runs AQL particle instructions (implementation: LEF repository)
 
 **Architecture**:
 - **Quantum-Inspired Particles** for execution:
@@ -561,7 +561,7 @@ The Mathematical Autopsy (MA) process is **MANDATORY** for any code involving ma
 
 ### LATTICE Axioms (Legally Enforced)
 
-These axioms are binding across AIOS, LQL, and LEF. Violations must trigger fail-close behavior and audit logging.
+These axioms are binding across AIOS, AQL (Chemistry), and AEF (Physics). Violations must trigger fail-close behavior and audit logging.
 
 - **A1 Determinism**: For fixed inputs, configuration, and seeds, all components are deterministic and idempotent.
 - **A2 Statelessness**: Execution units are stateless; any state is explicit in inputs.

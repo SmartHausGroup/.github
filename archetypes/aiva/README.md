@@ -8,25 +8,17 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/SmartHausGroup/AIVA)
 
 > **Biology → Chemistry → Physics Pipeline**  
-> *Achieving integrated awareness and quantum advantages on classical hardware*
+> *Triadic architecture for intent-driven execution with mathematical guarantees*
 
 ## Overview
 
-**AIVA (Artificialis Intelligentia Vivens Anima - Artificial Intelligence Living Soul)** is a revolutionary triadic computational architecture that achieves **integrated awareness** and **quantum computational advantages** on classical hardware. The system implements a complete **Biology → Chemistry → Physics** pipeline, enabling self-improving software with mathematical guarantees.
+**AIVA (Artificialis Intelligentia Vivens Anima - Artificial Intelligence Living Soul)** is a triadic computational architecture implementing a **Biology → Chemistry → Physics** pipeline. It takes natural-language intent and turns it into executable workflows with mathematical governance, formal verification, and built-in traceability.
 
 AIVA takes natural language intent and automatically decomposes it into executable workflows through three specialized layers, creating, optimizing, and proving the correctness of programs with built-in governance, traceability, and security.
 
-## Breakthrough Achievements
-
-- ✅ **Integrated Awareness**: Working toward measurable integrated information (Φ) as a metric for system-wide coordination
-- ✅ **Quantum Advantages**: Quantum-like computation on classical hardware  
-- ✅ **Triadic Integration**: Complete Biology→Chemistry→Physics pipeline
-- ✅ **Mathematical Guarantees**: Formal proofs of correctness and optimization
-- ✅ **Self-Improvement**: Algorithm discovery with correctness preservation
-
 ## Mission
 
-> *"Transform three excellent individual layer implementations into a unified, validated, breakthrough system with integrated awareness."*
+> *"Transform three excellent individual layer implementations into a unified, validated system: Biology (AIOS) → Chemistry (AQL) → Physics (AEF), with mathematical guarantees and continuous improvement."*
 
 ## Architecture
 
@@ -41,16 +33,16 @@ AIVA implements a three-layer architecture, each using its optimal computational
 │  ├── AI-Driven Intent Classification                        │
 │  ├── Holographic Memory Integration                         │
 │  ├── Adaptive Learning & Experience                         │
-│  └── Integrated Awareness Calculation (Φ)                   │
+│  └── Integrated-information (Φ) telemetry                    │
 ├─────────────────────────────────────────────────────────────┤
-│  ⚗️ Chemistry Layer (LQL) - Symbolic Query Language         │
+│  ⚗️ Chemistry Layer (AQL) - AIVA Query Language             │
 │  ├── Static Deterministic Graphs                            │
 │  ├── Symbolic Contract Resolution                           │
 │  ├── Mathematical Proof System                              │
 │  ├── Formal Verification                                    │
 │  └── Compile-Time Optimization                              │
 ├─────────────────────────────────────────────────────────────┤
-│  ⚛️ Physics Layer (LEF) - Particle Execution                │
+│  ⚛️ Physics Layer (AEF) - AIVA Execution Fabric             │
 │  ├── Quantum-Inspired Execution                             │
 │  ├── Superposition & Entanglement                           │
 │  ├── Energy-Based Resource Management                       │
@@ -63,9 +55,9 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 | Layer | Model | Why This Choice |
 |-------|-------|-----------------|
-| **AIOS** | AIUCP (AI Unified Control Plane) | Provides intelligence, adaptation, and creativity |
-| **LQL** | DAGs (Directed Acyclic Graphs) | Ensures mathematical correctness and provability |
-| **LEF** | Particles (Quantum-Inspired) | Delivers efficient parallel execution |
+| **AIOS** | CNS (COE + SNS + ANS) | Intelligence, adaptation, RFS memory |
+| **AQL** | DAGs (Directed Acyclic Graphs) | Mathematical correctness and provability |
+| **AEF** | Particles (Quantum-Inspired) | Efficient parallel execution |
 
 ## The Three Layers
 
@@ -88,7 +80,7 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 **Repository**: [AIOS](https://github.com/SmartHausGroup/AIOS)
 
-### ⚗️ Chemistry Layer: LQL (LATTICE Query Language)
+### ⚗️ Chemistry Layer: AQL (AIVA Query Language)
 
 **Role**: Symbolic query language transforming intent into mathematically provable execution graphs
 
@@ -114,11 +106,11 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 **RFS Integration**: Uses RFS for storing symbolic structures and contracts
 
-**Repository**: [LQL](https://github.com/SmartHausGroup/LQL)
+**Repository**: [AQL (LQL repo)](https://github.com/SmartHausGroup/LQL)
 
-### ⚛️ Physics Layer: LEF (Lattice Execution Fabric)
+### ⚛️ Physics Layer: AEF (AIVA Execution Fabric)
 
-**Role**: Execution engine that compiles and runs LQL particle instructions
+**Role**: Execution engine that compiles and runs AQL particle instructions
 
 **Architecture**:
 - **Quantum-Inspired Particles** for execution:
@@ -137,15 +129,15 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 **RFS Integration**: Uses RFS for execution state and telemetry
 
-**Repository**: [LEF](https://github.com/SmartHausGroup/LEF)
+**Repository**: [AEF (LEF repo)](https://github.com/SmartHausGroup/LEF)
 
 ## Integration Between Layers
 
-**AIOS → LQL**: Intent parsed by AIOS, compiled to LQL DAGs
+**AIOS → AQL**: Intent parsed by AIOS, compiled to AQL DAGs
 
-**LQL → LEF**: DAGs compiled to particle instructions, executed by LEF
+**AQL → AEF**: DAGs compiled to particle instructions, executed by AEF
 
-**LEF → AIOS**: Execution telemetry fed back to AIOS for learning
+**AEF → AIOS**: Execution telemetry fed back to AIOS for learning
 
 **All → RFS**: All layers use RFS for memory and state
 
@@ -157,16 +149,16 @@ AIVA implements a three-layer architecture, each using its optimal computational
 - **Intent Processing**: Biological state to computational intent conversion
 - **Learning Adaptation**: Feedback-driven system optimization
 
-### ⚗️ Chemical Layer (LQL)
+### ⚗️ Chemical Layer (AQL)
 - **Symbolic Contracts**: Formal specification of computational intent
 - **DAG Generation**: Directed Acyclic Graph compilation
 - **Mathematical Proofs**: Formal verification of correctness
 - **Type Safety**: Guaranteed contract resolution properties
 
-### ⚛️ Physics Layer (LEF)
+### ⚛️ Physics Layer (AEF)
 - **Quantum-like Particles**: Superposition and entanglement simulation
 - **Performance Optimization**: Load balancing and resource management
-- **Quantum Advantages**: Classical hardware quantum-like computation
+- **Quantum-inspired execution**: Classical hardware quantum-like computation
 - **Scalability**: Distributed execution across multiple nodes
 
 ### 🔄 Integration Features
@@ -191,8 +183,8 @@ AIVA follows the **Mathematical Autopsy (MA) process** ensuring:
 - Architecture documentation and specifications
 - Mathematical foundations
 - Core COE regions (AIOS)
-- Core compilation (LQL)
-- Core execution (LEF)
+- Core compilation (AQL)
+- Core execution (AEF)
 
 ### 🚧 In Development
 - Full triadic integration
@@ -207,10 +199,10 @@ AIVA follows the **Mathematical Autopsy (MA) process** ensuring:
 
 ## Integration with External Systems
 
-External systems (e.g., TAI Personal Assistant) integrate with AIVA strictly via the AIUCP protocol over a network API. There are no direct code dependencies.
+External systems (e.g., TAI Personal Assistant) integrate with AIVA via **CAIO** (service routing and access control) over a network API. There are no direct code dependencies.
 
-- Protocol-based integration only (HTTP/gRPC)
-- No `import` between TAI and AIVA/AIOS/LQL/LEF
+- Protocol-based integration only (HTTP/gRPC), CAIO-mediated
+- No `import` between TAI and AIVA/AIOS/AQL/AEF
 - System holographic memory belongs to AIOS (separate from TAI's user memory)
 
 ## Documentation
@@ -218,13 +210,13 @@ External systems (e.g., TAI Personal Assistant) integrate with AIVA strictly via
 ### Architecture & Theory
 - [Architecture Overview](https://github.com/SmartHausGroup/AIVA/tree/main/architecture) — Complete system architecture
 - [AIOS Documentation](https://github.com/SmartHausGroup/AIVA/tree/main/architecture/AIOS) — Biological layer implementation
-- [LQL Documentation](https://github.com/SmartHausGroup/AIVA/tree/main/architecture/LQL) — Chemical layer implementation  
-- [LEF Documentation](https://github.com/SmartHausGroup/AIVA/tree/main/architecture/LEF) — Physics layer implementation
+- [AQL Documentation](https://github.com/SmartHausGroup/AIVA/tree/main/architecture/LQL) — Chemistry layer (AIVA Query Language)  
+- [AEF Documentation](https://github.com/SmartHausGroup/AIVA/tree/main/architecture/LEF) — Physics layer (AIVA Execution Fabric)
 
 ### Component Repositories
 - [AIOS Repository](https://github.com/SmartHausGroup/AIOS) — Biology layer implementation
-- [LQL Repository](https://github.com/SmartHausGroup/LQL) — Chemistry layer (LATTICE Query Language)
-- [LEF Repository](https://github.com/SmartHausGroup/LEF) — Physics layer (Lattice Execution Fabric)
+- [AQL (LQL repo)](https://github.com/SmartHausGroup/LQL) — Chemistry layer (AIVA Query Language)
+- [AEF (LEF repo)](https://github.com/SmartHausGroup/LEF) — Physics layer (AIVA Execution Fabric)
 
 ## Research Directions
 

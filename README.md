@@ -4,7 +4,7 @@
 [![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)](https://github.com/SmartHausGroup)
 [![NVIDIA Inception](https://img.shields.io/badge/NVIDIA%20Inception-Member-76b900.svg)](https://www.nvidia.com/en-us/startups/)
 
-**SMARTHAUS** is a technology organization building AI systems where **mathematics serves as the nervous system**. At the core of our work is **Resonant Field Storage (RFS)** — a unified field-theoretic substrate that enables disparate AI components to communicate, exhibit collective awareness, and operate with mathematical guarantees.
+**SMARTHAUS** is a technology organization building AI systems where **mathematics serves as the nervous system**. At the core of our work is **Resonant Field Storage (RFS)** — the mathematical memory substrate for both TAI and AIVA, enabling disparate AI components to communicate, exhibit collective awareness, and operate with mathematical guarantees.
 
 ## 🌟 What is SMARTHAUS?
 
@@ -45,26 +45,13 @@ We adhere to a Math-First engineering doctrine, formalized in our core thesis: *
 
 SMARTHAUS builds **AI Archetypes** and **Governance Services** on our **Mathematical Autopsy (MA)** methodology and **Resonant Field Storage (RFS)** substrate:
 
-### 🎯 Archetype 1: TAI (Personal Assistant)
+### 🎯 TAI — Personal Assistant
 
-**Tutelarius Auxilium Intellectus** — Your personal AI assistant that remembers everything and knows you deeply.
+**Tutelarius Auxilium Intellectus** — Your personal AI assistant that remembers everything and knows you deeply. Voice-first, with endless memory (RFS), any model, and mathematical guarantees. TAI orchestrates services—RFS, NME, VFE, VEE, CAIO, MAIA—via a single platform.
 
-**Key Features**:
-- 🎤 **Voice-first interface** — Natural conversation optimized for voice interaction
-- 🧠 **Endless memory** — Never forgets, with exact-byte recall and semantic retrieval
-- 🔄 **Any model** — Not locked to a single AI provider; supports any model
-- 🛡️ **Mathematically guaranteed** — All operations verified through rigorous mathematical proofs
-- 🎯 **Continuous learning** — Grows with you through every interaction
+**→** [TAI product page](archetypes/tai/README.md) · [GitHub](https://github.com/SmartHausGroup/TAI)
 
-**Repositories**:
-- **TAI** — Main orchestration and user interface
-- **RFS** — Memory substrate (Resonant Field Storage)
-- **VFE** — GPU-first LLM inference engine
-- **VEE** — Intent classification and quantum-inspired math
-- **CAIO** — Service routing and access control
-- **MAIA** — Attention mechanisms and intent processing
-
-### 🧬 Archetype 2: AIVA (Triadic System)
+### 🧬 AIVA — Triadic AI System
 
 **Artificialis Intelligentia Vivens Anima** — A triadic computational system working toward integrated and mathematically aware AI.
 
@@ -76,12 +63,12 @@ SMARTHAUS builds **AI Archetypes** and **Governance Services** on our **Mathemat
    - Brain-inspired regions coordinate behavior
    - Working toward measurable integrated awareness
 
-2. **⚗️ Chemistry Layer (LQL)** — Symbolic query language
+2. **⚗️ Chemistry Layer (AQL)** — AIVA Query Language
    - Transforms intent into mathematically provable execution graphs
    - Ensures correctness through formal verification
    - Compiles to deterministic DAGs
 
-3. **⚛️ Physics Layer (LEF)** — Particle-based execution
+3. **⚛️ Physics Layer (AEF)** — AIVA Execution Fabric
    - Quantum-inspired particles execute computations
    - Energy-based resource management
    - Parallel execution with built-in telemetry
@@ -89,57 +76,32 @@ SMARTHAUS builds **AI Archetypes** and **Governance Services** on our **Mathemat
 **Repositories**:
 - **AIVA** — Architecture documentation and specifications
 - **AIOS** — Biology layer implementation
-- **LQL** — Chemistry layer (LATTICE Query Language)
-- **LEF** — Physics layer (Lattice Execution Fabric)
+- **AQL (LQL repo)** — Chemistry layer (AIVA Query Language)
+- **AEF (LEF repo)** — Physics layer (AIVA Execution Fabric)
 
-## 🛡️ Governance Services
+## 📄 Product Pages
 
-**Enterprise-grade governance infrastructure** that ensures AI systems operate with mathematical certainty and regulatory compliance.
+Each product has a single page on this site (ready for GitHub Pages). One section, one destination.
 
-### MGE (Mathematical Governance Engine)
+### Resonant Field Storage (RFS)
 
-**Certus Securitas Ex Machina** — Cryptographic governance for AI systems.
+**The mathematical memory substrate for TAI and AIVA.** A 4D field where information is stored as superposed wave patterns—resonance-based retrieval, relationship discovery via interference, exact-byte recall, and 42+ validated invariants. Built on field theory, not vector space.
 
-**Built for MA**: MGE provides the cryptographic receipts and rule enforcement that enable MA's "Receipt of Truth" and mathematical guarantees.
+**→** [RFS product page](resonant-field-storage/README.md) · [GitHub](https://github.com/SmartHausGroup/ResonantFieldStorage)
 
-**Key Features**:
-- **Cryptographic Receipts**: HMAC-SHA256 signed proof of compliance for AI decisions
-- **MA Integration**: Native integration with Mathematical Autopsy's execution layer
-- **Multi-Format Rules**: MDC/YAML/JSON rule formats for governance policies
-- **Enterprise Scale**: Sub-millisecond governance checks for high-throughput AI
-- **Cross-Archetype Security**: Can secure TAI, AIVA, and other AI systems
+### MGE — Mathematical Governance Engine
 
-**Use Cases**:
-- **MA Governance**: Secures Mathematical Autopsy operations with cryptographic proof
-- **Enterprise AI**: Compliance automation and audit trails for regulated industries
-- **Critical Infrastructure**: Safety guarantees for AI in high-stakes environments
-- **Development Security**: Automated governance in CI/CD and development workflows
+**Certus Securitas Ex Machina.** Cryptographic governance for AI: HMAC-SHA256 receipts, deterministic enforcement, MA integration, MDC/YAML/JSON rules. Sub-millisecond checks for TAI, AIVA, and enterprise AI. One product—documentation, tooling, and licensing in one place.
 
-**Repositories**:
-- **MGE** — Public documentation, installation guides, and licensing
-- **mge-core** — Internal service implementation with cryptographic engine
-- **mge-sdk** — SDK for developing custom governance rules
+**→** [MGE product page](archetypes/mge/README.md) · [GitHub](https://github.com/SmartHausGroup/MGE)
 
-## 🧮 Mathematical Autopsy (MA) Framework
+### Mathematical Autopsy (MA)
 
-**Our core methodology and agentic application** for mathematically rigorous AI development.
+**Math-first methodology for provably correct systems.** Define mathematics before code; prove invariants in notebooks; enforce in CI. Native macOS agent, notebook-driven development, and MGE-backed governance. One methodology, one destination.
 
-### MA Components
-- **MathematicalAutopsy** — Native macOS agentic application for mathematical code validation
-- **MA Methodology** — Notebook-first, math-driven development with CI gates and artifacts
-- **MA SDK** — Development tools for building MA-compatible applications
-- **MA Governance** — MGE provides cryptographic security for MA operations
+**→** [MA product page](mathematical-autopsy/README.md) · [GitHub](https://github.com/SmartHausGroup/MathematicalAutopsy)
 
-## 🔧 Infrastructure Components
-
-**Lower-level services and components** that provide foundational capabilities.
-
-### Core Infrastructure
-- **RFS** — Resonant Field Storage (4D memory substrate)
-- **VFE** — Verbum Field Engine (GPU-first LLM inference)
-- **VEE** — Voluntas Engine (intent classification and quantum-inspired math)
-- **CAIO** — Service routing and access control
-- **MAIA** — Attention mechanisms and intent processing
+---
 
 ## 🔬 The Mathematical Foundation
 
@@ -263,7 +225,7 @@ Unlike traditional AI systems where modules communicate through ad-hoc APIs, SMA
 AIVA can evolve and optimize itself while maintaining mathematical correctness:
 
 - Mutations are proposed and validated
-- LQL proves correctness before adoption
+- AQL proves correctness before adoption
 - Performance improvements are measured and verified
 - Complete audit trail of all changes
 
@@ -276,46 +238,17 @@ Working toward systems where the whole is aware of its parts:
 - Measurable integrated information
 - Collective intelligence metrics
 
-## 📦 Repository Structure
+## 📦 Product & Repo Index
 
-SMARTHAUS's work is organized into focused repositories, each with clear responsibilities:
+One page per product on this site; one primary repo per product. (Implementation repos such as -core or -sdk live under the main product repos and are not listed here.)
 
-### Core Substrate
-- **[ResonantFieldStorage](https://github.com/SmartHausGroup/ResonantFieldStorage)** — The 4D field storage substrate
-
-### TAI Archetype
-- **[TAI](https://github.com/SmartHausGroup/TAI)** — Personal assistant orchestration
-- **[VerbumFieldEngine](https://github.com/SmartHausGroup/VerbumFieldEngine)** — LLM inference engine
-- **[VoluntasEngine](https://github.com/SmartHausGroup/VoluntasEngine)** — Intent classification
-- **[CAIO](https://github.com/SmartHausGroup/CAIO)** — Service routing and control
-- **[MAIA](https://github.com/SmartHausGroup/MAIA)** — Attention mechanisms
-
-### AIVA Archetype
-- **[AIVA](https://github.com/SmartHausGroup/AIVA)** — Architecture documentation
-- **[AIOS](https://github.com/SmartHausGroup/AIOS)** — Biology layer
-- **[LQL](https://github.com/SmartHausGroup/LQL)** — Chemistry layer
-- **[LEF](https://github.com/SmartHausGroup/LEF)** — Physics layer
-
-### Governance Services
-
-* **MGE** — Mathematical Governance Engine (enterprise AI governance)
-  - **MGE** — Public documentation, installation guides, and licensing
-  - **mge-core** — Internal service implementation with cryptographic engine
-  - **mge-sdk** — SDK for developing custom governance rules
-
-### Infrastructure Components
-
-* **RFS** — Resonant Field Storage (4D memory substrate)
-* **VFE** — Verbum Field Engine (GPU-first LLM inference)
-* **VEE** — Voluntas Engine (intent classification and quantum-inspired math)
-* **CAIO** — Service routing and access control
-* **MAIA** — Attention mechanisms and intent processing
-
-### MA Framework & Methodology
-
-* **MathematicalAutopsy** — Core MA agentic application and methodology framework
-  - **MA Application**: Native macOS agent for mathematical code validation
-  - **MA Methodology**: Notebook-first development with CI gates and artifacts
+| Product | Page on this site | GitHub |
+|--------|--------------------|--------|
+| **Resonant Field Storage** | [RFS](resonant-field-storage/README.md) | [ResonantFieldStorage](https://github.com/SmartHausGroup/ResonantFieldStorage) |
+| **TAI** (Personal Assistant) | [TAI](archetypes/tai/README.md) | [TAI](https://github.com/SmartHausGroup/TAI) |
+| **AIVA** (Triadic AI) | [AIVA](archetypes/aiva/README.md) | [AIVA](https://github.com/SmartHausGroup/AIVA) |
+| **MGE** (Governance) | [MGE](archetypes/mge/README.md) | [MGE](https://github.com/SmartHausGroup/MGE) |
+| **Mathematical Autopsy** | [MA](mathematical-autopsy/README.md) | [MathematicalAutopsy](https://github.com/SmartHausGroup/MathematicalAutopsy) |
 
 
 

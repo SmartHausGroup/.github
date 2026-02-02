@@ -24,9 +24,9 @@ A service-oriented personal assistant platform with endless memory, contextual i
 Primary interaction mode is voice (STT/TTS), with text as secondary. Natural conversation optimized for voice interaction.
 
 ### 🧠 Endless Memory
-- **RFS Integration**: 4D field architecture for episodic memory
+- **RFS as memory substrate**: RFS (Resonant Field Storage) is TAI's mathematical memory substrate — 4D field architecture for episodic memory
 - **Exact-Byte Recall**: Never forgets, with exact-byte recall and semantic retrieval
-- **Persona Traits**: Separate persona traits store for preferences, personality, communication style
+- **Persona Traits**: Separate persona traits store for preferences, personality, communication style (NME: Nota Memoria Engine for structuring/trait extraction)
 - **Waveform Superposition**: Semantic relationships through field superposition
 
 ### 🔄 Any Model
@@ -63,7 +63,8 @@ TAI is a **service-oriented architecture** that handles frontend/UX/UI and orche
 All services communicate via HTTP APIs. Services are **NOT embedded** in TAI codebase.
 
 - **AICPOrchestrator**: Central API gateway and orchestration (Port 8000)
-- **RFS (Resonant Field Storage)**: 4-D wave-based field storage (Port 8002)
+- **RFS (Resonant Field Storage)**: 4-D wave-based field storage — memory substrate for TAI (Port 8002)
+- **NME (Nota Memoria Engine)**: Memory structuring and trait extraction before RFS
 - **VFE (Verbum Field Engine)**: GPU-first LLM inference engine (Port 8081)
 - **VEE/QuantumCore**: Intent classification and quantum-inspired math (Port 8001)
 - **CAIO**: Service routing and access control
