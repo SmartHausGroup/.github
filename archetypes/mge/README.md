@@ -10,6 +10,10 @@
 
 **Replace probabilistic AI safety with mathematical certainty.** Instead of hoping AI follows rules, MGE provides cryptographic proof that every AI action complies with governance requirements.
 
+## Why MGE (design rationale)
+
+Across TAI and AIVA we aim for **determinism, auditability, and fail-close**—not “the model will probably behave.” Governance is no exception: we don’t want “maybe it followed the policy”; we want **proof**. MGE is the layer that turns governance into **math**: every decision is checked against rules before execution, and every outcome is signed (cryptographic receipt). That gives us: (1) **pre-execution enforcement**—violations are blocked, not just logged; (2) **tamper-evident audit**—receipts bind decision to rules and timestamp; (3) **one governance plane** for both TAI and AIVA, so policy is consistent and auditable across archetypes. Same philosophy as lattice axioms and RFS field theory: **provable, not probabilistic**.
+
 MGE serves as the **mathematical immune system** for AI, providing:
 - **Cryptographic Receipts**: Tamper-proof proof of compliance for every decision
 - **Deterministic Enforcement**: Mathematical guarantees, not statistical approximations

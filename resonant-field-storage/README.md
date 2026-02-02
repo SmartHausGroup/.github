@@ -15,6 +15,10 @@ Resonant Field Storage (RFS) is a revolutionary approach to information storage 
 
 **Mathematical Foundation**: RFS is built on field theory mathematics, not vector space mathematics. This fundamental difference enables capabilities that vector databases cannot provide: relationships as physics (interference patterns), explainability built into the mathematics, contradiction detection through destructive interference, deterministic guarantees, and temporal intelligence. For a detailed comparison of field theory vs. vector space mathematics, see [From Vector Space to Field Theory—A New Mathematical Foundation for Memory](./RFS:%20From%20Vector%20Space%20to%20Field%20Theory—A%20New%20Mathematical%20Foundation%20for%20Memory.md).
 
+### Why field theory, not vector space
+
+Vector databases treat documents as **points** in a metric space: relationships are **computed** on-demand (distance, nearest neighbor). Points don’t interact—they just sit at coordinates. So you can’t encode relationships as part of the data structure; you can’t explain *why* documents are similar beyond “they’re close”; you can’t detect contradictions (distance doesn’t encode conflict); and you often trade determinism for speed (approximate search). RFS treats documents as **waves** in a 4D field: relationships **emerge** through superposition and interference. Constructive interference encodes similarity; destructive interference encodes contradiction. Retrieval is **resonance**—matched filter correlation—so “why was this retrieved?” has a mathematical answer (interference pattern). Energy is conserved (Parseval); encoding and retrieval are **deterministic** by design. So the “why” isn’t “we wanted a different index”—it’s that **field theory gives us explainability, contradiction detection, and provable guarantees** that vector space mathematics cannot. For AI memory and auditability, that difference is decisive.
+
 ## What Makes RFS Different?
 
 ### Traditional Systems

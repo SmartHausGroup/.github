@@ -11,75 +11,51 @@ A service-oriented personal assistant platform with endless memory, contextual i
 
 ## Overview
 
-**TAI (Tutelarius Auxilium Intellectus)** is a voice-first personal assistant that becomes everyone's personal best friend and assistant. TAI provides a flexible architecture where core systems (RFS, VFE, QuantumCore) integrate seamlessly as modules, enabling a marketplace ecosystem where developers can build and distribute modules that extend TAI's capabilities.
+**TAI (Tutelarius Auxilium Intellectus)** is a voice-first personal assistant platform with endless memory, contextual intelligence, continuous user learning, and an AI agent marketplace. TAI is designed so that the primary interaction is **voice**—hands-free, natural, always available—with text as secondary. Core capabilities (memory, inference, intent, attention, routing) are provided by **standalone services** (RFS, NME, VFE, VEE, MAIA, CAIO) that integrate over HTTP/gRPC via CAIO; TAI does not embed those services in its codebase. That enables hot-swapping, independent evolution, and a marketplace where developers can add or replace modules without forking the assistant. Memory is backed by **RFS (Resonant Field Storage)**—the same mathematical substrate used in AIVA—so that recall is exact-byte or semantic, with explainability and determinism. All operations are governed by the **Mathematical Autopsy (MA)** process: invariants, proofs, and CI enforcement so that behavior is provable, not only tested.
 
-**Full Name**: Tutelarius Auxilium Intellectus
-- **Tutelarius** = Guardian, Protector (guards intelligence with mathematical guarantees)
-- **Auxilium** = Aid, Help (provides assistance through orchestration)
-- **Intellectus** = Intelligence, Understanding (enables intelligent behavior through composition)
+**Full name:** Tutelarius Auxilium Intellectus—**Tutelarius** (guardian, protector: guards intelligence with mathematical guarantees), **Auxilium** (aid, help: provides assistance through orchestration), **Intellectus** (intelligence, understanding: enables intelligent behavior through composition).
+
+## Why voice-first and why RFS for memory
+
+We design TAI **voice-first** because the primary use case is a personal assistant you talk to—hands-free, natural, always available. Text is secondary; voice drives the interaction model, so STT/TTS, latency, and context are first-class. We use **RFS (Resonant Field Storage)** as the memory substrate because we want **endless memory with provable guarantees**: not “approximate recall” or “best-effort similarity,” but **exact-byte recall** when needed and **semantic retrieval** with explainability (interference patterns, not black-box distance). RFS is the same mathematical substrate used in AIVA (AIOS Hippocampus); so TAI and AIVA share the same memory *math*—determinism, energy conservation, invariants—even when they serve different users and workloads. The “why” is: we want a personal assistant that **never forgets** and that we can **audit and prove correct**, not one that “usually” remembers and “hopefully” behaves. Voice-first + RFS + MA is how we get there.
 
 ## Core Capabilities
 
 ### 🎤 Voice-First Interface
-Primary interaction mode is voice (STT/TTS), with text as secondary. Natural conversation optimized for voice interaction.
+
+Primary interaction mode is **voice** (STT/TTS), with text as secondary. The assistant is optimized for natural conversation over voice—latency, context window, and turn-taking are tuned for spoken interaction so that the experience is hands-free and always available. Voice drives the interaction model; text is supported but not the default.
 
 ### 🧠 Endless Memory
-- **RFS as memory substrate**: RFS (Resonant Field Storage) is TAI's mathematical memory substrate — 4D field architecture for episodic memory
-- **Exact-Byte Recall**: Never forgets, with exact-byte recall and semantic retrieval
-- **Persona Traits**: Separate persona traits store for preferences, personality, communication style (NME: Nota Memoria Engine for structuring/trait extraction)
-- **Waveform Superposition**: Semantic relationships through field superposition
+
+Memory is backed by **RFS (Resonant Field Storage)**—TAI’s mathematical memory substrate. RFS uses a 4D field architecture for episodic memory: documents and episodes are superposed as waveforms, and retrieval is resonance-based (exact-byte or semantic) with explainability (interference patterns) and determinism. **NME (Nota Memoria Engine)** structures memory and extracts persona traits (preferences, personality, communication style) *before* data is stored in RFS, so that what enters the field is consistent, typed, and queryable. The result is endless, auditable memory—never forgets, with exact-byte recall when needed and semantic retrieval with mathematical guarantees.
 
 ### 🔄 Any Model
-- **Verbum Field Engine (VFE)**: Maintains expandable model registry
-- **Not Locked to Single Provider**: Supports any AI model
-- **Model Agnostic**: Not tied to any single AI model or tool
-- **Marketplace Support**: Supports marketplace of alternatives
+
+Inference is provided by **VFE (Verbum Field Engine)**—a GPU-first LLM inference engine with an **expandable model registry**. TAI is not locked to a single provider or model; VFE maintains a registry so that models can be swapped or added without rewriting the assistant. That supports a **marketplace** of alternatives: developers can offer new models or tools, and TAI can route to them via CAIO and VEE/MAIA. Model-agnostic design keeps the assistant flexible and audit-ready (inference can be bounded, logged, and where possible reproduced).
 
 ### 🛡️ Mathematical Guarantees
-All operations mathematically verified via Mathematical Autopsy (MA) process:
-- Deterministic operations
-- Formal proofs
-- Invariants and lemmas
-- CI enforcement
+
+All operations are mathematically verified via the **Mathematical Autopsy (MA)** process. Determinism (same inputs → same outputs), formal proofs (invariants and lemmas), and CI enforcement ensure that behavior is **provably correct**, not only tested. MA order is strict: math → invariants → code (never code → math). That aligns TAI with the same guarantees used in RFS, AIVA, and MGE.
 
 ### 🎯 Continuous Learning
-- **User Learning Module**: Learns from every interaction
-- **Grows with You**: Through every interaction
-- **Adaptive**: Personalization based on usage patterns
+
+TAI learns from every interaction. A **user learning module** (and NME-backed trait extraction) supports personalization: preferences, communication style, and episodic memory grow with use. Learning is structured and stored via NME and RFS so that adaptation is auditable and consistent with the same mathematical substrate used for recall.
 
 ## Architecture
 
-TAI is a **service-oriented architecture** that handles frontend/UX/UI and orchestrates standalone service packages via HTTP APIs.
+TAI is a **service-oriented architecture**. The TAI core handles frontend/UX/UI (web interface, enterprise dashboard, CLI), orchestration (service coordination and routing), the user learning module (continuous learning and personalization), and the marketplace (AI tools and services). All **capability services**—memory, inference, intent, attention, routing—are **standalone packages** that communicate via HTTP APIs. Services are **not embedded** in the TAI codebase: TAI uses HTTP clients to call them, so that services can be hot-swapped, versioned independently, and replaced by marketplace alternatives without changing TAI’s core code.
 
 ### TAI Core
 
-- **Frontend/UX/UI**: Web Interface, Enterprise Dashboard, CLI
-- **Orchestration Layer**: Service coordination
-- **User Learning Module**: Continuous user learning
-- **Marketplace**: AI tools and services
+The core provides **frontend/UX/UI** (web, dashboard, CLI), an **orchestration layer** that coordinates service calls and routes user turns to the right services (VEE, MAIA, VFE, NME, RFS), a **user learning module** that feeds interaction data into NME and RFS for personalization, and a **marketplace** surface so that developers can register and distribute AI tools and services. Orchestration is CAIO-aware: cross-system calls (e.g. to AIVA) go through CAIO; internal service calls use the same protocol discipline where applicable.
 
 ### Standalone Service Packages
 
-All services communicate via HTTP APIs. Services are **NOT embedded** in TAI codebase.
-
-- **AICPOrchestrator**: Central API gateway and orchestration (Port 8000)
-- **RFS (Resonant Field Storage)**: 4-D wave-based field storage — memory substrate for TAI (Port 8002)
-- **NME (Nota Memoria Engine)**: Memory structuring and trait extraction before RFS → [NME](nme/README.md)
-- **VFE (Verbum Field Engine)**: GPU-first LLM inference engine (Port 8081) → [VFE](vfe/README.md)
-- **VEE/QuantumCore**: Intent classification and quantum-inspired math (Port 8001) → [VEE](vee/README.md)
-- **CAIO**: Service routing and access control → [CAIO](caio/README.md)
-- **MAIA**: Attention mechanisms and intent processing → [MAIA](maia/README.md)
-
-**Key Principle**: TAI uses service packages via HTTP clients. Services are NOT embedded in TAI codebase, enabling hot-swapping and modularity.
+Each capability is a separate service with its own API and (where applicable) port. **RFS** (Resonant Field Storage) is the 4D wave-based memory substrate (e.g. Port 8002). **NME** (Nota Memoria Engine) structures memory and extracts traits before RFS → [NME](nme/README.md). **VFE** (Verbum Field Engine) is the GPU-first LLM inference engine (e.g. Port 8081) → [VFE](vfe/README.md). **VEE** (Voluntas Engine) handles intent classification and quantum-inspired math (e.g. Port 8001) → [VEE](vee/README.md). **CAIO** provides service routing and access control → [CAIO](caio/README.md). **MAIA** provides attention mechanisms and intent processing → [MAIA](maia/README.md). An orchestrator/gateway (e.g. Port 8000) coordinates discovery and routing. **Key principle:** TAI uses these packages via HTTP clients; services are not embedded, enabling hot-swapping and modularity.
 
 ## Service Architecture
 
-All services implement the `TAIService` interface protocol, enabling:
-
-- **Hot-swapping**: Zero-downtime service replacement
-- **Service Discovery**: Automatic service registration and discovery
-- **Mathematical Guarantees**: Invariants and contracts verified via CI
-- **Marketplace**: Pluggable services with compliance verification
+All services implement a **TAIService**-style interface protocol so that TAI can discover, call, and (where needed) replace them consistently. **Hot-swapping** is supported: a service can be upgraded or replaced with zero downtime because TAI talks to it over HTTP, not by importing it. **Service discovery** allows automatic registration and discovery so that new services (e.g. from the marketplace) can be added without hardcoding endpoints. **Mathematical guarantees** are enforced per service: invariants and contracts are verified via CI (MA process) so that each service’s behavior is provable. The **marketplace** can plug in new services with compliance verification (e.g. via MGE or CAIO) so that extensions are both flexible and governed.
 
 ## Key Features
 

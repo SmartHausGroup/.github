@@ -2,6 +2,10 @@
 
 **A Math-First Development Methodology for Provably Correct Systems**
 
+## Why math first
+
+SMARTHAUS systems—RFS, AIOS, AIVA, TAI, MGE—are governed by **mathematical contracts** and **axioms**. Determinism (A1), fail-close (A3), auditability (A10), and invariants aren’t aspirations; they’re **enforced**. That only works if we **define the math before we write the code**. Mathematical Autopsy is the methodology that makes that possible: intent → mathematical foundation → invariants and lemmas → executable verification (notebooks) → CI enforcement → code. The “why” is simple: we want **provably correct systems**, not “mostly correct.” MA is how we get there—and how every component in the stack (RFS, COE/SNS/ANS, AQL, AEF) stays aligned with its contracts and axioms.
+
 ## The Revolution: From "We Tested It" to "We Proved It"
 
 Imagine deploying a system to production with complete confidence. Not because you tested it thoroughly (though you did), but because you **proved it mathematically**. Every guarantee has a formal proof. Every behavior is mathematically specified. Every change is validated against mathematical invariants before deployment.
