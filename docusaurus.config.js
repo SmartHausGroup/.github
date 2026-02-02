@@ -1,4 +1,7 @@
 /** @type {import('@docusaurus/types').Config} */
+const math = require('remark-math');
+const katex = require('rehype-katex');
+
 const config = {
   title: 'SMARTHAUS Docs',
   tagline: 'Mathematics as the nervous system of AI',
@@ -9,6 +12,12 @@ const config = {
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   i18n: { defaultLocale: 'en', locales: ['en'] },
+  stylesheets: [
+    {
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.13.24/dist/katex.min.css',
+      type: 'text/css',
+    },
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
@@ -18,6 +27,8 @@ const config = {
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/SmartHausGroup/.github/edit/main/',
+          remarkPlugins: [math],
+          rehypePlugins: [katex],
         },
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },
