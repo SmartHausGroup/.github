@@ -89,17 +89,17 @@ Each product has a single page on this site (ready for GitHub Pages). One sectio
 
 **→** [RFS](resonant-field-storage/README.md)
 
-### MGE — Mathematical Governance Engine
-
-**Certus Securitas Ex Machina.** Cryptographic governance for AI: HMAC-SHA256 receipts, deterministic enforcement, MA integration, MDC/YAML/JSON rules. Sub-millisecond checks for TAI, AIVA, and enterprise AI. One product—documentation, tooling, and licensing in one place.
-
-**→** [MGE](archetypes/mge/README.md)
-
 ### Mathematical Autopsy (MA)
 
-**Math-first methodology for provably correct systems.** Define mathematics before code; prove invariants in notebooks; enforce in CI. Native macOS agent, notebook-driven development, and MGE-backed governance. One methodology, one destination.
+**Math-first methodology for provably correct systems.** Define mathematics before code; prove invariants in notebooks; enforce in CI. **MGE is the rules engine for MA**—it evaluates governance rules (MDC/YAML/JSON), issues cryptographic receipts, and enforces deterministically at runtime. Native macOS agent, notebook-driven development. One methodology, one destination.
 
 **→** [MA](mathematical-autopsy/README.md)
+
+### MGE — Mathematical Governance Engine (part of MA)
+
+**Certus Securitas Ex Machina.** MGE is **part of Mathematical Autopsy (MA)**—the **rules engine** for MA. It evaluates governance rules (MDC/YAML/JSON), issues cryptographic receipts (HMAC-SHA256), and enforces deterministically before execution. Used by TAI, AIVA, and enterprise AI for sub-millisecond governance checks. Documentation, tooling, and licensing in one place.
+
+**→** [MGE](archetypes/mge/README.md)
 
 ---
 
@@ -128,13 +128,13 @@ Every component SMARTHAUS builds is **mathematically proven**, not just tested:
 
 #### Invariants & Validation
 
-- ✅ **42+ invariants** validated in continuous integration
+- ✅ **Many invariants** validated in continuous integration
   - Each invariant is a YAML specification with mathematical constraints
   - Validated automatically before every merge
   - Violations block deployment
   - Examples: Q_dB bounds, capacity margins, energy conservation, stability factors
 
-- ✅ **60+ verification notebooks** with executable proofs
+- ✅ **Many verification notebooks** with executable proofs
   - Deterministic execution with fixed seeds
   - Prove invariants with actual code
   - Generate artifacts consumed by CI gates

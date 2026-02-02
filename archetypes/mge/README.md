@@ -6,6 +6,8 @@
 [![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)](#)
 [![MGE Core](https://img.shields.io/badge/MGE-Core-1.0.0-green.svg)](#)
 
+**MGE is part of Mathematical Autopsy (MA)**—it is the **rules engine** for MA. The MA methodology (math first, invariants, notebooks, CI) defines *what* must be proven; MGE is the engine that evaluates governance rules, issues cryptographic receipts, and enforces policy at runtime. So MA and MGE are one story: methodology plus rules engine.
+
 ## 🌟 Vision
 
 **Replace probabilistic AI safety with mathematical certainty.** Instead of hoping AI follows rules, MGE provides cryptographic proof that every AI action complies with governance requirements.

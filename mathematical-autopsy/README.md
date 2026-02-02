@@ -4,7 +4,7 @@
 
 ## Why math first
 
-SMARTHAUS systems—RFS, AIOS, AIVA, TAI, MGE—are governed by **mathematical contracts** and **axioms**. Determinism (A1), fail-close (A3), auditability (A10), and invariants aren’t aspirations; they’re **enforced**. That only works if we **define the math before we write the code**. Mathematical Autopsy is the methodology that makes that possible: intent → mathematical foundation → invariants and lemmas → executable verification (notebooks) → CI enforcement → code. The “why” is simple: we want **provably correct systems**, not “mostly correct.” MA is how we get there—and how every component in the stack (RFS, COE/SNS/ANS, AQL, AEF) stays aligned with its contracts and axioms.
+SMARTHAUS systems—RFS, AIOS, AIVA, TAI—are governed by **mathematical contracts** and **axioms**. Determinism (A1), fail-close (A3), auditability (A10), and invariants aren’t aspirations; they’re **enforced**. That only works if we **define the math before we write the code**. Mathematical Autopsy is the methodology that makes that possible: intent → mathematical foundation → invariants and lemmas → executable verification (notebooks) → CI enforcement → code. **MGE (Mathematical Governance Engine) is the rules engine for MA**—it evaluates governance rules (MDC/YAML/JSON), issues cryptographic receipts, and enforces policy at runtime, so that governance is provable, not probabilistic. The “why” is simple: we want **provably correct systems**, not “mostly correct.” MA is how we get there—and how every component in the stack (RFS, COE/SNS/ANS, AQL, AEF) stays aligned with its contracts and axioms.
 
 ## The Revolution: From "We Tested It" to "We Proved It"
 
