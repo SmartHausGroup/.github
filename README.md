@@ -289,6 +289,7 @@ SMARTHAUS systems are built on rigorous mathematical foundations, drawing inspir
 
 ## 🔗 Organization
 
+- **Website**: [smarthaus.ai](https://www.smarthaus.ai)
 - **GitHub Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
 
 ## 🤝 Join SMARTHAUS
