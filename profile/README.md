@@ -76,30 +76,6 @@ SMARTHAUS builds **AI Archetypes** and **Governance Services** on our **Mathemat
 
 ---
 
-## 📄 Product Pages
-
-Each product has one page on this site (ready for GitHub Pages). Links stay on the site.
-
-### Resonant Field Storage (RFS)
-
-**The mathematical memory substrate for TAI and AIVA.** A 4D field where information is stored as superposed wave patterns—resonance-based retrieval, relationship discovery via interference, exact-byte recall, and 42+ validated invariants. Built on field theory, not vector space.
-
-**→** [RFS](../resonant-field-storage/README.md)
-
-### Mathematical Autopsy (MA)
-
-**Math-first methodology for provably correct systems.** Define mathematics before code; prove invariants in notebooks; enforce in CI. **MGE is the rules engine for MA**—it evaluates governance rules (MDC/YAML/JSON), issues cryptographic receipts, and enforces deterministically at runtime. Native macOS agent, notebook-driven development. One methodology, one destination.
-
-**→** [MA](../mathematical-autopsy/README.md)
-
-### MGE — Mathematical Governance Engine (part of MA)
-
-**Certus Securitas Ex Machina.** MGE is **part of Mathematical Autopsy (MA)**—the **rules engine** for MA. It evaluates governance rules (MDC/YAML/JSON), issues cryptographic receipts (HMAC-SHA256), and enforces deterministically before execution. Used by TAI, AIVA, and enterprise AI for sub-millisecond governance checks. Documentation, tooling, and licensing in one place.
-
-**→** [MGE](../archetypes/mge/README.md)
-
----
-
 ## 🔬 The Mathematical Foundation
 
 ### Resonant Field Storage (RFS)
