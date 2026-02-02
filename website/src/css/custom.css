@@ -1,0 +1,23 @@
+/**
+ * SMARTHAUS Docs custom styles
+ */
+
+:root {
+  --ifm-color-primary: #0072bc;
+  --ifm-color-primary-dark: #0067a9;
+  --ifm-color-primary-darker: #00619f;
+  --ifm-color-primary-darkest: #005083;
+  --ifm-color-primary-light: #007dcf;
+  --ifm-color-primary-lighter: #0083d9;
+  --ifm-color-primary-lightest: #0094f0;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #4da6ff;
+  --ifm-color-primary-dark: #3399ff;
+  --ifm-color-primary-darker: #2690ff;
+  --ifm-color-primary-darkest: #0077e6;
+  --ifm-color-primary-light: #67b3ff;
+  --ifm-color-primary-lighter: #74baff;
+  --ifm-color-primary-lightest: #9bceff;
+}
