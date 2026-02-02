@@ -22,8 +22,13 @@ The docs site is built with **Docusaurus** from this repo and is intended to be 
    - **Install Command:** `npm ci` (recommended).
 
 3. **Custom domain**
-   - In the project → Settings → Domains, add **docs.smarthaus.ai**.
-   - Add the CNAME (or A record) Vercel shows in your DNS (e.g. at your registrar or Cloudflare).
+   - **Via CLI** (from repo root, after linking):
+     ```bash
+     vercel link -p github -S smarthausgroup -y   # if not already linked
+     vercel domains add docs.smarthaus.ai
+     ```
+   - **Via dashboard:** Project → Settings → Domains → Add **docs.smarthaus.ai**.
+   - If the apex **smarthaus.ai** is not on Vercel DNS, add the CNAME (or A record) Vercel shows for **docs** at your DNS provider. (If you use Vercel DNS for smarthaus.ai, the subdomain is configured automatically.)
 
 4. **Deploy**
    - Push to the branch Vercel is watching (e.g. `main`). Each push deploys. Each PR gets a preview URL.

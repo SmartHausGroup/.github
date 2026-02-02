@@ -1,3 +1,7 @@
+---
+slug: /
+---
+
 # SMARTHAUS Documentation
 
 Welcome to the **SMARTHAUS** documentation. This site is the technical companion to [smarthaus.ai](https://www.smarthaus.ai).
