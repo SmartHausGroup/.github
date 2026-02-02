@@ -41,9 +41,10 @@ const config = {
             title: 'Docs',
             items: [
               { label: 'Intro', to: '/' },
-              { label: 'Framework (Thesis)', to: '/thesis/framework' },
+              { label: 'About', to: '/about' },
+              { label: 'Framework', to: '/thesis/framework' },
               { label: 'RFS', to: '/rfs/overview' },
-              { label: 'Mathematical Autopsy', to: '/mathematical-autopsy/overview' },
+              { label: 'Methodology (MA)', to: '/mathematical-autopsy/overview' },
             ],
           },
           {

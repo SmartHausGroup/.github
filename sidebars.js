@@ -1,8 +1,20 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docs: [
-    'intro',
-    'thesis/framework',
+    // Getting started
+    {
+      type: 'category',
+      label: 'Getting started',
+      collapsed: false,
+      items: ['intro', 'about'],
+    },
+    // Framework (why)
+    {
+      type: 'category',
+      label: 'Framework',
+      items: ['thesis/framework'],
+    },
+    // RFS (core tech)
     {
       type: 'category',
       label: 'Resonant Field Storage (RFS)',
@@ -26,7 +38,13 @@ const sidebars = {
         },
       ],
     },
-    'mathematical-autopsy/overview',
+    // Methodology
+    {
+      type: 'category',
+      label: 'Methodology',
+      items: ['mathematical-autopsy/overview'],
+    },
+    // Archetypes (what we build)
     {
       type: 'category',
       label: 'Archetypes',
@@ -36,7 +54,6 @@ const sidebars = {
         'archetypes/mge',
       ],
     },
-    'about',
   ],
 };
 

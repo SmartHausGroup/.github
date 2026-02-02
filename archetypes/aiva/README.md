@@ -26,32 +26,7 @@ We split the pipeline into **three layers** because **intent, structure, and exe
 
 AIVA implements a three-layer architecture, each using its optimal computational model:
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    AIVA Architecture                         │
-├─────────────────────────────────────────────────────────────┤
-│  🧠 Biology Layer (AIOS) - Intelligence Orchestration       │
-│  ├── Dynamic Intelligence Orchestration                     │
-│  ├── AI-Driven Intent Classification                        │
-│  ├── Holographic Memory Integration                         │
-│  ├── Adaptive Learning & Experience                         │
-│  └── Integrated-information (Φ) telemetry                    │
-├─────────────────────────────────────────────────────────────┤
-│  ⚗️ Chemistry Layer (AQL) - AIVA Query Language             │
-│  ├── Static Deterministic Graphs                            │
-│  ├── Symbolic Contract Resolution                           │
-│  ├── Mathematical Proof System                              │
-│  ├── Formal Verification                                    │
-│  └── Compile-Time Optimization                              │
-├─────────────────────────────────────────────────────────────┤
-│  ⚛️ Physics Layer (AEF) - AIVA Execution Fabric             │
-│  ├── Quantum-Inspired Execution                             │
-│  ├── Superposition & Entanglement                           │
-│  ├── Energy-Based Resource Management                       │
-│  ├── Built-in Telemetry & Observability                     │
-│  └── A/B Testing for Optimization                           │
-└─────────────────────────────────────────────────────────────┘
-```
+![AIVA Architecture](/img/aiva-architecture.png)
 
 ### Computational Models
 
