@@ -2,10 +2,10 @@
 
 **Guardian of Intelligent Assistance**
 
-[![Repository](https://img.shields.io/badge/Repository-TAI-blue)](https://github.com/SmartHausGroup/TAI)
-[![Status](https://img.shields.io/badge/Status-Foundation%20Complete-brightgreen)](https://github.com/SmartHausGroup/TAI)
+[![Repository](https://img.shields.io/badge/Repository-TAI-blue)](#)
+[![Status](https://img.shields.io/badge/Status-Foundation%20Complete-brightgreen)](#)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/SmartHausGroup/TAI)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#)
 
 A service-oriented personal assistant platform with endless memory, contextual intelligence, continuous user learning, and an AI agent marketplace.
 
@@ -64,11 +64,11 @@ All services communicate via HTTP APIs. Services are **NOT embedded** in TAI cod
 
 - **AICPOrchestrator**: Central API gateway and orchestration (Port 8000)
 - **RFS (Resonant Field Storage)**: 4-D wave-based field storage — memory substrate for TAI (Port 8002)
-- **NME (Nota Memoria Engine)**: Memory structuring and trait extraction before RFS
-- **VFE (Verbum Field Engine)**: GPU-first LLM inference engine (Port 8081)
-- **VEE/QuantumCore**: Intent classification and quantum-inspired math (Port 8001)
-- **CAIO**: Service routing and access control
-- **MAIA**: Attention mechanisms and intent processing
+- **NME (Nota Memoria Engine)**: Memory structuring and trait extraction before RFS → [NME](nme/README.md)
+- **VFE (Verbum Field Engine)**: GPU-first LLM inference engine (Port 8081) → [VFE](vfe/README.md)
+- **VEE/QuantumCore**: Intent classification and quantum-inspired math (Port 8001) → [VEE](vee/README.md)
+- **CAIO**: Service routing and access control → [CAIO](caio/README.md)
+- **MAIA**: Attention mechanisms and intent processing → [MAIA](maia/README.md)
 
 **Key Principle**: TAI uses service packages via HTTP clients. Services are NOT embedded in TAI codebase, enabling hot-swapping and modularity.
 
@@ -141,15 +141,16 @@ TAI follows a rigorous **MA Doc-First** approach:
 - Multi-modal integration
 - Enhanced memory capabilities
 
-## Component Repositories
+## TAI parts (on this site)
 
-TAI integrates with the following standalone services:
+TAI integrates with the following standalone services. Each has a page on this site:
 
-- **[RFS](https://github.com/SmartHausGroup/ResonantFieldStorage)** — Memory substrate (Resonant Field Storage)
-- **[VFE](https://github.com/SmartHausGroup/VerbumFieldEngine)** — GPU-first LLM inference engine
-- **[VEE](https://github.com/SmartHausGroup/VoluntasEngine)** — Intent classification and quantum-inspired math
-- **[CAIO](https://github.com/SmartHausGroup/CAIO)** — Service routing and access control
-- **[MAIA](https://github.com/SmartHausGroup/MAIA)** — Attention mechanisms and intent processing
+- **[RFS](../../resonant-field-storage/README.md)** — Memory substrate (Resonant Field Storage)
+- **[NME](nme/README.md)** — Nota Memoria Engine (memory structuring / trait extraction)
+- **[VFE](vfe/README.md)** — Verbum Field Engine (GPU-first LLM inference)
+- **[VEE](vee/README.md)** — Voluntas Engine (intent classification)
+- **[CAIO](caio/README.md)** — Service routing and access control
+- **[MAIA](maia/README.md)** — Attention mechanisms and intent processing
 
 ## Documentation
 
@@ -160,10 +161,9 @@ TAI integrates with the following standalone services:
 
 ## Learn More
 
-- **Repository**: [TAI on GitHub](https://github.com/SmartHausGroup/TAI)
-- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../SMARTHAUS_VISION.md)
-- **RFS Documentation**: [RFS README](../rfs/README.md)
-- **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../SMARTHAUS_VISION.md)
+- **RFS**: [Resonant Field Storage](../../resonant-field-storage/README.md)
+- **On this site**: [NME](nme/README.md) · [VFE](vfe/README.md) · [VEE](vee/README.md) · [CAIO](caio/README.md) · [MAIA](maia/README.md)
 - **Website**: [smarthaus.ai](https://smarthaus.ai)
 
 ## License

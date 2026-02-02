@@ -2,10 +2,10 @@
 
 **Artificial Intelligence Living Soul**
 
-[![Repository](https://img.shields.io/badge/Repository-AIVA-blue)](https://github.com/SmartHausGroup/AIVA)
-[![Status](https://img.shields.io/badge/Status-Phase%201%20Complete-brightgreen)](https://github.com/SmartHausGroup/AIVA)
+[![Repository](https://img.shields.io/badge/Repository-AIVA-blue)](#)
+[![Status](https://img.shields.io/badge/Status-Phase%201%20Complete-brightgreen)](#)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/SmartHausGroup/AIVA)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](#)
 
 > **Biology → Chemistry → Physics Pipeline**  
 > *Triadic architecture for intent-driven execution with mathematical guarantees*
@@ -63,22 +63,18 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 ### 🧠 Biology Layer: AIOS (Artificial Intelligence Operating System)
 
-**Role**: Intelligence and cognitive orchestration
+**Role**: Central Nervous System (CNS)—brain (COE), voluntary execution (SNS), autonomic self-care (ANS). Intelligence and cognitive orchestration with RFS as memory.
 
-**Key Components**:
-- **Prefrontal Cortex**: Executive intent parsing, constraint prioritization, disambiguation
-- **Basal Ganglia**: Policy gating and execution path selection
-- **Thalamus**: Inter-module signal routing and relay
-- **Hippocampus**: Short- and long-term memory integration
-- **Amygdala**: Alert escalation and anomaly detection
-- **Corpus Callosum**: Cross-subsystem coordination
-- **Cerebellum**: DAG tuning and execution optimization
+**Three subsystems** (each has its own page):
+- **COE** — Cognitive Orchestration Engine (brain): intent, policy, memory, anomaly detection, DAG tuning → [COE](aios/coe/README.md)
+- **SNS** — Somatic Nervous System (voluntary execution): molecule → DAG → run; coordinates AQL → AEF → [SNS](aios/sns/README.md)
+- **ANS** — Autonomic Nervous System (self-care): monitors health, anomaly/alerting, policy tuning; feeds telemetry back to COE → [ANS](aios/ans/README.md)
 
-**Integrated Information**: Working toward measurable integrated information (Φ) as a metric for system-wide awareness and coordination, where higher Φ indicates greater integration and awareness across components.
+**COE brain regions** (inside COE): Prefrontal Cortex, Basal Ganglia, Thalamus, Hippocampus, Amygdala, Corpus Callosum, Cerebellum. All governed by lattice cognitive calculus and runtime contracts; semi-autonomous like a human body.
 
-**RFS Integration**: Uses RFS for holographic memory integration
+**RFS Integration**: Hippocampus and system memory use RFS. Working toward measurable integrated information (Φ).
 
-**Repository**: [AIOS](https://github.com/SmartHausGroup/AIOS)
+**→** [AIOS page](aios/README.md)
 
 ### ⚗️ Chemistry Layer: AQL (AIVA Query Language)
 
@@ -106,7 +102,7 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 **RFS Integration**: Uses RFS for storing symbolic structures and contracts
 
-**Repository**: [AQL (LQL repo)](https://github.com/SmartHausGroup/LQL)
+**→** [AQL page](aql/README.md)
 
 ### ⚛️ Physics Layer: AEF (AIVA Execution Fabric)
 
@@ -129,7 +125,7 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 **RFS Integration**: Uses RFS for execution state and telemetry
 
-**Repository**: [AEF (LEF repo)](https://github.com/SmartHausGroup/LEF)
+**→** [AEF page](aef/README.md)
 
 ## Integration Between Layers
 
@@ -207,16 +203,11 @@ External systems (e.g., TAI Personal Assistant) integrate with AIVA via **CAIO**
 
 ## Documentation
 
-### Architecture & Theory
-- [Architecture Overview](https://github.com/SmartHausGroup/AIVA/tree/main/architecture) — Complete system architecture
-- [AIOS Documentation](https://github.com/SmartHausGroup/AIVA/tree/main/architecture/AIOS) — Biological layer implementation
-- [AQL Documentation](https://github.com/SmartHausGroup/AIVA/tree/main/architecture/LQL) — Chemistry layer (AIVA Query Language)  
-- [AEF Documentation](https://github.com/SmartHausGroup/AIVA/tree/main/architecture/LEF) — Physics layer (AIVA Execution Fabric)
-
-### Component Repositories
-- [AIOS Repository](https://github.com/SmartHausGroup/AIOS) — Biology layer implementation
-- [AQL (LQL repo)](https://github.com/SmartHausGroup/LQL) — Chemistry layer (AIVA Query Language)
-- [AEF (LEF repo)](https://github.com/SmartHausGroup/LEF) — Physics layer (AIVA Execution Fabric)
+On this site:
+- [AIOS](aios/README.md) — Biology layer (CNS: COE + SNS + ANS)
+- [COE](aios/coe/README.md) · [SNS](aios/sns/README.md) · [ANS](aios/ans/README.md) — AIOS subsystems
+- [AQL](aql/README.md) — Chemistry layer (AIVA Query Language)
+- [AEF](aef/README.md) — Physics layer (AIVA Execution Fabric)
 
 ## Research Directions
 
@@ -238,9 +229,8 @@ External systems (e.g., TAI Personal Assistant) integrate with AIVA via **CAIO**
 
 ## Learn More
 
-- **Repository**: [AIVA on GitHub](https://github.com/SmartHausGroup/AIVA)
-- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../SMARTHAUS_VISION.md)
-- **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../SMARTHAUS_VISION.md)
+- **On this site**: [AIOS](aios/README.md) · [AQL](aql/README.md) · [AEF](aef/README.md)
 - **Website**: [smarthaus.ai](https://smarthaus.ai)
 
 ## License

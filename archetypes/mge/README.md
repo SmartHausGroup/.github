@@ -3,8 +3,8 @@
 **Certus Securitas Ex Machina** — Deterministic AI governance through cryptographic mathematics.
 
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](../../../LICENSE)
-[![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)](https://github.com/SmartHausGroup)
-[![MGE Core](https://img.shields.io/badge/MGE-Core-1.0.0-green.svg)](https://github.com/SmartHausGroup/mge-core)
+[![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)](#)
+[![MGE Core](https://img.shields.io/badge/MGE-Core-1.0.0-green.svg)](#)
 
 ## 🌟 Vision
 
@@ -173,7 +173,7 @@ async def check_governance(action, context):
 
 ### SDK Integration
 
-For comprehensive SDK documentation and examples, see **[mge-sdk](https://github.com/SmartHausGroup/mge-sdk)**.
+For comprehensive SDK documentation and examples, see the MGE SDK documentation (on this site or on request).
 
 ```python
 from mge_sdk import MGEClient
@@ -193,10 +193,10 @@ else:
 ```
 
 **SDK Resources:**
-- **[Installation Guide](https://github.com/SmartHausGroup/mge-sdk#installation)** - Get started with the SDK
-- **[API Reference](https://github.com/SmartHausGroup/mge-sdk/docs/SDK_REFERENCE.md)** - Complete SDK documentation
-- **[Integration Guide](https://github.com/SmartHausGroup/mge-sdk/docs/INTEGRATION_GUIDE.md)** - Integration patterns and best practices
-- **[Rule Creation Guide](https://github.com/SmartHausGroup/mge-sdk/docs/RULE_CREATION_GUIDE.md)** - Creating custom governance rules
+- **Installation Guide** - Get started with the SDK (available with MGE licensing)
+- **API Reference** - Complete SDK documentation
+- **Integration Guide** - Integration patterns and best practices
+- **Rule Creation Guide** - Creating custom governance rules
 
 ### Sidecar Deployment
 
@@ -251,16 +251,9 @@ spec:
 - Real-time validation of infrastructure changes
 - Integration with existing DevSecOps pipelines
 
-## 📦 Repositories
+## 📦 MGE on this site
 
-### Public Repositories
-
-- **[MGE](https://github.com/SmartHausGroup/MGE)** — Public documentation, installation guides, and licensing
-- **[mge-sdk](https://github.com/SmartHausGroup/mge-sdk)** — SDK for developing custom governance rules and MA integration
-
-### Internal Repositories
-
-- **[mge-core](https://github.com/SmartHausGroup/mge-core)** — Core service implementation with cryptographic engine
+MGE (Mathematical Governance Engine) is documented on this site. Documentation, installation guides, SDK for custom governance rules, and core service implementation are available; contact SmartHaus for access and licensing.
 
 ## 🔄 Relationship to Other Archetypes
 
@@ -313,25 +306,13 @@ MGE provides governance across all SMARTHAUS archetypes:
 
 1. **Get MGE**: Contact SmartHaus for enterprise licensing
 2. **Deploy Service**: Use Docker or Kubernetes manifests
-3. **Configure Rules**: Use **[mge-sdk](https://github.com/SmartHausGroup/mge-sdk)** or direct API to define policies
+3. **Configure Rules**: Use MGE SDK or direct API to define policies
 4. **Integrate Systems**: Add governance checks to your AI applications
 5. **Monitor**: Set up monitoring and alerting for governance metrics
 
 ### Development Setup
 
-```bash
-# Clone repositories
-git clone https://github.com/SmartHausGroup/mge-core.git
-git clone https://github.com/SmartHausGroup/mge-sdk.git
-
-# Install SDK (see [mge-sdk](https://github.com/SmartHausGroup/mge-sdk) for full installation guide)
-cd mge-sdk
-pip install -e .
-
-# Start development service
-cd ../mge-core
-make dev-run
-```
+Contact SmartHaus for access to MGE core and SDK. Installation and development setup guides are provided with licensing.
 
 ### Rule Development
 
@@ -360,19 +341,7 @@ with open("my-rule.mdc", "w") as f:
 
 ## 📚 Documentation
 
-### For Organizations
-- **[Installation Guide](https://github.com/SmartHausGroup/MGE/docs/installation.md)** - Deployment and configuration
-- **[Integration Guide](https://github.com/SmartHausGroup/MGE/docs/integration.md)** - System integration patterns
-- **[API Reference](https://github.com/SmartHausGroup/MGE/docs/api.md)** - Complete REST API documentation
-
-### For Developers
-- **[SDK Documentation](https://github.com/SmartHausGroup/mge-sdk)** - Rule development toolkit
-- **[Rule Formats](https://github.com/SmartHausGroup/MGE/docs/rule_formats.md)** - MDC, YAML, JSON formats
-- **[Examples](https://github.com/SmartHausGroup/MGE/examples/)** - Working integration examples
-
-### For Rule Authors
-- **[Rule Creation Guide](https://github.com/SmartHausGroup/mge-sdk/docs/RULE_CREATION_GUIDE.md)**
-- **[Constraint Types](https://github.com/SmartHausGroup/MGE/docs/constraints.md)** - Available rule constraints
+Installation, integration, API reference, SDK documentation, rule formats (MDC, YAML, JSON), and rule creation guides are available with MGE licensing. Contact SmartHaus for access.
 
 ## 🤝 Support & Community
 
@@ -383,9 +352,7 @@ with open("my-rule.mdc", "w") as f:
 - **Performance Optimization** - Expert tuning for high-throughput scenarios
 
 ### Community Resources
-- **GitHub Issues** - Bug reports and feature requests
-- **Community Forum** - Peer support and knowledge sharing
-- **[mge-sdk Repository](https://github.com/SmartHausGroup/mge-sdk)** - Rule development support and examples
+- **Support** - Contact SmartHaus for bug reports, feature requests, and rule development support
 
 ### Contact
 - **Sales**: sales@smarthaus.group

@@ -2,9 +2,9 @@
 
 **A Holographic Memory Substrate for Intelligent Systems**
 
-[![Repository](https://img.shields.io/badge/Repository-ResonantFieldStorage-blue)](https://github.com/SmartHausGroup/ResonantFieldStorage)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)](https://github.com/SmartHausGroup/ResonantFieldStorage)
-[![Invariants](https://img.shields.io/badge/Invariants-42%2B%20Validated-success)](https://github.com/SmartHausGroup/ResonantFieldStorage)
+[![Repository](https://img.shields.io/badge/Repository-ResonantFieldStorage-blue)](#)
+[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)](#)
+[![Invariants](https://img.shields.io/badge/Invariants-42%2B%20Validated-success)](#)
 [![NVIDIA Inception](https://img.shields.io/badge/NVIDIA%20Inception-Member-76b900.svg)](https://www.nvidia.com/en-us/startups/)
 
 ## Overview
@@ -336,9 +336,7 @@ RFS follows **notebook-first development** as part of the Mathematical Autopsy (
 ## Learn More
 
 - **Use Cases**: [Detailed use case documentation](./use-cases/)
-- **Repository**: [ResonantFieldStorage on GitHub](https://github.com/SmartHausGroup/ResonantFieldStorage)
 - **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../SMARTHAUS_VISION.md)
-- **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
 - **Website**: [smarthaus.ai](https://smarthaus.ai)
 - **Field Theory vs. Vector Space**: [From Vector Space to Field Theory—A New Mathematical Foundation for Memory](./RFS:%20From%20Vector%20Space%20to%20Field%20Theory—A%20New%20Mathematical%20Foundation%20for%20Memory.md) — Comprehensive comparison of field theory mathematics vs. vector space mathematics, explaining why RFS's mathematical foundation enables capabilities that vector databases cannot provide
 

@@ -49,35 +49,35 @@ SMARTHAUS builds **AI Archetypes** and **Governance Services** on our **Mathemat
 
 **Tutelarius Auxilium Intellectus** — Your personal AI assistant that remembers everything and knows you deeply. Voice-first, with endless memory (RFS), any model, and mathematical guarantees. TAI orchestrates services—RFS, NME, VFE, VEE, CAIO, MAIA—via a single platform.
 
-**→** [TAI product page](archetypes/tai/README.md) · [GitHub](https://github.com/SmartHausGroup/TAI)
+**→** [TAI](archetypes/tai/README.md)
+
+**TAI parts** (each has its own page):
+- [NME](archetypes/tai/nme/README.md) — Nota Memoria Engine (memory structuring / trait extraction)
+- [VFE](archetypes/tai/vfe/README.md) — Verbum Field Engine (GPU-first LLM inference)
+- [VEE](archetypes/tai/vee/README.md) — Voluntas Engine (intent classification)
+- [CAIO](archetypes/tai/caio/README.md) — Service routing and access control
+- [MAIA](archetypes/tai/maia/README.md) — Attention mechanisms and intent processing
 
 ### 🧬 AIVA — Triadic AI System
 
 **Artificialis Intelligentia Vivens Anima** — A triadic computational system working toward integrated and mathematically aware AI.
 
-**The Three Layers**:
+**The Three Layers** (each has its own page):
 
-1. **🧠 Biology Layer (AIOS)** — Intelligence and cognitive orchestration
-   - Neural networks process intent
-   - Memory systems store experience
-   - Brain-inspired regions coordinate behavior
-   - Working toward measurable integrated awareness
+1. **🧠 Biology Layer (AIOS)** — Central Nervous System (COE + SNS + ANS)
+   - **AIOS** — Brain (COE), voluntary execution (SNS), autonomic self-care (ANS); RFS as memory
+   - **→** [AIOS](archetypes/aiva/aios/README.md)
+   - **AIOS parts**: [COE](archetypes/aiva/aios/coe/README.md) (brain) · [SNS](archetypes/aiva/aios/sns/README.md) (voluntary execution) · [ANS](archetypes/aiva/aios/ans/README.md) (self-care)
 
 2. **⚗️ Chemistry Layer (AQL)** — AIVA Query Language
-   - Transforms intent into mathematically provable execution graphs
-   - Ensures correctness through formal verification
-   - Compiles to deterministic DAGs
+   - Transforms intent into mathematically provable execution graphs; formal verification; deterministic DAGs
+   - **→** [AQL](archetypes/aiva/aql/README.md)
 
 3. **⚛️ Physics Layer (AEF)** — AIVA Execution Fabric
-   - Quantum-inspired particles execute computations
-   - Energy-based resource management
-   - Parallel execution with built-in telemetry
+   - Quantum-inspired particles execute computations; energy-based resource management; built-in telemetry
+   - **→** [AEF](archetypes/aiva/aef/README.md)
 
-**Repositories**:
-- **AIVA** — Architecture documentation and specifications
-- **AIOS** — Biology layer implementation
-- **AQL (LQL repo)** — Chemistry layer (AIVA Query Language)
-- **AEF (LEF repo)** — Physics layer (AIVA Execution Fabric)
+**→** [AIVA](archetypes/aiva/README.md)
 
 ## 📄 Product Pages
 
@@ -87,19 +87,19 @@ Each product has a single page on this site (ready for GitHub Pages). One sectio
 
 **The mathematical memory substrate for TAI and AIVA.** A 4D field where information is stored as superposed wave patterns—resonance-based retrieval, relationship discovery via interference, exact-byte recall, and 42+ validated invariants. Built on field theory, not vector space.
 
-**→** [RFS product page](resonant-field-storage/README.md) · [GitHub](https://github.com/SmartHausGroup/ResonantFieldStorage)
+**→** [RFS](resonant-field-storage/README.md)
 
 ### MGE — Mathematical Governance Engine
 
 **Certus Securitas Ex Machina.** Cryptographic governance for AI: HMAC-SHA256 receipts, deterministic enforcement, MA integration, MDC/YAML/JSON rules. Sub-millisecond checks for TAI, AIVA, and enterprise AI. One product—documentation, tooling, and licensing in one place.
 
-**→** [MGE product page](archetypes/mge/README.md) · [GitHub](https://github.com/SmartHausGroup/MGE)
+**→** [MGE](archetypes/mge/README.md)
 
 ### Mathematical Autopsy (MA)
 
 **Math-first methodology for provably correct systems.** Define mathematics before code; prove invariants in notebooks; enforce in CI. Native macOS agent, notebook-driven development, and MGE-backed governance. One methodology, one destination.
 
-**→** [MA product page](mathematical-autopsy/README.md) · [GitHub](https://github.com/SmartHausGroup/MathematicalAutopsy)
+**→** [MA](mathematical-autopsy/README.md)
 
 ---
 
@@ -238,17 +238,19 @@ Working toward systems where the whole is aware of its parts:
 - Measurable integrated information
 - Collective intelligence metrics
 
-## 📦 Product & Repo Index
+## 📦 Product & Part Index
 
-One page per product on this site; one primary repo per product. (Implementation repos such as -core or -sdk live under the main product repos and are not listed here.)
+All parts have a page on this site. Links below stay within the site (no external repo links).
 
-| Product | Page on this site | GitHub |
-|--------|--------------------|--------|
-| **Resonant Field Storage** | [RFS](resonant-field-storage/README.md) | [ResonantFieldStorage](https://github.com/SmartHausGroup/ResonantFieldStorage) |
-| **TAI** (Personal Assistant) | [TAI](archetypes/tai/README.md) | [TAI](https://github.com/SmartHausGroup/TAI) |
-| **AIVA** (Triadic AI) | [AIVA](archetypes/aiva/README.md) | [AIVA](https://github.com/SmartHausGroup/AIVA) |
-| **MGE** (Governance) | [MGE](archetypes/mge/README.md) | [MGE](https://github.com/SmartHausGroup/MGE) |
-| **Mathematical Autopsy** | [MA](mathematical-autopsy/README.md) | [MathematicalAutopsy](https://github.com/SmartHausGroup/MathematicalAutopsy) |
+| Product / part | Page on this site |
+|----------------|--------------------|
+| **Resonant Field Storage** | [RFS](resonant-field-storage/README.md) |
+| **TAI** (Personal Assistant) | [TAI](archetypes/tai/README.md) |
+| **TAI parts** | [NME](archetypes/tai/nme/README.md) · [VFE](archetypes/tai/vfe/README.md) · [VEE](archetypes/tai/vee/README.md) · [CAIO](archetypes/tai/caio/README.md) · [MAIA](archetypes/tai/maia/README.md) |
+| **AIVA** (Triadic AI) | [AIVA](archetypes/aiva/README.md) |
+| **AIVA parts** | [AIOS](archetypes/aiva/aios/README.md) (CNS: [COE](archetypes/aiva/aios/coe/README.md) · [SNS](archetypes/aiva/aios/sns/README.md) · [ANS](archetypes/aiva/aios/ans/README.md)) · [AQL](archetypes/aiva/aql/README.md) · [AEF](archetypes/aiva/aef/README.md) |
+| **MGE** (Governance) | [MGE](archetypes/mge/README.md) |
+| **Mathematical Autopsy** | [MA](mathematical-autopsy/README.md) |
 
 
 
