@@ -5,7 +5,7 @@ const config = {
   url: 'https://docs.smarthaus.ai',
   baseUrl: '/',
   organizationName: 'SmartHausGroup',
-  projectName: 'SmartHausGroup.github',
+  projectName: '.github',
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   i18n: { defaultLocale: 'en', locales: ['en'] },
@@ -17,7 +17,7 @@ const config = {
           path: 'docs',
           routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/SmartHausGroup/SmartHausGroup.github/edit/main/',
+          editUrl: 'https://github.com/SmartHausGroup/.github/edit/main/',
         },
         blog: false,
         theme: { customCss: require.resolve('./src/css/custom.css') },
@@ -31,7 +31,7 @@ const config = {
         items: [
           { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'Docs' },
           { href: 'https://www.smarthaus.ai', label: 'Website', position: 'right' },
-          { href: 'https://github.com/SmartHausGroup/SmartHausGroup.github', label: 'GitHub', position: 'right' },
+          { href: 'https://github.com/SmartHausGroup/.github', label: 'GitHub', position: 'right' },
         ],
       },
       footer: {
@@ -58,7 +58,7 @@ const config = {
             title: 'More',
             items: [
               { label: 'Website', href: 'https://www.smarthaus.ai' },
-              { label: 'GitHub', href: 'https://github.com/SmartHausGroup/SmartHausGroup.github' },
+              { label: 'GitHub', href: 'https://github.com/SmartHausGroup/.github' },
             ],
           },
         ],

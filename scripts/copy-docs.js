@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 /**
- * Copies markdown from repo root into website/docs/ so Docusaurus can serve it.
+ * Copies markdown from repo root into docs/ so Docusaurus can serve it.
  * Run before docusaurus build. Source of truth remains in repo root.
  */
 
 const fs = require('fs');
 const path = require('path');
 
-const REPO_ROOT = path.join(__dirname, '..', '..');
+const REPO_ROOT = path.join(__dirname, '..');
 const DOCS_OUT = path.join(__dirname, '..', 'docs');
 
 function ensureDir(dir) {
@@ -22,15 +22,8 @@ function copyFile(src, dest) {
   }
 }
 
-function copyWithContent(src, dest, content) {
-  ensureDir(path.dirname(dest));
-  fs.writeFileSync(dest, content, 'utf8');
-  console.log('  (content)', path.relative(DOCS_OUT, dest));
-}
-
 ensureDir(DOCS_OUT);
 
-// Intro is hand-written; about comes from profile or main README
 // Thesis
 copyFile(
   path.join(REPO_ROOT, 'thesis', 'MATH_THESIS_v5.md'),
@@ -68,7 +61,7 @@ copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'README.md'), path.join(DOCS_
 copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva.md'));
 copyFile(path.join(REPO_ROOT, 'archetypes', 'mge', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'mge.md'));
 
-// About (profile README or main README)
+// About (profile README)
 copyFile(
   path.join(REPO_ROOT, 'profile', 'README.md'),
   path.join(DOCS_OUT, 'about.md')

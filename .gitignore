@@ -12,15 +12,15 @@
 .DS_Store
 Thumbs.db
 
-# Docusaurus (website/)
-website/node_modules/
-website/build/
-website/.docusaurus/
-website/static/docs/
+# Docusaurus (repo root)
+node_modules/
+build/
+.docusaurus/
+static/docs/
 # Copied at build by scripts/copy-docs.js — do not commit
-website/docs/about.md
-website/docs/archetypes/
-website/docs/mathematical-autopsy/
-website/docs/rfs/
-website/docs/thesis/
+docs/about.md
+docs/archetypes/
+docs/mathematical-autopsy/
+docs/rfs/
+docs/thesis/
 

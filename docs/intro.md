@@ -16,4 +16,4 @@ SMARTHAUS builds AI systems where **mathematics serves as the nervous system**. 
 ## Quick links
 
 - [Website](https://www.smarthaus.ai)
-- [GitHub (this repo)](https://github.com/SmartHausGroup/SmartHausGroup.github)
+- [GitHub (this repo)](https://github.com/SmartHausGroup/.github)

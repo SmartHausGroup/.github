@@ -40,7 +40,7 @@ We adhere to a Math-First engineering doctrine, formalized in our core thesis: *
 ### Evidence
 *   👉 **[Read the Manifesto](https://github.com/SmartHausGroup/SmartHaus-Manifesto)** (The Vision & Values)
 *   👉 **[Read the Mathematical Thesis](thesis/MATH_THESIS_v5.md)** (The Proof: Field Theory, 44 Invariants, & Benchmarks)
-*   👉 **Docs site:** [docs.smarthaus.ai](https://docs.smarthaus.ai) (Docusaurus built from this repo; deploy via [DEPLOYMENT.md](DEPLOYMENT.md))
+*   👉 **Docs site:** [docs.smarthaus.ai](https://docs.smarthaus.ai) (Docusaurus at repo root; deploy via [DEPLOYMENT.md](DEPLOYMENT.md))
 
 ## 🏗️ Architecture Overview
 
