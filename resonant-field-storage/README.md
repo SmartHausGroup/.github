@@ -13,7 +13,7 @@ Resonant Field Storage (RFS) is a revolutionary approach to information storage 
 
 **Core Innovation**: RFS implements a resonant field representation using standard digital signal processing (DSP) — Fast Fourier Transforms (FFTs) and wavelets — and controlled superposition. The value comes from the operational guardrails and mathematical guarantees layered on top.
 
-**Mathematical Foundation**: RFS is built on field theory mathematics, not vector space mathematics. This fundamental difference enables capabilities that vector databases cannot provide: relationships as physics (interference patterns), explainability built into the mathematics, contradiction detection through destructive interference, deterministic guarantees, and temporal intelligence. For a detailed comparison of field theory vs. vector space mathematics, see [From Vector Space to Field Theory—A New Mathematical Foundation for Memory](./RFS:%20From%20Vector%20Space%20to%20Field%20Theory—A%20New%20Mathematical%20Foundation%20for%20Memory.md).
+**Mathematical Foundation**: RFS is built on field theory mathematics, not vector space mathematics. This fundamental difference enables capabilities that vector databases cannot provide: relationships as physics (interference patterns), explainability built into the mathematics, contradiction detection through destructive interference, deterministic guarantees, and temporal intelligence. For a detailed comparison of field theory vs. vector space mathematics, see [From Vector Space to Field Theory—A New Mathematical Foundation for Memory](/rfs/field-theory).
 
 ### Why field theory, not vector space
 
@@ -323,7 +323,7 @@ RFS excels in scenarios where relationships, explainability, and exact recall ma
 5. **Research Knowledge Graph** — Track concept evolution and research communities
 6. **Pharmaceutical Discovery** — Discover novel drug combinations through relationship discovery and GNN prediction
 
-See [Use Cases](./use-cases/) for detailed documentation on each scenario.
+See [Use Cases](/rfs/use-cases/overview) for detailed documentation on each scenario.
 
 ## Development Methodology
 
@@ -339,10 +339,10 @@ RFS follows **notebook-first development** as part of the Mathematical Autopsy (
 
 ## Learn More
 
-- **Use Cases**: [Detailed use case documentation](./use-cases/)
-- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../SMARTHAUS_VISION.md)
+- **Use Cases**: [Detailed use case documentation](/rfs/use-cases/overview)
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](/vision)
 - **Website**: [smarthaus.ai](https://smarthaus.ai)
-- **Field Theory vs. Vector Space**: [From Vector Space to Field Theory—A New Mathematical Foundation for Memory](./RFS:%20From%20Vector%20Space%20to%20Field%20Theory—A%20New%20Mathematical%20Foundation%20for%20Memory.md) — Comprehensive comparison of field theory mathematics vs. vector space mathematics, explaining why RFS's mathematical foundation enables capabilities that vector databases cannot provide
+- **Field Theory vs. Vector Space**: [From Vector Space to Field Theory—A New Mathematical Foundation for Memory](/rfs/field-theory) — Comprehensive comparison of field theory mathematics vs. vector space mathematics, explaining why RFS's mathematical foundation enables capabilities that vector databases cannot provide
 
 ## License
 
@@ -350,7 +350,7 @@ RFS follows **notebook-first development** as part of the Mathematical Autopsy (
 
 For licensing inquiries, please contact: **Philip Siniscalchi** at phil@smarthausgroup.com
 
-See [LICENSE](../LICENSE) file for full terms.
+See [LICENSE](https://github.com/SmartHausGroup/.github/blob/main/LICENSE) file for full terms.
 
 ---
 

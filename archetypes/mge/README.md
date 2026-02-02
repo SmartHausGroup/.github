@@ -2,7 +2,7 @@
 
 **Certus Securitas Ex Machina** — Deterministic AI governance through cryptographic mathematics.
 
-[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](../../../LICENSE)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](https://github.com/SmartHausGroup/.github/blob/main/LICENSE)
 [![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)](#)
 [![MGE Core](https://img.shields.io/badge/MGE-Core-1.0.0-green.svg)](#)
 

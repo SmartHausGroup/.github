@@ -72,11 +72,11 @@ All use cases leverage core RFS features:
 
 - **Start Here:** Read this README to understand all use cases
 - **Deep Dive:** Navigate to each use case subdirectory for detailed white paper documentation
-- **RFS Overview:** See [RFS README](../README.md) for technical architecture
-- **SMARTHAUS Vision:** See [SMARTHAUS Vision Document](../../../SMARTHAUS_VISION.md) for the complete vision
+- **RFS Overview:** See [RFS README](/rfs/overview) for technical architecture
+- **SMARTHAUS Vision:** See [SMARTHAUS Vision Document](/vision) for the complete vision
 
 ## Related Documentation
 
-- **RFS Overview:** [../README.md](../README.md)
+- **RFS Overview:** [RFS overview](/rfs/overview)
 - **RFS Repository:** [ResonantFieldStorage on GitHub](https://github.com/SmartHausGroup/ResonantFieldStorage)
-- **SMARTHAUS Documentation:** [../../../SMARTHAUS_VISION.md](../../../SMARTHAUS_VISION.md)
+- **SMARTHAUS Documentation:** [SMARTHAUS Vision](/vision)

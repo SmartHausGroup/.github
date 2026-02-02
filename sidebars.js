@@ -6,7 +6,7 @@ const sidebars = {
       type: 'category',
       label: 'Getting started',
       collapsed: false,
-      items: ['intro', 'about'],
+      items: ['intro', 'about', 'vision'],
     },
     // Framework (why)
     {

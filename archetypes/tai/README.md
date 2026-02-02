@@ -51,7 +51,7 @@ The core provides **frontend/UX/UI** (web, dashboard, CLI), an **orchestration l
 
 ### Standalone Service Packages
 
-Each capability is a separate service with its own API and (where applicable) port. **RFS** (Resonant Field Storage) is the 4D wave-based memory substrate (e.g. Port 8002). **NME** (Nota Memoria Engine) structures memory and extracts traits before RFS → [NME](nme/README.md). **VFE** (Verbum Field Engine) is the GPU-first LLM inference engine (e.g. Port 8081) → [VFE](vfe/README.md). **VEE** (Voluntas Engine) handles intent classification and quantum-inspired math (e.g. Port 8001) → [VEE](vee/README.md). **CAIO** provides service routing and access control → [CAIO](caio/README.md). **MAIA** provides attention mechanisms and intent processing → [MAIA](maia/README.md). An orchestrator/gateway (e.g. Port 8000) coordinates discovery and routing. **Key principle:** TAI uses these packages via HTTP clients; services are not embedded, enabling hot-swapping and modularity.
+Each capability is a separate service with its own API and (where applicable) port. **RFS** (Resonant Field Storage) is the 4D wave-based memory substrate (e.g. Port 8002). **NME** (Nota Memoria Engine) structures memory and extracts traits before RFS. **VFE** (Verbum Field Engine) is the GPU-first LLM inference engine (e.g. Port 8081). **VEE** (Voluntas Engine) handles intent classification and quantum-inspired math (e.g. Port 8001). **CAIO** provides service routing and access control. **MAIA** provides attention mechanisms and intent processing. An orchestrator/gateway (e.g. Port 8000) coordinates discovery and routing. **Key principle:** TAI uses these packages via HTTP clients; services are not embedded, enabling hot-swapping and modularity.
 
 ## Service Architecture
 
@@ -121,12 +121,12 @@ TAI follows a rigorous **MA Doc-First** approach:
 
 TAI integrates with the following standalone services. Each has a page on this site:
 
-- **[RFS](../../resonant-field-storage/README.md)** — Memory substrate (Resonant Field Storage)
-- **[NME](nme/README.md)** — Nota Memoria Engine (memory structuring / trait extraction)
-- **[VFE](vfe/README.md)** — Verbum Field Engine (GPU-first LLM inference)
-- **[VEE](vee/README.md)** — Voluntas Engine (intent classification)
-- **[CAIO](caio/README.md)** — Service routing and access control
-- **[MAIA](maia/README.md)** — Attention mechanisms and intent processing
+- **[RFS](/rfs/overview)** — Memory substrate (Resonant Field Storage)
+- **NME** — Nota Memoria Engine (memory structuring / trait extraction)
+- **VFE** — Verbum Field Engine (GPU-first LLM inference)
+- **VEE** — Voluntas Engine (intent classification)
+- **CAIO** — Service routing and access control
+- **MAIA** — Attention mechanisms and intent processing
 
 ## Documentation
 
@@ -137,9 +137,9 @@ TAI integrates with the following standalone services. Each has a page on this s
 
 ## Learn More
 
-- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../SMARTHAUS_VISION.md)
-- **RFS**: [Resonant Field Storage](../../resonant-field-storage/README.md)
-- **On this site**: [NME](nme/README.md) · [VFE](vfe/README.md) · [VEE](vee/README.md) · [CAIO](caio/README.md) · [MAIA](maia/README.md)
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](/vision)
+- **RFS**: [Resonant Field Storage](/rfs/overview)
+- **On this site**: [TAI](/archetypes/tai) (NME, VFE, VEE, CAIO, MAIA)
 - **Website**: [smarthaus.ai](https://smarthaus.ai)
 
 ## License
@@ -148,7 +148,7 @@ TAI integrates with the following standalone services. Each has a page on this s
 
 For licensing inquiries, please contact: **Philip Siniscalchi** at phil@smarthausgroup.com
 
-See [LICENSE](../../LICENSE) file for full terms.
+See [LICENSE](https://github.com/SmartHausGroup/.github/blob/main/LICENSE) file for full terms.
 
 ---
 

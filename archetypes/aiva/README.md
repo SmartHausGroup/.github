@@ -42,13 +42,13 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 **Role:** AIOS is the **Central Nervous System (CNS)** of AIVA. It implements a brain (COE), voluntary execution (SNS), and autonomic self-care (ANS), with RFS as the mathematical memory substrate. The COE receives intent, evaluates it using lattice cognitive calculus (reward, risk, entropy, memory similarity), and produces execution plans and blueprints. The SNS takes those plans and runs them: molecule → AQL (compile to DAG) → AEF (execute particles). The ANS monitors execution health, detects anomalies, triggers fail-close (A3) when thresholds are exceeded, and feeds telemetry back into the COE for learning and policy tuning. All three subsystems are semi-autonomous and contract-bound—they cooperate through canonical fields and runtime function contracts, not through a single central controller.
 
-**Three subsystems** (each has its own page): **COE** (brain: intent, policy, memory, anomaly detection, DAG tuning) → [COE](aios/coe/README.md). **SNS** (voluntary execution: molecule → DAG → run; coordinates AQL → AEF) → [SNS](aios/sns/README.md). **ANS** (self-care: monitors health, anomaly/alerting, policy tuning; feeds telemetry back to COE) → [ANS](aios/ans/README.md).
+**Three subsystems:** **COE** (brain: intent, policy, memory, anomaly detection, DAG tuning), **SNS** (voluntary execution: molecule → DAG → run; coordinates AQL → AEF), **ANS** (self-care: monitors health, anomaly/alerting, policy tuning; feeds telemetry back to COE).
 
 **COE brain regions** (inside the COE): Prefrontal Cortex (intent parsing), Basal Ganglia (policy gating), Thalamus (routing), Hippocampus (RFS-backed memory), Amygdala (risk and fail-close), Corpus Callosum (cross-subsystem coordination), Cerebellum (DAG tuning). All are governed by lattice cognitive calculus and runtime contracts; they run semi-autonomously like regions of a biological brain.
 
 **RFS Integration:** Hippocampus and system memory use RFS for episodic and system memory. Work continues toward measurable integrated information (Φ) as a metric for system-wide coordination.
 
-**→** [AIOS page](aios/README.md)
+**→** See [AIVA](/archetypes/aiva) for AIOS, AQL, and AEF layer details.
 
 ### ⚗️ Chemistry Layer: AQL (AIVA Query Language)
 
@@ -58,7 +58,7 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 **Mathematical foundation:** Contract Resolution Operator (formal calculus for intent resolution), Intent-Driven Structural Calculus (IDSC) (parallelism and structure), Mutation Differential Operator (MDO) (telemetry-driven adaptation), Entropy Axioms (mathematical constraints and validation). RFS can store symbolic structures and contracts produced or consumed by AQL.
 
-**→** [AQL page](aql/README.md)
+**→** See [AIVA](/archetypes/aiva) for AQL details.
 
 ### ⚛️ Physics Layer: AEF (AIVA Execution Fabric)
 
@@ -66,7 +66,7 @@ AIVA implements a three-layer architecture, each using its optimal computational
 
 **Architecture:** Particle types—**Quarks** (core computation), **Leptons** (I/O), **Bosons** (communication/messaging), **Gluons** (binding/synchronization), **Neutrinos** (silent/monitoring)—each with well-defined contracts. Execution is quantum-inspired on classical hardware (superposition and entanglement simulation where useful), with energy-based resource management and built-in telemetry. RFS can store execution state and telemetry when persistence or audit is required.
 
-**→** [AEF page](aef/README.md)
+**→** See [AIVA](/archetypes/aiva) for AEF details.
 
 ## Integration Between Layers
 
@@ -145,10 +145,9 @@ External systems (e.g., TAI Personal Assistant) integrate with AIVA via **CAIO**
 ## Documentation
 
 On this site:
-- [AIOS](aios/README.md) — Biology layer (CNS: COE + SNS + ANS)
-- [COE](aios/coe/README.md) · [SNS](aios/sns/README.md) · [ANS](aios/ans/README.md) — AIOS subsystems
-- [AQL](aql/README.md) — Chemistry layer (AIVA Query Language)
-- [AEF](aef/README.md) — Physics layer (AIVA Execution Fabric)
+- **AIOS** — Biology layer (CNS: COE + SNS + ANS)
+- **AQL** — Chemistry layer (AIVA Query Language)
+- **AEF** — Physics layer (AIVA Execution Fabric)
 
 ## Research Directions
 
@@ -170,8 +169,8 @@ On this site:
 
 ## Learn More
 
-- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../SMARTHAUS_VISION.md)
-- **On this site**: [AIOS](aios/README.md) · [AQL](aql/README.md) · [AEF](aef/README.md)
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](/vision)
+- **On this site**: [AIVA](/archetypes/aiva) (AIOS, AQL, AEF)
 - **Website**: [smarthaus.ai](https://smarthaus.ai)
 
 ## License
@@ -180,7 +179,7 @@ On this site:
 
 For licensing inquiries, please contact: **Philip Siniscalchi** at phil@smarthausgroup.com
 
-See [LICENSE](../../LICENSE) file for full terms.
+See [LICENSE](https://github.com/SmartHausGroup/.github/blob/main/LICENSE) file for full terms.
 
 ---
 

@@ -387,8 +387,8 @@ Organizations that can resolve incidents faster, learn from history automaticall
 
 ## Learn More
 
-- **RFS Overview**: [RFS README](../README.md) — Complete technical architecture
-- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](../../../SMARTHAUS_VISION.md) — The complete vision
+- **RFS Overview**: [RFS README](/rfs/overview) — Complete technical architecture
+- **SMARTHAUS Vision**: [SMARTHAUS Vision Document](/vision) — The complete vision
 - **Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
 
 ---

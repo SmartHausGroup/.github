@@ -8,7 +8,7 @@ Vector databases are built on vector space mathematics: points in high-dimension
 
 This document explains why the mathematical substrate matters—why field theory enables capabilities that vector space mathematics cannot provide.
 
-**For a comprehensive overview of RFS capabilities, use cases, and technical details, see the [RFS README](./README.md).**
+**For a comprehensive overview of RFS capabilities, use cases, and technical details, see the [RFS README](/rfs/overview).**
 
 ## The Mathematical Foundation: Field Theory vs. Vector Space
 
@@ -899,7 +899,7 @@ For applications that need more than fast similarity search—that need to under
 
 ## Further Reading
 
-For comprehensive technical documentation, use cases, performance benchmarks, implementation details, and production capabilities, see the [RFS README](./README.md). The README provides detailed information on:
+For comprehensive technical documentation, use cases, performance benchmarks, implementation details, and production capabilities, see the [RFS README](/rfs/overview). The README provides detailed information on:
 - Architecture and implementation status
 - Performance benchmarks (actual and theoretical)
 - Use cases with detailed white papers

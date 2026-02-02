@@ -1,6 +1,6 @@
 # SMARTHAUS: Mathematics as the Nervous System of AI
 
-[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](https://github.com/SmartHausGroup/.github/blob/main/LICENSE)
 [![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)](https://github.com/SmartHausGroup)
 [![NVIDIA Inception](https://img.shields.io/badge/NVIDIA%20Inception-Member-76b900.svg)](https://www.nvidia.com/en-us/startups/)
 
@@ -39,7 +39,7 @@ We adhere to a Math-First engineering doctrine, formalized in our core thesis: *
 
 ### Evidence
 *   👉 **[Read the Manifesto](https://github.com/SmartHausGroup/SmartHaus-Manifesto)** (The Vision & Values)
-*   👉 **[Read the Mathematical Thesis](thesis/MATH_THESIS_v5.md)** (The Proof: Field Theory, 44 Invariants, & Benchmarks)
+*   👉 **[Read the Mathematical Thesis](/thesis/framework)** (The Proof: Field Theory, 44 Invariants, & Benchmarks)
 
 ## 🏗️ Architecture Overview
 
@@ -49,30 +49,17 @@ SMARTHAUS builds **AI Archetypes** and **Governance Services** on our **Mathemat
 
 **Tutelarius Auxilium Intellectus** — Your personal AI assistant that remembers everything and knows you deeply. Voice-first, with endless memory (RFS), any model, and mathematical guarantees. TAI orchestrates services—RFS, NME, VFE, VEE, CAIO, MAIA—via a single platform.
 
-**→** [TAI](../archetypes/tai/README.md)
+**→** [TAI](/archetypes/tai)
 
-**TAI parts** (each has its own page):
-- [NME](../archetypes/tai/nme/README.md) — Nota Memoria Engine (memory structuring / trait extraction)
-- [VFE](../archetypes/tai/vfe/README.md) — Verbum Field Engine (GPU-first LLM inference)
-- [VEE](../archetypes/tai/vee/README.md) — Voluntas Engine (intent classification)
-- [CAIO](../archetypes/tai/caio/README.md) — Service routing and access control
-- [MAIA](../archetypes/tai/maia/README.md) — Attention mechanisms and intent processing
+**TAI parts:** NME (Nota Memoria Engine), VFE (Verbum Field Engine), VEE (Voluntas Engine), CAIO (service routing), MAIA (attention/intent). See [TAI](/archetypes/tai) for details.
 
 ### 🧬 AIVA — Triadic AI System
 
 **Artificialis Intelligentia Vivens Anima** — A triadic computational system working toward integrated and mathematically aware AI.
 
-**The Three Layers** (each has its own page):
+**The Three Layers:** Biology (AIOS), Chemistry (AQL), Physics (AEF). See [AIVA](/archetypes/aiva) for details.
 
-1. **🧠 Biology Layer (AIOS)** — Central Nervous System (COE + SNS + ANS)
-   - **→** [AIOS](../archetypes/aiva/aios/README.md)
-   - **AIOS parts**: [COE](../archetypes/aiva/aios/coe/README.md) (brain) · [SNS](../archetypes/aiva/aios/sns/README.md) (voluntary execution) · [ANS](../archetypes/aiva/aios/ans/README.md) (self-care)
-2. **⚗️ Chemistry Layer (AQL)** — AIVA Query Language
-   - **→** [AQL](../archetypes/aiva/aql/README.md)
-3. **⚛️ Physics Layer (AEF)** — AIVA Execution Fabric
-   - **→** [AEF](../archetypes/aiva/aef/README.md)
-
-**→** [AIVA](../archetypes/aiva/README.md)
+**→** [AIVA](/archetypes/aiva)
 
 ---
 
@@ -217,13 +204,13 @@ All parts have a page on this site. Links stay on the site.
 
 | Product / part | Page on this site |
 |----------------|--------------------|
-| **Resonant Field Storage** | [RFS](../resonant-field-storage/README.md) |
-| **TAI** (Personal Assistant) | [TAI](../archetypes/tai/README.md) |
-| **TAI parts** | [NME](../archetypes/tai/nme/README.md) · [VFE](../archetypes/tai/vfe/README.md) · [VEE](../archetypes/tai/vee/README.md) · [CAIO](../archetypes/tai/caio/README.md) · [MAIA](../archetypes/tai/maia/README.md) |
-| **AIVA** (Triadic AI) | [AIVA](../archetypes/aiva/README.md) |
-| **AIVA parts** | [AIOS](../archetypes/aiva/aios/README.md) (CNS: [COE](../archetypes/aiva/aios/coe/README.md) · [SNS](../archetypes/aiva/aios/sns/README.md) · [ANS](../archetypes/aiva/aios/ans/README.md)) · [AQL](../archetypes/aiva/aql/README.md) · [AEF](../archetypes/aiva/aef/README.md) |
-| **MGE** (Governance) | [MGE](../archetypes/mge/README.md) |
-| **Mathematical Autopsy** | [MA](../mathematical-autopsy/README.md) |
+| **Resonant Field Storage** | [RFS](/rfs/overview) |
+| **TAI** (Personal Assistant) | [TAI](/archetypes/tai) |
+| **TAI parts** | See [TAI](/archetypes/tai) |
+| **AIVA** (Triadic AI) | [AIVA](/archetypes/aiva) |
+| **AIVA parts** | See [AIVA](/archetypes/aiva) |
+| **MGE** (Governance) | [MGE](/archetypes/mge) |
+| **Mathematical Autopsy** | [MA](/mathematical-autopsy/overview) |
 
 
 
@@ -276,7 +263,7 @@ Each repository contains comprehensive documentation in its `docs/` directory:
 
 For licensing inquiries, please contact: **Philip Siniscalchi** at phil@smarthausgroup.com
 
-See [LICENSE](LICENSE) file for full terms.
+See [LICENSE](https://github.com/SmartHausGroup/.github/blob/main/LICENSE) file for full terms.
 
 ## 🙏 Acknowledgments
 

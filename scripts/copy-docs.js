@@ -67,4 +67,10 @@ copyFile(
   path.join(DOCS_OUT, 'about.md')
 );
 
+// Vision
+copyFile(
+  path.join(REPO_ROOT, 'SMARTHAUS_VISION.md'),
+  path.join(DOCS_OUT, 'vision.md')
+);
+
 console.log('copy-docs.js: done.');
