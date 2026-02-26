@@ -58,6 +58,12 @@ copyFile(
 
 // Archetypes
 copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai.md'));
+// TAI sub-services
+copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'nme', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'nme.md'));
+copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'vfe', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'vfe.md'));
+copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'vee', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'vee.md'));
+copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'caio', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'caio.md'));
+copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'maia', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'maia.md'));
 copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva.md'));
 copyFile(path.join(REPO_ROOT, 'archetypes', 'mge', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'mge.md'));
 

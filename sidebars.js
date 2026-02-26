@@ -81,7 +81,18 @@ const sidebars = {
       type: 'category',
       label: 'Archetypes',
       items: [
-        'archetypes/tai',
+        {
+          type: 'category',
+          label: 'TAI: Tutelarius Auxilium Intellectus',
+          link: { type: 'doc', id: 'archetypes/tai' },
+          items: [
+            'archetypes/tai/nme',
+            'archetypes/tai/vfe',
+            'archetypes/tai/vee',
+            'archetypes/tai/caio',
+            'archetypes/tai/maia',
+          ],
+        },
         'archetypes/aiva',
         'archetypes/mge',
       ],
