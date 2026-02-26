@@ -4,7 +4,7 @@ const katex = require('rehype-katex');
 
 const config = {
   title: 'SMARTHAUS Docs',
-  tagline: 'Mathematics as the nervous system of AI',
+  tagline: 'Advisory-first deterministic AI through mathematics',
   url: 'https://docs.smarthaus.ai',
   baseUrl: '/',
   organizationName: 'SmartHausGroup',
@@ -41,7 +41,8 @@ const config = {
         title: 'SMARTHAUS Docs',
         items: [
           { type: 'docSidebar', sidebarId: 'docs', position: 'left', label: 'Docs' },
-          { href: 'https://www.smarthaus.ai', label: 'Website', position: 'right' },
+          { type: 'doc', docId: 'advisory/README', position: 'left', label: 'Advisory' },
+          { href: 'https://smarthaus.ai', label: 'Website', position: 'right' },
           { href: 'https://github.com/SmartHausGroup/.github', label: 'GitHub', position: 'right' },
         ],
       },
@@ -53,9 +54,11 @@ const config = {
             items: [
               { label: 'Intro', to: '/' },
               { label: 'About', to: '/about' },
+              { label: 'Advisory', to: '/advisory' },
               { label: 'Core Thesis', to: '/thesis/framework' },
               { label: 'RFS', to: '/rfs/overview' },
               { label: 'Methodology (MA)', to: '/mathematical-autopsy/overview' },
+              { label: 'Advisory Services', to: '/advisory/overview' },
             ],
           },
           {
@@ -64,12 +67,12 @@ const config = {
               { label: 'TAI', to: '/archetypes/tai' },
               { label: 'AIVA', to: '/archetypes/aiva' },
               { label: 'MGE', to: '/archetypes/mge' },
-            ],
+  ],
           },
           {
             title: 'More',
             items: [
-              { label: 'Website', href: 'https://www.smarthaus.ai' },
+              { label: 'Website', href: 'https://smarthaus.ai' },
               { label: 'GitHub', href: 'https://github.com/SmartHausGroup/.github' },
             ],
           },

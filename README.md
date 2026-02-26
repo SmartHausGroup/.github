@@ -6,6 +6,8 @@
 
 **SMARTHAUS** is a technology organization building AI systems where **mathematics serves as the nervous system**. At the core of our work is **Resonant Field Storage (RFS)** — the mathematical memory substrate for both TAI and AIVA, enabling disparate AI components to communicate, exhibit collective awareness, and operate with mathematical guarantees.
 
+**Design system:** Docs theme and cross-links align with the marketing site. Canonical design and IA: [SmartHausWebsite/docs/SMARTHAUS_WEBSITE_DESIGN.md](https://github.com/SmartHausGroup/SmartHausWebsite/blob/main/docs/SMARTHAUS_WEBSITE_DESIGN.md) and [INFORMATION_ARCHITECTURE.md](https://github.com/SmartHausGroup/SmartHausWebsite/blob/main/docs/INFORMATION_ARCHITECTURE.md).
+
 ## 🌟 What is SMARTHAUS?
 
 SMARTHAUS represents a fundamental shift in how AI systems are built. Instead of isolated AI models operating independently, we build systems on a **shared mathematical field substrate** — **Resonant Field Storage (RFS)** — where all AI components project their states and communicate through rigorous mathematical operators.

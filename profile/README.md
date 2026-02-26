@@ -1,297 +1,62 @@
-# SMARTHAUS: Mathematics as the Nervous System of AI
+# SMARTHAUS: Deterministic AI Through Mathematics
 
 [![License](https://img.shields.io/badge/license-Proprietary-red.svg)](https://github.com/SmartHausGroup/.github/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/status-Active%20Development-brightgreen.svg)](https://github.com/SmartHausGroup)
+[![Status](https://img.shields.io/badge/status-Advisory%20%26%20Research-brightgreen.svg)](https://www.smarthaus.ai)
 [![NVIDIA Inception](https://img.shields.io/badge/NVIDIA%20Inception-Member-76b900.svg)](https://www.nvidia.com/en-us/startups/)
 
-**SMARTHAUS** is a technology organization building AI systems where **mathematics serves as the nervous system**. At the core of our work is **Resonant Field Storage (RFS)** — the mathematical memory substrate for both TAI and AIVA, enabling disparate AI components to communicate, exhibit collective awareness, and operate with mathematical guarantees.
+**SMARTHAUS** is an advisory and research organization building deterministic AI through mathematics.
 
-## 🌟 What is SMARTHAUS?
+## What is SMARTHAUS?
 
-SMARTHAUS represents a fundamental shift in how AI systems are built. Instead of isolated AI models operating independently, we build systems on a **shared mathematical field substrate** — **Resonant Field Storage (RFS)** — where all AI components project their states and communicate through rigorous mathematical operators.
+We are founded on one positioning:
 
-Think of it like this: just as a biological nervous system enables different organs to communicate and coordinate, our mathematical substrate (RFS) enables different AI modules to share information, pursue goals together, and maintain awareness of each other's states.
+- **Advisory-ready:** We offer client-facing strategic services built on Mathematical Autopsy.
+- **Research-driven:** We develop mathematical methods and systems that reduce uncertainty.
+- **Product-in-development:** TAI, AIVA, RFS, and MGE are our current engineering workstreams, not claims of production availability.
 
-## 🎯 Vision
+### The Problem
 
-SMARTHAUS builds AI systems that are:
+Modern AI is often non-deterministic. Teams rely on testing and heuristics and still face edge cases they cannot predict.
 
-- **Modular yet unified** — Through RFS, our shared mathematical field substrate
-- **Distributed yet aware** — Through field projections and integrated awareness
-- **Autonomous yet steerable** — Through attractor dynamics
-- **Deterministic yet adaptive** — Through mathematical guarantees
+### The Solution
 
-We're building the future where mathematics serves as the nervous system of AI, enabling systems that are provably correct, fully deterministic, and capable of collective intelligence.
+We replace “trust me” systems with methods that are:
 
-### The Core Innovation
+- **Mathematically defined**
+- **Invariant-enforced**
+- **Continuously verified**
 
-**Mathematics is not just a tool for building AI — it becomes the active medium through which AI components coexist and communicate.**
+## Advisory Positioning
 
-All AI modules (transformers, CNNs, RNNs, etc.) project into a shared 4D field using linear operators. Information flows through field superposition, interference patterns, and resonance — all governed by mathematical laws that ensure stability, determinism, and provable correctness.
+SMARTHAUS is first and foremost advisory and research. Our consultancy-style offerings help teams move from unclear AI outcomes to auditable, reproducible systems.
 
-## 📜 Philosophy & Mathematical Foundation
+- [Advisory overview](advisory/overview)
+- [Mathematical methodology](/advisory/methodology)
+- [Service offerings](/advisory)
+- [Mathematical guarantees](/advisory/guarantees)
 
-We adhere to a Math-First engineering doctrine, formalized in our core thesis: **"Mathematics as the Nervous System of AI."**
+## What we build (in development)
 
-1.  **Determinism:** Replace probabilistic coin-flips with calculated utilities.
-2.  **Invariants:** Enforce safety constraints physically within the control logic.
-3.  **Conservation:** Treat information state like energy—never lost, always accounted for.
+- **TAI** — a deterministic-assurance personal AI system under active development.
+- **AIVA** — a triadic systems architecture in development.
+- **MGE** — a governance engine that turns invariants into execution policy.
+- **RFS** — a mathematical memory substrate and research foundation.
 
-### Evidence
-*   👉 **[Read the Manifesto](https://github.com/SmartHausGroup/SmartHaus-Manifesto)** (The Vision & Values)
-*   👉 **[Read the Mathematical Thesis](/thesis/framework)** (The Proof: Field Theory, 44 Invariants, & Benchmarks)
+## Core Principles
 
-## 🏗️ Architecture Overview
+1. **Proof before implementation**
+   - We define the governing formula and constraints before code.
+2. **Verifiable outcomes**
+   - Clients get a clear path from intent to proof to execution.
+3. **Deterministic behavior**
+   - Same inputs and fixed context should produce the same outcome.
 
-SMARTHAUS builds **AI Archetypes** and **Governance Services** on our **Mathematical Autopsy (MA)** methodology and **Resonant Field Storage (RFS)** substrate:
+## Evidence
 
-### 🎯 TAI — Personal Assistant
+- **[Read the Mathematical Thesis](/thesis/framework)**
+- **[Read the MA guide](/mathematical-autopsy/overview)**
+- **[Read advisory service details](/advisory/services/express-assessment)**
 
-**Tutelarius Auxilium Intellectus** — Your personal AI assistant that remembers everything and knows you deeply. Voice-first, with endless memory (RFS), any model, and mathematical guarantees. TAI orchestrates services—RFS, NME, VFE, VEE, CAIO, MAIA—via a single platform.
+## Contact
 
-**→** [TAI](/archetypes/tai)
-
-**TAI parts:** NME (Nota Memoria Engine), VFE (Verbum Field Engine), VEE (Voluntas Engine), CAIO (service routing), MAIA (attention/intent). See [TAI](/archetypes/tai) for details.
-
-### 🧬 AIVA — Triadic AI System
-
-**Artificialis Intelligentia Vivens Anima** — A triadic computational system working toward integrated and mathematically aware AI. The three layers are **Biology (AIOS)** — Central Nervous System (COE + SNS + ANS), **Chemistry (AQL)** — AIVA Query Language, and **Physics (AEF)** — AIVA Execution Fabric; see [AIVA](/archetypes/aiva) for details.
-
----
-
-## 🔬 The Mathematical Foundation
-
-### Resonant Field Storage (RFS)
-
-At the heart of SMARTHAUS is **Resonant Field Storage** — a 4D mathematical field where information is stored as superposed wave patterns.
-
-**Key Concepts**:
-
-- **4D Field**: Three spatial dimensions $(x, y, z)$ plus time $(t)$
-- **Wave Superposition**: Multiple documents stored as overlapping waves
-- **Resonance**: Querying works by exciting resonances in the field
-- **Energy Conservation**: All operations preserve energy (Parseval's theorem)
-- **Exact Recall**: AEAD-backed byte channel for perfect reconstruction
-
-**Why Waves?**
-- **Superposition**: $N$ documents stored in $\mathcal{O}(D)$ space, not $\mathcal{O}(N)$
-- **Interference**: Constructive interference encodes relationships; destructive interference signals contradictions
-- **Resonance**: Queries resonate with matching patterns, enabling fast retrieval
-
-### Mathematical Guarantees
-
-Every component SMARTHAUS builds is **mathematically proven**, not just tested:
-
-#### Invariants & Validation
-
-- ✅ **Many invariants** validated in continuous integration
-  - Each invariant is a YAML specification with mathematical constraints
-  - Validated automatically before every merge
-  - Violations block deployment
-  - Examples: Q_dB bounds, capacity margins, energy conservation, stability factors
-
-- ✅ **Many verification notebooks** with executable proofs
-  - Deterministic execution with fixed seeds
-  - Prove invariants with actual code
-  - Generate artifacts consumed by CI gates
-  - Document mathematical relationships
-
-#### Core Guarantees
-
-- ✅ **Deterministic guarantees** — Same inputs always produce same outputs
-  - Mathematical proof, not probabilistic
-  - Enforced at every layer
-  - Complete reproducibility
-
-- ✅ **Energy conservation** — All operations preserve mathematical properties
-  - Parseval's theorem: FFT operations preserve energy
-  - Field operations maintain energy budgets
-  - Telemetry tracks energy conservation
-
-- ✅ **Formal proofs** — Lemmas and theorems document every guarantee
-  - Mathematical Autopsy process ensures proofs before code
-  - Every operator has formal specification
-  - Code must implement documented math
-
-#### What This Means
-
-**You don't have to trust us—you can verify the mathematics yourself.**
-
-Every guarantee is:
-1. **Documented** in mathematical notation
-2. **Proven** in verification notebooks
-3. **Enforced** by invariants in CI
-4. **Validated** before deployment
-
-This is the difference between "we tested it" and "we proved it."
-
-## 🎯 Key Differentiators
-
-### 1. Deterministic by Design ⭐ **CORE PRINCIPLE**
-
-**No non-deterministic silos. Every component is mathematically guaranteed to produce identical outputs for identical inputs.**
-
-This is not just a goal—it's a **mathematical guarantee** enforced at every layer:
-
-#### Determinism Enforcement
-
-- **All randomness is seeded and controlled**: Every random operation uses a deterministic seed. Same seed = same result, always.
-- **No time-dependent logic**: System behavior never depends on wall-clock time, timestamps, or system time. All temporal operations use deterministic time sources.
-- **Immutable inputs during processing**: Once processing begins, inputs are frozen. No mutations, no side effects during computation.
-- **LLM inference isolated and logged**: LLM calls are isolated, logged with full context, and can be replayed deterministically.
-- **Deterministic FFT operations**: All field operations (FFT, IFFT, correlation) use deterministic algorithms with fixed seeds.
-- **Versioned geometry**: Q geometry, band plans, and all constants are versioned and locked. Changes require explicit version bumps.
-
-#### Why Determinism Matters
-
-1. **Reproducibility**: Same inputs always produce same outputs. Critical for scientific rigor, debugging, and compliance.
-2. **Auditability**: Every operation can be replayed exactly. Complete audit trail with mathematical guarantees.
-3. **Testing**: Tests are deterministic. No flaky tests, no "works on my machine" issues.
-4. **Compliance**: Legal and regulatory requirements demand reproducibility. We provide mathematical guarantees, not just best efforts.
-5. **Debugging**: When something goes wrong, you can replay the exact sequence that caused it.
-
-#### Mathematical Proof
-
-For any service $S$ with inputs $I$ and seed $s$:
-$$S(I, s) = S(I, s) \quad \text{(always, for all } I, s \text{)}$$
-
-This is **proven**, not just tested. Every component has invariants that enforce this guarantee, validated in continuous integration.
-
-#### Determinism in Practice
-
-- **RFS Field Operations**: All FFT operations are deterministic. Same documents → same field state.
-- **Query Results**: Same query + same field → same results, always.
-- **Exact Recall**: Byte reconstruction is deterministic. Same field → same bytes.
-- **Telemetry**: All metrics are deterministic. Same operations → same telemetry.
-- **Notebooks**: All verification notebooks run deterministically with fixed seeds.
-
-**This is the foundation of SMARTHAUS: mathematical guarantees, not probabilistic promises.**
-
-### 2. Mathematics as Nervous System
-
-Unlike traditional AI systems where modules communicate through ad-hoc APIs, SMARTHAUS uses a **shared mathematical field**:
-
-- All modules project into the same Hilbert space
-- Information flows through field projections and resonance
-- Collective awareness emerges from field interactions
-- Goal-seeking via attractor dynamics in the energy landscape
-
-### 3. Self-Improving with Proofs
-
-AIVA can evolve and optimize itself while maintaining mathematical correctness:
-
-- Mutations are proposed and validated
-- AQL proves correctness before adoption
-- Performance improvements are measured and verified
-- Complete audit trail of all changes
-
-### 4. Integrated Awareness
-
-Working toward systems where the whole is aware of its parts:
-
-- Field-based global workspace
-- Mutual awareness through projections
-- Measurable integrated information
-- Collective intelligence metrics
-
-## 📦 Product & Part Index
-
-All parts have a page on this site. Links stay on the site.
-
-| Product / part | Page on this site |
-|----------------|--------------------|
-| **Resonant Field Storage** | [RFS](/rfs/overview) |
-| **TAI** (Personal Assistant) | [TAI](/archetypes/tai) |
-| **TAI parts** | See [TAI](/archetypes/tai) |
-| **AIVA** (Triadic AI) | [AIVA](/archetypes/aiva) |
-| **AIVA parts** | See [AIVA](/archetypes/aiva) |
-| **MGE** (Governance) | [MGE](/archetypes/mge) |
-| **Mathematical Autopsy** | [MA](/mathematical-autopsy/overview) |
-
-
-
-## 📊 Current Status
-
-### ✅ Production Ready
-- **RFS**: 4D field storage with 42 validated invariants. **Achieved 44% recall (Sparse-Distributed Field).**
-- **Mathematical Autopsy**: Validation framework operational
-- **Determinism**: All components mathematically guaranteed
-
-### 🚧 In Development
-- **MathematicalAutopsy**: Native macOS agentic application and MCP bridge
-- **MGE**: Enterprise deployment and MA integration features
-- **TAI**: Voice interface and user learning module
-- **AIVA**: Full triadic integration and integrated awareness metrics
-- **VFE**: Metal backend and expanded model support
-
-### 🔬 Research
-- Multi-modal field integration
-- Advanced attractor dynamics
-- Dynamic persuadability
-- Collective intelligence emergence
-
-## 🧮 Mathematical Rigor
-
-SMARTHAUS follows a rigorous **Mathematical Autopsy (MA) process**:
-
-1. **Math First**: Mathematical foundations defined before code
-2. **Invariants**: YAML invariants encode guarantees
-3. **Verification**: Notebooks prove invariants with executable code
-4. **CI Enforcement**: Automated validation before deployment
-5. **Code Alignment**: Code must implement documented math
-
-**Result**: Every component is mathematically proven, not just tested.
-
-
-## 📚 Documentation
-
-Each repository contains comprehensive documentation in its `docs/` directory:
-
-- Mathematical foundations and operators calculus
-- Invariants and lemmas with formal proofs
-- Verification notebooks with executable code
-- Architecture specifications and design documents
-- API references and usage guides
-
-## 📄 License
-
-**PROPRIETARY SOFTWARE** — All content in this repository is proprietary and confidential property of SmartHaus Group. All rights reserved. Unauthorized copying, modification, distribution, or use is strictly prohibited.
-
-For licensing inquiries, please contact: **Philip Siniscalchi** at phil@smarthausgroup.com
-
-See [LICENSE](https://github.com/SmartHausGroup/.github/blob/main/LICENSE) file for full terms.
-
-## 🙏 Acknowledgments
-
-SMARTHAUS systems are built on rigorous mathematical foundations, drawing inspiration from:
-- Physics (Hilbert spaces, wave dynamics, energy conservation)
-- Chemistry (reaction constraints, homeostasis, regulatory loops)
-- Biology (modular architectures, attractor-based goals, global workspace theory)
-
-## 🔗 Organization
-
-- **Website**: [smarthaus.ai](https://www.smarthaus.ai)
-- **GitHub Organization**: [SmartHausGroup](https://github.com/SmartHausGroup)
-
-## 🤝 Join SMARTHAUS
-
-Interested in what you see? We're always looking for talented individuals who share our vision of mathematics as the nervous system of AI.
-
-**Contact us:**
-- **Philip Siniscalchi** — phil@smarthausgroup.com
-- **LinkedIn**: [Connect with us on LinkedIn](https://www.linkedin.com/company/smarthausgroup)
-
-Whether you're interested in:
-- Contributing to our mathematical foundations
-- Building on our RFS substrate
-- Exploring our TAI or AIVA archetypes
-- Research collaboration
-- Commercial partnerships
-
-We'd love to hear from you.
-
----
-
-**SMARTHAUS** — *Mathematics as the Nervous System of AI*
-
-*"Mathematics is not merely a toolbox for designing models; it becomes an active medium within which models coexist and communicate."*
+For advisory and research alignment, use the smarthaus.ai website contact pathways and request a deterministic AI readiness review.

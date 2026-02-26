@@ -6,6 +6,16 @@
 
 SMARTHAUS systems—RFS, AIOS, AIVA, TAI—are governed by **mathematical contracts** and **axioms**. Determinism (A1), fail-close (A3), auditability (A10), and invariants aren’t aspirations; they’re **enforced**. That only works if we **define the math before we write the code**. Mathematical Autopsy is the methodology that makes that possible: intent → mathematical foundation → invariants and lemmas → executable verification (notebooks) → CI enforcement → code. **MGE (Mathematical Governance Engine) is the rules engine for MA**—it evaluates governance rules (MDC/YAML/JSON), issues cryptographic receipts, and enforces policy at runtime, so that governance is provable, not probabilistic. The “why” is simple: we want **provably correct systems**, not “mostly correct.” MA is how we get there—and how every component in the stack (RFS, COE/SNS/ANS, AQL, AEF) stays aligned with its contracts and axioms.
 
+## Advisory framing: prove before trust
+
+MA is the practical path from uncertainty to evidence:
+
+- **Problem:** AI work often relies on testing and intuition.
+- **Proof:** We define what must always hold and prove those obligations.
+- **Trust:** Clients and teams can verify results through deterministic artifacts.
+
+For advisory and product-readiness planning, this page maps to our client-facing process in [Advisory Methodology](/advisory/methodology).
+
 ## The Revolution: From "We Tested It" to "We Proved It"
 
 Imagine deploying a system to production with complete confidence. Not because you tested it thoroughly (though you did), but because you **proved it mathematically**. Every guarantee has a formal proof. Every behavior is mathematically specified. Every change is validated against mathematical invariants before deployment.
@@ -58,6 +68,8 @@ Mathematical Autopsy reverses the traditional approach:
 
 ### Phase 1: Intent & Description
 
+**Client-facing intent:** move from vague goals to clear, auditable outcomes.
+
 **Purpose:** Document the problem statement, context, and success criteria in plain English.
 
 **Why this matters:** Before you can prove something mathematically, you must understand what you're trying to prove. This phase ensures clarity of intent.
@@ -99,6 +111,8 @@ Mathematical Autopsy reverses the traditional approach:
 **Time investment:** 1-2 days for a new feature, 2-4 hours for a small change.
 
 ### Phase 2: Mathematical Foundation
+
+**Client-facing intent:** turn strategic goals into a bounded governing formula and constraints.
 
 **Purpose:** Formalize the mathematics — definitions, notation, equations, operators.
 
@@ -159,6 +173,8 @@ score(u, p) = cosine_similarity(vᵤ, vₚ) = (vᵤ · vₚ) / (||vᵤ|| · ||v�
 **Time investment:** 2-5 days for a new feature, 1-2 days for a small change.
 
 ### Phase 3: Lemma Development
+
+**Client-facing intent:** convert assumptions into measurable promises (invariants and lemmas).
 
 **Purpose:** Create formal guarantees (invariants) and proofs (lemmas).
 
@@ -240,6 +256,8 @@ score(u, p) = (vᵤ · vₚ) / (||vᵤ|| · ||vₚ||) satisfies 0 ≤ score(u, p
 **Time investment:** 3-7 days for a new feature (including proof development), 1-2 days for a small change.
 
 ### Phase 4: Verification
+
+**Client-facing intent:** produce runnable artifacts that prove the invariants hold, not documentation-only claims.
 
 **Purpose:** Create executable verification notebook that implements and validates the mathematics.
 
@@ -361,6 +379,8 @@ print(f"✓ Artifact exported to {artifact_path}")
 **Time investment:** 2-5 days for a new feature, 1-2 days for a small change.
 
 ### Phase 5: CI Enforcement
+
+**Client-facing intent:** keep guarantees active after launch and prevent regressions from silently reappearing.
 
 **Purpose:** Register artifacts, update documentation, and promote invariant/lemma status.
 

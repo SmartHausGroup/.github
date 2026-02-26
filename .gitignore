@@ -1,3 +1,9 @@
+# AI Agent governance (local only — not published to GitHub profile)
+AGENTS.md
+CLAUDE.md
+agent_governance/
+.cursor/
+
 # Cursor IDE workspace files
 .cursor-workspace
 
@@ -24,3 +30,4 @@ docs/mathematical-autopsy/
 docs/rfs/
 docs/thesis/
 
+.vercel

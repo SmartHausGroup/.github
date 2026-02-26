@@ -13,6 +13,15 @@ SMARTHAUS contributions are guided by our core principles:
 - **Scientific Integrity**: All claims must be verifiable and falsifiable
 - **Collaborative Excellence**: We work together to advance mathematical AI understanding
 
+## 📖 Documentation (docs.smarthaus.ai)
+
+When contributing to this docs site:
+
+- **Tone**: Precise and technical; no marketing fluff. Explain concepts clearly.
+- **First-use definitions**: Define acronyms and key terms on first use, or link to the [Glossary](/glossary) (e.g. [RFS](/glossary#rfs), [MA](/glossary#ma), [TAI](/glossary#tai), [AIVA](/glossary#aiva)).
+- **Invariants and contracts**: Put formal invariants, contracts, or constraints in admonitions (callouts) so they stand out.
+- **Cross-links**: Link to the marketing site for product pages and contact: [smarthaus.ai](https://smarthaus.ai). Use consistent link text (“Documentation” from marketing → docs; “Website” from docs → marketing).
+
 ## 🚀 Getting Started
 
 ### Prerequisites

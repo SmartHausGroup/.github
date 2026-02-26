@@ -61,6 +61,21 @@ copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'README.md'), path.join(DOCS_
 copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva.md'));
 copyFile(path.join(REPO_ROOT, 'archetypes', 'mge', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'mge.md'));
 
+// Advisory
+copyFile(path.join(REPO_ROOT, 'advisory', 'README.md'), path.join(DOCS_OUT, 'advisory', 'README.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'overview.md'), path.join(DOCS_OUT, 'advisory', 'overview.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'methodology.md'), path.join(DOCS_OUT, 'advisory', 'methodology.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'guarantees.md'), path.join(DOCS_OUT, 'advisory', 'guarantees.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'self-service.md'), path.join(DOCS_OUT, 'advisory', 'self-service.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'services', 'express-assessment.md'), path.join(DOCS_OUT, 'advisory', 'services', 'express-assessment.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'services', 'readiness-assessment.md'), path.join(DOCS_OUT, 'advisory', 'services', 'readiness-assessment.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'services', 'strategy-roadmap.md'), path.join(DOCS_OUT, 'advisory', 'services', 'strategy-roadmap.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'services', 'pilot-implementation.md'), path.join(DOCS_OUT, 'advisory', 'services', 'pilot-implementation.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'services', 'advisor-retainer.md'), path.join(DOCS_OUT, 'advisory', 'services', 'advisor-retainer.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'verticals', 'healthcare.md'), path.join(DOCS_OUT, 'advisory', 'verticals', 'healthcare.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'verticals', 'professional-services.md'), path.join(DOCS_OUT, 'advisory', 'verticals', 'professional-services.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'verticals', 'property-real-estate.md'), path.join(DOCS_OUT, 'advisory', 'verticals', 'property-real-estate.md'));
+
 // About (profile README)
 copyFile(
   path.join(REPO_ROOT, 'profile', 'README.md'),

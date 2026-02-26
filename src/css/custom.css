@@ -1,23 +1,95 @@
 /**
- * SMARTHAUS Docs custom styles
+ * SMARTHAUS Docs — design tokens aligned with marketing site (SMARTHAUS_WEBSITE_DESIGN.md)
  */
 
 :root {
+  /* Canonical tokens (match SmartHausWebsite app/styles/tokens.css) */
+  --background: #dcdcdc;
+  --foreground: #000120;
+  --color-primary: #0072BC;
+  --color-primary-dark: #005EA2;
+  --color-accent-orange: #ff8c00;
+  --surface-elevated: #e1dcdc;
+  --font-primary: "Satoshi", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-heading: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-accent: "Lato", monospace;
+
+  /* Docusaurus overrides */
   --ifm-color-primary: #0072bc;
   --ifm-color-primary-dark: #0067a9;
-  --ifm-color-primary-darker: #00619f;
+  --ifm-color-primary-darker: #005ea2;
   --ifm-color-primary-darkest: #005083;
   --ifm-color-primary-light: #007dcf;
   --ifm-color-primary-lighter: #0083d9;
   --ifm-color-primary-lightest: #0094f0;
+  --ifm-font-family-base: var(--font-primary);
+  --ifm-heading-font-family: var(--font-heading);
+  --ifm-background-color: var(--background);
+  --ifm-font-color-base: var(--foreground);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #4da6ff;
-  --ifm-color-primary-dark: #3399ff;
-  --ifm-color-primary-darker: #2690ff;
-  --ifm-color-primary-darkest: #0077e6;
-  --ifm-color-primary-light: #67b3ff;
-  --ifm-color-primary-lighter: #74baff;
-  --ifm-color-primary-lightest: #9bceff;
+  --background: #000120;
+  --foreground: #dcdcdc;
+  --surface-elevated: #162530;
+  --ifm-color-primary: #00BFFF;
+  --ifm-color-primary-dark: #0099cc;
+  --ifm-color-primary-darker: #0088b8;
+  --ifm-color-primary-darkest: #006688;
+  --ifm-color-primary-light: #33ccff;
+  --ifm-color-primary-lighter: #4dd4ff;
+  --ifm-color-primary-lightest: #80e0ff;
+  --ifm-background-color: var(--background);
+  --ifm-font-color-base: var(--foreground);
+}
+
+/* Navbar and footer — match marketing palette */
+.navbar {
+  background-color: var(--surface-elevated) !important;
+  color: var(--foreground);
+}
+
+.navbar__link {
+  color: var(--foreground) !important;
+}
+
+.navbar__link--active {
+  color: var(--color-primary) !important;
+}
+
+.footer {
+  background-color: var(--surface-elevated);
+  color: var(--foreground);
+}
+
+.footer__link-item {
+  color: var(--foreground);
+}
+
+.footer__link-item:hover {
+  color: var(--color-primary);
+}
+
+/* Admonitions / callouts — accent border (InfoCallout style per design doc) */
+.admonition,
+.alert {
+  border-left: 4px solid var(--color-accent-orange);
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+}
+.admonition-note,
+.alert--info {
+  border-left-color: var(--color-primary);
+}
+.admonition-warning,
+.alert--warning {
+  border-left-color: var(--color-accent-orange);
+}
+.admonition-danger,
+.alert--danger {
+  border-left-color: #ef4444;
+}
+
+/* Code blocks — muted theme; copy button is built-in in Docusaurus */
+.prism-code {
+  border-radius: var(--ifm-global-radius);
 }
