@@ -2,7 +2,7 @@
 
 **Physics layer of AIVA: particle-based execution engine**
 
-Part of the **AIVA** archetype. [← Back to AIVA](../README.md)
+Part of the **AIVA** archetype. [← Back to AIVA](/archetypes/aiva)
 
 ## Role
 

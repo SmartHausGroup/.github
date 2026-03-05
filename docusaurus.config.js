@@ -54,11 +54,11 @@ const config = {
             items: [
               { label: 'Intro', to: '/' },
               { label: 'About', to: '/about' },
-              { label: 'Advisory', to: '/advisory' },
+              { label: 'Architecture', to: '/architecture/system-map' },
               { label: 'Core Thesis', to: '/thesis/framework' },
               { label: 'RFS', to: '/rfs/overview' },
               { label: 'Methodology (MA)', to: '/mathematical-autopsy/overview' },
-              { label: 'Advisory Services', to: '/advisory/overview' },
+              { label: 'Advisory', to: '/advisory' },
             ],
           },
           {

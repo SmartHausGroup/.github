@@ -2,7 +2,7 @@
 
 **Voluntary execution: the “doing” path of AIOS**
 
-Part of the **AIOS** (Biology layer) in the **AIVA** archetype. [← Back to AIOS](../README.md) · [← Back to AIVA](../../README.md)
+Part of the **AIOS** (Biology layer) in the **AIVA** archetype. [← Back to AIOS](/archetypes/aiva/aios) · [← Back to AIVA](/archetypes/aiva)
 
 ## Role
 

@@ -2,7 +2,7 @@
 
 **Biology layer of AIVA: Central Nervous System (CNS)**
 
-Part of the **AIVA** archetype. [← Back to AIVA](../README.md)
+Part of the **AIVA** archetype. [← Back to AIVA](/archetypes/aiva)
 
 ## Role
 
@@ -18,9 +18,9 @@ AIOS is structured as a **nervous system** with three semi-autonomous subsystems
 
 | Subsystem | Role | Page |
 |-----------|------|------|
-| **COE** — Cognitive Orchestration Engine | The brain: intent parsing, policy gating, memory (RFS), anomaly detection, DAG tuning. Thinks; does not execute or monitor. | [COE](coe/README.md) |
-| **SNS** — Somatic Nervous System | Voluntary execution: molecule → DAG → run. Coordinates the “doing” path (COE → AQL → AEF). Does; does not decide or monitor. | [SNS](sns/README.md) |
-| **ANS** — Autonomic Nervous System | Self-care: monitors execution health, anomaly/alerting, policy tuning. Feeds telemetry back into COE. Watches and modulates; does not execute or decide. | [ANS](ans/README.md) |
+| **COE** — Cognitive Orchestration Engine | The brain: intent parsing, policy gating, memory (RFS), anomaly detection, DAG tuning. Thinks; does not execute or monitor. | [COE](/archetypes/aiva/coe) |
+| **SNS** — Somatic Nervous System | Voluntary execution: molecule → DAG → run. Coordinates the “doing” path (COE → AQL → AEF). Does; does not decide or monitor. | [SNS](/archetypes/aiva/sns) |
+| **ANS** — Autonomic Nervous System | Self-care: monitors execution health, anomaly/alerting, policy tuning. Feeds telemetry back into COE. Watches and modulates; does not execute or decide. | [ANS](/archetypes/aiva/ans) |
 
 ## How they work together (semi-autonomous, like a body)
 
@@ -32,7 +32,7 @@ AIOS is structured as a **nervous system** with three semi-autonomous subsystems
 
 ## COE brain regions (inside the COE)
 
-The COE is composed of region modules; each has a `process()` contract and emits canonical fields. See [COE](coe/README.md) for detail.
+The COE is composed of region modules; each has a `process()` contract and emits canonical fields. See [COE](/archetypes/aiva/coe) for detail.
 
 - **Prefrontal Cortex** — Intent parsing, constraint prioritization, disambiguation
 - **Basal Ganglia** — Policy gating and execution path selection

@@ -8,6 +8,14 @@ const sidebars = {
       collapsed: false,
       items: ['intro', 'about', 'vision', 'glossary'],
     },
+    // Architecture
+    {
+      type: 'category',
+      label: 'Architecture',
+      items: [
+        { type: 'doc', id: 'architecture/system-map', label: 'System Map' },
+      ],
+    },
     // Core Thesis
     {
       type: 'category',
@@ -22,6 +30,9 @@ const sidebars = {
       items: [
         'rfs/overview',
         'rfs/field-theory',
+        'rfs/stakeholder-overview',
+        'rfs/innovations',
+        'rfs/natural-science-thesis',
         {
           type: 'category',
           label: 'Use Cases',
@@ -42,7 +53,12 @@ const sidebars = {
     {
       type: 'category',
       label: 'Methodology',
-      items: ['mathematical-autopsy/overview'],
+      items: [
+        'mathematical-autopsy/overview',
+        'mathematical-autopsy/how-it-works',
+        'mathematical-autopsy/methodology',
+        'mathematical-autopsy/system-master',
+      ],
     },
     // Advisory
     {
@@ -93,7 +109,25 @@ const sidebars = {
             'archetypes/tai/maia',
           ],
         },
-        'archetypes/aiva',
+        {
+          type: 'category',
+          label: 'AIVA: Artificialis Intelligentia Vivens Anima',
+          link: { type: 'doc', id: 'archetypes/aiva' },
+          items: [
+            {
+              type: 'category',
+              label: 'AIOS (Biology Layer)',
+              link: { type: 'doc', id: 'archetypes/aiva/aios' },
+              items: [
+                'archetypes/aiva/coe',
+                'archetypes/aiva/sns',
+                'archetypes/aiva/ans',
+              ],
+            },
+            'archetypes/aiva/aql',
+            'archetypes/aiva/aef',
+          ],
+        },
         'archetypes/mge',
       ],
     },

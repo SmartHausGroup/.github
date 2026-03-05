@@ -2,7 +2,7 @@
 
 **Chemistry layer of AIVA: symbolic query language and provable execution graphs**
 
-Part of the **AIVA** archetype. [← Back to AIVA](../README.md)
+Part of the **AIVA** archetype. [← Back to AIVA](/archetypes/aiva)
 
 ## Role
 
