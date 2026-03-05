@@ -5,49 +5,46 @@ title: "AI Advisor Retainer"
 
 # AI Advisor Retainer
 
-For organizations moving beyond one-off projects, the retainer engagement provides recurring advisory support to preserve momentum and execution quality.
+For organizations with active AI initiatives, the retainer provides ongoing strategic guidance that maintains Mathematical Autopsy's discipline over time. This is where MA's value compounds — catching drift, recalibrating strategy, and keeping your AI program on a deterministic track.
 
-## Who This Service Is For
+## Who It's For
 
-- Organizations with one or more active AI initiatives
-- Teams that need structured prioritization across multiple initiatives
-- Leadership requiring ongoing interpretation of AI outcomes and decisions
+- Organizations with one or more active AI initiatives that need ongoing alignment
+- Teams managing multiple AI workstreams that require structured prioritization
+- Leadership that wants consistent, evidence-based decision support — not ad hoc consulting
 
-## Core Outcomes
+## How Mathematical Autopsy Applies
 
-### Monthly Strategic Guidance
+The retainer is built on MA's **Continuous Enforcement** phase — the discipline that keeps everything honest over time:
 
-Recurring advisory cadence to keep initiatives aligned with business priorities.
+| MA Function | What Happens in the Retainer |
+|------------|------------------------------|
+| **Drift Detection** | We continuously compare execution against the original strategic model — when reality diverges from plan, we catch it early |
+| **Assumption Monitoring** | The assumptions that grounded your strategy are re-validated as conditions change — markets shift, teams evolve, technology matures |
+| **Evidence Refresh** | Recommendations are updated when new data invalidates or strengthens previous conclusions |
+| **Gate Enforcement** | Phase transitions across your AI portfolio remain evidence-gated — no initiative advances on momentum alone |
 
-### Continuous Risk Review
+This is the engagement where most consulting firms lose rigor. The strategy is delivered, the consultants move on, and execution drifts. The retainer exists specifically to prevent that.
 
-Timely course correction for adoption, vendor, and outcome risks.
+## What You Receive
 
-### Quarterly Performance Reviews
-
-Structured check-ins with metrics, status, and roadmap updates.
-
-### Strategic Continuity
-
-Consistent external perspective across phases, avoiding fragmented project delivery.
-
-## Deliverables
-
-- Monthly strategy sessions
-- Ongoing decision support and interpretation
-- Quarterly review documentation
-- Annual strategy refresh
-
-## Why It Matters
-
-AI initiatives are multi-quarter journeys.
-
-A fractional advisory model provides continuity, decision support, and disciplined review without replacing your internal team.
+- **Monthly strategy sessions** focused on outcomes, blockers, and recalibration
+- **Ongoing decision support** for high-impact AI decisions as they arise
+- **Continuous risk review** across active initiatives — adoption, vendor, technical, and organizational risks
+- **Quarterly performance reviews** with formal metrics, status assessment, and roadmap updates
+- **Annual strategy refresh** to recalibrate direction based on accumulated evidence
 
 ## Operating Cadence
 
-1. Monthly strategy check-in focused on outcomes and blockers
-2. Ongoing on-demand support for high-impact decisions
-3. Quarterly review with explicit priorities for the next period
-4. Annual review to reassess strategy direction
+1. **Monthly** — Strategy check-in focused on initiative outcomes and course corrections
+2. **Ongoing** — On-demand support for time-sensitive decisions
+3. **Quarterly** — Formal review with explicit priorities for the next period
+4. **Annually** — Strategic reassessment incorporating everything learned over the year
 
+## Why It Matters
+
+AI initiatives are multi-quarter journeys. The decisions that matter most — whether to scale, pivot, pause, or accelerate — happen long after the initial strategy is set. Without ongoing mathematical discipline, organizations revert to intuition-based decision-making exactly when rigor matters most.
+
+The retainer gives you a fractional advisory model that costs significantly less than one failed AI initiative — and it keeps Mathematical Autopsy's guarantees active across your entire AI program, not just during the initial engagement.
+
+Continuous enforcement isn't a luxury. It's where the math pays for itself.

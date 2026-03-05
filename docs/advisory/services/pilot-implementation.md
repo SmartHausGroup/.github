@@ -5,53 +5,55 @@ title: "AI Pilot Implementation"
 
 # AI Pilot Implementation
 
-A focused advisory-supported pilot validates whether a selected AI use case works in your environment before full deployment.
+A controlled validation of your highest-priority AI initiative, designed to produce a definitive go/no-go decision. This isn't "let's try it and see" — it's a structured experiment underpinned by Mathematical Autopsy's full verification discipline.
 
-## Who This Service Is For
+## Who It's For
 
 - Organizations with a defined initiative and clear ownership
-- Teams that need confidence before scaling to broad deployment
-- Leadership that wants objective go/no-go criteria
+- Teams that need confidence before committing to full-scale deployment
+- Leadership that wants objective, evidence-based go/no-go criteria — not opinions
 
-## Core Outcomes
+## How Mathematical Autopsy Applies
 
-### Pilot Design
+The Pilot engages all five MA phases at their deepest level:
 
-Success criteria, scope, baseline metrics, and measurement plan are set up-front.
+| MA Phase | What Happens in Pilot Implementation |
+|----------|-------------------------------------|
+| **Intent** | Pilot hypotheses are pre-registered — what we expect to prove, what would constitute failure, and what "success" means in measurable terms |
+| **Foundation** | Baseline metrics, measurement protocols, and scope boundaries are formalized before execution begins |
+| **Lemmas** | Success criteria are decomposed into independently verifiable sub-components — each testable on its own |
+| **Verification** | Weekly checkpoints measure performance against pre-defined thresholds — not after-the-fact narratives |
+| **Enforcement** | Drift detection runs continuously — if assumptions change mid-pilot, the model catches it and recalibrates |
 
-### Controlled Validation
+This is the engagement where MA's value is most visible. Every data point, every measurement, every decision is traceable back to the formal structure established before the pilot began.
 
-Pilot execution with structured monitoring of performance, adoption, and risk.
+## What You Receive
 
-### Go/No-Go Recommendation
+- **Pilot design documentation** with pre-registered hypotheses, success criteria, and measurement protocols
+- **Weekly performance reports** tracking outcomes against pre-defined thresholds
+- **Evidence-based go/no-go recommendation** tied explicitly to measured results — not consultant judgment
+- **Deployment readiness assessment** identifying what must be preserved, modified, or rebuilt for scale
+- **Updated business case** reflecting actual pilot data instead of projections
 
-Recommendation is explicitly tied to predefined thresholds and evidence.
+## How It Works
 
-### Deployment Readiness
+1. **Design** — Success criteria, scope, baselines, and measurement plan are locked before any execution
+2. **Execution** — Controlled implementation with structured monitoring and weekly checkpoints
+3. **Measurement** — Outcomes assessed against pre-defined criteria with documented confidence levels
+4. **Decision** — Go/no-go recommendation delivered with full evidence trail and deployment planning
 
-If results support scaling, a deployment plan identifies what must be preserved from the pilot.
+## The Three Possible Outcomes
 
-## What We Deliver
+Every pilot produces one of three clear results:
 
-- Pilot design documentation
-- Weekly performance updates
-- Final pilot report with outcome interpretation
-- Updated business case and execution recommendations
+- **Scale** — Evidence supports full deployment with documented confidence
+- **Iterate** — Results are promising but specific conditions need adjustment before scaling
+- **Stop** — Evidence does not support continued investment — and we tell you before you've spent the deployment budget
 
-## Why It Helps
+All three outcomes are equally valid. A pilot that tells you to stop is just as valuable as one that tells you to scale — because it prevents a much larger failure downstream.
 
-Pilots should reduce uncertainty—not create it.
+## Why It Matters
 
-Structured pilot design and explicit criteria make the outcome actionable and auditable:
+Most pilots fail not because the technology doesn't work, but because nobody defined what "working" means before the pilot started. Success criteria are invented after the fact to justify the investment. Negative results are reframed as "learning opportunities" instead of clear signals to stop.
 
-- proceed with high confidence
-- revise and re-test
-- or pause before incurring larger deployment risk
-
-## Delivery Phases
-
-1. Design and success-criteria lock
-2. Execution with monitoring and weekly checkpoints
-3. Measurement and decision review
-4. Deployment recommendation and next-step planning
-
+Mathematical Autopsy eliminates this by making the pilot a formal experiment — with pre-registered hypotheses, defined measurement protocols, and explicit criteria for every possible outcome. The result is a decision you can trust, defend, and act on.

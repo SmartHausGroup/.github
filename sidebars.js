@@ -66,8 +66,9 @@ const sidebars = {
       label: 'Advisory',
       link: { type: 'doc', id: 'advisory/README' },
       items: [
-        'advisory/overview',
+        'advisory/how-we-engage',
         'advisory/methodology',
+        'advisory/overview',
         'advisory/guarantees',
         {
           type: 'category',

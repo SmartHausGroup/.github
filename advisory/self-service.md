@@ -1,38 +1,59 @@
 ---
-sidebar_position: 8
+sidebar_position: 9
 title: "Self-Service"
 ---
 
-# Self-Service Products
+# Self-Service Resources
 
-Self-service resources help organizations start the journey before deeper advisory engagement.
+Not every organization is ready for a formal advisory engagement — and that's fine. Self-service resources give you structured tools to start evaluating AI readiness on your own terms, using the same principles that underpin our advisory methodology.
 
-## Purpose
+## What's Available
 
-Self-service assets provide lightweight, practical tools for evaluation, planning, and preparation.
+### Free Resources
 
-- readiness and baseline signals
-- prioritization and valuation support
-- templates and frameworks to reduce startup friction
+Practical frameworks for initial self-evaluation and planning:
 
-## Current Product Areas
+- Readiness self-assessment guides
+- AI opportunity identification templates
+- Common pitfall checklists for AI adoption
 
-- **Free resources** for initial qualification and planning
-- **Entry tools** for quick prioritization
-- **Core toolkits** for deeper process preparation
-- **Premium modules** for hands-on pre-engagement analysis
+### Entry Tools
 
-## Typical Use
+Lightweight prioritization and evaluation instruments:
 
-- teams starting with internal evaluation
-- firms validating internal alignment before advisory investment
-- leadership teams that need structured preparation before strategy work
+- Opportunity scoring worksheets
+- Readiness dimension frameworks
+- Quick-reference guides for evaluating AI vendors and solutions
 
-## Role in Advisory
+### Core Toolkits
 
-Self-service is positioned as:
+Deeper preparation materials for teams getting serious about AI:
 
-- a first touch for qualified exploration
-- a bridge into advisory
-- a way to keep communication practical and visible across stakeholders
+- Process documentation templates
+- Stakeholder alignment frameworks
+- Baseline measurement guides
 
+## How Self-Service Connects to Advisory
+
+Self-service resources are designed as a natural entry point. Organizations that work through self-service materials arrive at formal advisory engagements with:
+
+- Clearer internal alignment on goals and priorities
+- Better baseline documentation of current operations
+- More realistic expectations about readiness and timeline
+
+This means advisory engagements start faster and go deeper — because the foundational preparation is already done.
+
+## The MA Connection
+
+Even our self-service resources reflect Mathematical Autopsy's principles. The templates and frameworks are structured around the same concepts — explicit intent, measurable criteria, evidence-based evaluation — that drive our formal engagements.
+
+The difference is depth: self-service gives you the structure; advisory applies the full mathematical discipline.
+
+## When to Move to Advisory
+
+Self-service works well for initial exploration. Consider moving to a formal [Express Assessment](/advisory/services/express-assessment) when:
+
+- You've identified potential AI opportunities but need objective validation
+- Internal stakeholders aren't aligned on priorities or readiness
+- You need defensible, board-ready analysis rather than internal estimates
+- You want the mathematical rigor that self-service frameworks can't provide on their own

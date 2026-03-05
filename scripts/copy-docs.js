@@ -101,6 +101,7 @@ copyFile(path.join(REPO_ROOT, 'archetypes', 'mge', 'README.md'), path.join(DOCS_
 
 // Advisory
 copyFile(path.join(REPO_ROOT, 'advisory', 'README.md'), path.join(DOCS_OUT, 'advisory', 'README.md'));
+copyFile(path.join(REPO_ROOT, 'advisory', 'how-we-engage.md'), path.join(DOCS_OUT, 'advisory', 'how-we-engage.md'));
 copyFile(path.join(REPO_ROOT, 'advisory', 'overview.md'), path.join(DOCS_OUT, 'advisory', 'overview.md'));
 copyFile(path.join(REPO_ROOT, 'advisory', 'methodology.md'), path.join(DOCS_OUT, 'advisory', 'methodology.md'));
 copyFile(path.join(REPO_ROOT, 'advisory', 'guarantees.md'), path.join(DOCS_OUT, 'advisory', 'guarantees.md'));

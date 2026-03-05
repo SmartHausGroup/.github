@@ -5,58 +5,58 @@ title: "AI Readiness Assessment"
 
 # AI Readiness Assessment
 
-The AI Readiness Assessment helps leadership teams determine whether they should proceed with AI investment—and how.
+A comprehensive diagnostic that tells your leadership team whether to proceed with AI investment — and exactly how. Every finding is formally derived through Mathematical Autopsy, so your decisions are built on evidence, not assumptions.
 
-## Who This Service Is For
+## Who It's For
 
-- Organizations that are considering AI but have not yet aligned on scope
-- Leaders evaluating whether current data, process, and governance practices can support AI
-- Teams that need objective criteria before funding larger AI initiatives
+- Organizations considering AI but not yet aligned on scope or priorities
+- Leaders evaluating whether current data, process, and governance can support AI
+- Teams that need objective, defensible criteria before funding larger initiatives
 
-## Core Outcomes
+## How Mathematical Autopsy Applies
 
-### Readiness Score
+The Readiness Assessment engages three full MA phases:
 
-A structured score and diagnostic profile across strategy, data, operations, technology, and governance.
+| MA Phase | What Happens in Readiness Assessment |
+|----------|-------------------------------------|
+| **Intent** | We define what a successful AI program means for your organization — not in general terms, but in your specific operational context |
+| **Foundation** | Every dimension of readiness is scored using formalized criteria with documented assumptions and explicit confidence levels |
+| **Lemmas** | Each finding becomes a provable sub-component — individually verifiable, with traceable evidence chains |
 
-### Opportunity Prioritization
+This means every score, every finding, and every recommendation can be audited. If someone on your board asks "why did you rate our data readiness at 3 out of 5?" — there's a documented, evidence-based answer.
 
-A ranked list of AI opportunities with quantified business impact and complexity.
+## The Seven Dimensions
 
-### Foundation Plan
+We assess readiness across seven critical dimensions:
 
-A practical remediation sequence so teams can raise readiness and reduce downstream waste.
+1. **Strategy Alignment** — Is AI investment aligned with business priorities?
+2. **Data Readiness** — Can your data support the initiatives you're considering?
+3. **Process Maturity** — Are your operational workflows ready to absorb AI?
+4. **Technology Infrastructure** — Does your tech stack support reliable AI deployment?
+5. **Governance Posture** — Do you have the controls and policies AI requires?
+6. **Team Capability** — Can your people implement, manage, and adopt AI solutions?
+7. **Change Capacity** — Can your organization absorb the change AI introduces?
 
-### Board-Ready Communication
+## What You Receive
 
-Executive-oriented summary suitable for investment discussion and steering decisions.
+- **7-dimension diagnostic** with formal scores and evidence-based findings
+- **Opportunity map** with prioritized AI use cases ranked by value, feasibility, and risk
+- **Remediation roadmap** identifying what needs to be resolved before investment
+- **30-day action plan** for immediate, measurable progress
+- **Board-ready documentation** suitable for investment discussion and leadership alignment
 
-## What We Deliver
+## The Decision Framework
 
-- 7-dimension assessment view
-- Opportunity map and priority ranking
-- Practical remediation roadmap
-- 30-day action plan for immediate progress
+The assessment produces one of three clear recommendations:
 
-## Decision Guidance
+- **Proceed now** — readiness supports immediate investment in identified opportunities
+- **Proceed selectively** — specific opportunities are ready, others require prerequisite work
+- **Invest in readiness first** — address foundational gaps before committing capital
 
-The assessment identifies whether an organization should:
-
-- proceed now
-- proceed selectively with conditions
-- pause and invest in readiness first
-
-That decision framing lowers the chance of avoidable implementation failure.
-
-## Delivery Highlights
-
-- Clear evidence standards for each finding
-- Explicit assumptions and confidence levels
-- Milestone-based recommendations before implementation
+This framing eliminates the most expensive mistake in AI adoption: investing before you're ready to absorb the results.
 
 ## Why It Matters
 
-An unready organization often spends on pilot or tooling before it is ready to absorb results.
+An unready organization doesn't just fail at AI — it fails expensively. Pilots run without baselines. Strategies are built on untested assumptions. Investments scale before value is proved.
 
-This assessment reduces waste by aligning strategy, process, and risk posture before the first major build or deployment.
-
+The Readiness Assessment catches these problems *before* the money is spent. And because every finding is derived through Mathematical Autopsy, the assessment itself is auditable, repeatable, and defensible — not just another consultant's opinion.

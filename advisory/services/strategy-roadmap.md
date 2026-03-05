@@ -5,49 +5,48 @@ title: "AI Strategy & Roadmap"
 
 # AI Strategy & Roadmap
 
-After readiness is established, this service translates assessment findings into a prioritized, investment-ready roadmap.
+Once readiness is established, this engagement translates findings into a prioritized, investment-ready execution plan — with every recommendation backed by Mathematical Autopsy's full five-phase discipline.
 
-## Who This Service Is For
+## Who It's For
 
-- Organizations with AI readiness signals and identified opportunity set
-- Leadership teams needing clarity on what to fund first
-- Teams requiring a realistic 12–36 month view with budget discipline
+- Organizations with readiness signals and an identified opportunity set
+- Leadership teams that need clarity on what to fund, in what order, and why
+- Teams requiring a realistic 12-36 month view with budget discipline and explicit assumptions
 
-## Core Outcomes
+## How Mathematical Autopsy Applies
 
-### Strategic Direction
+The Strategy & Roadmap is where all five MA phases come together:
 
-A clear articulation of what AI should support in the business, and what remains outside scope.
+| MA Phase | What Happens in Strategy & Roadmap |
+|----------|-----------------------------------|
+| **Intent** | Strategic direction is formalized — what AI should support in your business, and what remains out of scope |
+| **Foundation** | Each initiative is evaluated with quantified business cases, explicit assumptions, and measurable success criteria |
+| **Lemmas** | Every priority in your roadmap has provable supporting evidence and explicit conditions for validity |
+| **Verification** | Recommendations are stress-tested against operational, budget, and organizational constraints |
+| **Enforcement** | The roadmap includes built-in checkpoints and stage gates — so execution stays on track as conditions evolve |
 
-### Prioritized Opportunity Portfolio
+This means your roadmap isn't a wish list. It's a mathematically structured execution plan with guarantees at every level.
 
-Short list of high-confidence initiatives ranked by value, feasibility, and risk.
+## What You Receive
 
-### Evidence-Based Business Cases
+- **Strategic direction document** articulating where AI creates value and where it doesn't
+- **Prioritized initiative portfolio** ranked by evidence — highest confidence first, highest leverage second
+- **Evidence-based business cases** for each initiative, with documented assumptions and confidence bounds
+- **Implementation architecture** with dependencies, resource requirements, and sequencing
+- **Governance framework** defining decision rights, review cadences, and escalation criteria
+- **Financial framing** with explicit assumptions, scenarios, and bounded projections
 
-Documented assumptions and scenarios that support each initiative.
+## How It Works
 
-### Implementation Architecture
-
-Deployment dependencies, resources, and sequencing needed to execute reliably.
-
-## Deliverables
-
-- Strategy pack with governance and execution structure
-- Prioritized portfolio with measurable milestones
-- Implementation plan with stage gates
-- Financial framing with assumptions and confidence bounds
-
-## Engagement Rhythm
-
-1. Discovery and context alignment
-2. Initiative evaluation and quantification
-3. Governance design and architecture framing
-4. Executive review and strategy handoff
+1. **Discovery** — Context alignment with leadership to validate strategic priorities
+2. **Evaluation** — Initiative quantification using MA's formal scoring methodology
+3. **Architecture** — Governance design and implementation sequencing
+4. **Handoff** — Executive review, strategy validation, and operational transition
 
 ## Why It Matters
 
-Without a roadmap, AI investments often become disconnected pilots and ad hoc spending.
+Without a mathematically grounded roadmap, AI investments become disconnected pilots and ad hoc spending. Teams fund what's exciting instead of what's ready. Initiatives compete for resources without clear prioritization criteria. Boards approve budgets without auditable justification.
 
-This engagement aligns technical opportunities to business priorities and creates a defensible execution plan for leadership and finance teams.
+The Strategy & Roadmap solves this by producing a plan that your leadership, board, and finance team can all stand behind — because every recommendation is traceable to evidence, every priority is formally derived, and every assumption is documented.
 
+That's not strategy consulting. That's Mathematical Autopsy applied to your most important investment decisions.

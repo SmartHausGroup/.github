@@ -1,57 +1,56 @@
 ---
-sidebar_position: 3
-title: "Advisory Practice Overview"
+sidebar_position: 4
+title: "Practice Overview"
 ---
 
 # Advisory Practice Overview
 
-SMARTHAUS advisory supports organizations moving from AI ambiguity to dependable execution.
+SMARTHAUS advisory helps organizations move from AI ambiguity to dependable execution. Every engagement we run — regardless of scope, industry, or complexity — is underpinned by Mathematical Autopsy (MA), our construction discipline for deterministic advisory delivery.
 
-We focus on organizations that need practical decisions, not hype:
+This isn't a differentiator we mention in passing. It's the structural foundation of everything we do.
 
-- **Assess readiness** before investing
-- **Prioritize opportunities** with quantified business impact
-- **Pilot responsibly** with explicit success criteria
-- **Guide ongoing execution** through measurable milestones
+## How We Operate
 
-## Core Practice Principles
+### Readiness Before Investment
 
-### 1) Readiness Before Investment
+We don't let organizations invest in AI initiatives they aren't ready to absorb. Before any capital is committed, we formally assess readiness across multiple dimensions and define what "success" means in measurable terms.
 
-AI works better when scope, data, governance, and adoption realities are explicit.
+Mathematical Autopsy enforces this through its **Intent** phase — no engagement begins without explicit, formalized success criteria and stop conditions. If we can't define what success looks like, we don't proceed.
 
-- We define what “success” means before work starts.
-- We test assumptions before committing capital.
-- We sequence initiatives from highest confidence to highest leverage.
+### Evidence Over Intuition
 
-### 2) Evidence Over Intuition
+Every recommendation we make is built from observable evidence and repeatable criteria — stakeholder interviews, process observation, quantified baselines, documented scoring. Nothing is based on gut feeling.
 
-Recommendations are built from observable evidence and repeatable criteria:
+Mathematical Autopsy enforces this through its **Foundation** and **Lemma** phases — assumptions are documented, scoring is formalized, and every finding has a traceable evidence chain.
 
-- stakeholder interviews and process observation
-- quantified baselines
-- documented scoring and weighting
-- explicit success/failure thresholds
+### Deterministic Delivery
 
-### 3) Deterministic Delivery
+For the same inputs, constraints, and context, our process produces the same outputs. Your outcomes don't depend on consultant judgment or project momentum.
 
-Our advisory workflow is designed to reduce uncertainty through explicit rules and checkpoints.
+Mathematical Autopsy enforces this through its **Verification** and **Continuous Enforcement** phases — each decision is tied to documented rationale, each milestone is measurable, and each phase transition is gated by evidence.
 
-- each engagement has defined inputs, outputs, and stage gates
-- each decision is tied to a documented rationale
-- each milestone is measurable before the next phase starts
+## The Service Progression
 
-## Advisory Offer Flow
+Our engagements follow a natural progression, with each phase building on the evidence from the last:
 
-- [Express Assessment](/advisory/services/express-assessment)
-- [AI Readiness Assessment](/advisory/services/readiness-assessment)
-- [AI Strategy & Roadmap](/advisory/services/strategy-roadmap)
-- [AI Pilot Implementation](/advisory/services/pilot-implementation)
-- [AI Advisor Retainer](/advisory/services/advisor-retainer)
+1. **[Express Assessment](/advisory/services/express-assessment)** — A quick readiness signal to determine where you stand
+2. **[Readiness Assessment](/advisory/services/readiness-assessment)** — Full diagnostic across 7 dimensions with formal scoring
+3. **[Strategy & Roadmap](/advisory/services/strategy-roadmap)** — Prioritized execution plan with mathematical guarantees
+4. **[Pilot Implementation](/advisory/services/pilot-implementation)** — Controlled validation with evidence-based go/no-go
+5. **[Advisor Retainer](/advisory/services/advisor-retainer)** — Ongoing guidance with continuous enforcement
+
+You don't have to take every step. But every step you take runs through Mathematical Autopsy.
 
 ## Why This Matters
 
-Most AI initiatives fail because teams start with tools and pilots, not operating model.
+Most AI initiatives fail because teams start with tools and pilots before they've built an operating model. They spend on technology before they've defined what success looks like. They scale before they've proved value.
 
-Advisory-first sequencing lowers waste by ensuring each phase proves value before moving forward.
+Advisory-first sequencing — backed by the mathematical rigor of MA — ensures each phase proves value before the next one begins. That means less waste, fewer false starts, and investments you can defend to your board.
 
+## Industry Focus
+
+We serve organizations across three primary verticals, each with industry-specific considerations built into our MA-driven assessment and strategy frameworks:
+
+- **[Healthcare](/advisory/verticals/healthcare)** — compliance-aware adoption with patient safety as a constraint
+- **[Professional Services](/advisory/verticals/professional-services)** — high-leverage opportunities in document workflows and client delivery
+- **[Property & Real Estate](/advisory/verticals/property-real-estate)** — communication velocity and operational efficiency

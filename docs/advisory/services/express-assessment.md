@@ -5,51 +5,48 @@ title: "Express Assessment"
 
 # Express Assessment
 
-An accelerated advisory engagement for organizations that need a quick, defensible AI readiness signal before deeper planning.
+A fast, structured engagement that gives your organization a clear AI readiness signal — not a vague recommendation, but a mathematically grounded assessment of where you stand and what to do next.
 
-## Who It Is For
+## Who It's For
 
-- Organizations with 10–100 employees
-- Teams that need immediate clarity on AI opportunities
-- Leadership teams evaluating next steps before committing to broader strategy work
+- Organizations with 10-100 employees evaluating AI opportunities
+- Leadership teams that need clarity before committing to deeper strategy work
+- Teams tired of generic "you should explore AI" advice and ready for specifics
 
-## Purpose
+## How Mathematical Autopsy Applies
 
-Express Assessment creates a professional readiness signal in days, not weeks:
+Even in our shortest engagement, MA is the foundation:
 
-- quantify current readiness across key operating dimensions
-- identify 3–5 high-probability opportunities
-- define 30-day actions with clear owners
-- provide an evidence-based decision point for deeper advisory
+| MA Phase | What Happens in Express Assessment |
+|----------|-----------------------------------|
+| **Intent** | We define what success means for your organization — before any analysis begins |
+| **Foundation** | Your readiness is scored using formal criteria across key operational dimensions — not consultant intuition |
+
+The result is a readiness signal you can trust because it's built on explicit criteria, not impressions.
 
 ## What You Receive
 
-- Readiness score and opportunity ranking
-- Quick wins report with near-term impact
-- Action plan for the next 30 days
-- Live strategy call to review findings
+- **Readiness score** with formal methodology behind every rating
+- **Opportunity ranking** of 3-5 high-probability AI use cases, scored by expected impact and feasibility
+- **Quick wins report** identifying near-term actions with measurable outcomes
+- **30-day action plan** with clear owners and success criteria
+- **Live strategy session** to review findings and discuss next steps
 
-## Typical Timeline
+## How It Works
 
-- Discovery questionnaire and baseline input
-- Data and process review
-- Analysis and interpretation
-- Strategy discussion
-- Delivery of decision-ready summary
+1. **Intake** — Complete discovery questionnaire and share relevant operational context
+2. **Analysis** — We review your processes, data, and organizational readiness against formal assessment criteria
+3. **Scoring** — Readiness is quantified across key dimensions using MA's mathematical foundation
+4. **Delivery** — You receive a decision-ready summary with clear, evidence-based recommendations
 
-## Why It Helps
+The entire engagement is designed to be completed in days, not weeks.
 
-- avoids expensive blind pilots
-- establishes a clear starting point for advisory planning
-- reduces confusion between “interesting idea” and “good initiative”
-- provides a low-friction path toward a full readiness assessment
+## What You Walk Away With
 
-## Engagement Rhythm
+A clear, defensible answer to the question: *should we be investing in AI right now, and if so, where?*
 
-1. Complete assessment intake and document upload
-2. Review organizational context and current constraints
-3. Prioritize opportunities by expected value and readiness
-4. Deliver clear recommendation and next step
+- If yes — you have a prioritized starting point and a 30-day plan
+- If selectively — you know exactly which conditions need to be met first
+- If not yet — you know what readiness gaps to address and in what order
 
-The output is intentionally short, practical, and ready for executive review.
-
+No matter the answer, the reasoning is documented, traceable, and ready for executive review. That's what Mathematical Autopsy delivers, even in an express engagement.
