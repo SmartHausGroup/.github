@@ -1,6 +1,6 @@
-# SmartHaus Notebook Governance Standard (Canonical)
+# SMARTHAUS Notebook Governance Standard (Canonical)
 
-This is the canonical SmartHaus governance standard to copy into any repository that must enforce notebook-first runtime governance.
+This is the canonical SMARTHAUS governance standard to copy into any repository that must enforce notebook-first runtime governance.
 
 ## Policy ID
 

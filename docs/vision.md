@@ -2,7 +2,7 @@
 
 **Status**: Public Vision Document  
 **Date**: 2026-02-26  
-**Organization**: SmartHaus Group
+**Organization**: SMARTHAUS Group
 
 ---
 

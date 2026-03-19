@@ -38,11 +38,7 @@ Modern AI systems coordinate through APIs and prompts. They exchange representat
 
 SMARTHAUS addresses this by introducing a shared mathematical integration substrate beneath heterogeneous AI components. Instead of chaining behavior through text and routing logic, components project structured state into a governed field and retrieve from it under defined constraints.
 
-If component $i$ contributes state $x_i$ through encoding operator $E_i$, shared system state is constructed as:
-
-$$\Psi \leftarrow \sum_i E_i(x_i)$$
-
-This shared field $\Psi$ is not a log of messages. It is a mathematically governed medium in which state contributions superpose, interact, and evolve under defined invariants.
+Components project their structured state into this shared field, where contributions superpose, interact, and evolve under defined invariants. The field is not a log of messages — it is a mathematically governed medium.
 
 **APIs connect behavior. Substrates integrate state.**
 
@@ -87,17 +83,17 @@ With MA, determinism is constructed, validated, and enforced at every stage of s
 
 At the foundation of the SMARTHAUS architecture sits **Resonant Field Storage (RFS)** — the memory substrate that all systems project into.
 
-RFS is not a vector database. It is a 4-D complex field $\Psi(x, y, z, t)$ where information is stored as superposed wave patterns and retrieved through resonance. Where vector databases store isolated points in geometric space, RFS maintains a single governed field in which state contributions interact, interfere, and evolve under defined invariants.
+RFS is not a vector database. It is a 4-D complex field where information is stored as superposed wave patterns and retrieved through resonance. Where vector databases store isolated points in geometric space, RFS maintains a single governed field in which state contributions interact, interfere, and evolve under defined invariants.
 
 ### One field. Multiple channels.
 
-From a single field state $\Psi$, RFS provides:
+From a single field state, RFS provides:
 
-- **Exact recall** — deterministic byte-level retrieval via AEAD encryption. Given a document ID, you get back exactly what was stored. No approximation, no similarity ranking.
-- **Associative resonance** — semantic retrieval via matched filter $r = E^H \Psi$, returning ranked candidates based on resonance with the query. Corpus-aware scoring where cluster membership affects rankings.
+- **Exact recall** — deterministic byte-level retrieval with cryptographic integrity. Given a document ID, you get back exactly what was stored. No approximation, no similarity ranking.
+- **Associative resonance** — semantic retrieval via matched-filter correlation, returning ranked candidates based on resonance with the query. Corpus-aware scoring where cluster membership affects rankings.
 - **Proactive discovery** — cluster detection, anomaly identification, and field topology analysis *before any query is issued*. The field reveals structure that no one has asked about yet.
 
-No vector database provides all three from a single state. Band separation and guard bands ensure exact and associative channels do not interfere. Quality ($Q$) and interference ($\eta$) guardrails keep the field in an informative regime. Every guarantee is backed by a formal invariant with a verification notebook and CI artifact.
+No vector database provides all three from a single state. Spectral separation ensures exact and associative channels do not interfere. Signal-quality guardrails keep the field in an informative regime. Every guarantee is backed by a formal invariant with a verification notebook and CI artifact.
 
 ### Why this matters
 
@@ -117,7 +113,7 @@ SMARTHAUS systems are organized into four layers:
 
 | System | Role |
 |--------|------|
-| **[RFS](/rfs/overview)** — Resonant Field Storage | Memory substrate: 4-D resonant field providing exact recall, associative resonance, and proactive discovery from one state $\Psi$. |
+| **[RFS](/rfs/overview)** — Resonant Field Storage | Memory substrate: 4-D resonant field providing exact recall, associative resonance, and proactive discovery from a single governed state. |
 
 ### Intelligence
 
