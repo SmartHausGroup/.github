@@ -1,62 +1,53 @@
-# SMARTHAUS: Deterministic AI Through Mathematics
+# SMARTHAUS
 
-[![License](https://img.shields.io/badge/license-Proprietary-red.svg)](https://github.com/SmartHausGroup/.github/blob/main/LICENSE)
-[![Status](https://img.shields.io/badge/status-Advisory%20%26%20Research-brightgreen.svg)](https://www.smarthaus.ai)
-[![NVIDIA Inception](https://img.shields.io/badge/NVIDIA%20Inception-Member-76b900.svg)](https://www.nvidia.com/en-us/startups/)
+**AI you can prove. Not AI you have to trust.**
 
-**SMARTHAUS** is an advisory and research organization building deterministic AI through mathematics.
+Most AI today is built backwards. The industry trains a model, ships it, and bolts governance, safety, and explainability on top as wrappers. It's why 95% of generative AI pilots produce zero measurable impact. **You cannot govern a guess with another guess.**
 
-## What is SMARTHAUS?
+SMARTHAUS builds the other way.
 
-We are founded on one positioning:
+## The substrate, not the wrapper
 
-- **Advisory-ready:** We offer client-facing strategic services built on Mathematical Autopsy.
-- **Research-driven:** We develop mathematical methods and systems that reduce uncertainty.
-- **Product-in-development:** TAI, AIVA, RFS, and MGE are our current engineering workstreams, not claims of production availability.
+We start with what the system must always do, must never do, and must guarantee — and we prove those rules hold in math before a line of code ships. Every claim our software makes is backed by a checkable artifact: a lemma, an invariant, a notebook proof, a signed receipt, or a CI gate. If a property can't be proven, it doesn't ship.
 
-### The Problem
+That's the company. **Software that behaves like physics, not rhetoric.**
 
-Modern AI is often non-deterministic. Teams rely on testing and heuristics and still face edge cases they cannot predict.
+## Enterprise AI breaks in six ways. We close each one.
 
-### The Solution
+PROVE. REPLAY. BIND. PREVENT. SPECIFY. LEAD. Six failure modes. Each one has a real court case behind it — Workday, Cursor, LMArena, Replit, UnitedHealth, the EU AI Act. Each one is closed by construction in our architecture, not by a promise in a marketing document.
 
-We replace “trust me” systems with methods that are:
+**→ [Read The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md) — symptoms of the same root condition.**
 
-- **Mathematically defined**
-- **Invariant-enforced**
-- **Continuously verified**
+## Your AI. On every device you own.
 
-## Advisory Positioning
+Apple Intelligence is locked to Apple silicon. Gemini favors Pixel. Copilot favors Windows. Each of the three platform owners is trying to own your personal AI inside their own walls — and none of them can credibly own it across all of them.
 
-SMARTHAUS is first and foremost advisory and research. Our consultancy-style offerings help teams move from unclear AI outcomes to auditable, reproducible systems.
+We can, because we're not a platform.
 
-- [Advisory overview](advisory/overview)
-- [Mathematical methodology](/advisory/methodology)
-- [Service offerings](/advisory)
-- [Mathematical guarantees](/advisory/guarantees)
+What we're building is a portable AI layer that travels with you — one identity, one memory, one governance plane, across every device you actually use. We call it the **Personal AI Layer Interface (PALI)**. Your AI. Not theirs.
 
-## What we build (in development)
+## The proof
 
-- **TAI** — a deterministic-assurance personal AI system under active development.
-- **AIVA** — a triadic systems architecture in development.
-- **MGE** — a governance engine that turns invariants into execution policy.
-- **RFS** — a mathematical memory substrate and research foundation.
+We're not the only company that says these words. We're one of very few that publishes the math.
 
-## Core Principles
+- A formal mathematical thesis underneath the architecture.
+- An active research collaboration with **Princeton Physics** applying our methods to spectral pattern discovery in real lab data — joint paper in preparation.
+- Three patents filed: Resonant Field Storage, Universal Control Plane, and Mathematical Autopsy. More in flight.
+- Across our active codebase: **75+ named lemmas, 700+ machine-enforced invariants, 880+ runnable notebook proofs** — every one of them in CI.
 
-1. **Proof before implementation**
-   - We define the governing formula and constraints before code.
-2. **Verifiable outcomes**
-   - Clients get a clear path from intent to proof to execution.
-3. **Deterministic behavior**
-   - Same inputs and fixed context should produce the same outcome.
+Our discipline is called **Mathematical Autopsy** — we autopsy our own math before we ship it. If a proof fails, the build fails. There is no demo path that bypasses the gates.
 
-## Evidence
+## What's running today
 
-- **[Read the Mathematical Thesis](/thesis/framework)**
-- **[Read the MA guide](/mathematical-autopsy/overview)**
-- **[Read advisory service details](/advisory/services/express-assessment)**
+Two products are pilot-ready and signed for distribution:
 
-## Contact
+- **UCP Studio v0.6.3** — Universal Control Plane. Runtime governance: nothing executes that hasn't been admitted by policy.
+- **SAID Runtime v0.2.5** — Deterministic inference engine that makes frontier models interchangeable underneath your application logic.
 
-For advisory and research alignment, use the smarthaus.ai website contact pathways and request a deterministic AI readiness review.
+The substrate underneath, and the PALI experience on top, roll out across the next 18 months.
+
+## Get in touch
+
+We work with enterprises, research partners, and a small number of investors.
+
+**[smarthaus.ai](https://smarthaus.ai)**
