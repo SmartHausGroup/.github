@@ -1,59 +1,77 @@
----
-title: Glossary
-sidebar_position: 50
----
+# Glossary
 
-# SMARTHAUS Glossary
-
-Canonical definitions for terms and acronyms used across smarthaus.ai and docs.smarthaus.ai. Use these definitions consistently in all content.
+Short definitions of the terms used across the SMARTHAUS documentation.
 
 ---
 
-## A
+## Architecture
 
-**AEF (AIVA Execution Fabric)** — The execution layer of AIVA. Runs compiled structures (DAGs, particles) in parallel with stateless execution and telemetry. Part of the Biology → Chemistry → Physics pipeline.
+**PALI** — Personal AI Layer Interface. A portable AI layer that travels with the user across every device they own, anchored on one identity, one memory, and one governance plane. The consumer-facing surface SMARTHAUS is building on top of the substrate. See **[PALI](/pali/)**.
 
-**AIVA (Artificialis Intelligentia Vivens Anima)** — *Artificial Intelligence Living Soul.* Triadic architecture (Biology → Chemistry → Physics) for intent-driven execution with mathematical governance. Comprises AIOS (intent, memory, policy), AQL (static structures, DAGs), and AEF (execution).
+**Substrate** — The mathematical layer underneath SMARTHAUS products. Composed of three things shipping today: governance (UCP), inference (SAID), and the discipline that produces both (MAE / Mathematical Autopsy).
 
-**AQL (AIVA Query Language)** — The chemistry layer of AIVA. Turns intent into static, provable structures (DAGs, molecules) so correctness can be verified before execution. Also referred to as the AIVA Query Language.
-
-**AIOS** — The biology layer of AIVA: Cognitive Orchestration Engine (COE), Somatic and Autonomic subsystems. Handles intent, memory (RFS), policy, and self-care. Calculus-governed and adaptive.
+**Federated composable architecture** — The internal architectural model: hosts (TAI, UCP) embed primitives (SAID, MAE, others); primitives stay first-class products while composing into a unified user experience.
 
 ---
 
-## L
+## Products
 
-**LATTICE** — The framework of legally enforced axioms and runtime contracts governing SMARTHAUS systems (e.g. A1 determinism, A2 statelessness, A3 fail-close). Ensures reproducibility, auditability, and provable correctness across AIOS, AQL, AEF, and RFS.
+**UCP** — Universal Control Plane. Runtime governance product. Nothing executes that hasn't been admitted by policy. Every admitted action carries a cryptographically signed authority chain. Current release: v0.6.3. See **[UCP](/products/ucp)**.
 
----
+**SAID** — Deterministic inference engine. Makes frontier models interchangeable underneath application logic. Same inputs + same fixed context → same outputs. Current release: v0.2.5. See **[SAID](/products/said)**.
 
-## M
+**MAE** — Mathematical Autopsy Engine. The build authority that enforces the MA discipline across SMARTHAUS products. Deployment build under construction. See **[MAE](/products/mae)**.
 
-**MA (Mathematical Autopsy)** — A math-first development methodology for provably correct systems. Intent → mathematical foundation → invariants and lemmas → executable verification → CI enforcement → code. MGE is the rules engine for MA.
-
-**MGE (Mathematical Governance Engine)** — The rules engine for Mathematical Autopsy. Evaluates governance rules (MDC/YAML/JSON), issues cryptographic receipts, and enforces policy at runtime so governance is provable.
+**TAI** — The canonical integration host for cross-device personal AI. The shell inside which PALI renders on every device.
 
 ---
 
-## R
+## Methodology
 
-**RFS (Resonant Field Storage)** — The mathematical memory substrate for SMARTHAUS systems. A 4D field-theoretic approach where information is stored as superposed wave patterns and retrieved through resonance. Provides deterministic guarantees, explainability, and contradiction detection (unlike vector databases). Used by both TAI and AIVA.
+**Mathematical Autopsy (MA)** — The development discipline used to build SMARTHAUS products. A 9-phase pipeline that proves mathematical properties of a system before any code is written. CI-bound. Template-first. See **[Mathematical Autopsy](/mathematical-autopsy/overview)**.
 
----
+**The Six Failures** — The six distinct ways enterprise AI breaks in production: PROVE, REPLAY, BIND, PREVENT, SPECIFY, LEAD. Each has a real court case behind it. Each is closed by construction in our architecture. See **[The Six Failures](/six-failures/)**.
 
-## T
-
-**TAI (Tutelarius Auxilium Intellectus)** — *Guardian of Intelligent Assistance.* Voice-first personal assistant platform with endless memory (RFS), contextual intelligence, and an AI agent marketplace. Memory and inference are provided by standalone services (RFS, NME, VFE, VEE, MAIA, CAIO) integrated over CAIO.
+**By-construction** — A property is "by construction" if it holds because of how the system is built, not because of testing, monitoring, or human discipline. SMARTHAUS systems are built so seven properties hold by construction: **Reproducible, Traceable, Explainable, Auditable, Replayable, Falsifiable, Verifiable**.
 
 ---
 
-## Cross-references
+## Substrate technology
 
-- [Intro](/)
-- [About](about)
-- [Vision](vision)
-- [RFS Overview](rfs/overview)
-- [Mathematical Autopsy](mathematical-autopsy/overview)
-- [Archetypes: TAI](archetypes/tai)
-- [Archetypes: AIVA](archetypes/aiva)
-- [Archetypes: MGE](archetypes/mge)
+**RFS** — Resonant Field Storage. The mathematical memory substrate. Information is stored as wave patterns in a 4D Fourier field; retrieval works by matched-filter probing rather than vector cosine. See **[RFS](/rfs/overview)**.
+
+**NME** — Nota Memoria Engine. The encoder layer that transforms text into structured complex-valued waveforms suitable for RFS. Currently in active research.
+
+**FHRR** — Fourier Holographic Reduced Representations (Plate 1995). The vector-algebra framework underneath NME's complex-valued encoding.
+
+**MCP** — Model Context Protocol. The standard interface SMARTHAUS products use to communicate with AI clients (Claude Code, IDE plugins, agent frameworks). UCP ships a local MCP broker.
+
+---
+
+## Governance & compliance
+
+**Admission gate** — A UCP construct: a policy check that runs *before* an action executes. If policy denies, the action does not happen. There is no application-layer override.
+
+**Signed receipt** — A cryptographically signed record of an action: who attempted it, what was attempted, what authority admitted it, what was decided. Portable, replayable, and admissible.
+
+**Invariant** — A property that must hold at every point in a system's lifetime. SMARTHAUS invariants are YAML-defined and CI-verified. Roughly 700 of them across our active codebase.
+
+**Lemma** — A formal mathematical claim with a proof obligation. SMARTHAUS lemmas are numbered (L1, L2, …) and tied to executable verification notebooks.
+
+**Scorecard** — The aggregate pass/fail evidence for a phase or component, cryptographically pinned. Release targets refuse to run unless the scorecard is green.
+
+**SR 26-2** — Federal Reserve supervisory letter on AI/ML model risk management, finalized April 17, 2026. Supersedes SR 11-7. Requires model lineage and decision provenance — the format SMARTHAUS already produces.
+
+**EU AI Act** — European Union AI regulation, enforcement live February 2, 2025.
+
+---
+
+## Research
+
+**Princeton collaboration** — Joint research applying RFS + NME methods to single-particle fluorescence spectroscopy data developed by Puchalla et al. (2008). Joint paper in preparation. See **[Princeton Research](/research/princeton)**.
+
+**Math Thesis** — The formal mathematical foundation underneath the SMARTHAUS substrate. Currently at v7. See **[Math Thesis](/thesis/framework)**.
+
+---
+
+**[← Back to SMARTHAUS](https://github.com/SmartHausGroup)**
