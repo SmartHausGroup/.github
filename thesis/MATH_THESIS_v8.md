@@ -58,7 +58,7 @@ Mathematics as the Nervous System of AI: A Unified Field
 Operator Framework for Distributed Cognition
 
 
-Author: Philip Siniscalchi ORCID: 0009-0007-3820-0509 Affiliation: SmartHaus
+Author: Philip Siniscalchi ORCID: 0009-0007-3820-0509 Affiliation: SMARTHAUS
 Group, Independent Research
 Contact: phil@smarthausgroup.com Date: 2026-05-24 Version: 8.0
 
@@ -2353,8 +2353,8 @@ standing and mathematical formalization, similar to how a calculator bridges bet
 flects the author’s original thinking and research direction.
 
 Acknowledgments
-The author thanks the SmartHaus Group research team for infrastructure support
-and feedback during development. This work was supported by SmartHaus Group.
+The author thanks the SMARTHAUS research team for infrastructure support
+and feedback during development. This work was supported by SMARTHAUS.
 Patent Notice: Certain aspects of the Resonant Field Storage implementation are
 covered by US Provisional Patent Application 63/942,361 (filed December 16, 2025).
 This patent filing does not restrict the use of the theoretical framework or mathemat-
