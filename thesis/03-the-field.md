@@ -92,7 +92,7 @@ The next chapter — [Memory and Retrieval](./04-retrieval.md) — covers how ma
 
 ---
 
-**[Thesis overview](./README.md)** · **[Download PDF](./MATH_THESIS_v8.pdf)**
+**[Thesis overview](./README.md)**
 
 ---
 
