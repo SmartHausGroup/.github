@@ -42,10 +42,6 @@ The rest of this repo hosts SMARTHAUS's public content pages — strategy, produ
 
 - **[Resonant Field Storage (RFS)](./resonant-field-storage/)** — The mathematical memory substrate. Information as wave patterns; retrieval as matched-filter probing.
 
-### Advisory
-
-- **[Advisory](./advisory/)** — How we engage with enterprise clients, research partners, and design partners.
-
 ---
 
 ## More
