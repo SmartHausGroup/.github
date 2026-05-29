@@ -32,7 +32,7 @@ The published mathematical foundation underneath everything else. The formal cla
 
 The framework is falsifiable by construction: every theoretical guarantee maps to a measured invariant. **120+ invariants validating the thesis itself, in continuous integration, across 250+ verification notebooks.**
 
-This is the academic moat. It grounds the patent filings. It is the structural reason a competitor cannot simply re-implement the products without re-deriving the framework. **[Read MATH_THESIS v8 →](../thesis/framework.md)**
+This is the academic moat. It grounds the patent filings. It is the structural reason a competitor cannot simply re-implement the products without re-deriving the framework. **[Read MATH_THESIS v8 →](../thesis/README.md)**
 
 ### 2. Substrate — the shared mathematical foundation
 
@@ -151,8 +151,8 @@ You cannot govern a guess with another guess. We are the company building the pr
 
 ---
 
-**[The Six Failures](../six-failures/)** · **[Products](../products/ucp.md)** · **[PALI](../pali/)** · **[Mathematical Autopsy](../mathematical-autopsy/)** · **[Princeton Research](../research/princeton.md)** · **[Patents](../research/patents.md)** · **[Math Thesis](../thesis/framework.md)** · **[smarthaus.ai](https://smarthaus.ai)**
+**[The Six Failures](../six-failures/)** · **[Products](../products/ucp.md)** · **[PALI](../pali/)** · **[Mathematical Autopsy](../mathematical-autopsy/)** · **[Princeton Research](../research/princeton.md)** · **[Patents](../research/patents.md)** · **[Math Thesis](../thesis/README.md)** · **[smarthaus.ai](https://smarthaus.ai)**
 
 ---
 
-**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/README.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/pali/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/framework.md)** · **[smarthaus.ai](https://smarthaus.ai)**
+**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/README.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/pali/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/README.md)** · **[smarthaus.ai](https://smarthaus.ai)**
