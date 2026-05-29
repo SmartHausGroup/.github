@@ -73,7 +73,7 @@ None of these are decorative. Every one of them either passes in CI or the corre
 
 ## How to engage
 
-- **As a customer:** through the [Applied-MA advisory motion](../advisory) — embedded engagement to bring your own systems under MA discipline.
+- **As a customer:** through **Applied-MA** — embedded engagement to bring your own systems under MA discipline. Reach out via [smarthaus.ai](https://smarthaus.ai).
 - **As a partner:** through the [MAE product roadmap](../products/mae.md) once the deployment build is generally available.
 - **As a researcher or reviewer:** through joint work on the substrate (see [Princeton →](../research/princeton.md)) or by reading the [formal mathematical thesis](../thesis/).
 
