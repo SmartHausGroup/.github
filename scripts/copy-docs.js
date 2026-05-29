@@ -24,13 +24,44 @@ function copyFile(src, dest) {
 
 ensureDir(DOCS_OUT);
 
-// Thesis
+// Org landing → about
 copyFile(
-  path.join(REPO_ROOT, 'thesis', 'MATH_THESIS_v6.md'),
-  path.join(DOCS_OUT, 'thesis', 'framework.md')
+  path.join(REPO_ROOT, 'profile', 'README.md'),
+  path.join(DOCS_OUT, 'about.md')
 );
 
-// RFS
+// Six Failures (killer page)
+copyFile(
+  path.join(REPO_ROOT, 'six-failures', 'README.md'),
+  path.join(DOCS_OUT, 'six-failures.md')
+);
+
+// Products
+copyFile(path.join(REPO_ROOT, 'products', 'ucp.md'), path.join(DOCS_OUT, 'products', 'ucp.md'));
+copyFile(path.join(REPO_ROOT, 'products', 'said.md'), path.join(DOCS_OUT, 'products', 'said.md'));
+copyFile(path.join(REPO_ROOT, 'products', 'mae.md'), path.join(DOCS_OUT, 'products', 'mae.md'));
+
+// PALI
+copyFile(
+  path.join(REPO_ROOT, 'pali', 'README.md'),
+  path.join(DOCS_OUT, 'pali.md')
+);
+
+// Research
+copyFile(path.join(REPO_ROOT, 'research', 'princeton.md'), path.join(DOCS_OUT, 'research', 'princeton.md'));
+copyFile(path.join(REPO_ROOT, 'research', 'patents.md'), path.join(DOCS_OUT, 'research', 'patents.md'));
+
+// Thesis (v7 + framework summary page)
+copyFile(
+  path.join(REPO_ROOT, 'thesis', 'framework.md'),
+  path.join(DOCS_OUT, 'thesis', 'framework.md')
+);
+copyFile(
+  path.join(REPO_ROOT, 'thesis', 'MATH_THESIS_v7.pdf'),
+  path.join(DOCS_OUT, 'thesis', 'MATH_THESIS_v7.pdf')
+);
+
+// RFS (substrate technology)
 copyFile(
   path.join(REPO_ROOT, 'resonant-field-storage', 'README.md'),
   path.join(DOCS_OUT, 'rfs', 'overview.md')
@@ -49,7 +80,6 @@ copyFile(path.join(REPO_ROOT, 'resonant-field-storage', 'use-cases', '03_code_in
 copyFile(path.join(REPO_ROOT, 'resonant-field-storage', 'use-cases', '04_compliance_legal_archive', 'README.md'), path.join(DOCS_OUT, 'rfs', 'use-cases', 'compliance-legal.md'));
 copyFile(path.join(REPO_ROOT, 'resonant-field-storage', 'use-cases', '05_research_knowledge_graph', 'README.md'), path.join(DOCS_OUT, 'rfs', 'use-cases', 'research-knowledge.md'));
 copyFile(path.join(REPO_ROOT, 'resonant-field-storage', 'use-cases', '06_pharmaceutical_discovery', 'README.md'), path.join(DOCS_OUT, 'rfs', 'use-cases', 'pharmaceutical.md'));
-// RFS deep dives
 copyFile(
   path.join(REPO_ROOT, 'resonant-field-storage', 'innovations.md'),
   path.join(DOCS_OUT, 'rfs', 'innovations.md')
@@ -76,28 +106,6 @@ copyFile(
   path.join(REPO_ROOT, 'mathematical-autopsy', 'methodology.md'),
   path.join(DOCS_OUT, 'mathematical-autopsy', 'methodology.md')
 );
-copyFile(
-  path.join(REPO_ROOT, 'mathematical-autopsy', 'system-master.md'),
-  path.join(DOCS_OUT, 'mathematical-autopsy', 'system-master.md')
-);
-
-// Archetypes
-copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai.md'));
-// TAI sub-services
-copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'nme', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'nme.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'vfe', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'vfe.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'vee', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'vee.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'caio', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'caio.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'tai', 'maia', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'tai', 'maia.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva.md'));
-// AIVA sub-systems
-copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'aios', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva', 'aios.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'aql', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva', 'aql.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'aef', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva', 'aef.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'aios', 'coe', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva', 'coe.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'aios', 'sns', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva', 'sns.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'aiva', 'aios', 'ans', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'aiva', 'ans.md'));
-copyFile(path.join(REPO_ROOT, 'archetypes', 'mge', 'README.md'), path.join(DOCS_OUT, 'archetypes', 'mge.md'));
 
 // Advisory
 copyFile(path.join(REPO_ROOT, 'advisory', 'README.md'), path.join(DOCS_OUT, 'advisory', 'README.md'));
@@ -114,17 +122,5 @@ copyFile(path.join(REPO_ROOT, 'advisory', 'services', 'advisor-retainer.md'), pa
 copyFile(path.join(REPO_ROOT, 'advisory', 'verticals', 'healthcare.md'), path.join(DOCS_OUT, 'advisory', 'verticals', 'healthcare.md'));
 copyFile(path.join(REPO_ROOT, 'advisory', 'verticals', 'professional-services.md'), path.join(DOCS_OUT, 'advisory', 'verticals', 'professional-services.md'));
 copyFile(path.join(REPO_ROOT, 'advisory', 'verticals', 'property-real-estate.md'), path.join(DOCS_OUT, 'advisory', 'verticals', 'property-real-estate.md'));
-
-// About (profile README)
-copyFile(
-  path.join(REPO_ROOT, 'profile', 'README.md'),
-  path.join(DOCS_OUT, 'about.md')
-);
-
-// Vision
-copyFile(
-  path.join(REPO_ROOT, 'SMARTHAUS_VISION.md'),
-  path.join(DOCS_OUT, 'vision.md')
-);
 
 console.log('copy-docs.js: done.');
