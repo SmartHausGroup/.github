@@ -92,7 +92,7 @@ The next chapter — [Falsifiability](./06-falsifiability.md) — covers how the
 
 ---
 
-**[Thesis overview](./README.md)** · **[Download PDF](./MATH_THESIS_v8.pdf)**
+**[Thesis overview](./README.md)**
 
 ---
 
