@@ -10,6 +10,10 @@ The rest of this repo hosts SMARTHAUS's public content pages — strategy, produ
 
 ## Pages
 
+### The whole picture
+
+- **[The SMARTHAUS Vision](./vision/)** — Four-layer architecture (thesis, substrate, operators, marketplace), three plays, PALI, the endgame. Read this first if you want the full picture.
+
 ### Why SMARTHAUS
 
 - **[The Six Failures](./six-failures/)** — The six ways enterprise AI breaks in production, each with a real court case behind it. Each one closed by construction in our architecture.
