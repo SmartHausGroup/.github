@@ -589,4 +589,6 @@ Everyone building Physical AI is trying to add physics to language models. The a
 | General Resonance Theory            | Synchronized oscillations generating awareness       | Resonance-based storage and retrieval as computational primitive |
 | Thermodynamic Cognitive Homeostasis | Energy-entropy regulation with Lyapunov stability    | Energy conservation (Parseval) + fail-closed + formal invariants |
 
+---
 
+**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/ucp.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/pali/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/framework.md)** · **[smarthaus.ai](https://smarthaus.ai)**
