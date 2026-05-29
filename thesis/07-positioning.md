@@ -87,7 +87,7 @@ The next chapter — [Extensions](./08-extensions.md) — covers where this work
 
 ---
 
-**[Thesis overview](./README.md)** · **[Download PDF](./MATH_THESIS_v8.pdf)**
+**[Thesis overview](./README.md)**
 
 ---
 
