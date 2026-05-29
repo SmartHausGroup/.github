@@ -74,7 +74,7 @@ const sidebars = {
       items: [
         { type: 'doc', id: 'research/princeton', label: 'Princeton Research' },
         { type: 'doc', id: 'research/patents', label: 'Patents' },
-        { type: 'doc', id: 'thesis/framework', label: 'Math Thesis (v7)' },
+        { type: 'doc', id: 'thesis/framework', label: 'Math Thesis (v8)' },
       ],
     },
 
