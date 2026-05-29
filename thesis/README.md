@@ -39,7 +39,7 @@ For the formal mathematical treatment — full equations, proofs, lemma index, b
 
 ## How this connects to what SMARTHAUS ships
 
-- **[Resonant Field Storage (RFS)](https://github.com/SmartHausGroup/.github/blob/main/resonant-field-storage/README.md)** is the working implementation of the field substrate described in chapters 3 and 4.
+- **[Resonant Field Storage (RFS)](https://github.com/SmartHausGroup/.github/blob/main/products/Substrate/RFS/README.md)** is the working implementation of the field substrate described in chapters 3 and 4.
 - **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** is the development discipline that turns the thesis into shipping code.
 - **[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** is the operational case for why this work matters now.
 - **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** applies the substrate to single-particle fluorescence spectroscopy data — joint paper in preparation.
@@ -50,4 +50,4 @@ For the formal mathematical treatment — full equations, proofs, lemma index, b
 
 ---
 
-**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/README.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/pali/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/README.md)** · **[smarthaus.ai](https://smarthaus.ai)**
+**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/README.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/products/PALI/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/README.md)** · **[smarthaus.ai](https://smarthaus.ai)**
