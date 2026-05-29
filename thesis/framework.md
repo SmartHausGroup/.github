@@ -4,7 +4,7 @@
 **Version:** v8 (May 2026) · supersedes v7 (March 2026)
 **License:** CC-BY-4.0
 
-📄 **[Download MATH_THESIS_v8 (PDF, 383 KB)](./MATH_THESIS_v8.pdf)** — the full document, with all equations, proofs, and figures.
+**Choose your format.** This page is the plain-English executive summary (~1,200 words). For the full thesis text rendered on GitHub, see **[README.md](./README.md)**. For the canonical typeset version with all equations, proofs, and figures, download **[MATH_THESIS_v8.pdf](./MATH_THESIS_v8.pdf)**.
 
 ---
 
