@@ -102,7 +102,7 @@ The next chapter — [Positioning](./07-positioning.md) — covers how the SMART
 
 ---
 
-**[Thesis overview](./README.md)** · **[Download PDF](./MATH_THESIS_v8.pdf)**
+**[Thesis overview](./README.md)**
 
 ---
 
