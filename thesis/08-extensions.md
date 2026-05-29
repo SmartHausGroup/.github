@@ -94,7 +94,7 @@ The substrate is the foundation. The products are how the foundation reaches the
 
 ---
 
-**[Download PDF](./MATH_THESIS_v8.pdf)** for the full formal treatment with equations, proofs, and bibliography.
+The eight chapters together provide the full substantive treatment; each chapter cites its primary mathematical references inline.
 
 ---
 
