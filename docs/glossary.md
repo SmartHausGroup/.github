@@ -70,7 +70,7 @@ Short definitions of the terms used across the SMARTHAUS documentation.
 
 **Princeton collaboration** — Joint research applying RFS + NME methods to single-particle fluorescence spectroscopy data developed by Puchalla et al. (2008). Joint paper in preparation. See **[Princeton Research](/research/princeton)**.
 
-**Math Thesis** — The formal mathematical foundation underneath the SMARTHAUS substrate. Currently at v7. See **[Math Thesis](/thesis/framework)**.
+**Math Thesis** — The formal mathematical foundation underneath the SMARTHAUS substrate. Currently at v8. See **[Math Thesis](/thesis/framework)**.
 
 ---
 
