@@ -108,7 +108,7 @@ The next chapter — [Design Principles](./05-design-principles.md) — covers w
 
 ---
 
-**[Thesis overview](./README.md)** · **[Download PDF](./MATH_THESIS_v8.pdf)**
+**[Thesis overview](./README.md)**
 
 ---
 
