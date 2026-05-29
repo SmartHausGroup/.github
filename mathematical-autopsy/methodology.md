@@ -196,3 +196,7 @@ Mathematical Autopsy is a five-phase methodology (Intent → Mathematical Founda
 - **Scope creep and requirements** — IEEE Access (scope creep and project success); PMI “Top Five Causes Scope Creep,” “Poor requirements management source of failed projects.”
 
 *For detailed phase-by-phase instructions, file locations, and templates, see the repository’s operations and math documentation and the invariant/lemma templates. This document describes the methodology and its evidence-based rationale at a governance and client-facing level.*
+
+---
+
+**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/ucp.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/pali/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/framework.md)** · **[smarthaus.ai](https://smarthaus.ai)**
