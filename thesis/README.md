@@ -8,7 +8,7 @@ The SMARTHAUS thesis proposes a different integration substrate: **mathematics i
 
 This is not a metaphor. It is operational mathematics — a working implementation, with measured behavior, against falsifiable predictions.
 
-These pages are the SMARTHAUS web representation of the thesis — eight chapters that develop the argument from problem statement to research roadmap, rewritten for web readers. The formal mathematical paper is the [downloadable PDF](./MATH_THESIS_v8.pdf) for anyone who wants the full equation treatment.
+These pages are the SMARTHAUS web representation of the thesis — eight chapters that develop the argument from problem statement to research roadmap, written for web reading. Each chapter stands on its own; together they are the full substantive treatment.
 
 ---
 
@@ -33,7 +33,7 @@ The chapters are designed to read in sequence — each chapter builds on the pre
 
 A first-pass read of chapters 1–2 alone covers the thesis in plain English. A full read of all eight chapters covers the substance underneath each of the SMARTHAUS products — UCP, SAID, MAE, and the cross-device PALI surface (TAI).
 
-For the formal mathematical treatment — full equations, proofs, lemma index, bibliography — download the [PDF](./MATH_THESIS_v8.pdf).
+For the deepest mathematical detail — operator definitions, lemma index, full reference bibliography — read across the chapters in sequence; the formal material is layered through the eight chapters.
 
 ---
 
