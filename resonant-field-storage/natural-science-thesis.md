@@ -1,6 +1,6 @@
 # Natural Science as Operational Mathematics: The Path to Awareness in Physical AI
 
-**Author:** SmartHaus Group
+**Author:** SMARTHAUS
 **Date:** February 2026
 **Status:** Working thesis
 
