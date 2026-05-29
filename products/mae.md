@@ -46,7 +46,7 @@ Across the SMARTHAUS active codebase, this discipline produces **~75 named lemma
 
 ## How to engage
 
-MAE is currently the substrate beneath our shipping products, not yet a standalone customer-facing product. Engagement happens through the **Applied-MA** advisory motion — embedded engagement with customer teams to bring their own systems under Mathematical Autopsy discipline. Reach out via **[smarthaus.ai](https://smarthaus.ai)**.
+MAE is currently the substrate beneath our shipping products, not yet a standalone customer-facing product. Engagement happens through **Applied-MA** — an embedded engagement with customer teams to bring their own systems under Mathematical Autopsy discipline. Reach out via **[smarthaus.ai](https://smarthaus.ai)**.
 
 ---
 
