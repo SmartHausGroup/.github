@@ -14,14 +14,14 @@ Runtime governance for AI systems. Nothing executes that hasn't been admitted by
 **Closes:** [PROVE](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md) and [PREVENT](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md).
 **Four canonical deployments:** [Coding agents in regulated codebases](./ucp/use-cases/01_coding_agents_regulated_codebases/README.md) · [Customer support agents](./ucp/use-cases/02_customer_support_agents/README.md) · [Internal automation across M365/Salesforce/SAP](./ucp/use-cases/03_internal_automation_agents/README.md) · [Bounded autonomous workflows](./ucp/use-cases/04_bounded_autonomous_workflows/README.md)
 
-### [SAID — Deterministic Inference Engine](./said.md)
+### [SAID — Deterministic Inference Engine](./said/README.md)
 **Current release:** v0.2.5 · Signed for distribution
 
 GPU-first deterministic inference. Same input, same fixed context, same output. Every time. Every model. Frontier models become interchangeable underneath application logic.
 
 **Closes:** [REPLAY](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md).
 
-### [MAE — Mathematical Autopsy Engine](./mae.md)
+### [MAE — Mathematical Autopsy Engine](./mae/README.md)
 **Status:** Foundation in place; deployment build under construction
 
 The build authority underneath every SMARTHAUS product. The engine that enforces Mathematical Autopsy — defines, validates, proves, and embeds verified properties inside customer software.
