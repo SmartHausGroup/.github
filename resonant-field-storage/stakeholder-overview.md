@@ -1,6 +1,6 @@
 # Resonant Field Storage (RFS) -- What It Is, Why It Matters, How It Works
 
-**Author:** Philip Siniscalchi, SmartHaus Group
+**Author:** Philip Siniscalchi, SMARTHAUS
 **Date:** 2026-02-26
 **Audience:** Investors, partners, technical evaluators, and curious builders
 
