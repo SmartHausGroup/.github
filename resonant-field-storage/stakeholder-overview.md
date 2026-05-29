@@ -190,3 +190,7 @@ RFS is not an incremental improvement on vector databases. It is a fundamentally
 **Technical details:** [Core Thesis: Mathematics as the Nervous System of AI](/thesis/framework)
 **RFS deep dive:** [RFS Overview](/rfs/overview)
 **Source code:** [github.com/SmartHausGroup/rfs-core](https://github.com/SmartHausGroup/rfs-core)
+
+---
+
+**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/ucp.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/pali/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/framework.md)** · **[smarthaus.ai](https://smarthaus.ai)**
