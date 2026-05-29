@@ -51,14 +51,18 @@ copyFile(
 copyFile(path.join(REPO_ROOT, 'research', 'princeton.md'), path.join(DOCS_OUT, 'research', 'princeton.md'));
 copyFile(path.join(REPO_ROOT, 'research', 'patents.md'), path.join(DOCS_OUT, 'research', 'patents.md'));
 
-// Thesis (v7 + framework summary page)
+// Thesis (v8 + framework summary page)
 copyFile(
   path.join(REPO_ROOT, 'thesis', 'framework.md'),
   path.join(DOCS_OUT, 'thesis', 'framework.md')
 );
 copyFile(
-  path.join(REPO_ROOT, 'thesis', 'MATH_THESIS_v7.pdf'),
-  path.join(DOCS_OUT, 'thesis', 'MATH_THESIS_v7.pdf')
+  path.join(REPO_ROOT, 'thesis', 'MATH_THESIS_v8.pdf'),
+  path.join(DOCS_OUT, 'thesis', 'MATH_THESIS_v8.pdf')
+);
+copyFile(
+  path.join(REPO_ROOT, 'thesis', 'MATH_THESIS_v8.md'),
+  path.join(DOCS_OUT, 'thesis', 'MATH_THESIS_v8.md')
 );
 
 // RFS (substrate technology)
