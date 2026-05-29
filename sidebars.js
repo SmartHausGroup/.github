@@ -1,38 +1,56 @@
 /** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
 const sidebars = {
   docs: [
-    // Getting started
+    'intro',
+
     {
       type: 'category',
-      label: 'Getting started',
+      label: 'Why SMARTHAUS',
       collapsed: false,
-      items: ['intro', 'about', 'vision', 'glossary'],
-    },
-    // Architecture
-    {
-      type: 'category',
-      label: 'Architecture',
       items: [
-        { type: 'doc', id: 'architecture/system-map', label: 'System Map' },
+        { type: 'doc', id: 'six-failures', label: 'The Six Failures' },
       ],
     },
-    // Core Thesis
+
     {
       type: 'category',
-      label: 'Core Thesis',
-      items: [{ type: 'doc', id: 'thesis/framework', label: 'Mathematics as the Nervous System of AI' }],
+      label: 'Products',
+      collapsed: false,
+      items: [
+        { type: 'doc', id: 'products/ucp', label: 'UCP — Universal Control Plane' },
+        { type: 'doc', id: 'products/said', label: 'SAID — Deterministic Inference' },
+        { type: 'doc', id: 'products/mae', label: 'MAE — Mathematical Autopsy Engine' },
+      ],
     },
-    // RFS (core tech)
+
     {
       type: 'category',
-      label: 'Resonant Field Storage (RFS)',
+      label: 'PALI',
+      items: [
+        { type: 'doc', id: 'pali', label: 'Personal AI Layer Interface' },
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Methodology',
+      items: [
+        { type: 'doc', id: 'mathematical-autopsy/overview', label: 'Mathematical Autopsy' },
+        'mathematical-autopsy/how-it-works',
+        'mathematical-autopsy/methodology',
+      ],
+    },
+
+    {
+      type: 'category',
+      label: 'Substrate (RFS)',
       link: { type: 'doc', id: 'rfs/overview' },
       items: [
         'rfs/overview',
         'rfs/field-theory',
-        'rfs/stakeholder-overview',
         'rfs/innovations',
         'rfs/natural-science-thesis',
+        'rfs/stakeholder-overview',
         {
           type: 'category',
           label: 'Use Cases',
@@ -49,18 +67,17 @@ const sidebars = {
         },
       ],
     },
-    // Methodology
+
     {
       type: 'category',
-      label: 'Methodology',
+      label: 'Research',
       items: [
-        'mathematical-autopsy/overview',
-        'mathematical-autopsy/how-it-works',
-        'mathematical-autopsy/methodology',
-        'mathematical-autopsy/system-master',
+        { type: 'doc', id: 'research/princeton', label: 'Princeton Research' },
+        { type: 'doc', id: 'research/patents', label: 'Patents' },
+        { type: 'doc', id: 'thesis/framework', label: 'Math Thesis (v7)' },
       ],
     },
-    // Advisory
+
     {
       type: 'category',
       label: 'Advisory',
@@ -93,43 +110,13 @@ const sidebars = {
         'advisory/self-service',
       ],
     },
-    // Archetypes (what we build)
+
     {
       type: 'category',
-      label: 'Archetypes',
+      label: 'Reference',
       items: [
-        {
-          type: 'category',
-          label: 'TAI: Tutelarius Auxilium Intellectus',
-          link: { type: 'doc', id: 'archetypes/tai' },
-          items: [
-            'archetypes/tai/nme',
-            'archetypes/tai/vfe',
-            'archetypes/tai/vee',
-            'archetypes/tai/caio',
-            'archetypes/tai/maia',
-          ],
-        },
-        {
-          type: 'category',
-          label: 'AIVA: Artificialis Intelligentia Vivens Anima',
-          link: { type: 'doc', id: 'archetypes/aiva' },
-          items: [
-            {
-              type: 'category',
-              label: 'AIOS (Biology Layer)',
-              link: { type: 'doc', id: 'archetypes/aiva/aios' },
-              items: [
-                'archetypes/aiva/coe',
-                'archetypes/aiva/sns',
-                'archetypes/aiva/ans',
-              ],
-            },
-            'archetypes/aiva/aql',
-            'archetypes/aiva/aef',
-          ],
-        },
-        'archetypes/mge',
+        'about',
+        'glossary',
       ],
     },
   ],
