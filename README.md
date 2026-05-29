@@ -51,7 +51,7 @@ The rest of this repo hosts SMARTHAUS's public content pages — strategy, produ
 
 ---
 
-© SMARTHAUS Group
+© SMARTHAUS
 
 ---
 
