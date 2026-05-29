@@ -18,6 +18,12 @@ PROVE. REPLAY. BIND. PREVENT. SPECIFY. LEAD. Six failure modes. Each one has a r
 
 **→ [Read The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md) — symptoms of the same root condition.**
 
+## The whole picture in one page
+
+Four architectural layers — thesis, substrate, operators, marketplace. Three plays — Prevent, Replay, Specify. One personal-AI destination. The complete end-to-end view of what we're building and why.
+
+**→ [Read The SMARTHAUS Vision](https://github.com/SmartHausGroup/.github/blob/main/vision/README.md).**
+
 ## Your AI. On every device you own.
 
 Apple Intelligence is locked to Apple silicon. Gemini favors Pixel. Copilot favors Windows. Each of the three platform owners is trying to own your personal AI inside their own walls — and none of them can credibly own it across all of them.
