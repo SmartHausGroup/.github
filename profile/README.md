@@ -2,7 +2,7 @@
 
 **AI you can prove. Not AI you have to trust.**
 
-Most AI today is built backwards. The industry trains a model, ships it, and bolts governance, safety, and explainability on top as wrappers. It's why 95% of generative AI pilots produce zero measurable impact. **You cannot govern a guess with another guess.**
+Most AI today is built backwards. The industry trains a model, ships it, and bolts governance, safety, and explainability on top as wrappers. The result: 80%+ of enterprise AI projects never reach production (RAND Corporation, 2024), and the ones that do face an audit, compliance, and litigation environment converging on a question their wrapper-architecture cannot answer. **You cannot govern a guess with another guess.**
 
 SMARTHAUS builds the other way.
 
@@ -20,7 +20,7 @@ PROVE. REPLAY. BIND. PREVENT. SPECIFY. LEAD. Six failure modes. Each one has a r
 
 ## The whole picture in one page
 
-Four architectural layers — thesis, substrate, operators, marketplace. Three plays — Prevent, Replay, Specify. One personal-AI destination. The complete end-to-end view of what we're building and why.
+Three architectural tiers — **Substrate**, **Components**, **PALI**. Three plays — Prevent, Replay, Specify. One personal-AI destination delivered by TAI. The complete end-to-end view of what we're building and why.
 
 **→ [Read The SMARTHAUS Vision](https://github.com/SmartHausGroup/.github/blob/main/vision/README.md).**
 
@@ -30,7 +30,9 @@ Apple Intelligence is locked to Apple silicon. Gemini favors Pixel. Copilot favo
 
 We can, because we're not a platform.
 
-What we're building is a portable AI layer that travels with you — one identity, one memory, one governance plane, across every device you actually use. We call it the **Personal AI Layer Interface (PALI)**. Your AI. Not theirs.
+The category SMARTHAUS is defining is the **Personal AI Layer Interface (PALI)** — a portable AI layer that travels with you across every device you own, with one identity, one memory, one governance plane. The product delivering PALI is **[TAI](https://github.com/SmartHausGroup/.github/blob/main/products/PALI/TAI/README.md)** — voice-first personal AI with mathematical guarantees. Platform foundations (Rust daemon, voice subsystem, IPC, macOS arm64 packaging) are shipping today; the first end-to-end cross-device pilot lands Y1 H2.
+
+Your AI. Not theirs.
 
 ## The proof
 
@@ -45,18 +47,23 @@ Our discipline is called **Mathematical Autopsy** — we autopsy our own math be
 
 ## What's running today
 
-Two products are pilot-ready and signed for distribution:
+Two Components are pilot-ready and signed for distribution:
 
 - **UCP Studio v0.6.3** — Universal Control Plane. Runtime governance: nothing executes that hasn't been admitted by policy.
 - **SAID Runtime v0.2.5** — Deterministic inference engine that makes frontier models interchangeable underneath your application logic.
 
-The substrate underneath, and the PALI experience on top, roll out across the next 18 months.
+A third, **MAE (Mathematical Autopsy Engine)**, has its foundation in place — the deployment build is under construction. TAI platform foundations are shipping in the `tai-engine` Rust workspace. The Substrate underneath (RFS + NME) productizes Y2 H2.
 
 ## Get in touch
 
 We work with enterprises, research partners, and a small number of investors.
 
-**[smarthaus.ai](https://smarthaus.ai)**
+- **Web:** [smarthaus.ai](https://smarthaus.ai)
+- **Email:** phil@smarthausgroup.com
+
+---
+
+© SMARTHAUS
 
 ---
 
