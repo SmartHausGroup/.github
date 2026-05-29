@@ -152,3 +152,7 @@ You cannot govern a guess with another guess. We are the company building the pr
 ---
 
 **[The Six Failures](../six-failures/)** · **[Products](../products/ucp.md)** · **[PALI](../pali/)** · **[Mathematical Autopsy](../mathematical-autopsy/)** · **[Princeton Research](../research/princeton.md)** · **[Patents](../research/patents.md)** · **[Math Thesis](../thesis/framework.md)** · **[smarthaus.ai](https://smarthaus.ai)**
+
+---
+
+**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/ucp.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/pali/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/framework.md)** · **[smarthaus.ai](https://smarthaus.ai)**
