@@ -33,7 +33,7 @@ That is the bet underneath SMARTHAUS's broader architecture, and the Princeton w
 
 ## What's published
 
-- **MATH_THESIS_v7** — the formal mathematical foundation underneath RFS and the SMARTHAUS substrate. [Read it →](../thesis/)
+- **MATH_THESIS_v8** — the formal mathematical foundation underneath RFS and the SMARTHAUS substrate. [Read it →](../thesis/)
 - **Pattern Discovery Report** — the comparative analysis demonstrating RFS+NME advantage over standard FCS analysis on Princeton experimental data. Available under NDA.
 - **Joint paper** — in preparation with Princeton collaborators.
 
