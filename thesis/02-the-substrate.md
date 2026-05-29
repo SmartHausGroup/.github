@@ -73,7 +73,7 @@ The next chapter — [The Field](./03-the-field.md) — describes the concrete i
 
 ---
 
-**[Thesis overview](./README.md)** · **[Download PDF](./MATH_THESIS_v8.pdf)**
+**[Thesis overview](./README.md)**
 
 ---
 
