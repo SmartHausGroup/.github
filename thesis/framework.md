@@ -47,7 +47,7 @@ Each section is paired with the executable verification artifacts that confirm t
 
 If you cite the thesis in academic or technical work, please cite as:
 
-> Siniscalchi, P., et al. (2026). *SMARTHAUS Mathematical Thesis (v8).* SMARTHAUS Group. Available at https://github.com/SmartHausGroup/.github/blob/main/thesis/MATH_THESIS_v8.pdf
+> Siniscalchi, P., et al. (2026). *SMARTHAUS Mathematical Thesis (v8).* SMARTHAUS. Available at https://github.com/SmartHausGroup/.github/blob/main/thesis/MATH_THESIS_v8.pdf
 
 ---
 
