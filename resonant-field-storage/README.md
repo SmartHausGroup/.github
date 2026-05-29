@@ -346,7 +346,7 @@ RFS follows **notebook-first development** as part of the Mathematical Autopsy (
 
 ## License
 
-**PROPRIETARY SOFTWARE** — All content in this repository is proprietary and confidential property of SmartHaus Group. All rights reserved. Unauthorized copying, modification, distribution, or use is strictly prohibited.
+**PROPRIETARY SOFTWARE** — All content in this repository is proprietary and confidential property of SMARTHAUS. All rights reserved. Unauthorized copying, modification, distribution, or use is strictly prohibited.
 
 For licensing inquiries, please contact: **Philip Siniscalchi** at phil@smarthausgroup.com
 
