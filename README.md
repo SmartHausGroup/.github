@@ -2,52 +2,38 @@
 
 **AI you can prove. Not AI you have to trust.**
 
-This is the SMARTHAUS organization-profile repository. The file at [`profile/README.md`](./profile/README.md) is what visitors see when they land at **[github.com/SmartHausGroup](https://github.com/SmartHausGroup)**.
+Most AI today is built backwards. The industry trains a model, ships it, then bolts governance, safety, and explainability on top as wrappers. It's why 95% of generative AI pilots produce zero measurable impact. **You cannot govern a guess with another guess.**
 
-The rest of this repo hosts SMARTHAUS's public content pages — strategy, products, research, methodology — as plain Markdown that renders directly on GitHub.
+SMARTHAUS builds the other way. We start with what the system must always do, must never do, and must guarantee — and we prove those rules hold in math before a line of code ships. Every claim our software makes is backed by a checkable artifact: a lemma, an invariant, a notebook proof, a signed receipt, or a CI gate. If a property cannot be proven, it does not ship.
 
----
-
-## Pages
-
-### The whole picture
-
-- **[The SMARTHAUS Vision](./vision/)** — Four-layer architecture (thesis, substrate, operators, marketplace), three plays, PALI, the endgame. Read this first if you want the full picture.
-
-### Why SMARTHAUS
-
-- **[The Six Failures](./six-failures/)** — The six ways enterprise AI breaks in production, each with a real court case behind it. Each one closed by construction in our architecture.
-
-### Products
-
-- **[UCP — Universal Control Plane](./products/ucp.md)** — Runtime governance. Current release: v0.6.3. Pilot-ready.
-- **[SAID — Deterministic Inference](./products/said.md)** — Frontier models, interchangeable and deterministic. Current release: v0.2.5. Pilot-ready.
-- **[MAE — Mathematical Autopsy Engine](./products/mae.md)** — The build authority for every SMARTHAUS product. Deployment build under construction.
-
-### The portable AI layer
-
-- **[PALI — Personal AI Layer Interface](./pali/)** — Your AI, on every device you own. The cross-platform answer to Apple Intelligence, Gemini, and Copilot.
-
-### Methodology
-
-- **[Mathematical Autopsy](./mathematical-autopsy/)** — The 9-phase development discipline that produces every SMARTHAUS product. ~75 named lemmas, ~700 machine-enforced invariants, ~880 runnable notebook proofs in CI.
-
-### Research
-
-- **[Princeton Collaboration](./research/princeton.md)** — Applying our substrate to single-particle fluorescence spectroscopy data. Joint paper in preparation.
-- **[Patents](./research/patents.md)** — RFS, UCP, MA. More in flight.
-- **[Math Thesis (v8)](./thesis/framework.md)** — The formal mathematical foundation. Current edition May 2026.
-
-### Substrate
-
-- **[Resonant Field Storage (RFS)](./resonant-field-storage/)** — The mathematical memory substrate. Information as wave patterns; retrieval as matched-filter probing.
+**Software that behaves like physics, not rhetoric.**
 
 ---
 
-## More
+## Where to start
 
-- **Org page** — [github.com/SmartHausGroup](https://github.com/SmartHausGroup)
-- **Website** — [smarthaus.ai](https://smarthaus.ai)
+**The whole picture in one page** — [The SMARTHAUS Vision](./vision/README.md). Three-tier architecture (Substrate, Components, PALI), three plays, the endgame. Read this first if you want everything at once.
+
+**The case for why this matters now** — [The Six Failures](./six-failures/README.md). Six structural ways enterprise AI is breaking in production right now, each with a real court case from January 2025 forward: Mobley v. Workday, Cursor's hallucinating support bot, Replit's autonomous agent dropping a production database, UnitedHealth's nH Predict, the EU AI Act, SR 26-2.
+
+**What we ship** — [Products](./products/README.md). Three categories organized around a shared mathematical substrate:
+- **[PALI](./products/PALI/README.md)** — Personal AI Layer Interface. The category SMARTHAUS is defining. The PALI product is **[TAI](./products/PALI/TAI/README.md)**.
+- **[Components](./products/Components/README.md)** — The seven mathematical-governance products. **[UCP](./products/Components/UCP/README.md)** (v0.6.3), **[SAID](./products/Components/SAID/README.md)** (v0.2.5), and **[MAE](./products/Components/MAE/README.md)** are pilot-ready today.
+- **[Substrate](./products/Substrate/README.md)** — **[RFS](./products/Substrate/RFS/README.md)** and **[NME](./products/Substrate/NME/README.md)**, the mathematical foundation underneath everything.
+
+**How we build it** — [Mathematical Autopsy](./mathematical-autopsy/README.md). The development discipline that produces every SMARTHAUS product. Across our active codebase: **~75 named lemmas, ~700 machine-enforced invariants, ~880 runnable notebook proofs**. Every one of them in CI. None of them decorative.
+
+**The math underneath** — [Math Thesis](./thesis/README.md). Eight chapters developing the field-theoretic framework — from the integration problem AI faces today through the architectural commitments that solve it. The formal paper is downloadable as PDF.
+
+**Why this is real, not just talk** — [Princeton Research](./research/princeton.md). Joint collaboration applying SMARTHAUS methods to single-particle fluorescence spectroscopy data; joint paper in preparation. [Patents](./research/patents.md) — RFS, UCP, and Mathematical Autopsy filed, more in flight.
+
+---
+
+## Get in touch
+
+We work with enterprises, research partners, and a small number of investors.
+
+**Web:** [smarthaus.ai](https://smarthaus.ai) · **Org:** [github.com/SmartHausGroup](https://github.com/SmartHausGroup)
 
 ---
 
