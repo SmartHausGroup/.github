@@ -13,9 +13,10 @@ sidebar_position: 1
 
 The SMARTHAUS Mathematical Thesis is the document that formalizes what we are building and why it works. It is not marketing. It is not a whitepaper. It is the mathematical specification that all SMARTHAUS products are derived from and tested against.
 
-The current edition is **v7**, March 2026.
+The current edition is **v8**, May 2026.
 
-**[📄 Read MATH_THESIS_v7 (PDF)](./MATH_THESIS_v7.pdf)**
+- **[📄 Read MATH_THESIS_v8 (PDF)](./MATH_THESIS_v8.pdf)**
+- **[📝 Read MATH_THESIS_v8 (Markdown, in-browser)](./MATH_THESIS_v8.md)**
 
 ---
 
@@ -46,7 +47,7 @@ Each section is paired with the executable verification artifacts that confirm t
 
 If you cite the thesis in academic or technical work, please cite as:
 
-> Siniscalchi, P., et al. (2026). *SMARTHAUS Mathematical Thesis (v7).* SMARTHAUS Group. Available at https://github.com/SmartHausGroup/.github/blob/main/thesis/MATH_THESIS_v7.pdf
+> Siniscalchi, P., et al. (2026). *SMARTHAUS Mathematical Thesis (v8).* SMARTHAUS Group. Available at https://github.com/SmartHausGroup/.github/blob/main/thesis/MATH_THESIS_v8.pdf
 
 ---
 
