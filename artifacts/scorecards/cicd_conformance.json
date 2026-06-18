@@ -1,0 +1,51 @@
+{
+  "schema_version": "0.1.0",
+  "standard": "repo-cicd-conformance",
+  "status": "GREEN",
+  "determinism": {
+    "seed_locked": true,
+    "seed": 1729,
+    "nondeterminism_sources": [],
+    "certification": "deterministic-static-SmartHausGroup.github-cicd-adoption"
+  },
+  "notebook": {
+    "path": "notebooks/ma/cicd_conformance.ipynb",
+    "sha256": "a6c3aafebffcfe493bb35a0a9ee1e07ed1fe0ef45c35e9063703f4d2c77564be"
+  },
+  "invariants": [
+    {
+      "id": "SmartHausGroup.github-CICD-L1-MANIFEST-BINDING",
+      "status": "PASS",
+      "lemma": "L-SmartHausGroup.github-CICD-1",
+      "test_binding": "notebooks/ma/cicd_conformance.ipynb::manifest_binding"
+    },
+    {
+      "id": "SmartHausGroup.github-CICD-L2-BRANCH-NON-BYPASS",
+      "status": "PASS",
+      "lemma": "L-SmartHausGroup.github-CICD-2",
+      "test_binding": "notebooks/ma/cicd_conformance.ipynb::branch_non_bypass"
+    },
+    {
+      "id": "SmartHausGroup.github-CICD-L3-FAIL-CLOSED-GATES",
+      "status": "PASS",
+      "lemma": "L-SmartHausGroup.github-CICD-3",
+      "test_binding": "notebooks/ma/cicd_conformance.ipynb::fail_closed_gates"
+    },
+    {
+      "id": "SmartHausGroup.github-CICD-L4-EVIDENCE-TRACEABILITY",
+      "status": "PASS",
+      "lemma": "L-SmartHausGroup.github-CICD-4",
+      "test_binding": "notebooks/ma/cicd_conformance.ipynb::evidence_traceability"
+    },
+    {
+      "id": "SmartHausGroup.github-CICD-L5-UCP-RECEIPT-BINDING",
+      "status": "PASS",
+      "lemma": "L-SmartHausGroup.github-CICD-5",
+      "test_binding": "notebooks/ma/cicd_conformance.ipynb::ucp_receipt_binding"
+    }
+  ],
+  "score": {
+    "passed": 5,
+    "total": 5
+  }
+}

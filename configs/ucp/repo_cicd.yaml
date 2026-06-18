@@ -1,0 +1,123 @@
+schema_version: 0.1.0
+repository:
+  owner: SmartHausGroup
+  name: SmartHausGroup.github
+  canonical_path: /Users/smarthaus/Projects/GitHub/SmartHausGroup.github
+  remote: https://github.com/SmartHausGroup/.github.git
+profile:
+  primary: docs-site
+  secondary: []
+protected_branches:
+  - pattern: main
+    requires_pull_request: true
+    blocks_direct_push: true
+    required_approvals: 2
+    requires_codeowners: true
+    requires_signed_commits: true
+    requires_linear_history: true
+    blocks_force_push: true
+    blocks_deletion: true
+    requires_conversation_resolution: true
+    required_checks:
+      - repo-cicd-conformance
+      - evidence-pack
+  - pattern: master
+    requires_pull_request: true
+    blocks_direct_push: true
+    required_approvals: 2
+    requires_codeowners: true
+    requires_signed_commits: true
+    requires_linear_history: true
+    blocks_force_push: true
+    blocks_deletion: true
+    requires_conversation_resolution: true
+    required_checks:
+      - repo-cicd-conformance
+      - evidence-pack
+  - pattern: development
+    requires_pull_request: true
+    blocks_direct_push: true
+    required_approvals: 2
+    requires_codeowners: true
+    requires_signed_commits: true
+    requires_linear_history: true
+    blocks_force_push: true
+    blocks_deletion: true
+    requires_conversation_resolution: true
+    required_checks:
+      - repo-cicd-conformance
+      - evidence-pack
+  - pattern: dev
+    requires_pull_request: true
+    blocks_direct_push: true
+    required_approvals: 2
+    requires_codeowners: true
+    requires_signed_commits: true
+    requires_linear_history: true
+    blocks_force_push: true
+    blocks_deletion: true
+    requires_conversation_resolution: true
+    required_checks:
+      - repo-cicd-conformance
+      - evidence-pack
+  - pattern: staging
+    requires_pull_request: true
+    blocks_direct_push: true
+    required_approvals: 2
+    requires_codeowners: true
+    requires_signed_commits: true
+    requires_linear_history: true
+    blocks_force_push: true
+    blocks_deletion: true
+    requires_conversation_resolution: true
+    required_checks:
+      - repo-cicd-conformance
+      - evidence-pack
+required_checks:
+  - repo-cicd-conformance
+  - evidence-pack
+  - ma-intent-and-invariants
+  - notebook-governance
+  - scorecard-green
+  - unit-tests
+  - lint-or-static-analysis
+  - ruleset-conformance
+make_targets:
+  ai-status: make ai-status
+  ai-validate: make ai-validate
+  ai-validate-full: make ai-validate-full
+  ai-evidence-pack: make ai-evidence-pack
+  ai-pack-verify: make ai-pack-verify
+  prepare-publication: make prepare-publication
+  publication-ready: make publication-ready
+  push-safe: make push-safe
+ma_evidence:
+  intent: docs/ma/cicd_conformance_phase0_intent.md
+  formula: docs/ma/cicd_conformance_phase1_formula.md
+  calculus: docs/ma/cicd_conformance_phase2_calculus.md
+  lemmas: docs/ma/cicd_conformance_phase3_lemmas.md
+  invariants:
+    - invariants/cicd_conformance.yaml
+  notebooks:
+    - notebooks/ma/cicd_conformance.ipynb
+  scorecards:
+    - artifacts/scorecards/cicd_conformance.json
+locks:
+  sources: configs/ucp/standard_sources.lock
+  toolchain: configs/ucp/standard_toolchain.lock
+advisory_gates:
+  - repo-specific-runtime-depth-review
+release_policy:
+  releases_artifacts: false
+  requires_environment_approval: true
+  requires_signed_provenance: true
+ucp_policy:
+  requires_ucp_receipt: true
+  receipt_subjects:
+    - commit
+    - push
+    - pull_request
+    - merge
+    - release
+    - deploy
+  blocks_without_remote_ci_evidence: true

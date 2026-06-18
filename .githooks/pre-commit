@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+receipt=".git/ucp-prepared-tree"
+current_tree="$(git write-tree)"
+
+if [[ ! -f "${receipt}" ]]; then
+  echo "pre-commit blocked: run 'make prepare-publication' first." >&2
+  exit 1
+fi
+
+prepared_tree="$(cat "${receipt}")"
+if [[ "${prepared_tree}" != "${current_tree}" ]]; then
+  echo "pre-commit blocked: prepared tree does not match staged tree." >&2
+  echo "prepared=${prepared_tree}" >&2
+  echo "current=${current_tree}" >&2
+  exit 1
+fi

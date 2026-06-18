@@ -1,0 +1,62 @@
+schema_version: 0.1.0
+repo: SmartHausGroup.github
+standard_commit: c859ddec2a5d8edced86137e339f64360caeb28a
+algorithm: sha256
+entries:
+  - id: repo_cicd_standard
+    path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/00-authority/live/SMARTHAUS_REPO_CICD_CONFORMANCE_STANDARD.md
+    sha256: 9864afea182ec4cc177e29198fe53a0de27c114380692e5667357d5a239a9ab8
+  - id: repo_cicd_manifest_schema
+    path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/schemas/repo_cicd_conformance.schema.json
+    sha256: 16eb1e1c7e2d2ecb3916a538257307124b403ec586435a908302a4c39927b491
+  - id: repo_cicd_scorecard_schema
+    path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/schemas/repo_cicd_scorecard.schema.json
+    sha256: 425e72a2aca3d75ffeee3bcd046c86d9eb0329e8dc5a3c2194b9fb777053b52b
+  - id: smarthausgroup_github_repo_manifest
+    path: configs/ucp/repo_cicd.yaml
+    sha256: 47593532d8bdea593125c115bdc20a176b45bcf8229b027a485079594c71b02c
+  - id: smarthausgroup_github_standard_sources
+    path: configs/ucp/standard_sources.yaml
+    sha256: 96212ebd8ceb555bd38b0fd538d1452b8c3d4cabde84cce4912f7202e1ec8a98
+  - id: smarthausgroup_github_toolchain_lock
+    path: configs/ucp/standard_toolchain.lock
+    sha256: e1d2cbef38c56086c9ccba7951ad6256ce9cd21044e7a89bca101d591118798e
+  - id: smarthausgroup_github_ci_workflow
+    path: .github/workflows/repo-cicd-conformance.yml
+    sha256: e59b969094b4a73db724601b968f097529f42af7d061b5edcf12495d0cafb8b3
+  - id: smarthausgroup_github_branch_ruleset
+    path: .github/rulesets/protected-branches.json
+    sha256: 1d5b99a10e9ebd8d2a02cd4e5d5f3c3fb7502f8cff63d419c7354f87a10951ab
+  - id: smarthausgroup_github_makefile
+    path: Makefile
+    sha256: 50bb705aaba02bd42ad33877322f56866ecc5cce329f1a5f20f5c0656013dcba
+  - id: smarthausgroup_github_make_ai
+    path: Makefile.ai
+    sha256: 38872357acbf278800532260eff528308f995d831c40a482cac7a463e4ae95ca
+  - id: smarthausgroup_github_verifier_script
+    path: scripts/ci/verify_repo_cicd_conformance.py
+    sha256: 0b9b6122888af561015f3246597849b63a352e69438e9d82e6949f8aceade1e6
+  - id: smarthausgroup_github_evidence_script
+    path: scripts/ci/build_repo_cicd_evidence.py
+    sha256: 4fe76152550020ca5d70710bca2d06d502dadee1dd547018ba1367614369bcdc
+  - id: smarthausgroup_github_cicd_phase0
+    path: docs/ma/cicd_conformance_phase0_intent.md
+    sha256: 4be071c3041d4d6bf058f257126feffc6db4e73e94c5810b0ff4b512a9b5b585
+  - id: smarthausgroup_github_cicd_phase1
+    path: docs/ma/cicd_conformance_phase1_formula.md
+    sha256: 0d2ba7fec6bb2e1c200239a5cf4d0f6217190f14b624bb96002725443fc2497d
+  - id: smarthausgroup_github_cicd_phase2
+    path: docs/ma/cicd_conformance_phase2_calculus.md
+    sha256: 64710a8f97900310b47b7f5d5912c0d9779f088168df0cef979569670649241a
+  - id: smarthausgroup_github_cicd_phase3
+    path: docs/ma/cicd_conformance_phase3_lemmas.md
+    sha256: de75e2c11c8d9aba643ea7c43d8d1d0d07841c78ccd59a2450c5e8bbf243887f
+  - id: smarthausgroup_github_cicd_invariants
+    path: invariants/cicd_conformance.yaml
+    sha256: 7725e7cd772fe77e9e20fc901816ad6d347d531868f5e283f238c6fa4c98b721
+  - id: smarthausgroup_github_cicd_notebook
+    path: notebooks/ma/cicd_conformance.ipynb
+    sha256: a6c3aafebffcfe493bb35a0a9ee1e07ed1fe0ef45c35e9063703f4d2c77564be
+  - id: smarthausgroup_github_cicd_scorecard
+    path: artifacts/scorecards/cicd_conformance.json
+    sha256: 0d3cb419449711c209d5c4ffda9535ea916212a705ac93b7e05ded6e261669f5

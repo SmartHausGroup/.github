@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+msg_file="$1"
+receipt=".git/ucp-prepared-tree"
+
+if [[ ! -f "${receipt}" ]]; then
+  echo "commit-msg blocked: missing prepared tree receipt." >&2
+  exit 1
+fi
+
+prepared_tree="$(cat "${receipt}")"
+
+if ! grep -q '^UCP-Prepared-Tree:' "${msg_file}"; then
+  {
+    echo ""
+    echo "UCP-Prepared-Tree: ${prepared_tree}"
+  } >> "${msg_file}"
+fi
+
+rm -f "${receipt}"

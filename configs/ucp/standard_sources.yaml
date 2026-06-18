@@ -1,0 +1,19 @@
+schema_version: 0.1.0
+repo: SmartHausGroup.github
+standard_ref:
+  repository: /Users/smarthaus/Projects/GitHub/standards
+  commit: c859ddec2a5d8edced86137e339f64360caeb28a
+  packet: repo-cicd-conformance
+sources:
+  - id: repo_cicd_standard
+    path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/00-authority/live/SMARTHAUS_REPO_CICD_CONFORMANCE_STANDARD.md
+  - id: repo_cicd_manifest_schema
+    path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/schemas/repo_cicd_conformance.schema.json
+  - id: repo_cicd_scorecard_schema
+    path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/schemas/repo_cicd_scorecard.schema.json
+  - id: smarthausgroup_github_repo_manifest
+    path: configs/ucp/repo_cicd.yaml
+  - id: smarthausgroup_github_ci_workflow
+    path: .github/workflows/repo-cicd-conformance.yml
+  - id: smarthausgroup_github_ruleset
+    path: .github/rulesets/protected-branches.json

@@ -1,0 +1,50 @@
+name: SMARTHAUS Repo CI/CD Conformance
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - dev
+      - development
+      - staging
+      - "release/**"
+      - "hotfix/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: smarthaus-cicd-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  repo-cicd-conformance:
+    name: repo-cicd-conformance
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Validate repo CI/CD conformance
+        run: make repo-cicd-conformance
+      - name: Validate full repo gate
+        run: make ai-validate-full
+
+  evidence-pack:
+    name: evidence-pack
+    runs-on: ubuntu-latest
+    needs:
+      - repo-cicd-conformance
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build evidence pack
+        run: make ai-evidence-pack
+      - name: Verify evidence pack
+        run: make ai-pack-verify

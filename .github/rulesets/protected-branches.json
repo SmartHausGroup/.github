@@ -1,0 +1,58 @@
+{
+  "name": "SmartHausGroup.github protected branches",
+  "target": "branch",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "include": [
+        "refs/heads/main",
+        "refs/heads/master",
+        "refs/heads/development",
+        "refs/heads/dev",
+        "refs/heads/staging",
+        "refs/heads/release/**",
+        "refs/heads/hotfix/**"
+      ],
+      "exclude": []
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion"
+    },
+    {
+      "type": "non_fast_forward"
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 2,
+        "dismiss_stale_reviews_on_push": true,
+        "require_code_owner_review": true,
+        "require_last_push_approval": true,
+        "required_review_thread_resolution": true
+      }
+    },
+    {
+      "type": "required_linear_history"
+    },
+    {
+      "type": "required_signatures"
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "strict_required_status_checks_policy": true,
+        "required_status_checks": [
+          {
+            "context": "repo-cicd-conformance"
+          },
+          {
+            "context": "evidence-pack"
+          }
+        ]
+      }
+    }
+  ],
+  "bypass_actors": []
+}
