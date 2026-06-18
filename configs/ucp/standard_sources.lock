@@ -1,23 +1,26 @@
 schema_version: 0.1.0
 repo: SmartHausGroup.github
-standard_commit: c859ddec2a5d8edced86137e339f64360caeb28a
+standard_commit: 532ff4f14c75824a1cee9a0bd1b37362946661b0
 algorithm: sha256
 entries:
   - id: repo_cicd_standard
     path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/00-authority/live/SMARTHAUS_REPO_CICD_CONFORMANCE_STANDARD.md
-    sha256: 9864afea182ec4cc177e29198fe53a0de27c114380692e5667357d5a239a9ab8
+    sha256: 2c8b8aca1eb900b8a5e60778251f18d19b249124a7ed60494259760d4f0f91f7
   - id: repo_cicd_manifest_schema
     path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/schemas/repo_cicd_conformance.schema.json
     sha256: 16eb1e1c7e2d2ecb3916a538257307124b403ec586435a908302a4c39927b491
   - id: repo_cicd_scorecard_schema
     path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/schemas/repo_cicd_scorecard.schema.json
     sha256: 425e72a2aca3d75ffeee3bcd046c86d9eb0329e8dc5a3c2194b9fb777053b52b
+  - id: repo_cicd_check_context_map
+    path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/profiles/required_check_context_map.yaml
+    sha256: bf551a18368d41f83bcf974ec030870ebaf0a9cb742f7a5abcdf2fc2c0a197d2
   - id: smarthausgroup_github_repo_manifest
     path: configs/ucp/repo_cicd.yaml
     sha256: 47593532d8bdea593125c115bdc20a176b45bcf8229b027a485079594c71b02c
   - id: smarthausgroup_github_standard_sources
     path: configs/ucp/standard_sources.yaml
-    sha256: 96212ebd8ceb555bd38b0fd538d1452b8c3d4cabde84cce4912f7202e1ec8a98
+    sha256: 4e75a6b48a06e1dd6996f16252abd610dfa4e129635234fac75c75fa744406a6
   - id: smarthausgroup_github_toolchain_lock
     path: configs/ucp/standard_toolchain.lock
     sha256: e1d2cbef38c56086c9ccba7951ad6256ce9cd21044e7a89bca101d591118798e

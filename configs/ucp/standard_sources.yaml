@@ -2,7 +2,7 @@ schema_version: 0.1.0
 repo: SmartHausGroup.github
 standard_ref:
   repository: /Users/smarthaus/Projects/GitHub/standards
-  commit: c859ddec2a5d8edced86137e339f64360caeb28a
+  commit: 532ff4f14c75824a1cee9a0bd1b37362946661b0
   packet: repo-cicd-conformance
 sources:
   - id: repo_cicd_standard
@@ -11,6 +11,8 @@ sources:
     path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/schemas/repo_cicd_conformance.schema.json
   - id: repo_cicd_scorecard_schema
     path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/schemas/repo_cicd_scorecard.schema.json
+  - id: repo_cicd_check_context_map
+    path: /Users/smarthaus/Projects/GitHub/standards/repo-cicd-conformance/30-contracts/profiles/required_check_context_map.yaml
   - id: smarthausgroup_github_repo_manifest
     path: configs/ucp/repo_cicd.yaml
   - id: smarthausgroup_github_ci_workflow
