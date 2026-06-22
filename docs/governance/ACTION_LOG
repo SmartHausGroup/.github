@@ -6,3 +6,4 @@
 - Imported the proven SMARTHAUS CI/CD conformance control floor.
 - Bound the repo to MAE v0.2.1 only as local unsigned-limited validation evidence; no promotion or repin claim is made.
 - Completed local validation: repo conformance, evidence pack, agent bind check, supply-chain policy, Semgrep, Zizmor, Gitleaks, TruffleHog filesystem scan, and MAE v0.2.1 bundle digest verification.
+- Closed rollout after PR #1 merge. Main commit `02c9e67f56e56db94f9377ea868e6ab795ff8bb7` is signed and verified; all required default-branch checks are green; live custom property is `conformance=smarthaus-template-v1`.

@@ -1,9 +1,9 @@
 # SmartHausGroup/.github Project Status
 
-**Status:** local validation complete; PR publication pending
+**Status:** conformant
 **Date:** 2026-06-22
 
-`SmartHausGroup/.github` is an active untagged candidate in the standards audit. This tranche migrates it to the conformant control floor before applying the org custom property.
+`SmartHausGroup/.github` is conformant under the live SMARTHAUS ruleset.
 
 ## Local Validation
 
@@ -14,6 +14,13 @@
 - `python3 scripts/supply_chain_policy.py --check --write-scorecard`: pass
 - Semgrep, Zizmor, Gitleaks, and TruffleHog local scans: pass
 - MAE v0.2.1 bundle digest verified against build receipt
+
+## Closure
+
+- PR #1 merged.
+- Main commit `02c9e67f56e56db94f9377ea868e6ab795ff8bb7` is signed and verified.
+- Default-branch checks are green.
+- Live property is `conformance=smarthaus-template-v1`.
 
 ## Boundaries
 
