@@ -1,0 +1,5 @@
+{
+  "packages": [],
+  "policy": "allow_only_committed_current_spdx_noassertion_identities",
+  "schema_version": "smarthaus.unresolved-license-manifest.v1"
+}

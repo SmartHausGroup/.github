@@ -6,41 +6,41 @@
     "seed_locked": true,
     "seed": 1729,
     "nondeterminism_sources": [],
-    "certification": "deterministic-static-SmartHausGroup.github-cicd-adoption"
+    "certification": "deterministic-static-GITHUB-ORG-PROFILE-cicd-adoption"
   },
   "notebook": {
     "path": "notebooks/ma/cicd_conformance.ipynb",
-    "sha256": "a6c3aafebffcfe493bb35a0a9ee1e07ed1fe0ef45c35e9063703f4d2c77564be"
+    "sha256": "1427afc5af686f2a30145cdb1144611d71a962897a908498112338b5b5c5e871"
   },
   "invariants": [
     {
-      "id": "SmartHausGroup.github-CICD-L1-MANIFEST-BINDING",
+      "id": "GITHUB-ORG-PROFILE-CICD-L1-MANIFEST-BINDING",
       "status": "PASS",
-      "lemma": "L-SmartHausGroup.github-CICD-1",
+      "lemma": "L-GITHUB-ORG-PROFILE-CICD-1",
       "test_binding": "notebooks/ma/cicd_conformance.ipynb::manifest_binding"
     },
     {
-      "id": "SmartHausGroup.github-CICD-L2-BRANCH-NON-BYPASS",
+      "id": "GITHUB-ORG-PROFILE-CICD-L2-BRANCH-NON-BYPASS",
       "status": "PASS",
-      "lemma": "L-SmartHausGroup.github-CICD-2",
+      "lemma": "L-GITHUB-ORG-PROFILE-CICD-2",
       "test_binding": "notebooks/ma/cicd_conformance.ipynb::branch_non_bypass"
     },
     {
-      "id": "SmartHausGroup.github-CICD-L3-FAIL-CLOSED-GATES",
+      "id": "GITHUB-ORG-PROFILE-CICD-L3-FAIL-CLOSED-GATES",
       "status": "PASS",
-      "lemma": "L-SmartHausGroup.github-CICD-3",
+      "lemma": "L-GITHUB-ORG-PROFILE-CICD-3",
       "test_binding": "notebooks/ma/cicd_conformance.ipynb::fail_closed_gates"
     },
     {
-      "id": "SmartHausGroup.github-CICD-L4-EVIDENCE-TRACEABILITY",
+      "id": "GITHUB-ORG-PROFILE-CICD-L4-EVIDENCE-TRACEABILITY",
       "status": "PASS",
-      "lemma": "L-SmartHausGroup.github-CICD-4",
+      "lemma": "L-GITHUB-ORG-PROFILE-CICD-4",
       "test_binding": "notebooks/ma/cicd_conformance.ipynb::evidence_traceability"
     },
     {
-      "id": "SmartHausGroup.github-CICD-L5-UCP-RECEIPT-BINDING",
+      "id": "GITHUB-ORG-PROFILE-CICD-L5-UCP-RECEIPT-BINDING",
       "status": "PASS",
-      "lemma": "L-SmartHausGroup.github-CICD-5",
+      "lemma": "L-GITHUB-ORG-PROFILE-CICD-5",
       "test_binding": "notebooks/ma/cicd_conformance.ipynb::ucp_receipt_binding"
     }
   ],

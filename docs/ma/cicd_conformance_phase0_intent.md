@@ -1,11 +1,11 @@
-# SmartHausGroup.github Repo CI/CD Conformance - Phase 0 Intent
+# SmartHausGroup/.github Repo CI/CD Conformance - Phase 0 Intent
 
 Status: approved adoption
-Date: 2026-06-18
+Date: 2026-06-22
 
 ## What are we building?
 
-A repo-local adoption of the SMARTHAUS Repo CI/CD Conformance Standard for `SmartHausGroup.github`.
+A repo-local adoption of the SMARTHAUS Repo CI/CD Conformance Standard for `SmartHausGroup/.github`.
 
 ## Why are we building it?
 
@@ -13,7 +13,7 @@ Every SMARTHAUS repository needs the same CI/CD control plane: branch protection
 
 ## Problem
 
-Repository CI/CD surfaces were inconsistent. Some repos had no workflows, some had workflow-only checks without UCP manifests, and some had historical gates that were not traceable to a standard MA packet.
+Repository CI/CD surfaces were inconsistent. Some repos had no workflows, some had workflow-only checks without UCP manifests, and this org profile repo was active but not yet tagged into the conformant ruleset.
 
 ## Boundaries
 
@@ -24,9 +24,10 @@ Out of scope: product feature behavior, cloud deployment, and new application ru
 ## Required Guarantees
 
 - Required CI runs on PRs and protected branch pushes.
-- Protected branches require PRs and block direct pushes.
+- Protected branches block direct mutation through signed commits, linear history, no deletion, no force push, strict required mechanical contexts, and zero bypass actors.
+- Human-review quorum, CODEOWNERS review, and last-push approval are not required for this solo-operator conformance mode.
 - Required gates fail closed.
-- CI/CD evidence binds to standard commit `c859ddec2a5d8edced86137e339f64360caeb28a`.
+- CI/CD evidence binds to standards commit `d76daeb86432b00826fa7b02613dedae0ab24ad3`.
 - UCP can read one deterministic manifest and scorecard for this repository.
 
 ## Success Criteria
@@ -34,6 +35,7 @@ Out of scope: product feature behavior, cloud deployment, and new application ru
 - `make repo-cicd-conformance` passes.
 - `make ai-pack-verify` passes.
 - `.github/workflows/repo-cicd-conformance.yml` exposes `repo-cicd-conformance` and `evidence-pack` jobs.
+- Branch ruleset required status contexts include `verify`, `validate`, `secret-scan`, `zizmor`, `supply-chain-policy`, `sbom-vulnerability-budget`, `trufflehog`, and `semgrep`.
 - `artifacts/scorecards/cicd_conformance.json` is green.
 
 ## Determinism Definition

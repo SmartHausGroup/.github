@@ -1,0 +1,32 @@
+name: static-analysis
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - dev
+      - development
+      - staging
+      - "release/**"
+      - "hotfix/**"
+  schedule:
+    - cron: "40 7 * * 1"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  semgrep:
+    name: semgrep
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Semgrep deterministic policy scan
+        run: |
+          set -euo pipefail
+          SEMGREP_VERSION=$(python3 -c 'import json; print(json.load(open("compliance/supply-chain-tools.json"))["semgrep"])')
+          pipx run "semgrep==${SEMGREP_VERSION}" scan --config .semgrep.yml --error --exclude ".git" --exclude "notebooks/**/*.ipynb" --exclude "agent_governance/**" --exclude "app/desktop/src-tauri/resources/said-runtime/backend/_internal/**" .

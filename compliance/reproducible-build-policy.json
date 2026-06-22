@@ -1,0 +1,7 @@
+{
+  "schema_version": "smarthaus.reproducible-build-policy.v1",
+  "deterministic_source_archive_required": true,
+  "runtime_build_outputs": [],
+  "build_output_policy": "runtime repos must add build-output digests before release extraction",
+  "failure_mode": "fail_closed_when_runtime_outputs_exist_without_digests"
+}

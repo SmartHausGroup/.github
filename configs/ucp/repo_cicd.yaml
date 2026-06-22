@@ -1,81 +1,130 @@
 schema_version: 0.1.0
 repository:
   owner: SmartHausGroup
-  name: SmartHausGroup.github
-  canonical_path: /Users/smarthaus/Projects/GitHub/SmartHausGroup.github
+  name: .github
+  canonical_path: ${SMARTHAUS_GITHUB_ORG_PROFILE_REPO_ROOT}
   remote: https://github.com/SmartHausGroup/.github.git
 profile:
-  primary: docs-site
-  secondary: []
+  primary: org-profile-governance
+  secondary:
+    - repo-cicd-conformance
 protected_branches:
   - pattern: main
-    requires_pull_request: true
+    requires_pull_request: false
     blocks_direct_push: true
-    required_approvals: 2
-    requires_codeowners: true
+    required_approvals: 0
+    requires_codeowners: false
     requires_signed_commits: true
     requires_linear_history: true
     blocks_force_push: true
     blocks_deletion: true
-    requires_conversation_resolution: true
+    requires_conversation_resolution: false
     required_checks:
       - repo-cicd-conformance
       - evidence-pack
+      - verify
+      - validate
+      - secret-scan
+      - zizmor
+      - supply-chain-policy
+      - sbom-vulnerability-budget
+      - trufflehog
+      - semgrep
   - pattern: master
-    requires_pull_request: true
+    requires_pull_request: false
     blocks_direct_push: true
-    required_approvals: 2
-    requires_codeowners: true
+    required_approvals: 0
+    requires_codeowners: false
     requires_signed_commits: true
     requires_linear_history: true
     blocks_force_push: true
     blocks_deletion: true
-    requires_conversation_resolution: true
+    requires_conversation_resolution: false
     required_checks:
       - repo-cicd-conformance
       - evidence-pack
+      - verify
+      - validate
+      - secret-scan
+      - zizmor
+      - supply-chain-policy
+      - sbom-vulnerability-budget
+      - trufflehog
+      - semgrep
   - pattern: development
-    requires_pull_request: true
+    requires_pull_request: false
     blocks_direct_push: true
-    required_approvals: 2
-    requires_codeowners: true
+    required_approvals: 0
+    requires_codeowners: false
     requires_signed_commits: true
     requires_linear_history: true
     blocks_force_push: true
     blocks_deletion: true
-    requires_conversation_resolution: true
+    requires_conversation_resolution: false
     required_checks:
       - repo-cicd-conformance
       - evidence-pack
+      - verify
+      - validate
+      - secret-scan
+      - zizmor
+      - supply-chain-policy
+      - sbom-vulnerability-budget
+      - trufflehog
+      - semgrep
   - pattern: dev
-    requires_pull_request: true
+    requires_pull_request: false
     blocks_direct_push: true
-    required_approvals: 2
-    requires_codeowners: true
+    required_approvals: 0
+    requires_codeowners: false
     requires_signed_commits: true
     requires_linear_history: true
     blocks_force_push: true
     blocks_deletion: true
-    requires_conversation_resolution: true
+    requires_conversation_resolution: false
     required_checks:
       - repo-cicd-conformance
       - evidence-pack
+      - verify
+      - validate
+      - secret-scan
+      - zizmor
+      - supply-chain-policy
+      - sbom-vulnerability-budget
+      - trufflehog
+      - semgrep
   - pattern: staging
-    requires_pull_request: true
+    requires_pull_request: false
     blocks_direct_push: true
-    required_approvals: 2
-    requires_codeowners: true
+    required_approvals: 0
+    requires_codeowners: false
     requires_signed_commits: true
     requires_linear_history: true
     blocks_force_push: true
     blocks_deletion: true
-    requires_conversation_resolution: true
+    requires_conversation_resolution: false
     required_checks:
       - repo-cicd-conformance
       - evidence-pack
+      - verify
+      - validate
+      - secret-scan
+      - zizmor
+      - supply-chain-policy
+      - sbom-vulnerability-budget
+      - trufflehog
+      - semgrep
 required_checks:
   - repo-cicd-conformance
   - evidence-pack
+  - verify
+  - validate
+  - secret-scan
+  - zizmor
+  - supply-chain-policy
+  - sbom-vulnerability-budget
+  - trufflehog
+  - semgrep
   - ma-intent-and-invariants
   - notebook-governance
   - scorecard-green
@@ -106,7 +155,7 @@ locks:
   sources: configs/ucp/standard_sources.lock
   toolchain: configs/ucp/standard_toolchain.lock
 advisory_gates:
-  - repo-specific-runtime-depth-review
+  - org-profile-content-depth-review
 release_policy:
   releases_artifacts: false
   requires_environment_approval: true

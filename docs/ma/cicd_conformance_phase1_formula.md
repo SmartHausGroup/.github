@@ -1,8 +1,8 @@
-# SmartHausGroup.github Repo CI/CD Conformance - Phase 1 Formula
+# SmartHausGroup/.github Repo CI/CD Conformance - Phase 1 Formula
 
 Let:
 
-- `R` be `SmartHausGroup.github`.
+- `R` be `SmartHausGroup/.github`.
 - `c` be the commit under evaluation.
 - `t` be the git tree hash.
 - `m` be `configs/ucp/repo_cicd.yaml`.
@@ -15,6 +15,7 @@ Let:
 RepoAdmissible_R(c) =
   ManifestValid_R(m)
   and BranchRulesProtected_R(b)
+  and NoHumanDeadlock_R(b)
   and RequiredChecksGreen_R(q, c)
   and MAEvidenceTraceable_R(e)
   and ScorecardGreen_R(s)

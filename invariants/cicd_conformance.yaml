@@ -1,33 +1,33 @@
 schema_version: 0.1.0
-repo: SmartHausGroup.github
+repo: GITHUB-ORG-PROFILE
 standard: repo-cicd-conformance
 invariants:
-  - id: SmartHausGroup.github-CICD-L1-MANIFEST-BINDING
-    lemma: L-SmartHausGroup.github-CICD-1
+  - id: GITHUB-ORG-PROFILE-CICD-L1-MANIFEST-BINDING
+    lemma: L-GITHUB-ORG-PROFILE-CICD-1
     proof_obligation: configs/ucp/repo_cicd.yaml declares repo identity, profile, checks, Make targets, MA evidence, and locks.
     failure_boundary: Missing or incomplete manifest blocks repo conformance.
     test_binding: notebooks/ma/cicd_conformance.ipynb::manifest_binding
     ci_gate: repo-cicd-conformance
-  - id: SmartHausGroup.github-CICD-L2-BRANCH-NON-BYPASS
-    lemma: L-SmartHausGroup.github-CICD-2
-    proof_obligation: Protected branch ruleset requires PRs and blocks direct mutation.
-    failure_boundary: Any direct protected branch path blocks repo conformance.
+  - id: GITHUB-ORG-PROFILE-CICD-L2-BRANCH-NON-BYPASS
+    lemma: L-GITHUB-ORG-PROFILE-CICD-2
+    proof_obligation: Protected branch ruleset uses mechanical required contexts, signed commits, linear history, no deletion, no force push, and zero bypass actors without impossible multi-human approval.
+    failure_boundary: Human-review deadlock, bypass actor, missing required context, deletion, force push, unsigned history, or non-linear history blocks repo conformance.
     test_binding: notebooks/ma/cicd_conformance.ipynb::branch_non_bypass
     ci_gate: repo-cicd-conformance
-  - id: SmartHausGroup.github-CICD-L3-FAIL-CLOSED-GATES
-    lemma: L-SmartHausGroup.github-CICD-3
+  - id: GITHUB-ORG-PROFILE-CICD-L3-FAIL-CLOSED-GATES
+    lemma: L-GITHUB-ORG-PROFILE-CICD-3
     proof_obligation: Required Make targets and workflow jobs fail closed.
     failure_boundary: Soft-failed required validation blocks repo conformance.
     test_binding: notebooks/ma/cicd_conformance.ipynb::fail_closed_gates
     ci_gate: repo-cicd-conformance
-  - id: SmartHausGroup.github-CICD-L4-EVIDENCE-TRACEABILITY
-    lemma: L-SmartHausGroup.github-CICD-4
+  - id: GITHUB-ORG-PROFILE-CICD-L4-EVIDENCE-TRACEABILITY
+    lemma: L-GITHUB-ORG-PROFILE-CICD-4
     proof_obligation: CI/CD MA docs, notebook, invariant file, and scorecard exist.
     failure_boundary: Missing evidence blocks repo conformance.
     test_binding: notebooks/ma/cicd_conformance.ipynb::evidence_traceability
     ci_gate: evidence-pack
-  - id: SmartHausGroup.github-CICD-L5-UCP-RECEIPT-BINDING
-    lemma: L-SmartHausGroup.github-CICD-5
+  - id: GITHUB-ORG-PROFILE-CICD-L5-UCP-RECEIPT-BINDING
+    lemma: L-GITHUB-ORG-PROFILE-CICD-5
     proof_obligation: Manifest requires UCP receipts for admission events.
     failure_boundary: Missing UCP receipt policy blocks governed publication.
     test_binding: notebooks/ma/cicd_conformance.ipynb::ucp_receipt_binding

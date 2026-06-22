@@ -1,0 +1,77 @@
+name: security
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - dev
+      - development
+      - staging
+      - "release/**"
+      - "hotfix/**"
+  schedule:
+    - cron: "0 7 * * 1"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  secret-scan:
+    name: secret-scan
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+      - name: gitleaks (checksum-verified binary, fail-closed)
+        run: |
+          set -euo pipefail
+          TOOL_DIR="$RUNNER_TEMP/smarthaus-secret-tools"
+          DOWNLOAD_DIR="$RUNNER_TEMP/smarthaus-secret-downloads"
+          mkdir -p "$TOOL_DIR" "$DOWNLOAD_DIR"
+          GITLEAKS_VERSION=$(python3 -c 'import json; print(json.load(open("compliance/supply-chain-tools.json"))["gitleaks"])')
+          curl -sSfL -o "$DOWNLOAD_DIR/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz" "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz"
+          curl -sSfL -o "$DOWNLOAD_DIR/gitleaks_${GITLEAKS_VERSION}_checksums.txt" "https://github.com/gitleaks/gitleaks/releases/download/v${GITLEAKS_VERSION}/gitleaks_${GITLEAKS_VERSION}_checksums.txt"
+          (cd "$DOWNLOAD_DIR" && grep "gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz" "gitleaks_${GITLEAKS_VERSION}_checksums.txt" | sha256sum -c -)
+          tar -xzf "$DOWNLOAD_DIR/gitleaks_${GITLEAKS_VERSION}_linux_x64.tar.gz" -C "$TOOL_DIR" gitleaks
+          "$TOOL_DIR/gitleaks" detect --source . --config .gitleaks.toml --no-git --no-banner --redact --exit-code 1
+
+  trufflehog:
+    name: trufflehog
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: TruffleHog verified-secret scan
+        run: |
+          set -euo pipefail
+          TOOL_DIR="$RUNNER_TEMP/smarthaus-secret-tools"
+          DOWNLOAD_DIR="$RUNNER_TEMP/smarthaus-secret-downloads"
+          mkdir -p "$TOOL_DIR" "$DOWNLOAD_DIR"
+          TRUFFLEHOG_VERSION=$(python3 -c 'import json; print(json.load(open("compliance/supply-chain-tools.json"))["trufflehog"])')
+          curl -sSfL -o "$DOWNLOAD_DIR/trufflehog_${TRUFFLEHOG_VERSION}_linux_amd64.tar.gz" "https://github.com/trufflesecurity/trufflehog/releases/download/v${TRUFFLEHOG_VERSION}/trufflehog_${TRUFFLEHOG_VERSION}_linux_amd64.tar.gz"
+          curl -sSfL -o "$DOWNLOAD_DIR/trufflehog_${TRUFFLEHOG_VERSION}_checksums.txt" "https://github.com/trufflesecurity/trufflehog/releases/download/v${TRUFFLEHOG_VERSION}/trufflehog_${TRUFFLEHOG_VERSION}_checksums.txt"
+          (cd "$DOWNLOAD_DIR" && grep "trufflehog_${TRUFFLEHOG_VERSION}_linux_amd64.tar.gz" "trufflehog_${TRUFFLEHOG_VERSION}_checksums.txt" | sha256sum -c -)
+          tar -xzf "$DOWNLOAD_DIR/trufflehog_${TRUFFLEHOG_VERSION}_linux_amd64.tar.gz" -C "$TOOL_DIR" trufflehog
+          GIT_LFS_SKIP_SMUDGE=1 "$TOOL_DIR/trufflehog" git "file://$GITHUB_WORKSPACE" --no-update --fail --only-verified
+
+  zizmor:
+    # Audits workflows for unpinned actions, template injection, dangerous triggers.
+    name: zizmor
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: zizmor workflow audit
+        run: |
+          pipx run zizmor --persona=auditor --format sarif . > results.sarif
+          python3 scripts/supply_chain_policy.py --zizmor-sarif results.sarif
+
+# CodeQL, GitHub secret scanning, and push protection: enable via GitHub Code Security / GHAS when
+# owner or enterprise settings allow. Gitleaks and TruffleHog remain the active fail-closed fallback.

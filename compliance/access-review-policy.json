@@ -1,0 +1,16 @@
+{
+  "schema_version": "smarthaus.access-review-policy.v1",
+  "cadence": "quarterly",
+  "scope": [
+    "repository collaborators",
+    "CODEOWNERS teams",
+    "repo-factory token ownership",
+    "ruleset bypass actors",
+    "GitHub Actions secrets"
+  ],
+  "solo_operator_mode": {
+    "human_review_deadlock_controls": "disabled",
+    "mechanical_controls": "required"
+  },
+  "failure_mode": "fail_closed_on_unowned_bypass_or_unknown_secret"
+}
