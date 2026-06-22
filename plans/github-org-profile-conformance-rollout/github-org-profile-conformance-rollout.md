@@ -1,7 +1,7 @@
 # SmartHausGroup/.github Conformance Rollout
 
 **Plan ID:** `plan:github-org-profile-conformance-rollout`
-**Status:** `approved-for-execution`
+**Status:** `complete`
 **Date:** 2026-06-22
 
 ## Phase 0 - Intent Definition
@@ -71,7 +71,7 @@ Runtime extraction for this tranche is the committed CI/governance control surfa
 ## Acceptance
 
 - Local validation passes. Completed 2026-06-22: repo conformance, evidence pack, agent bind check, supply-chain policy, Semgrep, Zizmor, Gitleaks, TruffleHog filesystem scan, and MAE v0.2.1 bundle digest verification.
-- PR checks pass.
-- Merge commit is signed and verified.
+- PR checks pass. Completed on PR #1.
+- Merge commit is signed and verified: `02c9e67f56e56db94f9377ea868e6ab795ff8bb7`.
 - Default-branch checks pass after merge.
-- Org custom property is set only after default-branch evidence is green.
+- Org custom property is set: `conformance=smarthaus-template-v1`.
