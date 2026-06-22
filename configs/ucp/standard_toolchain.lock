@@ -1,5 +1,5 @@
 schema_version: 0.1.0
-repo: SmartHausGroup.github
+repo: SmartHausGroup/.github
 toolchain:
   python: "3.11"
   python_binding: actions/setup-python selected `python` or explicit Make VENV_PY override

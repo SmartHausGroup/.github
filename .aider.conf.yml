@@ -1,0 +1,4 @@
+# Aider has zero auto-discovery — this committed directive is its only bind to canonical AGENTS.md.
+# DOCUMENTED LIMITATION (Aider #3433): a relative path breaks for home-global / monorepo-subdir
+# invocations and an absolute path is non-portable across clones. Accepted trade-off.
+read: AGENTS.md

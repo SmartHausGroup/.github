@@ -1,0 +1,51 @@
+{
+  "schema_version": "smarthaus.ma.plan.v1",
+  "plan_id": "plan:github-org-profile-conformance-rollout",
+  "status": "approved-for-execution",
+  "date": "2026-06-22",
+  "repository": "SmartHausGroup/.github",
+  "objective": "Bring SmartHausGroup/.github into the SMARTHAUS repository conformance ruleset.",
+  "non_goals": [
+    "product runtime changes",
+    "MAE artifact promotion",
+    "AICP/UCP repin"
+  ],
+  "determinism": {
+    "seed": 1729,
+    "definition": "same git tree and locked standards inputs produce the same conformance decision"
+  },
+  "required_checks": [
+    "repo-cicd-conformance",
+    "evidence-pack",
+    "verify",
+    "validate",
+    "secret-scan",
+    "zizmor",
+    "supply-chain-policy",
+    "sbom-vulnerability-budget",
+    "trufflehog",
+    "semgrep"
+  ],
+  "mae_validation_context": {
+    "version": "0.2.1",
+    "status": "unsigned_limited_local_candidate",
+    "bundle": "/Users/smarthaus/Projects/GitHub/mae/artifacts/releases/mathematical_autopsy_engine/0.2.1/com.smarthaus.mathematical-autopsy-engine-0.2.1.ucp.tar.gz",
+    "promotion_allowed": false
+  },
+  "phases": [
+    {"id": "phase0", "name": "intent", "status": "complete"},
+    {"id": "phase1", "name": "formula", "status": "complete"},
+    {"id": "phase2", "name": "calculus", "status": "complete"},
+    {"id": "phase3", "name": "lemmas", "status": "complete"},
+    {"id": "phase4", "name": "invariants", "status": "complete"},
+    {"id": "phase5", "name": "notebook", "status": "complete"},
+    {"id": "phase6", "name": "scorecard", "status": "complete"},
+    {"id": "phase7", "name": "runtime-extraction", "status": "in_progress"}
+  ],
+  "acceptance": {
+    "local_validation": "complete",
+    "pull_request_checks": "pending",
+    "default_branch_checks": "pending",
+    "conformance_property": "pending"
+  }
+}

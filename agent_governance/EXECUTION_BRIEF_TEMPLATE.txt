@@ -1,0 +1,39 @@
+Execute plan:{plan-id}:{task-id} — {Task Name}
+
+This is a follow-up to plan:{plan-id}:{prev-task} which completed with {GO|NO-GO}
+{on aggregate (score) | with all gates passing}.
+{Prior phases delivered}: {2-3 sentence summary of what has been built so far —
+include key components, APIs, and patterns established}.
+{Root cause or gap}: {what this phase addresses that prior phases did not}.
+
+STEP 1 — Read these files (in order):
+  AGENTS.md
+  CLAUDE.md
+  docs/governance/NORTH_STAR.md
+  docs/governance/EXECUTION_PLAN.md
+  plans/{plan-name}/{plan-name}.md
+  {prior phase prompts in order, e.g.:}
+  docs/prompts/codex-{plan-name}-kickoff.md
+  docs/prompts/codex-{plan-name}-phase-{NN-1}.md
+  {dependency gate artifact, e.g.:}
+  {path}/T{N-1}_gate.json  ← must show "pass": true
+  docs/prompts/codex-{plan-name}-phase-{NN}.md  ← FULL MATHS PROMPT
+
+STEP 2 — Execute phases M → A → T → H → S per the MATHS prompt.
+
+STEP 3 — Emit the completion block and create the T{N+1} MATHS prompt at
+  docs/prompts/codex-{plan-name}-phase-{NN+1}.md per the Self-Reinforcing
+  Loop section.
+
+Key constraints:
+  - Use .venv/bin/python for ALL Python commands
+  - {compile/validation command, e.g.: cd app/extension && npm run compile}
+  - {critical gotcha 1 from prior phases}
+  - {critical gotcha 2 from prior phases}
+  - {file allowlist summary: list directories/files agent may touch}
+  - {file denylist summary: list directories/files agent must NOT touch}
+  - {dirty-tree handling: if unrelated files exist in working tree, instructions}
+  - {iteration/budget limits if applicable}
+  - {BLOCKED conditions if applicable}
+
+Plan approved by owner. Status: APPROVED. Execute now.

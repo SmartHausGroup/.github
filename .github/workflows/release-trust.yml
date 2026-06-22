@@ -1,0 +1,51 @@
+name: release-trust
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  release-provenance:
+    name: release-provenance
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+      attestations: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - name: Create deterministic source archive
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/release-trust"
+          mkdir -p "$OUT"
+          git ls-files -z | LC_ALL=C sort -z > "$OUT/files.lst"
+          tar --null --no-recursion --files-from "$OUT/files.lst" --mtime='UTC 1970-01-01' --owner=0 --group=0 --numeric-owner --sort=name -cf "$OUT/source.tar"
+          gzip -n -9 "$OUT/source.tar"
+          (cd "$OUT" && sha256sum source.tar.gz > SHA256SUMS)
+          printf 'SOURCE_ARCHIVE=%s\n' "$OUT/source.tar.gz" >> "$GITHUB_ENV"
+          printf 'DIGEST_MANIFEST=%s\n' "$OUT/SHA256SUMS" >> "$GITHUB_ENV"
+          printf 'COSIGN_BUNDLE=%s\n' "$OUT/source.tar.gz.bundle" >> "$GITHUB_ENV"
+      - uses: sigstore/cosign-installer@d7543c93d881b35a8faa02e8e3605f69b7a1ce62 # v3.10.0
+        with:
+          cosign-release: v3.1.1
+      - name: Keyless sign source archive
+        run: cosign sign-blob --yes --bundle "$COSIGN_BUNDLE" "$SOURCE_ARCHIVE"
+      - uses: actions/attest-build-provenance@977bb373ede98d70efdf65b84cb5f73e068dcc2a # v3
+        with:
+          subject-path: ${{ env.SOURCE_ARCHIVE }}
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: release-trust-${{ github.ref_name }}
+          if-no-files-found: error
+          path: |
+            ${{ env.SOURCE_ARCHIVE }}
+            ${{ env.DIGEST_MANIFEST }}
+            ${{ env.COSIGN_BUNDLE }}

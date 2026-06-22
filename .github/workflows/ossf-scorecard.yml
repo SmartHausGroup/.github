@@ -1,0 +1,37 @@
+name: ossf-scorecard
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - dev
+      - development
+      - staging
+      - "release/**"
+      - "hotfix/**"
+  schedule:
+    - cron: "50 7 * * 1"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: read
+jobs:
+  ossf-scorecard:
+    name: ossf-scorecard
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: read
+      pull-requests: read
+      checks: read
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: ossf/scorecard-action@05b42c624433fc40578a4040d5cf5e36ddca8cde # v2.4.2
+        with:
+          results_file: scorecard-results.sarif
+          results_format: sarif
+          publish_results: false

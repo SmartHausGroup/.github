@@ -1,0 +1,17 @@
+{
+  "schema_version": "smarthaus.vex-policy.v1",
+  "vex_required_for_waived_vulnerabilities": true,
+  "allowed_statuses": [
+    "not_affected",
+    "fixed",
+    "under_investigation"
+  ],
+  "required_fields": [
+    "vulnerability_id",
+    "package_name",
+    "status",
+    "justification",
+    "reviewed_by"
+  ],
+  "failure_mode": "fail_closed"
+}

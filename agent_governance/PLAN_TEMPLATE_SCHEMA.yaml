@@ -1,0 +1,241 @@
+# Master Plan Template — YAML Schema
+# Use this as the canonical structure for all {plan-name}.yaml files.
+# Every field marked "required" must be present. Use null for optional fields that don't apply.
+# See agent_governance/PLAN_TEMPLATE.md for full documentation, inline examples, and anti-drift guidance.
+
+# --- Section 1: Plan Header ---
+plan_id: "plan:<fill-kebab-name>"                    # required, format: plan:{kebab-name}
+parent_plan_id: null                                  # required, null if top-level
+title: "<fill>"                                       # required
+version: "1.0"                                        # required, semver
+status: draft                                         # required, enum: draft | approved | in-progress | complete | blocked | cancelled | failed
+owner: "<fill>"                                       # required
+date_created: "YYYY-MM-DD"                            # required, ISO date
+date_updated: "YYYY-MM-DD"                            # required, ISO date
+north_star_ref: "docs/governance/NORTH_STAR.md"       # required, path to project North Star
+execution_plan_ref: "<fill>"                          # required, section in EXECUTION_PLAN.md
+domain: framework                                     # required, enum: framework | app | infrastructure | governance
+math_algorithm_scope: false                           # required, boolean
+
+# --- Section 2: North Star Alignment ---
+north_star_alignment:
+  source: "docs/governance/NORTH_STAR.md"
+  principles:                                         # required, list of specific principles
+    - "<principle-1>"
+    - "<principle-2>"
+  anti_alignment:                                     # required, what this plan does NOT change
+    - "<what is preserved/unchanged>"
+
+# --- Section 3: Intent Capture ---
+intent_capture:
+  user_stated_requirements:                           # required
+    - "<user requirement 1 in their words>"
+    - "<user requirement 2>"
+  intent_doc_ref: "captured in this plan"             # required, path or "captured in this plan"
+  intent_verification: "<statement tracing Rx to user requirements>"  # required
+
+# --- Section 4: Objective ---
+objective: "<1-3 sentences>"                          # required
+current_state: "<what is broken/missing>"             # required
+target_state: "<what done looks like, measurable>"    # required
+
+# --- Section 5: Scope ---
+scope:
+  in_scope:                                           # required
+    - "<conceptual item 1>"
+  out_of_scope:                                       # required
+    - "<conceptual exclusion 1>"
+  file_allowlist:                                     # required, exact paths or globs
+    - "<path-or-glob>"
+  file_denylist:                                      # required, exact paths or globs
+    - "<path-or-glob>"
+
+# --- Section 6: Requirements ---
+requirements:                                         # required, at least one
+  - id: R1
+    ref: "plan:<plan-id>:R1"
+    description: "<1-2 sentences>"
+    acceptance_criteria: "<measurable>"
+    depends_on: []                                    # list of Rx IDs or "none"
+    user_intent_trace: "<which user stated requirement>"
+
+# --- Section 7: Execution Sequence ---
+execution_sequence:
+  ordering:                                           # required
+    - T1
+    - T2
+  stop_on_first_failure: true                         # required
+  maths_phase_mapping:                                # required if math_algorithm_scope: true, else null
+    T1: M
+    T2: A
+
+# --- Section 8: Task Breakdown ---
+tasks:                                                # required, one entry per task
+  - id: T1
+    ref: "plan:<plan-id>:T1"
+    name: "<task name>"
+    description: "<1-3 sentences>"
+    requirement_refs: [R1]                            # which Rx this satisfies
+    depends_on: []                                    # which task IDs must complete first
+    maths_phase: M                                    # M | A | T | H | S | null
+    deliverables:                                     # required
+      - "<file path>"
+    exit_criteria:                                    # required
+      - "<verifiable condition>"
+    validation_command: "<exact executable command>"   # required; for human-only steps add requires_human_approval: true, block_if_unset: true
+    implementation_notes: null                         # optional
+
+# --- Section 9: Gate Checks ---
+gates:
+  checks:                                             # required, at least one
+    - id: "CHECK:C0"
+      name: "<gate name>"
+      description: "<what it validates>"
+      task_ref: T1                                    # which task this validates
+      validation_command: "<exact command>"
+      pass_criteria: "<what pass looks like>"
+      fail_action: block                              # enum: block | rollback | escalate
+  decision:
+    go_rule: "All gates pass"
+    no_go_rule: "Any gate fails"
+  no_go_triggers:                                     # required
+    - "<condition that forces NO-GO>"
+
+# --- Section 10: Determinism Requirements ---
+# Required if math_algorithm_scope: true. Set to null if N/A.
+determinism:
+  seed_locking:                                       # list of library: seed pairs
+    numpy: 42
+    random: 42
+  device_policy: "CPU only"
+  float_precision: "float64"
+  replay_verification:
+    seeds: [42, 123, 256]
+    comparison: "bit-identical arrays"
+  deterministic_algorithms: "np.argsort(kind='stable')"
+
+# --- Section 11: Artifacts ---
+artifacts:                                            # required
+  - path: "<exact path>"
+    format: JSON                                      # JSON | YAML | pt | ipynb | py | etc.
+    producer: T5                                      # task ID that generates it
+    schema_ref: "<link or 'inline'>"
+    validation: "<no NaN/Inf, schema match, etc.>"
+    artifact_sha256: null                             # optional; SHA-256 of artifact at write time for replay verification
+
+# --- Section 12: Environment Prerequisites ---
+environment:
+  python_version: ">=3.11"
+  venv: ".venv/bin/python"
+  additional_dependencies: []                         # beyond requirements.txt
+  hardware: "standard CI"                             # or specific requirements
+  external_data: []                                   # datasets, models, APIs
+  pre_notebook_check: "make pre-notebook-check"       # or N/A
+
+# --- Section 13: Implementation Approach ---
+implementation_approach:
+  options_considered:
+    - id: A
+      description: "<description>"
+      pros: ["<pro>"]
+      cons: ["<con>"]
+    - id: B
+      description: "<description>"
+      pros: ["<pro>"]
+      cons: ["<con>"]
+  chosen: A
+  rationale: "<why A>"
+  rejected_rationale:
+    B: "<why not B>"
+  adr_ref: null                                       # link to ADR or null
+
+# --- Section 14: Risks and Mitigations ---
+risks:
+  items:
+    - risk: "<description>"
+      impact: high                                    # enum: high | medium | low
+      mitigation: "<how to prevent/handle>"
+      status: open                                    # enum: open | mitigated | accepted | materialized
+  hard_blockers:
+    - "<blocker description>"
+
+# --- Section 15: Rollback ---
+rollback:
+  procedure:                                          # required, ordered steps
+    - "<step 1>"
+  files_to_revert:                                    # required
+    - "<path>"
+  artifacts_to_delete:                                # required
+    - "<path>"
+  governance_updates_on_rollback:                     # required
+    - "<what to update>"
+
+# --- Section 16: Prompt References ---
+prompt_references:
+  maths_template: "agent_governance/master-maths-prompt-template.md"  # or null
+  prompt_doc: "docs/prompts/{agent}-<plan-name>.md"   # or null
+  prompt_kickoff: "docs/prompts/{agent}-<plan-name>-prompt.txt"  # or null
+  per_task_prompts: []                                # list of paths, or empty
+
+# --- Section 17: Traceability ---
+traceability:
+  files_created:
+    notebooks: []
+    invariants: []                                    # invariant IDs
+    lemmas: []                                        # lemma IDs
+    code_files: []                                    # extracted Python paths
+    config_artifacts: []                              # generated JSON/YAML paths
+  index_updates:
+    traceability_index: null                          # entries for CODE_TRACEABILITY_INDEX.md or null
+    invariant_index: null                             # entries for invariants/INDEX.yaml or null
+    math_readme: null                                 # entries for docs/math/README.md or null
+    lemmas_appendix: null                             # entries for LEMMAS_APPENDIX.md or null
+
+# --- Section 18: Governance Closure ---
+governance_closure:
+  action_log: "docs/governance/ACTION_LOG"
+  execution_plan: "docs/governance/EXECUTION_PLAN.md"
+  project_status: "docs/governance/PROJECT_STATUS.md"  # or null if not milestone
+  invariant_promotions: []                            # list of "INV-XXXX: proposed → accepted"
+  lemma_promotions: []                                # list of "LXX: Draft → Rev X.Y"
+
+# --- Section 19: Execution Outcome (filled during/after execution) ---
+execution_outcome:
+  task_checklist: []                                  # filled during execution
+  gate_checklist: []                                  # filled during execution
+  final_decision: null                                # GO | NO-GO, filled at end
+  approved_by: null
+  completion_timestamp: null                          # YYYY-MM-DD HH:MM:SS TZ
+
+# --- Section 20: When Blocked ---
+when_blocked:
+  format: "STATUS: BLOCKED / TASK: {id} / REASON: {desc} / MISSING: {list} / NEXT ALLOWED ACTION: {path}"
+  escalation:
+    primary: "<plan owner>"
+    secondary: "<team lead>"
+
+# --- Section 21: Agent Constraints ---
+agent_constraints:
+  - "Do not touch files outside Section 5 file allowlist."
+  - "Do not skip or reorder tasks."
+  - "Do not modify thresholds or invariants to make gates green without owner approval."
+  - "Do not execute until plan status is approved."
+  - "Reference plan:{plan-id}:{task-id} in all action log entries and commits."
+  - "Do not add tasks, gates, or deliverables not in this plan without owner approval."
+  - "Use .venv/bin/python for all Python commands."
+
+# --- Section 22: References ---
+references:
+  north_star: "docs/governance/NORTH_STAR.md"
+  execution_plan: "docs/governance/EXECUTION_PLAN.md"
+  applicable_rules:
+    - "<list applicable .cursor/rules/ files>"
+  related_plans: []
+  related_docs: []
+  maths_prompt_template: "agent_governance/master-maths-prompt-template.md"
+
+# --- Template metadata ---
+_template:
+  version: "1.0"
+  last_updated: "2026-02-22"
+  schema_json: "agent_governance/PLAN_TEMPLATE_SCHEMA.json"

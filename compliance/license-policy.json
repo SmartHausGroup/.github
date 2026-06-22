@@ -1,0 +1,61 @@
+{
+    "schema_version": "smarthaus.license-policy.v1",
+    "default_decision": "deny_unknown",
+    "allowed_license_ids": [
+        "Apache-2.0",
+        "BSD-2-Clause",
+        "BSD-3-Clause",
+        "ISC",
+        "LicenseRef-UNLICENSED",
+        "MIT",
+        "OFL-1.1",
+        "Python-2.0"
+    ],
+    "blocked_license_ids": [
+        "AGPL-1.0-only",
+        "AGPL-1.0-or-later",
+        "AGPL-3.0-only",
+        "AGPL-3.0-or-later",
+        "GPL-1.0-only",
+        "GPL-1.0-or-later",
+        "GPL-2.0-only",
+        "GPL-2.0-or-later",
+        "GPL-3.0-only",
+        "GPL-3.0-or-later",
+        "LGPL-2.0-only",
+        "LGPL-2.0-or-later",
+        "LGPL-2.1-only",
+        "LGPL-2.1-or-later",
+        "LGPL-3.0-only",
+        "LGPL-3.0-or-later"
+    ],
+    "review_required": [
+        "MPL-2.0",
+        "EPL-2.0",
+        "CDDL-1.0"
+    ],
+    "unknown_license_allowlist": [
+        {
+            "package_name_pattern": ".",
+            "reason": "Repository source root license is governed by committed LICENSE and NOTICE files."
+        },
+        {
+            "package_name_pattern": "actions/*",
+            "reason": "Syft cannot infer licenses for workflow action refs; actions are separately full-SHA pinned and audited."
+        },
+        {
+            "package_name_pattern": "ossf/scorecard-action",
+            "reason": "Syft cannot infer licenses for workflow action refs; this action is full-SHA pinned and audited."
+        },
+        {
+            "package_name_pattern": "sigstore/cosign-installer",
+            "reason": "Syft cannot infer licenses for workflow action refs; this action is full-SHA pinned and audited."
+        }
+    ],
+    "unresolved_license_manifest": {
+        "allow_empty": true,
+        "path": "compliance/unresolved-license-manifest.json",
+        "reason": "Syft SPDX output cannot infer licenses for selected manager-derived packages from lock metadata alone; package identities are frozen so new unresolved packages fail closed.",
+        "sha256": "c4d58628458a9e94a27613f377e7d5ad07bb93ed1b778c064512cfe7fb620de2"
+    }
+}
