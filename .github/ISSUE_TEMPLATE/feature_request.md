@@ -1,74 +1,42 @@
 ---
-name: Feature Request
-about: Suggest a new feature or enhancement
-title: "[FEATURE] Brief description of the requested feature"
+name: Change request
+about: Request a product, docs, governance, or repository-standard change
+title: "[CHANGE] "
 labels: ["enhancement", "triage"]
 assignees: []
 ---
 
-## ✨ Feature Request
+## Requested Change
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+What should change?
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+## Reason
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
+What problem does this solve?
 
-**Use case**
-Describe the specific use case this feature would address:
-- Who would use this feature?
-- What problem does it solve?
-- How does it align with SMARTHAUS vision?
+## Scope
 
-**Implementation approach**
-If you have thoughts on how this could be implemented:
-- Technical approach
-- Components affected
-- Mathematical considerations
-- Breaking changes
+- [ ] Product code
+- [ ] Public documentation
+- [ ] Standards
+- [ ] GitHub governance
+- [ ] CI/CD
+- [ ] Release or package process
+- [ ] Agent workflow
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+## Source Of Truth
 
-**Priority level**
-- [ ] Nice to have
-- [ ] Should have
-- [ ] Must have
-- [ ] Critical/blocking
+Which standard, product profile, issue, customer requirement, or approved plan
+authorizes this?
 
-**Timeline expectations**
-- [ ] Immediate (next sprint)
-- [ ] Short-term (next quarter)
-- [ ] Medium-term (next 6 months)
-- [ ] Long-term (next year+)
+## Acceptance Criteria
 
-**Related archetypes/components**
-- [ ] TAI (Personal Assistant)
-- [ ] AIVA (Triadic System)
-- [ ] MGE (Governance Engine)
-- [ ] RFS (Field Storage)
-- [ ] Multiple archetypes
+- [ ] Behavior or copy is updated.
+- [ ] Required evidence is produced.
+- [ ] CI/CD or governance checks are updated if needed.
+- [ ] Public-facing claims are backed by current evidence.
 
-**Mathematical requirements**
-If this feature involves mathematical guarantees:
-- Required invariants:
-- Verification approach:
-- Performance requirements:
+## Notes
 
-**Business impact**
-- Revenue impact:
-- User impact:
-- Competitive advantage:
-
----
-
-**Before submitting:**
-- [ ] I've checked if this feature already exists
-- [ ] I've provided clear use case and benefits
-- [ ] I've indicated priority and timeline expectations
-- [ ] I've considered implementation complexity
-
-Thank you for helping shape the future of SMARTHAUS!
+Do not include secrets, customer data, private logs, or exploit details in public
+issues.

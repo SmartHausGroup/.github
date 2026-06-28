@@ -1,147 +1,55 @@
-## Description
+## Purpose
 
-Brief description of the changes made in this pull request.
+What changed, and why?
 
-## Type of Change
+## Scope
 
-- [ ] 🐛 **Bug fix** - Non-breaking change that fixes an issue
-- [ ] ✨ **New feature** - Non-breaking change that adds functionality
-- [ ] 💥 **Breaking change** - Fix or feature that would cause existing functionality to not work as expected
-- [ ] 📚 **Documentation** - Updates to documentation only
-- [ ] 🔧 **Maintenance** - Code refactoring, tooling, or maintenance tasks
-- [ ] 🚀 **Performance** - Performance improvements or optimizations
-- [ ] 🔒 **Security** - Security-related changes or fixes
-- [ ] 🧪 **Testing** - Adding or updating tests
-- [ ] 🔄 **Dependencies** - Updating dependencies
+- [ ] Public profile or public documentation
+- [ ] Organization default template or community file
+- [ ] Governance script, workflow, ruleset, or policy
+- [ ] Agent instruction binding
+- [ ] Repo CI/CD conformance evidence
+- [ ] Other:
 
-## Changes Made
+## Authority
 
-### Code Changes
-- **Files modified**: List of files changed
-- **Functions/methods added/modified**: Key functions affected
-- **Classes/interfaces changed**: Any API changes
+Relevant source of truth:
 
-### Mathematical Changes (if applicable)
-- **Invariants added/modified**: New mathematical guarantees
-- **Verification notebooks**: Notebooks updated or added
-- **Mathematical proofs**: New theorems or lemmas
+- [ ] `SmartHausGroup/standards`
+- [ ] this repository's current README/operator model
+- [ ] product repository evidence
+- [ ] approved issue/plan:
 
-### Security Changes (if applicable)
-- **Security impact**: How does this affect security?
-- **Cryptographic changes**: Any crypto-related modifications
-- **Access control**: Changes to permissions or authentication
+## Evidence
 
-## Testing
+Commands run:
 
-### Unit Tests
-- [ ] All existing tests pass
-- [ ] New tests added for new functionality
-- [ ] Test coverage maintained above 80%
+```text
 
-### Integration Tests
-- [ ] Integration tests pass
-- [ ] API endpoints tested
-- [ ] External integrations verified
+```
 
-### Manual Testing
-- [ ] Manual testing performed
-- [ ] Edge cases tested
-- [ ] Error conditions tested
-- [ ] Cross-browser testing (if frontend)
+Important results:
 
-### Mathematical Verification
-- [ ] Invariants validated
-- [ ] Verification notebooks run successfully
-- [ ] Mathematical guarantees maintained
+```text
 
-## Quality Assurance
+```
 
-### Code Quality
-- [ ] Code follows SMARTHAUS style guidelines
-- [ ] No new linting errors introduced
-- [ ] Type hints added for new functions
-- [ ] Documentation strings added/updated
+## Risk Check
 
-### Security Review
-- [ ] Security implications reviewed
-- [ ] No sensitive data exposed
-- [ ] Input validation implemented
-- [ ] Authentication/authorization verified
+- [ ] No secrets, private data, customer data, or credentials are included.
+- [ ] Public copy contains no stale release/version/compliance claims.
+- [ ] Generated agent bind files were not edited directly, or `make agents-sync` was run.
+- [ ] Governance files match the live enforcement plan.
+- [ ] Any required follow-up GitHub setting change is listed below.
 
-### Performance Impact
-- [ ] Performance benchmarks run
-- [ ] No significant performance regressions
-- [ ] Memory usage reviewed
-- [ ] Scalability considerations addressed
+## Follow-Up Settings
 
-## Documentation
+List GitHub UI/API settings that must be changed after merge:
 
-- [ ] README updated (if user-facing changes)
-- [ ] API documentation updated
-- [ ] Code comments added for complex logic
-- [ ] Changelog updated
-- [ ] Migration guide added (for breaking changes)
+- none
 
-## Deployment
+## Reviewer Notes
 
-### Migration Notes
-If this is a breaking change, provide migration instructions:
+Anything reviewers should verify manually:
 
-### Rollback Plan
-Steps to rollback if issues occur in production:
-
-### Feature Flags
-Are there feature flags that should be enabled/disabled?
-
-## Related Issues
-
-Closes #123, #456
-Related to #789
-
-## Checklist
-
-- [ ] Changes follow SMARTHAUS development practices
-- [ ] Commit messages follow conventional format
-- [ ] All tests pass locally
-- [ ] Documentation updated
-- [ ] Reviewed by at least one maintainer
-- [ ] Ready for merge
-
-## Breaking Changes
-
-List any breaking changes and migration instructions:
-
-- **Change 1**: Description and migration steps
-- **Change 2**: Description and migration steps
-
-## Security Considerations
-
-- **Impact**: Low/Medium/High
-- **Mitigations**: Security measures implemented
-- **Review**: Security team review completed
-
-## Performance Metrics
-
-- **Before**: Baseline performance metrics
-- **After**: New performance metrics
-- **Improvement**: Percentage or absolute improvement
-
-## Mathematical Verification
-
-For changes involving mathematical guarantees:
-
-- **Invariants verified**: List of invariants tested
-- **Proof validation**: Verification notebooks run
-- **Determinism confirmed**: Deterministic behavior maintained
-
----
-
-**By submitting this pull request, I confirm that:**
-
-- [ ] My changes follow the SMARTHAUS Code of Conduct
-- [ ] I have read and agree to the Contributor License Agreement
-- [ ] My changes are ready for production deployment
-- [ ] I have tested my changes thoroughly
-- [ ] I have updated all relevant documentation
-
-Thank you for contributing to SMARTHAUS! 🎯
+- none
