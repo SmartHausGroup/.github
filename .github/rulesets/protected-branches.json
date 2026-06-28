@@ -64,6 +64,12 @@
           },
           {
             "context": "semgrep"
+          },
+          {
+            "context": "ossf-scorecard"
+          },
+          {
+            "context": "org-governance-audit"
           }
         ]
       }

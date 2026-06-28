@@ -13,8 +13,12 @@ REQUIRED = [
     "configs/ucp/standard_sources.yaml",
     "configs/ucp/standard_sources.lock",
     "configs/ucp/standard_toolchain.lock",
+    ".github/CODEOWNERS",
+    ".github/PULL_REQUEST_TEMPLATE.md",
     ".github/workflows/repo-cicd-conformance.yml",
+    ".github/workflows/org-governance-audit.yml",
     ".github/rulesets/protected-branches.json",
+    "SECURITY.md",
     "docs/ma/cicd_conformance_phase0_intent.md",
     "docs/ma/cicd_conformance_phase1_formula.md",
     "docs/ma/cicd_conformance_phase2_calculus.md",
@@ -98,6 +102,8 @@ def main() -> int:
         "sbom-vulnerability-budget",
         "trufflehog",
         "semgrep",
+        "ossf-scorecard",
+        "org-governance-audit",
     }
     missing_contexts = sorted(expected_contexts - contexts)
     if missing_contexts:

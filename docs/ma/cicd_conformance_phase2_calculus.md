@@ -42,6 +42,8 @@ RequiredChecksGreen_R(q, c) =
   and q.sbom-vulnerability-budget.status = success
   and q.trufflehog.status = success
   and q.semgrep.status = success
+  and q.ossf-scorecard.status = success
+  and q.org-governance-audit.status = success
 ```
 
 ```text

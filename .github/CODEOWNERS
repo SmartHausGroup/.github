@@ -1,0 +1,28 @@
+# Organization profile and governance owners.
+#
+# Keep this file user-based until SmartHausGroup owner/security/platform teams
+# have confirmed write-level repository permissions.
+
+* @Siniscalchi13 @babuvenky76
+
+# Public organization profile copy is a brand and governance surface.
+/profile/README.md @Siniscalchi13
+/README.md @Siniscalchi13
+/SECURITY.md @Siniscalchi13
+
+# GitHub controls and shared governance automation.
+/.github/ @Siniscalchi13 @babuvenky76
+/scripts/ @Siniscalchi13 @babuvenky76
+/tools/ @Siniscalchi13 @babuvenky76
+/compliance/ @Siniscalchi13 @babuvenky76
+/configs/ @Siniscalchi13 @babuvenky76
+/invariants/ @Siniscalchi13 @babuvenky76
+/notebooks/ @Siniscalchi13 @babuvenky76
+
+# Agent instruction source.
+/AGENTS.md @Siniscalchi13 @babuvenky76
+/CLAUDE.md @Siniscalchi13 @babuvenky76
+/GEMINI.md @Siniscalchi13 @babuvenky76
+/.amazonq/ @Siniscalchi13 @babuvenky76
+/.continue/ @Siniscalchi13 @babuvenky76
+/.junie/ @Siniscalchi13 @babuvenky76

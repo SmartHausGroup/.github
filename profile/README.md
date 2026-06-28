@@ -2,69 +2,56 @@
 
 **AI you can prove. Not AI you have to trust.**
 
-Most AI today is built backwards. The industry trains a model, ships it, and bolts governance, safety, and explainability on top as wrappers. The result: 80%+ of enterprise AI projects never reach production (RAND Corporation, 2024), and the ones that do face an audit, compliance, and litigation environment converging on a question their wrapper-architecture cannot answer. **You cannot govern a guess with another guess.**
+SMARTHAUS builds mathematically governed AI systems for work where a model output
+is not enough. High-stakes AI needs proof of what happened, why it was allowed,
+what evidence supported it, and which rule would have stopped it.
 
-SMARTHAUS builds the other way.
+Our operating principle is simple: if a system is going to take real action, the
+action must pass through a deterministic governance layer and leave an auditable
+receipt.
 
-## The substrate, not the wrapper
+## What We Build
 
-We start with what the system must always do, must never do, and must guarantee — and we prove those rules hold in math before a line of code ships. Every claim our software makes is backed by a checkable artifact: a lemma, an invariant, a notebook proof, a signed receipt, or a CI gate. If a property can't be proven, it doesn't ship.
+SMARTHAUS work is organized around a trust layer for AI agents and enterprise
+automation:
 
-That's the company. **Software that behaves like physics, not rhetoric.**
+- governed execution, where actions are admitted or denied before they run;
+- deterministic inference and replay, where important outcomes can be checked;
+- Mathematical Autopsy, where production-bound behavior is specified, proven,
+  tested, and traced before release;
+- signed package and release supply chains for agent capabilities.
 
-## Enterprise AI breaks in six ways. We close each one.
+The products and repositories in this organization are at different maturity
+levels. Public repository copy is informational; release status, distribution
+readiness, and customer commitments are controlled by each product repository's
+current release evidence.
 
-PROVE. REPLAY. BIND. PREVENT. SPECIFY. LEAD. Six failure modes. Each one has a real court case behind it — Workday, Cursor, LMArena, Replit, UnitedHealth, the EU AI Act. Each one is closed by construction in our architecture, not by a promise in a marketing document.
+## Start Here
 
-**→ [Read The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md) — symptoms of the same root condition.**
+- [SMARTHAUS website](https://smarthaus.ai) - company and product overview.
+- [Products](https://github.com/SmartHausGroup/.github/blob/main/products/README.md) - public product map.
+- [Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md) - the build discipline behind proof-bound software.
+- [The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md) - the enterprise AI failure modes SMARTHAUS is built to close.
+- [Security policy](https://github.com/SmartHausGroup/.github/blob/main/SECURITY.md) - how to report vulnerabilities safely.
 
-## The whole picture in one page
+## For Developers And Agents
 
-Three architectural tiers — **Substrate**, **Components**, **PALI**. Three plays — Prevent, Replay, Specify. One personal-AI destination delivered by TAI. The complete end-to-end view of what we're building and why.
+This organization's `.github` repository provides public profile copy, default
+community health files, agent instruction bindings, and shared governance
+automation. It does not replace product repositories, the standards repository,
+or release artifacts.
 
-**→ [Read The SMARTHAUS Vision](https://github.com/SmartHausGroup/.github/blob/main/vision/README.md).**
+When in doubt:
 
-## Your AI. On every device you own.
+- product code lives in product repositories;
+- cross-product standards live in `SmartHausGroup/standards`;
+- reusable repository baselines come from `SmartHausGroup/smarthaus-repo-template`;
+- releases are controlled by protected branches, protected tags, and release
+  evidence in the owning repository.
 
-Apple Intelligence is locked to Apple silicon. Gemini favors Pixel. Copilot favors Windows. Each of the three platform owners is trying to own your personal AI inside their own walls — and none of them can credibly own it across all of them.
+## Contact
 
-We can, because we're not a platform.
-
-The category SMARTHAUS is defining is the **Personal AI Layer Interface (PALI)** — a portable AI layer that travels with you across every device you own, with one identity, one memory, one governance plane. The product delivering PALI is **[TAI](https://github.com/SmartHausGroup/.github/blob/main/products/PALI/TAI/README.md)** — voice-first personal AI with mathematical guarantees. Platform foundations (Rust daemon, voice subsystem, IPC, macOS arm64 packaging) are shipping today; the first end-to-end cross-device pilot lands Y1 H2.
-
-Your AI. Not theirs.
-
-## The proof
-
-We're not the only company that says these words. We're one of very few that publishes the math.
-
-- A formal mathematical thesis underneath the architecture.
-- An active research collaboration with **Princeton Physics** applying our methods to spectral pattern discovery in real lab data — joint paper in preparation.
-- Three patents filed: Resonant Field Storage, Universal Control Plane, and Mathematical Autopsy. More in flight.
-- Across our active codebase: **75+ named lemmas, 700+ machine-enforced invariants, 880+ runnable notebook proofs** — every one of them in CI.
-
-Our discipline is called **Mathematical Autopsy** — we autopsy our own math before we ship it. If a proof fails, the build fails. There is no demo path that bypasses the gates.
-
-## What's running today
-
-Two Components are pilot-ready and signed for distribution:
-
-- **UCP Studio v0.6.3** — Universal Control Plane. Runtime governance: nothing executes that hasn't been admitted by policy.
-- **SAID Runtime v0.2.5** — Deterministic inference engine that makes frontier models interchangeable underneath your application logic.
-
-A third, **MAE (Mathematical Autopsy Engine)**, has its foundation in place — the deployment build is under construction. TAI platform foundations are shipping in the `tai-engine` Rust workspace. The Substrate underneath (RFS + NME) productizes Y2 H2.
-
-## Get in touch
-
-We work with enterprises, research partners, and a small number of investors.
-
-- **Web:** [smarthaus.ai](https://smarthaus.ai)
-- **Email:** phil@smarthausgroup.com
-
----
+- Web: [smarthaus.ai](https://smarthaus.ai)
+- GitHub: [github.com/SmartHausGroup](https://github.com/SmartHausGroup)
 
 © SMARTHAUS
-
----
-
-**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/README.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/products/PALI/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/README.md)** · **[smarthaus.ai](https://smarthaus.ai)**

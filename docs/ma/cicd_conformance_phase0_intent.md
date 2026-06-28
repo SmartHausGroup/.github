@@ -35,7 +35,7 @@ Out of scope: product feature behavior, cloud deployment, and new application ru
 - `make repo-cicd-conformance` passes.
 - `make ai-pack-verify` passes.
 - `.github/workflows/repo-cicd-conformance.yml` exposes `repo-cicd-conformance` and `evidence-pack` jobs.
-- Branch ruleset required status contexts include `verify`, `validate`, `secret-scan`, `zizmor`, `supply-chain-policy`, `sbom-vulnerability-budget`, `trufflehog`, and `semgrep`.
+- Branch ruleset required status contexts include `verify`, `validate`, `secret-scan`, `zizmor`, `supply-chain-policy`, `sbom-vulnerability-budget`, `trufflehog`, `semgrep`, `ossf-scorecard`, and `org-governance-audit`.
 - `artifacts/scorecards/cicd_conformance.json` is green.
 
 ## Determinism Definition

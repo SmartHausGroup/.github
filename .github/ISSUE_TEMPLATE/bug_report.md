@@ -1,71 +1,50 @@
 ---
-name: Bug Report
-about: Report a bug or unexpected behavior
-title: "[BUG] Brief description of the issue"
+name: Bug report
+about: Report incorrect behavior in a SMARTHAUS repository or public doc
+title: "[BUG] "
 labels: ["bug", "triage"]
 assignees: []
 ---
 
-## 🐛 Bug Report
+## Problem
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+What is wrong?
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+## Where
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+- Repository:
+- Path, page, workflow, or command:
+- Branch/tag/commit if known:
 
-**Actual behavior**
-What actually happened instead.
+## Reproduction
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+Steps or command:
 
-**Environment**
-- Repository: [e.g., TAI, RFS, MGE]
-- Component: [e.g., Service, SDK, Documentation]
-- Version: [e.g., v1.0.0]
-- Python version: [e.g., 3.10]
-- Operating System: [e.g., Ubuntu 22.04, macOS 12.0]
-- Deployment: [e.g., Local, Docker, Kubernetes]
+```text
 
-**Additional context**
-- Error messages/logs:
-- Configuration details:
-- Steps you've tried to resolve:
-- Impact on your work:
+```
 
-**Related components**
-- [ ] Affects TAI archetype
-- [ ] Affects AIVA archetype
-- [ ] Affects MGE archetype
-- [ ] Affects RFS substrate
-- [ ] Affects multiple components
+Observed result:
 
-**Mathematical context** (if applicable)
-- Invariants affected:
-- Verification notebooks impacted:
-- Mathematical guarantees violated:
+```text
 
-**Security impact** (if applicable)
-- [ ] No security impact
-- [ ] Low security impact
-- [ ] Medium security impact
-- [ ] High security impact
-- [ ] Critical security impact
+```
 
----
+Expected result:
 
-**Before submitting:**
-- [ ] I've searched existing issues for similar reports
-- [ ] I've included all relevant environment details
-- [ ] I've provided clear reproduction steps
-- [ ] I've indicated the impact level
+```text
 
-Thank you for helping improve SMARTHAUS!
+```
+
+## Impact
+
+- [ ] Public copy is wrong or stale
+- [ ] Governance evidence is wrong or missing
+- [ ] CI/CD gate is failing
+- [ ] Security posture is affected
+- [ ] Product behavior is affected
+
+## Notes
+
+Do not include secrets, customer data, private logs, or exploit details in public
+issues.

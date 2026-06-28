@@ -1,44 +1,96 @@
-# SMARTHAUS
+# SmartHausGroup/.github
 
-**AI you can prove. Not AI you have to trust.**
+This repository is the organization-level GitHub control surface for
+`SmartHausGroup`.
 
-Most AI today is built backwards. The industry trains a model, ships it, then bolts governance, safety, and explainability on top as wrappers. It's why 95% of generative AI pilots produce zero measurable impact. **You cannot govern a guess with another guess.**
+It has special behavior on GitHub, but only for specific file types. Everything
+else in this repository is normal public repository content.
 
-SMARTHAUS builds the other way. We start with what the system must always do, must never do, and must guarantee — and we prove those rules hold in math before a line of code ships. Every claim our software makes is backed by a checkable artifact: a lemma, an invariant, a notebook proof, a signed receipt, or a CI gate. If a property cannot be proven, it does not ship.
+## What This Repository Owns
 
-**Software that behaves like physics, not rhetoric.**
+| Area | Path | Purpose |
+|---|---|---|
+| Organization profile | `profile/README.md` | Public copy shown on the `SmartHausGroup` organization page. |
+| Community defaults | `.github/` | Default issue templates, pull request template, security policy, code of conduct, and CODEOWNERS. |
+| Agent instruction bindings | `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md`, `.amazonq/`, `.continue/`, `.junie/` | One canonical agent instruction set projected into tool-specific files. |
+| Repo conformance | `configs/ucp/`, `docs/ma/`, `invariants/`, `notebooks/ma/`, `artifacts/scorecards/` | Evidence that this repository conforms to SMARTHAUS repo CI/CD rules. |
+| Shared workflow examples | `.github/workflows/` | Workflows for this repo and patterns for other repos. Workflows here do not automatically run in other repositories. |
+| Governance audit | `scripts/ci/` | Deterministic local checks for repo, policy, and live GitHub settings drift. |
+| Supply-chain policy | `compliance/`, `scripts/supply_chain_policy.py` | Pinned-tool and scanning policy for this repo. |
 
----
+## What This Repository Does Not Own
 
-## Where to start
+This repository is not the source of truth for:
 
-**The whole picture in one page** — [The SMARTHAUS Vision](./vision/README.md). Three-tier architecture (Substrate, Components, PALI), three plays, the endgame. Read this first if you want everything at once.
+- product code;
+- product release status;
+- production deployment secrets;
+- cross-product standards;
+- Marketplace package feeds;
+- SharePoint product knowledge;
+- customer commitments;
+- per-repository branch protection enforcement outside this repo.
 
-**The case for why this matters now** — [The Six Failures](./six-failures/README.md). Six structural ways enterprise AI is breaking in production right now, each with a real court case from January 2025 forward: Mobley v. Workday, Cursor's hallucinating support bot, Replit's autonomous agent dropping a production database, UnitedHealth's nH Predict, the EU AI Act, SR 26-2.
+Authoritative locations:
 
-**What we ship** — [Products](./products/README.md). Three categories organized around a shared mathematical substrate:
-- **[PALI](./products/PALI/README.md)** — Personal AI Layer Interface. The category SMARTHAUS is defining. The PALI product is **[TAI](./products/PALI/TAI/README.md)**.
-- **[Components](./products/Components/README.md)** — The seven mathematical-governance products. **[UCP](./products/Components/UCP/README.md)** (v0.6.3), **[SAID](./products/Components/SAID/README.md)** (v0.2.5), and **[MAE](./products/Components/MAE/README.md)** are pilot-ready today.
-- **[Substrate](./products/Substrate/README.md)** — **[RFS](./products/Substrate/RFS/README.md)** and **[NME](./products/Substrate/NME/README.md)**, the mathematical foundation underneath everything.
+- `SmartHausGroup/standards` - cross-product standards and GitHub governance rules.
+- `SmartHausGroup/smarthaus-repo-template` - reusable repository baseline.
+- product repositories - product code, product-specific docs, releases, and evidence.
+- SharePoint Products site - browsable internal copies derived from governed sources.
 
-**How we build it** — [Mathematical Autopsy](./mathematical-autopsy/README.md). The development discipline that produces every SMARTHAUS product. Across our active codebase: **~75 named lemmas, ~700 machine-enforced invariants, ~880 runnable notebook proofs**. Every one of them in CI. None of them decorative.
+## Special GitHub Behavior
 
-**The math underneath** — [Math Thesis](./thesis/README.md). Eight chapters developing the field-theoretic framework — from the integration problem AI faces today through the architectural commitments that solve it. The formal paper is downloadable as PDF.
+GitHub treats some files in this repository specially:
 
-**Why this is real, not just talk** — [Princeton Research](./research/princeton.md). Joint collaboration applying SMARTHAUS methods to single-particle fluorescence spectroscopy data; joint paper in preparation. [Patents](./research/patents.md) — RFS, UCP, and Mathematical Autopsy filed, more in flight.
+- `profile/README.md` renders on the organization profile.
+- community health files under `.github/` can be used as defaults by repositories
+  that do not define their own.
+- `SECURITY.md` can appear as the default security policy.
 
----
+GitHub does not automatically apply these to every repo:
 
-## Get in touch
+- workflows under `.github/workflows/`;
+- ruleset JSON files under `.github/rulesets/`;
+- scripts under `scripts/`;
+- agent instructions;
+- product documentation.
 
-We work with enterprises, research partners, and a small number of investors.
+Those must be referenced, copied, enforced by rulesets, or applied through the
+repo factory.
 
-**Web:** [smarthaus.ai](https://smarthaus.ai) · **Org:** [github.com/SmartHausGroup](https://github.com/SmartHausGroup)
+## Operating Rules
 
----
+- Do not make product maturity, release, compliance, or security claims here
+  unless they are current and backed by product evidence.
+- Do not store secrets or private customer information here.
+- Do not edit generated agent bind files directly. Edit `AGENTS.md`, then run
+  `make agents-sync`.
+- Do not use this repo as a product documentation dump. Public product copy here
+  should be high-level and pointer-based.
+- Keep this repo public-safe at all times.
 
-© SMARTHAUS
+## Local Commands
 
----
+```bash
+make validate
+make repo-cicd-conformance
+make ai-evidence-pack
+make ai-pack-verify
+make agents-check
+make github-settings-audit
+```
 
-**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/README.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/products/PALI/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/README.md)** · **[smarthaus.ai](https://smarthaus.ai)**
+## Current Priority
+
+The highest-priority governance work for this repository is keeping local
+evidence, live GitHub settings, organization defaults, and public profile copy in
+sync.
+
+The live GitHub settings must match the committed policy. If a ruleset JSON,
+workflow, security policy, or custom property exists only as a file but is not
+applied in GitHub, it is evidence of intent, not enforcement.
+
+GitHub-native Secret Protection is treated as an enterprise approval and cost
+decision. Until it is approved and enabled, this repository must keep
+fail-closed CI secret scanners active through the required `secret-scan` and
+`trufflehog` checks.

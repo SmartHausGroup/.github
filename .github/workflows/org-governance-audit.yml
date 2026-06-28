@@ -1,0 +1,42 @@
+name: org-governance-audit
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - dev
+      - development
+      - staging
+      - "release/**"
+      - "hotfix/**"
+  schedule:
+    - cron: "15 6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  org-governance-audit:
+    name: org-governance-audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5.6.0
+        with:
+          python-version: "3.11"
+      - name: Audit committed governance posture
+        run: python3 scripts/ci/audit_org_profile_repo.py --local
+      - name: Audit live GitHub settings if token permits
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/ci/audit_org_profile_repo.py --live --repo "${{ github.repository }}"

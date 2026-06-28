@@ -1,9 +1,9 @@
 {
-  "manifest_sha256": "f2c7dbaeb622f72d8c21ef6371fd608d72b758622d1ad4c8f6daf3ddd207d01b",
+  "manifest_sha256": "45516e5891be3baa0e30e1419140f18b397d986e7e529a560e3806326fbdb008",
   "notebook_sha256": "1427afc5af686f2a30145cdb1144611d71a962897a908498112338b5b5c5e871",
   "repo": ".github",
   "schema_version": "0.1.0",
   "scorecard_sha256": "fcf3d10ec6c36921260a6e1d4e4e6f6487601eef2148f97450b5dd5ef1249e14",
   "standard": "repo-cicd-conformance",
-  "tree": "4b175fdc3a83f7c757036d3d86c24e0615569de0"
+  "tree": "a2afd5984e7a2e49a3bb64327c6780f95045e3ca"
 }
