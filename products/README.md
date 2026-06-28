@@ -1,67 +1,47 @@
-# SMARTHAUS Products
+# SMARTHAUS Product Index
 
-**Three categories of product. One mathematical substrate underneath all of them.**
+This is a public-safe map of SMARTHAUS product areas. It is intentionally
+high-level. The owning product repositories and approved release evidence
+control release status, installability, and customer commitments.
 
----
+## Runtime And Control Plane
 
-## The three categories
+| Product area | Public-safe description | Current public-safe status |
+|---|---|---|
+| AICP / UCP | Runtime control-plane surface for governed package admission, lifecycle boundaries, receipts, and execution policy. | Active release evolution. Do not treat older Studio naming or version text as current without product evidence. |
+| SAID / SAGE | Deterministic inference runtime and desktop product line with governed model selection, runtime health, and declared host contracts. | Release-readiness evidence exists, but public distribution claims need product-repo confirmation. |
+| MAE | Mathematical Autopsy Engine: build and proof authority for rule, evidence, scorecard, receipt, and governed artifact workflows. | Pre-1.0 platform runtime; external deployment claims require release evidence. |
 
-SMARTHAUS products are organized into three categories that map directly to the architectural layers of the [SMARTHAUS Vision](https://github.com/SmartHausGroup/.github/blob/main/vision/README.md):
+## Product And Workforce Surfaces
 
-### [PALI](./PALI/README.md) — Personal AI Layer Interface
+| Product area | Public-safe description | Current public-safe status |
+|---|---|---|
+| TAI / PALI | Personal AI Layer Interface product direction: a governed assistant surface spanning shell, engine, SDK, and release evidence. | Active development. Public release is not claimed here. |
+| M365 | Governed Microsoft 365 operations module for bounded identity, collaboration, and site-operation workflows. | Bounded standalone module; do not claim full Microsoft 365 administration coverage. |
+| Marketplace Packages | Controlled package supply chain for AI capabilities, with separate producer/certification and clean distribution-feed roles. | Feed presence does not imply runtime activation. |
+| OpenClaw | Governed chat-channel connector package for channel governance, sender allowlists, mutation fencing, and audit events. | Package metadata exists; live channel operation is not claimed here. |
 
-**The category SMARTHAUS is defining.** A portable AI layer that travels with the user across every device — one identity, one memory, one governance plane, on whatever device the user happens to be using.
+## Foundations And Components
 
-PALI is not a feature add-on. It is a *category name* SMARTHAUS is staking — the way "operating system" or "smartphone" was once a category that somebody had to define. The category exists because the three platform owners (Apple, Google, Microsoft) cannot credibly deliver cross-platform personal AI; their business models depend on locking AI into their walls.
+| Product area | Public-safe description | Current public-safe status |
+|---|---|---|
+| UnifiedCalculus | Registry and evidence foundation for reusable formal calculi. | Internal-auditor-ready foundation; not an end-user app. |
+| RFS / NME | Research and substrate primitives for resonant memory and meaning extraction. | Research/substrate foundation used through components and partnerships. |
+| MAIA | Intent engine component. | Active development; role description only. |
+| CAIO | Orchestration component. | Active development; role description only. |
+| MGE | In-application governance component. | Active development; role description only. |
+| VEE | Math, privacy, and reinforcement-learning kernel component. | Active development; role description only. |
+| C2 | Governed privacy-cloud infrastructure project. | Pre-alpha; no production deployment claim. |
 
-The product that delivers the PALI category today is **[TAI — Tutelarius Auxilium Intellectus](./PALI/TAI/README.md)**.
+## Naming Note
 
-### [Components](./Components/README.md)
+Some public and internal materials still use transitional names, especially
+`UCP/AICP` and `SAID/SAGE`. Until a product repository records a final naming
+decision, treat those as transitional aliases and do not present them as
+separate product lines.
 
-**The mathematical-governance products that compose into PALI** — and that are deployed standalone in enterprise contexts. Seven Components in active development; three pilot-ready and signed for distribution today:
+## Claim Boundary
 
-| Pilot-ready | What it does |
-|---|---|
-| [**UCP** — Universal Control Plane](./Components/UCP/README.md) | Runtime governance. Nothing executes that hasn't been admitted by policy. v0.6.3 signed. |
-| [**SAID** — Deterministic Inference Engine](./Components/SAID/README.md) | Same input, same output, every time. Frontier models interchangeable. v0.2.5 signed. |
-| [**MAE** — Mathematical Autopsy Engine](./Components/MAE/README.md) | Proven embedded code, customer-owned. The Applied-MA engagement. |
-
-| Active development | What it does |
-|---|---|
-| [**MAIA**](./Components/MAIA/README.md) | Intent engine — figures out what the user actually wants. |
-| [**MGE**](./Components/MGE/README.md) | Mathematical Governance Engine — governance running as a sidecar inside customer applications. |
-| [**CAIO**](./Components/CAIO/README.md) | Orchestrator — service orchestration and access control. |
-| [**VEE**](./Components/VEE/README.md) | Math, privacy, and reinforcement-learning kernel — Lyapunov stability, quantum-inspired compute, differential privacy. |
-
-### [Substrate](./Substrate/README.md)
-
-**The mathematical foundation underneath the Components.** Two primitives that are not sold standalone but ship as the integration substrate every Component (and the PALI product) reads and writes into:
-
-| Substrate primitive | What it does |
-|---|---|
-| [**RFS** — Resonant Field Storage](./Substrate/RFS/README.md) | Field-theoretic memory. Information stored as wave patterns in a 4D Fourier field; retrieval through matched-filter probing. |
-| [**NME** — Nota Memoria Engine](./Substrate/NME/README.md) | The encoder that extracts structured meaning from text and projects it into the RFS field. |
-
----
-
-## How they compose
-
-A reader navigating SMARTHAUS for the first time can read the categories in either direction:
-
-**Top-down (what the user experiences first):** Start with [PALI](./PALI/README.md) and [TAI](./PALI/TAI/README.md). That's the consumer-facing surface — the AI that travels with the user. Underneath it are the [Components](./Components/README.md) that provide governance, inference, and proofs. Underneath them is the [Substrate](./Substrate/README.md) that integrates everything.
-
-**Bottom-up (what makes everything work):** Start with the [Substrate](./Substrate/README.md) — RFS and NME, the mathematical memory layer. The [Components](./Components/README.md) operate on the substrate (UCP gates actions against it; SAID retrieves from it; MAE proves properties of it). [PALI](./PALI/README.md) is the consumer surface that those Components converge into.
-
-Either path leads to the same place: a mathematically-governed AI architecture that ships products today and rolls out the cross-device personal AI experience over the next 18 months.
-
----
-
-## How to engage
-
-- **Enterprise pilots** on UCP, SAID, MAE — reach out via [smarthaus.ai](https://smarthaus.ai).
-- **PALI / TAI** — early access lists are open; details on the [TAI page](./PALI/TAI/README.md).
-- **Research partnerships** (academic, industrial) on Substrate primitives — see [Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md) for the model engagement.
-
----
-
-**[The Six Failures](https://github.com/SmartHausGroup/.github/blob/main/six-failures/README.md)** · **[Products](https://github.com/SmartHausGroup/.github/blob/main/products/README.md)** · **[PALI](https://github.com/SmartHausGroup/.github/blob/main/products/PALI/README.md)** · **[Mathematical Autopsy](https://github.com/SmartHausGroup/.github/blob/main/mathematical-autopsy/README.md)** · **[Princeton Research](https://github.com/SmartHausGroup/.github/blob/main/research/princeton.md)** · **[Patents](https://github.com/SmartHausGroup/.github/blob/main/research/patents.md)** · **[Math Thesis](https://github.com/SmartHausGroup/.github/blob/main/thesis/README.md)** · **[smarthaus.ai](https://smarthaus.ai)**
+This page does not claim general availability, production deployment,
+certification, customer adoption, broad platform support, or package activation
+unless the owning product repository has current release evidence.

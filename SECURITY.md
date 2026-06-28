@@ -51,8 +51,8 @@ Baseline expectations:
 - environment-scoped production secrets with approval where available;
 - signed release evidence where a repository ships artifacts.
 
-Product-specific security requirements live in the product repository and in
-`SmartHausGroup/standards`.
+Product-specific security requirements live with the owning product repository
+and approved internal standards.
 
 ## Public Issue Policy
 

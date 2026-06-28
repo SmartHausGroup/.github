@@ -17,15 +17,9 @@ ROOT = Path(__file__).resolve().parents[2]
 
 EXPECTED_REPO = "SmartHausGroup/.github"
 EXPECTED_CONTEXTS = {
-    "repo-cicd-conformance",
-    "evidence-pack",
-    "verify",
-    "validate",
     "secret-scan",
     "trufflehog",
     "zizmor",
-    "supply-chain-policy",
-    "sbom-vulnerability-budget",
     "semgrep",
     "ossf-scorecard",
     "org-governance-audit",
@@ -43,7 +37,44 @@ EXPECTED_PROPERTIES = {
 PUBLIC_COPY_FILES = [
     "README.md",
     "profile/README.md",
+    "products/README.md",
     "SECURITY.md",
+]
+FORBIDDEN_PUBLIC_PATHS = [
+    ".agents",
+    ".amazonq",
+    ".continue",
+    ".github/copilot-instructions.md",
+    ".github/workflows/agent-files.yml",
+    ".github/workflows/conformance.yml",
+    ".github/workflows/release-trust.yml",
+    ".github/workflows/repo-cicd-conformance.yml",
+    ".github/workflows/supply-chain.yml",
+    ".junie",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    "Makefile.ai",
+    "agent_governance",
+    "artifacts",
+    "compliance",
+    "configs",
+    "docs/governance",
+    "docs/ma",
+    "invariants",
+    "mathematical-autopsy",
+    "notebooks",
+    "plans",
+    "products/Components",
+    "products/PALI",
+    "products/Substrate",
+    "research",
+    "scorecards",
+    "scripts/supply_chain_policy.py",
+    "six-failures",
+    "thesis",
+    "tools/agents",
+    "vision",
 ]
 STALE_PUBLIC_PATTERNS = [
     (re.compile(r"\bv\d+\.\d+\.\d+\b"), "exact product version claim"),
@@ -121,12 +152,18 @@ def audit_local(audit: Audit) -> None:
         ".github/ISSUE_TEMPLATE/feature_request.md",
         ".github/ISSUE_TEMPLATE/security_report.md",
         ".github/rulesets/protected-branches.json",
-        ".github/rulesets/protected-tags.json",
         ".github/workflows/org-governance-audit.yml",
+        ".github/workflows/security.yml",
+        ".github/workflows/static-analysis.yml",
+        ".github/workflows/ossf-scorecard.yml",
         "scripts/ci/audit_org_profile_repo.py",
     ]
     for path in required:
         audit.require_file(path)
+
+    for path in FORBIDDEN_PUBLIC_PATHS:
+        if (ROOT / path).exists():
+            audit.fail(f"public .github repo contains internal-facing path: {path}")
 
     for path in PUBLIC_COPY_FILES:
         target = audit.require_file(path)
@@ -153,6 +190,9 @@ def audit_local(audit: Audit) -> None:
     missing_contexts = sorted(EXPECTED_CONTEXTS - contexts)
     if missing_contexts:
         audit.fail(f"protected-branches ruleset missing contexts: {missing_contexts}")
+    extra_contexts = sorted(contexts - EXPECTED_CONTEXTS)
+    if extra_contexts:
+        audit.fail(f"protected-branches ruleset contains internal or retired contexts: {extra_contexts}")
     for rule in branch_ruleset.get("rules", []):
         if rule.get("type") == "required_status_checks":
             params = rule.get("parameters", {})
@@ -160,14 +200,6 @@ def audit_local(audit: Audit) -> None:
                 audit.fail("protected-branches ruleset does not require strict status checks")
             if params.get("do_not_enforce_on_create") is not False:
                 audit.fail("protected-branches ruleset does not enforce status checks on branch creation")
-
-    tag_ruleset = load_json(ROOT / ".github/rulesets/protected-tags.json")
-    if tag_ruleset.get("target") != "tag":
-        audit.fail("protected-tags ruleset target is not tag")
-    tag_rule_types = {rule.get("type") for rule in tag_ruleset.get("rules", [])}
-    for required_rule in ["deletion", "update"]:
-        if required_rule not in tag_rule_types:
-            audit.fail(f"protected-tags ruleset missing {required_rule}")
 
 
 def audit_live(
@@ -258,6 +290,9 @@ def audit_live(
     missing_live_contexts = sorted(EXPECTED_CONTEXTS - live_contexts)
     if missing_live_contexts:
         audit.fail(f"live rulesets missing required contexts: {missing_live_contexts}")
+    extra_live_contexts = sorted(live_contexts - EXPECTED_CONTEXTS)
+    if extra_live_contexts:
+        audit.fail(f"live rulesets contain internal or retired contexts: {extra_live_contexts}")
 
     prop_map = {item.get("property_name"): item.get("value") for item in properties}
     for key, expected in EXPECTED_PROPERTIES.items():

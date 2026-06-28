@@ -23,9 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      issues: read
-      pull-requests: read
-      checks: read
+      issues: read # Needed by OSSF Scorecard to evaluate repository issue hygiene.
+      pull-requests: read # Needed by OSSF Scorecard to evaluate pull-request hygiene.
+      checks: read # Needed by OSSF Scorecard to read check-run evidence.
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:
