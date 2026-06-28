@@ -1,7 +1,0 @@
-{
-  "schema_version": "smarthaus.eol-support-policy.v1",
-  "support_window_source": "SECURITY.md {{SUPPORT_WINDOW}} token until repo-specific release policy is set",
-  "release_notes_eol_required": true,
-  "unsupported_versions_receive_security_fixes": false,
-  "failure_mode": "fail_closed_when_release_policy_is_defined"
-}

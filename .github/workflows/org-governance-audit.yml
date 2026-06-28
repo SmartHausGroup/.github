@@ -21,7 +21,7 @@ concurrency:
 
 permissions:
   contents: read
-  actions: read
+  actions: read # Needed for the live audit to read this repo's workflow state.
 
 jobs:
   org-governance-audit:
@@ -39,4 +39,5 @@ jobs:
       - name: Audit live GitHub settings if token permits
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 scripts/ci/audit_org_profile_repo.py --live --repo "${{ github.repository }}"
+          GITHUB_REPOSITORY_NAME: ${{ github.repository }}
+        run: python3 scripts/ci/audit_org_profile_repo.py --live --repo "$GITHUB_REPOSITORY_NAME"

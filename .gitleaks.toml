@@ -1,7 +1,0 @@
-[allowlist]
-description = "Generated MAE payload manifests and embedded runtime internals are governed by release evidence, not source secret scanning."
-paths = [
-  '''app/configs/generated/ma_said_live_payload_bundle_backing\.json$''',
-  '''app/desktop/src-tauri/resources/said-runtime/manifest\.json$''',
-  '''app/desktop/src-tauri/resources/said-runtime/backend/_internal/.*''',
-]

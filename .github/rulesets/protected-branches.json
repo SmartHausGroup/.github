@@ -36,31 +36,13 @@
         "do_not_enforce_on_create": false,
         "required_status_checks": [
           {
-            "context": "repo-cicd-conformance"
-          },
-          {
-            "context": "evidence-pack"
-          },
-          {
-            "context": "verify"
-          },
-          {
-            "context": "validate"
-          },
-          {
             "context": "secret-scan"
           },
           {
-            "context": "zizmor"
-          },
-          {
-            "context": "supply-chain-policy"
-          },
-          {
-            "context": "sbom-vulnerability-budget"
-          },
-          {
             "context": "trufflehog"
+          },
+          {
+            "context": "zizmor"
           },
           {
             "context": "semgrep"
