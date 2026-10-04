@@ -1,0 +1,96 @@
+{
+  "schema_version": "smarthaus-ci-v1",
+  "baseline_version": "2.0.0",
+  "allowed_signers": [
+    "CFD8534FFE67BD0336FC84ED5C9E2D2C9768ED52",
+    "968479A1AFF927E37D1A566BB5690EEEBB952194"
+  ],
+  "checks": {
+    "syntax": {
+      "image": "smarthaus-local@sha256:7692ce1d8f8d3f2ebec665080984d4256eeae3a822f3f0981509420ab16f8662",
+      "argv": [
+        "python",
+        "-c",
+        "import ast,pathlib\nfiles=sorted(pathlib.Path('scripts').rglob('*.py'))\nfor p in files: ast.parse(p.read_bytes(),filename=str(p))\nprint(f'Parsed {len(files)} Python files')"
+      ],
+      "when_paths": [
+        "scripts/**/*.py"
+      ],
+      "timeout_seconds": 120
+    },
+    "tests": {
+      "image": "smarthaus-local@sha256:7692ce1d8f8d3f2ebec665080984d4256eeae3a822f3f0981509420ab16f8662",
+      "argv": [
+        "python",
+        "scripts/ci/audit_org_profile_repo.py",
+        "--local"
+      ],
+      "when_paths": [
+        "**"
+      ],
+      "timeout_seconds": 120
+    },
+    "static_security": {
+      "image": "semgrep/semgrep@sha256:06938c1f365d3f67b8cedd8bc117607ae64253f88a0e768e9da9408548927dd6",
+      "argv": [
+        "semgrep",
+        "scan",
+        "--config",
+        "/tmp/smarthaus-semgrep-rules.yml",
+        "--json",
+        "--output",
+        "/output/semgrep.json",
+        "--no-git-ignore",
+        "--error",
+        "--metrics=off",
+        "--disable-version-check",
+        "--"
+      ],
+      "semgrep_policy": {
+        "schema_version": "smarthaus-semgrep-target-policy-v1",
+        "rules_path": ".semgrep.yml",
+        "rules_sha256": "6367b0a1a13c3604c49731dbc809d4b360622cd157a329b712284b43d7a5efee",
+        "include_paths": [
+          "scripts/**/*.py"
+        ],
+        "exclude_paths": []
+      },
+      "when_paths": [
+        "scripts/**/*.py",
+        ".semgrep.yml"
+      ],
+      "timeout_seconds": 300
+    },
+    "dependencies": {
+      "image": "smarthaus-local@sha256:7692ce1d8f8d3f2ebec665080984d4256eeae3a822f3f0981509420ab16f8662",
+      "argv": [
+        "python",
+        "-c",
+        "import ast,pathlib,sys\nexternal=set()\nfor p in pathlib.Path('scripts').rglob('*.py'):\n for n in ast.walk(ast.parse(p.read_bytes())):\n  names=[a.name for a in n.names] if isinstance(n,ast.Import) else ([n.module] if isinstance(n,ast.ImportFrom) and n.module and not n.level else [])\n  external.update(name.split('.')[0] for name in names if name.split('.')[0] not in sys.stdlib_module_names)\nassert not external, f'Undeclared external dependencies: {sorted(external)}'\nprint('Audit scripts use standard-library dependencies only')"
+      ],
+      "when_paths": [
+        "scripts/**/*.py"
+      ],
+      "timeout_seconds": 120
+    },
+    "build": {
+      "image": "smarthaus-local@sha256:7692ce1d8f8d3f2ebec665080984d4256eeae3a822f3f0981509420ab16f8662",
+      "argv": [
+        "python",
+        "-c",
+        "import pathlib,zipfile,hashlib\nfiles=['README.md','profile/README.md','products/README.md','SECURITY.md','LICENSE']\npayload={name:pathlib.Path(name).read_bytes() for name in files}\nassert all(payload.values()), 'Empty public document'\noutput=pathlib.Path('/output/public-docs.zip')\nwith zipfile.ZipFile(output,'w',compression=zipfile.ZIP_STORED) as z:\n for name in sorted(payload):\n  info=zipfile.ZipInfo(name,date_time=(1980,1,1,0,0,0));info.external_attr=0o100644 << 16\n  z.writestr(info,payload[name])\nwith zipfile.ZipFile(output) as z:\n assert sorted(z.namelist())==sorted(payload), 'Archive inventory mismatch'\n assert z.testzip() is None, 'Archive integrity failure'\n for name,content in payload.items(): assert z.read(name)==content, f'Archive/source mismatch: {name}'\nprint('Verified public documentation archive',hashlib.sha256(output.read_bytes()).hexdigest())"
+      ],
+      "when_paths": [
+        "README.md",
+        "profile/**",
+        "products/**",
+        "SECURITY.md",
+        "LICENSE"
+      ],
+      "timeout_seconds": 60,
+      "artifacts": [
+        "public-docs.zip"
+      ]
+    }
+  }
+}
