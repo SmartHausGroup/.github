@@ -1,47 +1,61 @@
-# SMARTHAUS Product Index
+# SMARTHAUS product map
 
-This is a public-safe map of SMARTHAUS product areas. It is intentionally
-high-level. The owning product repositories and approved release evidence
-control release status, installability, and customer commitments.
+SMARTHAUS is building the mathematically governed AI fabric: components for constructing rules, running them inside applications, interpreting intent, checking outputs, governing actions, coordinating work, and sharing memory.
 
-## Runtime And Control Plane
+The research thesis, *Mathematics as the Nervous System of AI*, underpins this architecture. It describes mathematics as the integrating substrate for specialized AI components. RFS is the working memory implementation described in the thesis. The broader cognitive architecture remains a research and development direction.
 
-| Product area | Public-safe description | Current public-safe status |
-|---|---|---|
-| AICP / UCP | Runtime control-plane surface for governed package admission, lifecycle boundaries, receipts, and execution policy. | Active release evolution. Do not treat older Studio naming or version text as current without product evidence. |
-| SAID / SAGE | Deterministic inference runtime and desktop product line with governed model selection, runtime health, and declared host contracts. | Release-readiness evidence exists, but public distribution claims need product-repo confirmation. |
-| MAE | Mathematical Autopsy Engine: build and proof authority for rule, evidence, scorecard, receipt, and governed artifact workflows. | Pre-1.0 platform runtime; external deployment claims require release evidence. |
+## What the components do
 
-## Product And Workforce Surfaces
+| Component | Role |
+|---|---|
+| **MAE — Mathematical Autopsy Engine** | Creates and verifies bounded rules, linking generated artifacts to their mathematical definitions and verification evidence. |
+| **MGR — Mathematically Governed Runtime** | The embeddable harness that runs MAE-created rules inside SMARTHAUS applications or other applications, wherever rules are needed. |
+| **MAIA** | Interprets user intent and identifies when clarification is needed. |
+| **SAID** | Checks model-generated outputs against declared constraints before an application accepts them. |
+| **UCP — Universal Control Plane** | Governs whether actions may proceed at integrated runtime gateways and managed host boundaries. |
+| **CAIO** | The orchestrator: coordinates components and workflows. |
+| **MGT** | Addresses governance within model computation. |
+| **RFS — Resonant Field Storage** | Shared field-based memory supporting associative retrieval and integrity-checked exact recall. |
+| **NME — Nota Memoria Engine** | Encodes structured meaning for the memory foundation. |
+| **Operations Center** | Management surface for governed runtimes, including enrollment, policy distribution, and lifecycle controls. |
+| **TAI** | The personal AI application direction bringing components together around the user. |
+| **VEE — Voluntas Engine** | Mathematical kernels and research supporting stability, privacy, and reinforcement learning. |
 
-| Product area | Public-safe description | Current public-safe status |
-|---|---|---|
-| TAI / PALI | Personal AI Layer Interface product direction: a governed assistant surface spanning shell, engine, SDK, and release evidence. | Active development. Public release is not claimed here. |
-| M365 | Governed Microsoft 365 operations module for bounded identity, collaboration, and site-operation workflows. | Bounded standalone module; do not claim full Microsoft 365 administration coverage. |
-| Marketplace Packages | Controlled package supply chain for AI capabilities, with separate producer/certification and clean distribution-feed roles. | Feed presence does not imply runtime activation. |
-| OpenClaw | Governed chat-channel connector package for channel governance, sender allowlists, mutation fencing, and audit events. | Package metadata exists; live channel operation is not claimed here. |
+## Current development stages
 
-## Foundations And Components
+This snapshot describes the work reviewed in October 2026. It is not an installation or release catalogue. Product-specific records govern exact versions, supported environments, and availability.
 
-| Product area | Public-safe description | Current public-safe status |
-|---|---|---|
-| UnifiedCalculus | Registry and evidence foundation for reusable formal calculi. | Internal-auditor-ready foundation; not an end-user app. |
-| RFS / NME | Research and substrate primitives for resonant memory and meaning extraction. | Research/substrate foundation used through components and partnerships. |
-| MAIA | Intent engine component. | Active development; role description only. |
-| CAIO | Orchestration component. | Active development; role description only. |
-| MGE | In-application governance component. | Active development; role description only. |
-| VEE | Math, privacy, and reinforcement-learning kernel component. | Active development; role description only. |
-| C2 | Governed privacy-cloud infrastructure project. | Pre-alpha; no production deployment claim. |
+| Component | Implementation and remaining work |
+|---|---|
+| **MAE** | A sealed runtime implements bounded rule-generation and verification paths. Supported rule families define its present scope; broader construction capabilities continue to develop. |
+| **MGR** | Bounded governed rule execution exists within MAE, alongside a released contract-validation package. The independently owned, shared embeddable harness is under development. These artifacts have different scopes. |
+| **MAIA** | An intent runtime and sealed artifact exist. Integration into consuming applications remains a separate milestone. |
+| **SAID** | Output constraint checking and bounded retry/fallback paths exist. Guarantees depend on the declared constraints and the application's integration. |
+| **UCP** | Runtime action-admission and lifecycle controls exist. Coverage depends on the gateways and host controls an application actually uses. |
+| **CAIO** | Under development as the orchestrator. Coordination, dispatch boundaries, and runtime integration are active work. |
+| **MGT** | Governed computation kernels, a harness, and formal proof sources exist. Product packaging and integration continue. |
+| **RFS / NME** | Memory, encoding, and retrieval implementations exist. Service packaging and broader application integration continue. |
+| **Operations Center** | Management APIs and runtime lifecycle machinery exist across Operations Center and UCP. Completion of the operating surface and integrated rollout acceptance remain separate work. |
+| **TAI** | Engine and application foundations exist. The integrated personal AI experience remains under development. |
+| **VEE** | Mathematical kernels and research implementations exist. A complete reinforcement-learning runtime is not claimed here. |
 
-## Naming Note
+## Applications and distribution
 
-Some public and internal materials still use transitional names, especially
-`UCP/AICP` and `SAID/SAGE`. Until a product repository records a final naming
-decision, treat those as transitional aliases and do not present them as
-separate product lines.
+**SIGMA** and the **Employee Command Center (ECC)** are application work that puts controlled workflows into trading and business operations. Their individual implementation and acceptance records determine what each application can do. Their existence does not establish complete fabric integration.
 
-## Claim Boundary
+**Marketplace Packages** supports the distribution of governed capabilities. A package being listed, signed, or released does not mean it has been activated in an application or accepted by a customer.
 
-This page does not claim general availability, production deployment,
-certification, customer adoption, broad platform support, or package activation
-unless the owning product repository has current release evidence.
+## How the pieces fit
+
+MAE creates the rules; MGR runs them where an application needs rules. CAIO coordinates work among components. Intent, output, action, model-computation, and memory components address their respective boundaries. The thesis supplies the underlying architectural direction; each integration must establish its own behavior and evidence.
+
+A verified rule guarantees only the property proved under its stated assumptions. Application integration must preserve those assumptions. Component verification, product release, deployment, and customer acceptance each require their own evidence.
+
+## Learn more
+
+- [SMARTHAUS company and products](https://smarthaus.ai)
+- [Investor overview and development stages](https://investor.smarthaus.ai)
+- [Organization profile](../profile/README.md)
+- [Private vulnerability reporting](../SECURITY.md)
+
+Contact: [phil@smarthausgroup.com](mailto:phil@smarthausgroup.com)
