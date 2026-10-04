@@ -1,0 +1,15 @@
+schema_version: smarthaus-repository-automation-signed-ci-v1
+enabled: true
+allowed_source_branch_patterns:
+- codex/*
+allowed_target_branches:
+- development
+release_promotion_pairs:
+- source_branch: development
+  target_branch: staging
+- source_branch: staging
+  target_branch: main
+allowed_signer_fingerprints:
+- CFD8534FFE67BD0336FC84ED5C9E2D2C9768ED52
+allowed_publication_routes:
+- NORMAL_GOVERNED_PUBLICATION
