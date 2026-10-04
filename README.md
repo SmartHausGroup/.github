@@ -1,48 +1,36 @@
-# SmartHausGroup/.github
+# SMARTHAUS on GitHub
 
-This is the public GitHub front door for `SmartHausGroup`.
+This repository is the public GitHub front door for SMARTHAUS, The SmartHaus Group. It contains the organization profile, product map, shared community templates, and security reporting guidance.
 
-It exists for public-safe organization profile copy, default contribution
-templates, security reporting guidance, and lightweight health checks for this
-public repository.
+## Find your starting point
 
-## What Belongs Here
+| Resource | Purpose |
+|---|---|
+| [Organization profile](profile/README.md) | Company and architecture introduction displayed on the [organization landing page](https://github.com/SmartHausGroup). |
+| [Product map](products/README.md) | What each component does and its current development stage. |
+| [Security policy](SECURITY.md) | How to report vulnerabilities privately. |
+| [Community templates](.github/) | Shared issue and pull request templates and contribution expectations. |
+| [SMARTHAUS website](https://smarthaus.ai) | Current company and product positioning. |
+| [Investor overview](https://investor.smarthaus.ai) | Investment context and development stages. |
 
-| Area | Path | Purpose |
-|---|---|---|
-| Organization profile | `profile/README.md` | Public copy shown on the SmartHausGroup GitHub organization page. |
-| Public product index | `products/README.md` | Concise product map with evidence-bounded status language. |
-| Community defaults | `.github/` | Default issue templates, pull request template, security policy, and ownership hints. |
-| Public-repo checks | `.github/workflows/`, `scripts/ci/` | Checks that this public repo remains safe, current, and free of obvious secrets. |
+GitHub displays `profile/README.md` on the organization landing page. This README explains the repository itself.
 
-## What Does Not Belong Here
+## Product source and evidence
 
-This repository is not the place for internal operating manuals, private
-roadmaps, enterprise settings runbooks, agent workforce instructions, detailed
-security implementation notes, internal collaboration-system detail, or product
-release machinery.
+Product code, installation guidance, and release records belong to their owning repositories. Many are private. This public repository introduces the work; access to private source and diligence materials is arranged separately.
 
-Detailed source of truth lives in the owning product repositories and internal
-systems. This public repository should point people in the right direction
-without exposing internal process.
+Public descriptions distinguish a component's purpose from its implementation, release, deployment, and customer acceptance. These are separate milestones. Published copy should identify the scope of a guarantee and have current evidence for any release or readiness claim.
 
-## Public Copy Rules
+## Contributing and reporting
 
-- Keep the content external-safe.
-- Do not publish secrets, customer data, private logs, unreleased plans, or
-  internal operating instructions.
-- Do not make product maturity, release, compliance, certification, or security
-  claims unless the owning product repository has current evidence.
-- Prefer plain product descriptions over architecture internals.
-- Use transitional aliases carefully when names are still being reconciled.
+Use the issue and pull request templates for public documentation feedback. Keep credentials, customer information, private logs, and internal operating details out of public submissions. Report vulnerabilities through the [security policy](SECURITY.md).
 
-## Local Checks
+SMARTHAUS CI and the scripts in this repository check this public documentation surface. They do not establish product certification or runtime readiness.
 
-```bash
-make validate
-make github-settings-audit
-make github-settings-audit-live
-```
+## Maintainer checks
 
-GitHub-native Secret Protection requires enterprise approval. Until that is
-approved, this public repo uses required CI scanners for secret scanning.
+`make validate` runs the local public-profile governance audit. It checks required public files, stale claims, and separation from internal material. Live GitHub settings checks require the approved SMARTHAUS Automation path; local checks do not verify remote protections.
+
+Contact: [phil@smarthausgroup.com](mailto:phil@smarthausgroup.com)
+
+© SMARTHAUS
