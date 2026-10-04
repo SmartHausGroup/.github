@@ -16,14 +16,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[2]
 
 EXPECTED_REPO = "SmartHausGroup/.github"
-EXPECTED_CONTEXTS = {
-    "secret-scan",
-    "trufflehog",
-    "zizmor",
-    "semgrep",
-    "ossf-scorecard",
-    "org-governance-audit",
-}
+EXPECTED_CONTEXTS: set[str] = set()
 EXPECTED_PROPERTIES = {
     "conformance": "smarthaus-template-v1",
     "product_family": "governance",
@@ -152,10 +145,9 @@ def audit_local(audit: Audit) -> None:
         ".github/ISSUE_TEMPLATE/feature_request.md",
         ".github/ISSUE_TEMPLATE/security_report.md",
         ".github/rulesets/protected-branches.json",
-        ".github/workflows/org-governance-audit.yml",
-        ".github/workflows/security.yml",
-        ".github/workflows/static-analysis.yml",
-        ".github/workflows/ossf-scorecard.yml",
+        ".github/rulesets/release-approval.json",
+        ".smarthaus/automation.yaml",
+        ".smarthaus/ci.json",
         "scripts/ci/audit_org_profile_repo.py",
     ]
     for path in required:
@@ -179,27 +171,16 @@ def audit_local(audit: Audit) -> None:
         if owner not in codeowners:
             audit.fail(f"CODEOWNERS missing {owner}")
 
-    branch_ruleset = load_json(ROOT / ".github/rulesets/protected-branches.json")
-    if branch_ruleset.get("bypass_actors") != []:
-        audit.fail("protected-branches ruleset contains bypass actors")
-    rule_types = {rule.get("type") for rule in branch_ruleset.get("rules", [])}
-    for required_rule in ["deletion", "non_fast_forward", "required_linear_history", "required_signatures", "required_status_checks"]:
-        if required_rule not in rule_types:
-            audit.fail(f"protected-branches ruleset missing {required_rule}")
-    contexts = status_contexts_from_ruleset(branch_ruleset)
-    missing_contexts = sorted(EXPECTED_CONTEXTS - contexts)
-    if missing_contexts:
-        audit.fail(f"protected-branches ruleset missing contexts: {missing_contexts}")
-    extra_contexts = sorted(contexts - EXPECTED_CONTEXTS)
-    if extra_contexts:
-        audit.fail(f"protected-branches ruleset contains internal or retired contexts: {extra_contexts}")
-    for rule in branch_ruleset.get("rules", []):
-        if rule.get("type") == "required_status_checks":
-            params = rule.get("parameters", {})
-            if params.get("strict_required_status_checks_policy") is not True:
-                audit.fail("protected-branches ruleset does not require strict status checks")
-            if params.get("do_not_enforce_on_create") is not False:
-                audit.fail("protected-branches ruleset does not enforce status checks on branch creation")
+    if load_json(ROOT / '.github/rulesets/protected-branches.json') != {'bypass_actors': [], 'conditions': {'ref_name': {'exclude': [], 'include': ['~DEFAULT_BRANCH', 'refs/heads/development', 'refs/heads/staging', 'refs/heads/main']}}, 'enforcement': 'active', 'name': 'protected-branches', 'rules': [{'type': 'deletion'}, {'type': 'non_fast_forward'}, {'type': 'required_signatures'}, {'parameters': {'allowed_merge_methods': ['merge'], 'dismiss_stale_reviews_on_push': True, 'require_code_owner_review': False, 'require_last_push_approval': False, 'required_approving_review_count': 0, 'required_review_thread_resolution': True}, 'type': 'pull_request'}], 'target': 'branch'}:
+        audit.fail(".github/rulesets/protected-branches.json differs from approved signed-CI protection policy")
+    if load_json(ROOT / '.github/rulesets/release-approval.json') != {'bypass_actors': [], 'conditions': {'ref_name': {'exclude': [], 'include': ['refs/heads/main']}}, 'enforcement': 'active', 'name': 'release-approval', 'rules': [{'parameters': {'allowed_merge_methods': ['merge'], 'dismiss_stale_reviews_on_push': True, 'require_code_owner_review': False, 'require_last_push_approval': False, 'required_approving_review_count': 1, 'required_review_thread_resolution': True}, 'type': 'pull_request'}], 'target': 'branch'}:
+        audit.fail(".github/rulesets/release-approval.json differs from approved signed-CI protection policy")
+    ci = load_json(ROOT / ".smarthaus/ci.json")
+    if (ci.get("schema_version") != "smarthaus-ci-v1" or ci.get("baseline_version") != "2.0.0"
+            or not {"syntax", "tests", "static_security", "dependencies", "build"} <= set(ci.get("checks", {}))):
+        audit.fail("signed CI policy is missing required checks")
+    if any((ROOT / ".github/workflows").glob("*.y*ml")):
+        audit.fail("GitHub Actions workflows are present; this repository uses SMARTHAUS CI")
 
 
 def audit_live(

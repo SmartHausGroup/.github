@@ -16,4 +16,5 @@ github-settings-audit:
 	@$(PY) scripts/ci/audit_org_profile_repo.py --local
 
 github-settings-audit-live:
-	@GH_TOKEN="$${GH_TOKEN:-$$(gh auth token)}" $(PY) scripts/ci/audit_org_profile_repo.py --local --live --require-live --repo SmartHausGroup/.github
+	@echo "Use SMARTHAUS Automation App reads for live repository settings; no personal GitHub auth."
+	@exit 2
