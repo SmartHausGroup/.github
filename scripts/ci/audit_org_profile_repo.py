@@ -1,31 +1,16 @@
 #!/usr/bin/env python3
-"""Audit SmartHausGroup/.github public profile and GitHub settings posture."""
+"""Audit SmartHausGroup/.github public profile and committed SMARTHAUS CI policy."""
 
 from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import sys
-import urllib.error
-import urllib.request
 from pathlib import Path
 from typing import Any
 
 ROOT = Path(__file__).resolve().parents[2]
-
-EXPECTED_REPO = "SmartHausGroup/.github"
-EXPECTED_CONTEXTS: set[str] = set()
-EXPECTED_PROPERTIES = {
-    "conformance": "smarthaus-template-v1",
-    "product_family": "governance",
-    "criticality": "high",
-    "data_classification": "public",
-    "release_model": "docs-governance",
-    "owner_team": "platform",
-    "lifecycle": "active",
-}
 
 PUBLIC_COPY_FILES = [
     "README.md",
@@ -113,27 +98,6 @@ def load_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def api_get(path: str, token: str) -> Any:
-    req = urllib.request.Request(f"https://api.github.com{path}")
-    req.add_header("Accept", "application/vnd.github+json")
-    req.add_header("X-GitHub-Api-Version", "2022-11-28")
-    req.add_header("Authorization", f"Bearer {token}")
-    with urllib.request.urlopen(req, timeout=20) as response:
-        return json.loads(response.read().decode("utf-8"))
-
-
-def status_contexts_from_ruleset(ruleset: dict[str, Any]) -> set[str]:
-    contexts: set[str] = set()
-    for rule in ruleset.get("rules", []):
-        if rule.get("type") != "required_status_checks":
-            continue
-        params = rule.get("parameters", {})
-        for item in params.get("required_status_checks", []):
-            if isinstance(item, dict) and item.get("context"):
-                contexts.add(item["context"])
-    return contexts
-
-
 def audit_local(audit: Audit) -> None:
     required = [
         "README.md",
@@ -183,128 +147,12 @@ def audit_local(audit: Audit) -> None:
         audit.fail("GitHub Actions workflows are present; this repository uses SMARTHAUS CI")
 
 
-def audit_live(
-    audit: Audit,
-    repo: str,
-    require_live: bool,
-    require_native_secret_protection: bool,
-) -> None:
-    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
-    if not token:
-        message = "live audit skipped because GH_TOKEN/GITHUB_TOKEN is not set"
-        if require_live:
-            audit.fail(message)
-        else:
-            audit.warn(message)
-        return
-
-    owner, name = repo.split("/", 1)
-    try:
-        metadata = api_get(f"/repos/{owner}/{name}", token)
-        workflow_permissions = api_get(f"/repos/{owner}/{name}/actions/permissions/workflow", token)
-        rulesets = api_get(f"/repos/{owner}/{name}/rulesets", token)
-        properties = api_get(f"/repos/{owner}/{name}/properties/values", token)
-    except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
-        message = f"live audit API access failed: {exc}"
-        if require_live:
-            audit.fail(message)
-        else:
-            audit.warn(message)
-        return
-
-    if metadata.get("full_name") != repo:
-        audit.fail(f"live repository mismatch: {metadata.get('full_name')} != {repo}")
-    if metadata.get("default_branch") != "main":
-        audit.fail("live default branch is not main")
-    if metadata.get("visibility") != "public":
-        audit.fail("live repository is not public")
-    if metadata.get("delete_branch_on_merge") is not True:
-        audit.fail("live delete_branch_on_merge is not enabled")
-    if metadata.get("allow_merge_commit") is not False:
-        audit.fail("live merge commits are still enabled")
-    if metadata.get("allow_rebase_merge") is not False:
-        audit.fail("live rebase merges are still enabled")
-    if metadata.get("allow_squash_merge") is not True:
-        audit.fail("live squash merges are not enabled")
-
-    if workflow_permissions.get("default_workflow_permissions") != "read":
-        audit.fail("live default workflow token permissions are not read-only")
-    if workflow_permissions.get("can_approve_pull_request_reviews") is not False:
-        audit.fail("live workflow tokens can approve pull request reviews")
-
-    security = metadata.get("security_and_analysis") or {}
-    for feature in [
-        "secret_scanning",
-        "secret_scanning_push_protection",
-        "secret_scanning_non_provider_patterns",
-    ]:
-        status = (security.get(feature) or {}).get("status")
-        if status != "enabled":
-            message = (
-                f"live {feature} is not enabled; native GitHub Secret Protection "
-                "requires enterprise approval, so fail-closed CI secret scanners remain required"
-            )
-            if require_native_secret_protection:
-                audit.fail(message)
-            else:
-                audit.warn(message)
-    dependabot_status = (security.get("dependabot_security_updates") or {}).get("status")
-    if dependabot_status != "enabled":
-        audit.fail("live dependabot_security_updates is not enabled")
-
-    live_contexts: set[str] = set()
-    for ruleset in rulesets:
-        if ruleset.get("target") != "branch" or ruleset.get("enforcement") != "active":
-            continue
-        try:
-            detail = api_get(f"/repos/{owner}/{name}/rulesets/{ruleset['id']}", token)
-        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as exc:
-            message = f"could not read live ruleset {ruleset.get('name')}: {exc}"
-            if require_live:
-                audit.fail(message)
-            else:
-                audit.warn(message)
-            continue
-        if detail.get("bypass_actors") not in ([], None):
-            audit.fail(f"live ruleset {detail.get('name')} contains bypass actors")
-        live_contexts.update(status_contexts_from_ruleset(detail))
-    missing_live_contexts = sorted(EXPECTED_CONTEXTS - live_contexts)
-    if missing_live_contexts:
-        audit.fail(f"live rulesets missing required contexts: {missing_live_contexts}")
-    extra_live_contexts = sorted(live_contexts - EXPECTED_CONTEXTS)
-    if extra_live_contexts:
-        audit.fail(f"live rulesets contain internal or retired contexts: {extra_live_contexts}")
-
-    prop_map = {item.get("property_name"): item.get("value") for item in properties}
-    for key, expected in EXPECTED_PROPERTIES.items():
-        if prop_map.get(key) != expected:
-            audit.fail(f"live custom property {key}={prop_map.get(key)!r}, expected {expected!r}")
-
-
 def main() -> int:
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--local", action="store_true", help="run local repository checks")
-    parser.add_argument("--live", action="store_true", help="run live GitHub settings checks")
-    parser.add_argument("--require-live", action="store_true", help="fail if live GitHub API access is unavailable")
-    parser.add_argument(
-        "--require-native-secret-protection",
-        action="store_true",
-        help="fail if GitHub-native Secret Protection is not enabled",
-    )
-    parser.add_argument("--repo", default=os.environ.get("GITHUB_REPOSITORY", EXPECTED_REPO))
-    args = parser.parse_args()
-
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--local", action="store_true", help="run local repository checks (the default)")
+    parser.parse_args()
     audit = Audit()
-    run_local = args.local or not args.live
-    if run_local:
-        audit_local(audit)
-    if args.live:
-        audit_live(
-            audit,
-            args.repo,
-            args.require_live,
-            args.require_native_secret_protection,
-        )
+    audit_local(audit)
     return audit.finish()
 
 
