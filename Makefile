@@ -8,7 +8,7 @@ help:
 	@echo "SMARTHAUS public .github targets"
 	@echo "  validate              Run local public-profile governance audit"
 	@echo "  github-settings-audit Run local GitHub governance audit"
-	@echo "  github-settings-audit-live Run local + live GitHub governance audit"
+	@echo "  github-settings-audit-live Retired; use SMARTHAUS Automation App reads"
 
 validate: github-settings-audit
 
